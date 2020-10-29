@@ -1,0 +1,88 @@
+*** Error in `./auto_search': double free or corruption (!prev): 0x00005653ca218010 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x777e5)[0x7f8885c1b7e5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x8037a)[0x7f8885c2437a]
+/lib/x86_64-linux-gnu/libc.so.6(cfree+0x4c)[0x7f8885c2853c]
+/lib/x86_64-linux-gnu/libc.so.6(fclose+0x103)[0x7f8885c11363]
+./auto_search(+0x1f95dd)[0x564a732b45dd]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x7f8885bc4830]
+./auto_search(+0x197a)[0x564a730bc97a]
+======= Memory map: ========
+564a730bb000-564a732bd000 r-xp 00000000 08:11 118046921                  /home/huangmingjiang/hmj123/alzette-diff/9/auto_search/Debug/auto_search
+564a734bc000-564a734bd000 r--p 00201000 08:11 118046921                  /home/huangmingjiang/hmj123/alzette-diff/9/auto_search/Debug/auto_search
+564a734bd000-564a734be000 rw-p 00202000 08:11 118046921                  /home/huangmingjiang/hmj123/alzette-diff/9/auto_search/Debug/auto_search
+564a734be000-5653c9a5c000 rw-p 00000000 00:00 0 
+5653ca218000-5653ca239000 rw-p 00000000 00:00 0                          [heap]
+7f8880000000-7f8880021000 rw-p 00000000 00:00 0 
+7f8880021000-7f8884000000 ---p 00000000 00:00 0 
+7f888598e000-7f88859a4000 r-xp 00000000 08:03 9437705                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f88859a4000-7f8885ba3000 ---p 00016000 08:03 9437705                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f8885ba3000-7f8885ba4000 rw-p 00015000 08:03 9437705                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f8885ba4000-7f8885d64000 r-xp 00000000 08:03 9446054                    /lib/x86_64-linux-gnu/libc-2.23.so
+7f8885d64000-7f8885f64000 ---p 001c0000 08:03 9446054                    /lib/x86_64-linux-gnu/libc-2.23.so
+7f8885f64000-7f8885f68000 r--p 001c0000 08:03 9446054                    /lib/x86_64-linux-gnu/libc-2.23.so
+7f8885f68000-7f8885f6a000 rw-p 001c4000 08:03 9446054                    /lib/x86_64-linux-gnu/libc-2.23.so
+7f8885f6a000-7f8885f6e000 rw-p 00000000 00:00 0 
+7f8885f6e000-7f8885f86000 r-xp 00000000 08:03 9446041                    /lib/x86_64-linux-gnu/libpthread-2.23.so
+7f8885f86000-7f8886185000 ---p 00018000 08:03 9446041                    /lib/x86_64-linux-gnu/libpthread-2.23.so
+7f8886185000-7f8886186000 r--p 00017000 08:03 9446041                    /lib/x86_64-linux-gnu/libpthread-2.23.so
+7f8886186000-7f8886187000 rw-p 00018000 08:03 9446041                    /lib/x86_64-linux-gnu/libpthread-2.23.so
+7f8886187000-7f888618b000 rw-p 00000000 00:00 0 
+7f888618b000-7f8886293000 r-xp 00000000 08:03 9446057                    /lib/x86_64-linux-gnu/libm-2.23.so
+7f8886293000-7f8886492000 ---p 00108000 08:03 9446057                    /lib/x86_64-linux-gnu/libm-2.23.so
+7f8886492000-7f8886493000 r--p 00107000 08:03 9446057                    /lib/x86_64-linux-gnu/libm-2.23.so
+7f8886493000-7f8886494000 rw-p 00108000 08:03 9446057                    /lib/x86_64-linux-gnu/libm-2.23.so
+7f8886494000-7f88864ba000 r-xp 00000000 08:03 9446040                    /lib/x86_64-linux-gnu/ld-2.23.so
+7f888669f000-7f88866a3000 rw-p 00000000 00:00 0 
+7f88866b8000-7f88866b9000 rw-p 00000000 00:00 0 
+7f88866b9000-7f88866ba000 r--p 00025000 08:03 9446040                    /lib/x86_64-linux-gnu/ld-2.23.so
+7f88866ba000-7f88866bb000 rw-p 00026000 08:03 9446040                    /lib/x86_64-linux-gnu/ld-2.23.so
+7f88866bb000-7f88866bc000 rw-p 00000000 00:00 0 
+7ffd1e082000-7ffd1e0a3000 rw-p 00000000 00:00 0                          [stack]
+7ffd1e165000-7ffd1e167000 r--p 00000000 00:00 0                          [vvar]
+7ffd1e167000-7ffd1e169000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:alzette 
+Note: blocksize Now only fixed for bits for Alzette.  
+blocksize: 64 
+rounds:9 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing cDDT Lookup Tables... 
+Time of Construct Alzette cDDT: 9.00 seconds.  
+Searching Alzette Bn_w: 34 
+Time: 86.00 seconds.  
+Searching Alzette Bn_w: 35 
+Time: 860.00 seconds.  
+Searching Alzette Bn_w: 36 
+Time: 9164.00 seconds.  
+Searching Alzette Bn_w: 37 
+Time: 94985.00 seconds.  
+Searching Alzette Bn_w: 38 
+Time: 882395.00 seconds.  
+Searching Alzette Bn_w: 39 
+Time: 6470620.00 seconds.  
+Searching Alzette Bn_w: 40 
+Time: 6480106.00 seconds.  
+round-----left---------right------weight 
+00     0x80400100    0x40000080     -2 
+01     0x00400000    0x00000080     -1 
+02     0x00000000    0x00000080     -1 
+03     0x00000080    0x00000180     -3 
+04     0x00008080    0x80800180     -6 
+05     0x01008081    0x80008081     -8 
+06     0x40c04081    0xa04020e1     -10 
+07     0xe0002060    0x60406020     -6 
+08     0x60200000    0x60400000     -3 
+09     0x60a00000    0xc0400060     NULL 
+9 Round Total Weight: -40 
+Time cost: 6480107.00 seconds ==  108001.78 minutes == 1800.03 hours == 75.00 days. 
+Auto-search 9-Round Alzette optimal differential trails END! 
+|************************************************************************|
+Time cost: 6480116.57 seconds ==  108001.94 minutes == 1800.03 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------

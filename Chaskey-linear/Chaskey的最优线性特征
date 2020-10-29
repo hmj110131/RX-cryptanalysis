@@ -1,0 +1,683 @@
+//2019年03月21日16:17:44
+
+[era@sce Debug]$ scerun ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:1 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 4.00 seconds.  
+Searching SPARX-128 Bn_w: 0 
+Time: 0.00 seconds.  
+round----Xr0-----------Xr1------------Xr2------------Xr3----w_0--w_1--w_2--w_3---Pw 
+01     0x00000001    0x08000001     0x00000000     0x00000000    -0  -0  -0  -0   -122881728 
+02     0x00000000    0x00000080     0x00800000     0x00000000     -   -   -   -   NULL 
+------------------ 
+1 Round SPARX64 Total Weight: -0 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 4.54 seconds ==  0.08 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年03月22日14:18:43
+huangmingjiang@ubuntu:~/hmj123/chaskey/1/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:1 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 0 
+Time: 0.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+01     0x00000001    0x08000001     0x00000000     0x00000000    -0   -0   -0   -0    -0 
+02     0x00000000    0x00000080     0x00800000     0x00000000     -    -    -    -   NULL 
+Tmp-----MV0-----------MV1------------MV2------------MV3--------- 
+01     0x00000001    0x00000000     0x00000000     0x00000000   
+------------------ 
+1 Round Chaskey Total Weight: -0 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.15 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年03月28日15:43:55
+huangmingjiang@ubuntu:~/hmj123/chaskey/2/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:2 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 1 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 2 
+Time: 0.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+01     0x02000001    0x0b100001     0x00000001     0x00000001    -1   -0   -0   -0    -1 
+02     0x00000000    0x00000001     0x00000000     0x00000000    -0   -0   -0   -1    -1 
+03     0x00300004    0x00001000     0x10000000     0x00000004     -    -    -    -   NULL 
+Tmp-----MV0-----------MV1------------MV2------------MV3--------- 
+01     0x02000001    0x00000001     0x00000000     0x00000000   
+02     0x00000020    0x00000000     0x00200000     0x00000000   
+------------------ 
+2 Round Chaskey Total Weight: -2 
+Time cost: 0.21 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.33 seconds ==  0.06 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+huangmingjiang@ubuntu:~/hmj123/chaskey/2/auto_search/Debug$ 
+
+
+//2019年03月28日17:18:35
+huangmingjiang@ubuntu:~/hmj123/chaskey/3/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:3 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 2 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 3 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 4 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 5 
+Time: 47.00 seconds.  
+Searching SPARX-128 Bn_w: 6 
+Time: 5580.00 seconds.  
+Searching SPARX-128 Bn_w: 7 
+
+
+
+
+//2019年04月01日09:31:35
+huangmingjiang@ubuntu:~/hmj123/chaskey/3/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:3 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 2 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 3 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 4 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 5 
+Time: 47.00 seconds.  
+Searching SPARX-128 Bn_w: 6 
+Time: 5580.00 seconds.  
+Searching SPARX-128 Bn_w: 7 
+Time: 503691.00 seconds.
+Searching SPARX-128 Bn_w: 8
+
+
+
+//2019年04月22日12:40:21
+//限定第1轮的每个模加的相关性重量Cor<2
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaske 
+Error input with cipher name! 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:3 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 9 
+Time: 726.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+01     0x00000001    0x08100001     0x00000201     0x00000303    -0   -1   -0   -1    -2 
+02     0x00000300    0x00000001     0x00000000     0x00000000    -5   -0   -0   -0    -5 
+03     0x00000000    0x00010000     0x00000001     0x00000000    -0   -0   -1   -1    -2 
+04     0x00240030    0x10008080     0x81011000     0x00240000     -    -    -    -   NULL 
+Tmp-----MV0-----------MV1------------MV2------------MV3--------- 
+01     0x02000001    0x00000001     0x00000200     0x00000200   
+02     0x00000200    0x00000000     0x00000000     0x00000000   
+03     0x00200000    0x00000101     0x00000020     0x00000100   
+------------------ 
+3 Round Chaskey Total Weight: -9 
+Time cost: 726.79 seconds ==  12.11 minutes == 0.20 hours == 0.01 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 730.03 seconds ==  12.17 minutes == 0.20 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+//2019年04月25日09:18:33
+//对于wc=9的3轮向前扩展一轮的结果,所以4轮的相关性重量COR=39
+huangmingjiang@ubuntu:~/hmj123/chaskey/test/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:1 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 30 
+Time: 0.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+04     0x00240030    0x10008080     0x81011000     0x00240000   -3   -4   -8   -15    -30 
+02     0x509a22a6    0x008241c0     0x5101c65b     0x40b026a6     -    -    -    -   NULL 
+Tmp-----MV0-----------MV1------------MV2------------MV3--------- 
+01     0x04901402    0xe4919881     0x142204a6     0x25100081   
+------------------ 
+1 Round Chaskey Total Weight: -30 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.45 seconds ==  0.06 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年04月25日09:28:04
+//对于wc=9的3轮向前扩展一轮的结果,所以4轮的相关性重量COR=21+9=30
+huangmingjiang@ubuntu:~/hmj123/chaskey/tst/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:1 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 21 
+Time: 3.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+04     0x00240030    0x10008080     0x81011000     0x00240000   -3   -4   -6   -8    -21 
+05     0x50f3b222    0x408241a0     0x5161069b     0x40c0b6a6     -    -    -    -   NULL 
+Tmp-----MV0-----------MV1------------MV2------------MV3--------- 
+01     0x04901402    0x64119881     0x142204a6     0xa5100081   
+------------------ 
+1 Round Chaskey Total Weight: -21 
+Time cost: 3.75 seconds ==  0.06 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 7.09 seconds ==  0.12 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+//2019年04月25日09:33:17
+//对于wc=9的3轮向前扩展一轮的结果,所以4轮的相关性重量COR=20+9=29
+huangmingjiang@ubuntu:~/hmj123/chaskey/tst/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:1 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 20 
+Time: 207.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+04     0x00240030    0x10008080     0x81011000     0x00240000    -4   -4   -6   -6    -20 
+02     0x50e73286    0x008241a0     0x5161469b     0x40d436a6     -    -    -    -   NULL 
+Tmp-----MV0-----------MV1------------MV2------------MV3--------- 
+01     0x04101402    0x64119881     0x14220430     0xa5100081   
+------------------ 
+1 Round Chaskey Total Weight: -20 
+Time cost: 207.74 seconds ==  3.46 minutes == 0.06 hours == 0.00 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 211.09 seconds ==  3.52 minutes == 0.06 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年04月25日09:38:32
+//由上面的3轮的输出向前扩展1轮的相关性重量
+huangmingjiang@ubuntu:~/hmj123/chaskey/test/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:1 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 1 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 2 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 3 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 4 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 5 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 6 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 7 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 8 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 9 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 10 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 11 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 12 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 13 
+Time: 1.00 seconds.  
+Searching SPARX-128 Bn_w: 14 
+Time: 6.00 seconds.  
+Searching SPARX-128 Bn_w: 15 
+Time: 20.00 seconds.  
+Searching SPARX-128 Bn_w: 16 
+Time: 65.00 seconds.  
+Searching SPARX-128 Bn_w: 17 
+Time: 200.00 seconds.  
+Searching SPARX-128 Bn_w: 18 
+Time: 568.00 seconds.  
+Searching SPARX-128 Bn_w: 19 
+Time: 1561.00 seconds.  
+Searching SPARX-128 Bn_w: 20 
+Time: 1774.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+04     0x00240030    0x10008080     0x81011000     0x00240000    -4   -4   -6   -6    -20 
+02     0x50e73286    0x008241a0     0x5161469b     0x40d436a6     -    -    -    -   NULL 
+Tmp-----MV0-----------MV1------------MV2------------MV3--------- 
+01     0x04101402    0x64119881     0x14220430     0xa5100081   
+------------------ 
+1 Round Chaskey Total Weight: -20 
+Time cost: 1774.71 seconds ==  29.58 minutes == 0.49 hours == 0.02 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 1778.13 seconds ==  29.64 minutes == 0.49 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+//2019年04月25日10:49:16
+//对于wc=9的3轮向前扩展一轮的结果,所以4轮的相关性重量COR=9+20+33=62  --->LSC=124
+huangmingjiang@ubuntu:~/hmj123/chaskey/test/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:1 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 33 
+Time: 503.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+02     0x50e73286    0x008241a0     0x5161469b     0x40d436a6    -10   -12   -3   -8    -33 
+02     0xa26e7c06    0x762a4504     0x65067e2a     0x3ea61c27     -    -    -    -   NULL 
+Tmp-----MV0-----------MV1------------MV2------------MV3--------- 
+01     0x00ec7488    0x0c003003     0xd68c4029     0x75b1b511   
+------------------ 
+1 Round Chaskey Total Weight: -33 
+Time cost: 503.87 seconds ==  8.40 minutes == 0.14 hours == 0.01 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 507.30 seconds ==  8.46 minutes == 0.14 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年04月25日17:58:07
+//对于wc=9的3轮向前扩展一轮的结果,所以4轮的相关性重量COR=9+20+32=61  --->LSC=122
+huangmingjiang@ubuntu:~/hmj123/chaskey/test/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:1 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 32 
+Time: 22601.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+02     0x50e73286    0x008241a0     0x5161469b     0x40d436a6    -10   -12   -4   -6    -32 
+02     0xbaae7e16    0x76224512     0x65104022     0x3ea61e37     -    -    -    -   NULL 
+Tmp-----MV0-----------MV1------------MV2------------MV3--------- 
+01     0x00ec6488    0x24003003     0xc60c4029     0x75b1b511   
+------------------ 
+1 Round Chaskey Total Weight: -32 
+Time cost: 22601.63 seconds ==  376.69 minutes == 6.28 hours == 0.26 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 22604.91 seconds ==  376.75 minutes == 6.28 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------
+---------------------------------
+---------------------------------
+---------------------------------
+-----第2组的3轮相关性重量为Cor=9的线性路径---------------
+---------------------------------
+---------------------------------
+---------------------------------
+//2019年04月24日08:21:44
+//限定第1轮的每个模加的相关性重量Cor<3
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:3 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 9 
+Time: 137368.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+01     0x00000000    0x00000800     0x00090001     0x010d0801    -0   -2   -1   -0    -3 
+02     0x00000000    0x00000000     0x00000001     0x00000001    -0   -0   -0   -0    -0 
+03     0x00000000    0x00000080     0x00810000     0x00000000    -0   -2   -3   -1    -6 
+04     0x18001a20    0x80880040     0x00400189     0x00001a20     -    -    -    -   NULL 
+Tmp-----MV0-----------MV1------------MV2------------MV3--------- 
+01     0x00010000    0x00018000     0x00000001     0x00080001   
+02     0x00000000    0x00000001     0x00000000     0x00000000   
+03     0x00001000    0xc1818000     0x10000000     0xc1000000   
+------------------ 
+3 Round Chaskey Total Weight: -9 
+Time cost: 137368.66 seconds ==  2289.48 minutes == 38.16 hours == 1.59 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 137371.84 seconds ==  2289.53 minutes == 38.16 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+
+
+//2019年04月25日09:37:21
+//对于wc=9的3轮向前扩展一轮的结果,所以4轮的相关性重量COR=20+9=29
+huangmingjiang@ubuntu:~/hmj123/chaskey/tst/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:1 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 20 
+Time: 0.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+04     0x18001a20    0x80880040     0x00400189     0x00001a20     -5   -3   -7   -5    -20 
+02     0x4d224005    0xa83f0da8     0x2da1c86d     0x25004107     -    -    -    -   NULL 
+Tmp-----MV0-----------MV1------------MV2------------MV3--------- 
+01     0x11025e12    0x407b280d     0x4c320102     0x401b2900   
+------------------ 
+1 Round Chaskey Total Weight: -20 
+Time cost: 0.30 seconds ==  0.01 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.60 seconds ==  0.06 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年04月25日09:49:32
+//对于wc=9的3轮向前扩展一轮的结果,所以4轮的相关性重量COR=20+9=29，最小的值还是为29
+huangmingjiang@ubuntu:~/hmj123/chaskey/tst/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:1 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 19 
+Time: 584.00 seconds.  
+Searching SPARX-128 Bn_w: 20 
+Time: 584.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+04     0x18001a20    0x80880040     0x00400189     0x00001a20    -5   -3   -7   -5    -20 
+02     0x4d224005    0xa83f0da8     0x2da1c86d     0x25004107     -    -    -    -   NULL 
+Tmp-----MV0-----------MV1------------MV2------------MV3--------- 
+01     0x11025e12    0x407b280d     0x4c320102     0x401b2900   
+------------------ 
+1 Round Chaskey Total Weight: -20 
+Time cost: 584.39 seconds ==  9.74 minutes == 0.16 hours == 0.01 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 587.93 seconds ==  9.80 minutes == 0.16 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年04月25日10:09:54
+//对于wc=9的3轮向前扩展一轮的结果,所以4轮的相关性重量COR=9+20+45=74
+huangmingjiang@ubuntu:~/hmj123/chaskey/test/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:1 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 45 
+Time: 0.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+02     0x4d224005    0xa83f0da8     0x2da1c86d     0x25004107    -8   -9   -8   -20    -45 
+02     0x86f3d88d    0xf89bdc99     0x5e9ee8cb     0x61c1908d     -    -    -    -   NULL 
+Tmp-----MV0-----------MV1------------MV2------------MV3--------- 
+01     0x23a1b5bc    0x1878c245     0xb5bb4a13     0x21494e0c   
+------------------ 
+1 Round Chaskey Total Weight: -45 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.22 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+huangmingjiang@ubuntu:~/hmj123/chaskey/test/auto_search/Debug$ 
+
+
+//2019年04月25日10:11:52
+//对于wc=9的3轮向前扩展一轮的结果,所以4轮的相关性重量COR=9+20+40=69
+huangmingjiang@ubuntu:~/hmj123/chaskey/test/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:1 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 40 
+Time: 0.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+02     0x4d224005    0xa83f0da8     0x2da1c86d     0x25004107     -8   -9   -8   -15    -40 
+02     0x87f3f88d    0xf89bdc99     0x5e9ee8cb     0x60c1908d     -    -    -    -   NULL 
+Tmp-----MV0-----------MV1------------MV2------------MV3--------- 
+01     0x23a1b5bc    0x1878c245     0xb5bb4a13     0x21494e0c   
+------------------ 
+1 Round Chaskey Total Weight: -40 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.35 seconds ==  0.06 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+//2019年04月25日10:13:06
+//对于wc=9的3轮向前扩展一轮的结果,所以4轮的相关性重量COR=9+20+36=65
+huangmingjiang@ubuntu:~/hmj123/chaskey/test/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:1 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 36 
+Time: 1.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+02     0x4d224005    0xa83f0da8     0x2da1c86d     0x25004107    -8   -9   -7   -12    -36 
+02     0x87b1ba97    0xf89bfc99     0x7ffee8cb     0x6083d08d     -    -    -    -   NULL 
+Tmp-----MV0-----------MV1------------MV2------------MV3--------- 
+01     0x23a1b5bc    0x1878c245     0xb5bb4a13     0x21494e0c   
+------------------ 
+1 Round Chaskey Total Weight: -36 
+Time cost: 1.55 seconds ==  0.03 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 4.89 seconds ==  0.08 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年04月25日10:14:06
+//对于wc=9的3轮向前扩展一轮的结果,所以4轮的相关性重量COR=9+20+33=62  --->LSC=124
+huangmingjiang@ubuntu:~/hmj123/chaskey/test/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:1 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 33 
+Time: 0.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+02     0x4d224005    0xa83f0da8     0x2da1c86d     0x25004107    -8   -9   -4   -12    -33 
+02     0x8731ba9b    0xd8d8fe99     0xfaf8c8c8     0x6003d081     -    -    -    -   NULL 
+Tmp-----MV0-----------MV1------------MV2------------MV3--------- 
+01     0x23a1b5bc    0x18180641     0xb5bb4a13     0x21294a0c   
+------------------ 
+1 Round Chaskey Total Weight: -33 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.36 seconds ==  0.06 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年04月25日15:00:46
+//对于wc=9的3轮向前扩展一轮的结果,所以4轮的相关性重量COR=9+20+32=61  --->LSC=122
+huangmingjiang@ubuntu:~/hmj123/chaskey/test2/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:1 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 32 
+Time: 16428.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+02     0x4d224005    0xa83f0da8     0x2da1c86d     0x25004107    -8   -9   -4   -11    -32 
+02     0xe752ba95    0xd8d8de99     0xdaf8c8c8     0x0003d08f     -    -    -    -   NULL 
+Tmp-----MV0-----------MV1------------MV2------------MV3--------- 
+01     0x23a1b5fc    0x18180641     0xb5f94a13     0x21294a0c   
+------------------ 
+1 Round Chaskey Total Weight: -32 
+Time cost: 16428.12 seconds ==  273.80 minutes == 4.56 hours == 0.19 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 16432.01 seconds ==  273.87 minutes == 4.56 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

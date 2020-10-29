@@ -1,0 +1,57 @@
+//2020年10月20日08:55:47
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper  #blocksize  #rounds  #mode 
+ciper: alzette 
+blocksize: 64 
+rotational parameter: 15 
+rounds: 2 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+Constructing Alzette_Constant_RX ... 
+rk=15   Alzette_C[0]: b7e15162   Alzette_C_RX[0]: 1f500a92 
+RX_zeta_total: 288  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing Alzette info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct Alzette cDDT: 25.00 seconds.  
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 64.000000  --Max expected weight-- 
+**thr_d**: 0  
+Update: 1   RX_Bn_w: 15.999889  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.999945    0.000000    1.999945 
+01     1f500a92    00000000   00000000   1.999945    12.000000    13.999945 
+02     1e000000    054900a8      NULL        NULL         NULL      NULL
+2 Round Total Weight: -15.999889 
+|-----------------------------------------------------------------------|
+**thr_d**: 1  
+Update: 2   RX_Bn_w: 14.999889  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000010    00000000   00000000   1.999945    1.000000    2.999945 
+01     1f500a82    00001000   00000000   1.999945    10.000000    11.999945 
+02     16000010    054114a8      NULL        NULL         NULL      NULL
+2 Round Total Weight: -14.999889 
+|-----------------------------------------------------------------------|
+Time: 0.00 seconds.
+**************************************************************************|
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000010    00000000   00000000   1.999945    1.000000    2.999945 
+01     1f500a82    00001000   00000000   1.999945    10.000000    11.999945 
+02     16000010    054114a8      NULL        NULL         NULL      NULL
+2 Round Total Weight: -14.999889 
+|-----------------------------------------------------------------------|
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search 2-Round Alzette optimal RX-differential trails END! 
+|************************************************************************|
+Time cost: 25.94 seconds ==  0.43 minutes == 0.01 hours. 
+Auto-RX-search END! 
+|************************************************************************|
+

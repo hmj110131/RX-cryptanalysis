@@ -1,0 +1,108 @@
+//2020年10月15日10:06:17
+[huangmingjiang@localhost 10]$ cd auto_search/Debug/
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:alzette 
+Note: blocksize Now only fixed for bits for Alzette.  
+blocksize: 64 
+rounds:10 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing cDDT Lookup Tables... 
+Time of Construct Alzette cDDT: 19.00 seconds.  
+Searching Alzette Bn_w: 40 
+Time: 0.00 seconds.  
+Searching Alzette Bn_w: 41 
+Time: 8.00 seconds.  
+Searching Alzette Bn_w: 42 
+Time: 86.00 seconds.  
+Searching Alzette Bn_w: 43 
+
+
+
+
+
+//2020年10月16日11:13:11
+[huangmingjiang@localhost 10]$ cd auto_search/Debug/
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:alzette 
+Note: blocksize Now only fixed for bits for Alzette.  
+blocksize: 64 
+rounds:10 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing cDDT Lookup Tables... 
+Time of Construct Alzette cDDT: 19.00 seconds.  
+Searching Alzette Bn_w: 46 
+Time: 37097.00 seconds.  
+|-------------------------------------------|
+round-----left---------right------weight 
+00     0x80400100    0x40000080     -2 
+01     0x00400000    0x00000080     -1 
+02     0x00000000    0x00000080     -1 
+03     0x00000080    0x00000180     -3 
+04     0x00008080    0x80800180     -6 
+05     0x01008081    0x80008081     -8 
+06     0x40c04081    0xa04020e1     -10 
+07     0xe0002060    0x60406020     -6 
+08     0x60200000    0x60400000     -4 
+09     0x60600000    0x00400060     -5 
+10     0x20300020    0x00501078     NULL 
+10 Round Total Weight: -46 
+|-------------------------------------------|
+Time cost: 37097.96 seconds ==  618.30 minutes == 10.30 hours == 0.43 days. 
+Auto-search 10-Round Alzette optimal differential trails END! 
+|************************************************************************|
+Time cost: 37117.84 seconds ==  618.63 minutes == 10.31 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+
+//2020年10月16日15:23:21
+huangmingjiang@localhost alzette-diff]$ cd auto_search/Debug/
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:alzette 
+Note: blocksize Now only fixed for bits for Alzette.  
+blocksize: 64 
+rounds:10 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing cDDT Lookup Tables... 
+Time of Construct Alzette cDDT: 28.00 seconds.  
+Searching Alzette Bn_w: 48 
+Time: 125499.00 seconds.  
+|-------------------------------------------|
+round-----left---------right------weight 
+00     0x80400100    0x40000080     -2 
+01     0x00400000    0x00000080     -1 
+02     0x00000000    0x00000080     -1 
+03     0x00000080    0x00000180     -3 
+04     0x00008080    0x80800180     -6 
+05     0x01008081    0x80008081     -8 
+06     0x40c1c081    0x604020e1     -12 
+07     0xa0002060    0x20406020     -7 
+08     0x60200040    0x20000000     -3 
+09     0xe0200040    0x000040e0     -5 
+10     0x00300040    0x002040f8     NULL 
+10 Round Total Weight: -48 
+|-------------------------------------------|
+Time cost: 125499.31 seconds ==  2091.66 minutes == 34.86 hours == 1.45 days. 
+Auto-search 10-Round Alzette optimal differential trails END! 
+|************************************************************************|
+Time cost: 125527.52 seconds ==  2092.13 minutes == 34.87 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+

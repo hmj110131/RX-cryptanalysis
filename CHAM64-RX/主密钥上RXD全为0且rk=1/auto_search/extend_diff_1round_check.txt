@@ -1,0 +1,286 @@
+
+	u64 X=0x111, Y=0x40;
+	u64 Sa,Sb;
+	u64 alpha = 0;  //x
+	u64 Sa_LSB8,Sb_LSB8;
+	u64 AB_indx[16] = {0};  // Sa and Sb
+	u64 gama_0 = 0,gama_1 = 0,gama_2 = 0,gama_3 = 0,gama_4 = 0,gama_5 = 0,gama_6 = 0,gama_7 = 0;
+	u16 gama_num[]={0};
+	u16 i=0,i0=0,i1=0,i2=0,i3=0,i4=0,i5=0,i6=0,i7=0,j=0,k=0;
+	u64 gama = 0;  //gama.andout.
+
+	X=0x0400;Y=0x0100; //simon32
+	alpha = X;
+	//////look up the DDTAB table to find the gama.//////
+	Sa = ROTATE_LEFT(alpha,rol_a,blocksize_len);
+	Sb = ROTATE_LEFT(alpha,rol_b,blocksize_len);
+
+	//x0
+	Sa_LSB8 = (Sa) & 0xFF; //8 bit
+	Sb_LSB8 = (Sb) & 0xFF; //8 bit
+	AB_indx[0] = (Sa_LSB8 << 8) | Sb_LSB8;
+	gama_num[0] = DDTAB_8bit[AB_indx[0]][256];
+	//x1
+	Sa_LSB8 = Sa & 0xFF00; //8 bit
+	Sb_LSB8 = ( Sb >> 8) & 0xFF; //8 bit
+	AB_indx[1] = Sa_LSB8  | Sb_LSB8;
+	gama_num[1] = DDTAB_8bit[AB_indx[1]][256];
+
+	for(i1=0;i1<gama_num[1];i1++)
+	{
+		gama_1 = DDTAB_8bit[AB_indx[1]][i1];  //gama_num 4-7 bits
+		for(i0=0;i0 < gama_num[0];i0++)
+		{
+			gama_0 = DDTAB_8bit[AB_indx[0]][i0];  //gama_num 0-3 bitssearch_round
+			gama = (gama_1 <<8) | gama_0;
+
+			if(SIMON_DP_weight_check(alpha,gama) == 1) //valid gama.
+			{
+				gama= gama ^ ROTATE_LEFT(alpha,rol_c,blocksize_len) ^ Y; //beta1.Go to next round.
+
+				printf(" 0x%016x  \n",gama);
+			}
+		}
+	}
+	gama = 1;
+	for (i=0;i<2;i++)
+		gama = gama *gama_num[i];
+
+	printf("cnt:  %d  \n",gama);
+
+
+	X=0x800002;Y=0x1; //simon64
+	alpha = X;
+	//////look up the DDTAB table to find the gama.//////
+	Sa = ROTATE_LEFT(alpha,0,blocksize_len);
+	Sb = ROTATE_LEFT(alpha,5,blocksize_len);
+	for(j=0;j<3;j++)  //nBytes
+	{
+		Sa_LSB8 = (Sa>>(8*j)) & 0x00FF; //8 bit
+		Sb_LSB8 = (Sb>>(8*j)) & 0x00FF; //8 bit
+		AB_indx[j] = ((Sa_LSB8 << 8) | Sb_LSB8);
+		gama_num[j] = DDTAB_8bit[AB_indx[j]][256];
+	}
+
+	//for(i3=0;i3<gama_num[3];i3++)
+	{
+	//gama_3 = DDTAB_8bit[AB_indx[3]][i3];  //gama_num 4-7 bits
+	for(i2=0;i2<gama_num[2];i2++)
+	{
+		gama_2 = DDTAB_8bit[AB_indx[2]][i2];  //gama_num 4-7 bits
+		for(i1=0;i1<gama_num[1];i1++)
+		{
+			gama_1 = DDTAB_8bit[AB_indx[1]][i1];  //gama_num 4-7 bits
+			for(i0=0;i0 < gama_num[0];i0++)
+			{
+				gama_0 = DDTAB_8bit[AB_indx[0]][i0];  //gama_num 0-3 bitssearch_round
+				//gama = (gama_3 << 24) | (gama_2 << 16) | (gama_1 <<8) | gama_0;
+				gama =  (gama_2 << 16) | (gama_1 <<8) | gama_0;
+
+				if(SIMON_DP_weight_check(alpha,gama) == 1) //valid gama.
+				{
+					gama = gama ^ ROTATE_LEFT(alpha,1,blocksize_len)^ Y;  //beta1.Go to next round.
+
+				}
+			}
+		}}}
+	gama = 1;
+	for (i=0;i<3;i++)
+		gama = gama *gama_num[i];
+
+	printf("simeck 48 cnt:  %d  \n",gama);
+
+
+	X=0x111, Y=0x40; //simon128
+	alpha = X;
+
+	Sa = ROTATE_LEFT(alpha,rol_a,blocksize_len);
+	Sb = ROTATE_LEFT(alpha,rol_b,blocksize_len);
+	for(j=0;j<8;j++)  //nBytes
+	{
+		Sa_LSB8 = (Sa>>(8*j)) & 0xFF; //8 bit
+		Sb_LSB8 = (Sb>>(8*j)) & 0xFF; //8 bit
+		AB_indx[j] = ((Sa_LSB8 << 8) | Sb_LSB8);
+		gama_num[j] = DDTAB_8bit[AB_indx[j]][256];
+	}
+
+	for(i7=0;i7<gama_num[7];i7++)
+	{
+	gama_7 = DDTAB_8bit[AB_indx[7]][i7];  //gama_num 4-7 bits
+	for(i6=0;i6<gama_num[6];i6++)
+	{
+	gama_6 = DDTAB_8bit[AB_indx[6]][i6];  //gam2a_num 4-7 bits
+	for(i5=0;i5<gama_num[5];i5++)
+	{
+	gama_5 = DDTAB_8bit[AB_indx[5]][i5];  //gama_num 4-7 bits
+	for(i4=0;i4<gama_num[4];i4++)
+	{
+	gama_4 = DDTAB_8bit[AB_indx[4]][i4];  //gam2a_num 4-7 bits
+	for(i3=0;i3<gama_num[3];i3++)
+	{
+	gama_3 = DDTAB_8bit[AB_indx[3]][i3];  //gama_num 4-7 bits
+	for(i2=0;i2<gama_num[2];i2++)
+	{
+		gama_2 = DDTAB_8bit[AB_indx[2]][i2];  //gama_num 4-7 bits
+		for(i1=0;i1<gama_num[1];i1++)
+		{
+			gama_1 = DDTAB_8bit[AB_indx[1]][i1];  //gama_num 4-7 bits
+			for(i0=0;i0 < gama_num[0];i0++)
+			{
+				gama_0 = DDTAB_8bit[AB_indx[0]][i0];  //gama_num 0-3 bitssearch_round
+				gama =(gama_7 << 56) | (gama_6 << 48) | (gama_5 << 40) | (gama_4 << 32) | (gama_3 << 24) | (gama_2 << 16) | (gama_1 <<8) | gama_0;
+
+				if(SIMON_DP_weight_check(alpha,gama) == 1) //valid gama.
+				{
+					gama= gama ^ ROTATE_LEFT(alpha,rol_c,blocksize_len) ^ Y; //beta1.Go to next round.
+
+					//printf(" 0x%016x  \n",gama);
+				}
+			}
+		}	}	}	}	}	}	}
+
+	gama = 1;
+	for (i=0;i<8;i++)
+		gama = gama *gama_num[i];
+
+	printf("cnt:  %d  \n",gama);
+	
+	
+	
+	
+	
+	
+void ROUNDBACK_2(u64 X,u64 Y,int rounds)
+	{
+		u64 alpha = Y;  //x
+		u64 Sa_LSB8,Sb_LSB8;
+		u64 Sa,Sb;
+		u64 AB_indx[16] = {0};  // Sa and Sb
+		u16 gama_num[]={0};
+		u64 gama_0 = 0,gama_1 = 0,gama_2 = 0,gama_3 = 0,gama_4 = 0,gama_5 = 0,gama_6 = 0,gama_7 = 0;
+		u16 i=0,i0=0,i1=0,i2=0,i3=0,i4=0,i5=0,i6=0,i7=0,j=0,k=0;
+		u64 gama = 0;  //gama.andout.
+
+		//////look up the DDTAB table to find the gama.//////
+		Sa = ROTATE_LEFT(alpha,0,24);    //rol_a,blocksize_len);
+		Sb = ROTATE_LEFT(alpha,5,24);   //rol_b,blocksize_len);
+
+		//x0
+		Sa_LSB8 = (Sa) & 0xFF; //8 bit
+		Sb_LSB8 = (Sb) & 0xFF; //8 bit
+		AB_indx[0] = (Sa_LSB8 << 8) | Sb_LSB8;
+		gama_num[0] = DDTAB_8bit[AB_indx[0]][256];
+		//x1
+		Sa_LSB8 = Sa & 0xFF00; //8 bit
+		Sb_LSB8 = ( Sb >> 8) & 0xFF; //8 bit
+		AB_indx[1] = Sa_LSB8  | Sb_LSB8;
+		gama_num[1] = DDTAB_8bit[AB_indx[1]][256];
+		//x2
+		Sa_LSB8 = (Sa>>16) & 0x00FF; //8 bit
+		Sb_LSB8 = (Sb>>16) & 0x00FF; //8 bit
+		AB_indx[2] = ((Sa_LSB8 << 8) | Sb_LSB8);
+		gama_num[2] = DDTAB_8bit[AB_indx[2]][256];
+
+
+		for(i2=0;i2<gama_num[2];i2++)
+		{
+		gama_2 = DDTAB_8bit[AB_indx[2]][i2];  //gama_num 4-7 bits
+		for(i1=0;i1<gama_num[1];i1++)
+		{
+			gama_1 = DDTAB_8bit[AB_indx[1]][i1];  //gama_num 4-7 bits
+			for(i0=0;i0 < gama_num[0];i0++)
+			{
+				gama_0 = DDTAB_8bit[AB_indx[0]][i0];  //gama_num 0-3 bitssearch_round
+				gama = (gama_2 << 16) | (gama_1 <<8) | gama_0;
+
+				gama = gama ^ ROTATE_LEFT(alpha,1,24) ^ X;
+
+				if(rounds > 2)
+				{
+					ROUNDBACK_2(Y,gama,rounds-1);
+				}
+				else
+				{
+					printf_itoa(gama);
+				}
+			}
+		}
+		}
+		}
+
+		u64 X=0x2, Y=0x5;
+		u64 Sa,Sb;
+		u64 alpha = 0;  //x
+		u64 Sa_LSB8,Sb_LSB8;
+		u64 AB_indx[16] = {0};  // Sa and Sb
+		u64 gama_0 = 0,gama_1 = 0,gama_2 = 0,gama_3 = 0,gama_4 = 0,gama_5 = 0,gama_6 = 0,gama_7 = 0;
+		u16 gama_num[]={0};
+		u16 i=0,i0=0,i1=0,i2=0,i3=0,i4=0,i5=0,i6=0,i7=0,j=0,k=0;
+		u64 gama = 0;  //gama.andout.
+
+		alpha = Y;
+		//////look up the DDTAB table to find the gama.//////
+		Sa = ROTATE_LEFT(alpha,0,24);    //rol_a,blocksize_len);
+		Sb = ROTATE_LEFT(alpha,5,24);   //rol_b,blocksize_len);
+
+		//x0
+		Sa_LSB8 = (Sa) & 0xFF; //8 bit
+		Sb_LSB8 = (Sb) & 0xFF; //8 bit
+		AB_indx[0] = (Sa_LSB8 << 8) | Sb_LSB8;
+		gama_num[0] = DDTAB_8bit[AB_indx[0]][256];
+		//x1
+		Sa_LSB8 = Sa & 0x00FF00 ; //8 bit
+		Sb_LSB8 = ( Sb >> 8) & 0xFF; //8 bit
+		AB_indx[1] = Sa_LSB8  | Sb_LSB8;
+		gama_num[1] = DDTAB_8bit[AB_indx[1]][256];
+		//x2
+		Sa_LSB8 = (Sa>>16) & 0x00FF; //8 bit
+		Sb_LSB8 = (Sb>>16) & 0x00FF; //8 bit
+		AB_indx[2] = ((Sa_LSB8 << 8) | Sb_LSB8);
+		gama_num[2] = DDTAB_8bit[AB_indx[2]][256];
+
+		for(i2=0;i2<gama_num[2];i2++)
+		{
+		gama_2 = DDTAB_8bit[AB_indx[2]][i2];  //gama_num 4-7 bits
+		for(i1=0;i1<gama_num[1];i1++)
+		{
+			gama_1 = DDTAB_8bit[AB_indx[1]][i1];  //gama_num 4-7 bits
+			for(i0=0;i0 < gama_num[0];i0++)
+			{
+				gama_0 = DDTAB_8bit[AB_indx[0]][i0];  //gama_num 0-3 bitssearch_round
+				gama = (gama_2 << 16) | (gama_1 <<8) | gama_0;
+
+			if(SIMON_DP_weight_check(alpha,gama) == 1) //valid gama.
+				gama = gama ^ ROTATE_LEFT(alpha,1,24) ^ X;  //rol_c
+
+				//printf_itoa(gama);
+				ROUNDBACK_2(Y,gama,3);
+			}
+		}
+		}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

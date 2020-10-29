@@ -1,0 +1,92 @@
+[root@jws016 Debug]# ./auto_search 
+已杀死
+[root@jws016 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck
+blocksize: 96
+rounds:10
+mode: 4
+SPECK_96 trail-core round: 9 
+Constructing ARX Tables... 
+Time of Construct HIGHT tables: 13.00 seconds.  
+up_round: 0  up_wt_min:0   down_wt_min:12 
+up_round: 1  up_wt_min:10   down_wt_min:0 
+round-------left-------------right--------weight 
+01     0x00800a080800    0x0800124a0848     -10 
+02     0x000092400040    0x400000104200     -6 
+03     0x000000820200    0x000000001202     -4 
+04     0x000000009000    0x000000000010     -2 
+05     0x000000000080    0x000000000000     -0 
+06     0x800000000000    0x800000000000     -1 
+07     0x808000000000    0x808000000004     -3 
+08     0x800080000004    0x840080000020     -5 
+09     0x808080800020    0xa08480800124     -9 
+10     0x800400008124    0x842004008801     -9 
+11     0x20a000008880    0x01a02004c88c     NULL 
+10 round Total trail weight:  -49 
+------------------------------------------------------------ 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@jws016 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck
+blocksize: 96
+rounds:11
+mode: 4
+SPECK_96 trail-core round: 9 
+Constructing ARX Tables... 
+Time of Construct HIGHT tables: 13.00 seconds.  
+up_round: 0  up_wt_min:0   down_wt_min:26 
+up_round: 1  up_wt_min:10   down_wt_min:12 
+up_round: 2  up_wt_min:21   down_wt_min:0 
+round-------left-------------right--------weight 
+01     0x900f00480900    0x011003084009     -11 
+02     0x00800a080800    0x0800124a0848     -10 
+03     0x000092400040    0x400000104200     -6 
+04     0x000000820200    0x000000001202     -4 
+05     0x000000009000    0x000000000010     -2 
+06     0x000000000080    0x000000000000     -0 
+07     0x800000000000    0x800000000000     -1 
+08     0x808000000000    0x808000000004     -3 
+09     0x800080000004    0x840080000020     -5 
+10     0x808080800020    0xa08480800124     -9 
+11     0x800400008124    0x842004008801     -9 
+12     0x20a000008880    0x01a02004c88c     NULL 
+11 round Total trail weight:  -60 
+------------------------------------------------------------ 
+Time cost: 0.48 seconds ==  0.01 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

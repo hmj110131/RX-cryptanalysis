@@ -1,0 +1,471 @@
+
+//2018年11月09日17:13:55
+//speck修改了每个block之间的概率重量累加判断的Matsui条件，之前没有考虑alpha和beta的XOR的对应分块的最小概率重量。
+//
+
+[root@fws011 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:6 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+Searching Bn_w: 10 
+Time: 0.00 seconds.  
+Searching Bn_w: 11 
+Time: 0.00 seconds.  
+Searching Bn_w: 12 
+Time: 0.00 seconds.  
+Searching Bn_w: 13 
+Time: 0.00 seconds.  
+Searching Bn_w: 14 
+Time: 4.00 seconds.  
+Searching Bn_w: 15 
+Time: 9.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000000820200    0x000000001202     -4 
+02     0x000000009000    0x000000000010     -2 
+03     0x000000000080    0x000000000000     -0 
+04     0x800000000000    0x800000000000     -1 
+05     0x808000000000    0x808000000004     -3 
+06     0x800080000004    0x840080000020     -5 
+07     0x808080800020    0xa08480800124     NULL 
+6 Round Total Weight: -15 
+Time cost: 9.58 seconds ==  0.16 minutes == 0.00 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 17.31 seconds ==  0.29 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+[root@jws020 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:7 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+Searching Bn_w: 15 
+Time: 0.00 seconds.  
+Searching Bn_w: 16 
+Time: 0.00 seconds.  
+Searching Bn_w: 17 
+Time: 0.00 seconds.  
+Searching Bn_w: 18 
+Time: 0.00 seconds.  
+Searching Bn_w: 19 
+Time: 6.00 seconds.  
+Searching Bn_w: 20 
+Time: 119.00 seconds.  
+Searching Bn_w: 21 
+Time: 747.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000092400040    0x400000104200     -6 
+02     0x000000820200    0x000000001202     -4 
+03     0x000000009000    0x000000000010     -2 
+04     0x000000000080    0x000000000000     -0 
+05     0x800000000000    0x800000000000     -1 
+06     0x808000000000    0x808000000004     -3 
+07     0x800080000004    0x840080000020     -5 
+08     0x808080800020    0xa08480800124     NULL 
+7 Round Total Weight: -21 
+Time cost: 747.13 seconds ==  12.45 minutes == 0.21 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 754.88 seconds ==  12.58 minutes == 0.21 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+[root@fws011 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:7 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+Searching Bn_w: 15 
+Time: 0.00 seconds.  
+Searching Bn_w: 16 
+Time: 0.00 seconds.  
+Searching Bn_w: 17 
+Time: 0.00 seconds.  
+Searching Bn_w: 18 
+Time: 0.00 seconds.  
+Searching Bn_w: 19 
+Time: 6.00 seconds.  
+Searching Bn_w: 20 
+Time: 112.00 seconds.  
+Searching Bn_w: 21 
+Time: 702.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000092400040    0x400000104200     -6 
+02     0x000000820200    0x000000001202     -4 
+03     0x000000009000    0x000000000010     -2 
+04     0x000000000080    0x000000000000     -0 
+05     0x800000000000    0x800000000000     -1 
+06     0x808000000000    0x808000000004     -3 
+07     0x800080000004    0x840080000020     -5 
+08     0x808080800020    0xa08480800124     NULL 
+7 Round Total Weight: -21 
+Time cost: 702.11 seconds ==  11.70 minutes == 0.20 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 709.86 seconds ==  11.83 minutes == 0.20 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+///////////考虑gamma异或左移3位的beta后的汉明重量来限制的结果
+[root@fws011 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:7 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+Searching Bn_w: 15 
+Time: 0.00 seconds.  
+Searching Bn_w: 16 
+Time: 0.00 seconds.  
+Searching Bn_w: 17 
+Time: 0.00 seconds.  
+Searching Bn_w: 18 
+Time: 0.00 seconds.  
+Searching Bn_w: 19 
+Time: 6.00 seconds.  
+Searching Bn_w: 20 
+Time: 109.00 seconds.  
+Searching Bn_w: 21 
+Time: 688.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000092400040    0x400000104200     -6 
+02     0x000000820200    0x000000001202     -4 
+03     0x000000009000    0x000000000010     -2 
+04     0x000000000080    0x000000000000     -0 
+05     0x800000000000    0x800000000000     -1 
+06     0x808000000000    0x808000000004     -3 
+07     0x800080000004    0x840080000020     -5 
+08     0x808080800020    0xa08480800124     NULL 
+7 Round Total Weight: -21 
+Time cost: 688.95 seconds ==  11.48 minutes == 0.19 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 696.70 seconds ==  11.61 minutes == 0.19 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+////////考虑每轮中产生的gamma对应的概率小于wt-xor-min加上一个阈值/////////////////
+[root@fws011 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:7 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+Searching Bn_w: 15 
+Time: 0.00 seconds.  
+Searching Bn_w: 16 
+Time: 0.00 seconds.  
+Searching Bn_w: 17 
+Time: 0.00 seconds.  
+Searching Bn_w: 18 
+Time: 0.00 seconds.  
+Searching Bn_w: 19 
+Time: 6.00 seconds.  
+Searching Bn_w: 20 
+Time: 112.00 seconds.  
+Searching Bn_w: 21 
+Time: 704.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000092400040    0x400000104200     -6 
+02     0x000000820200    0x000000001202     -4 
+03     0x000000009000    0x000000000010     -2 
+04     0x000000000080    0x000000000000     -0 
+05     0x800000000000    0x800000000000     -1 
+06     0x808000000000    0x808000000004     -3 
+07     0x800080000004    0x840080000020     -5 
+08     0x808080800020    0xa08480800124     NULL 
+7 Round Total Weight: -21 
+Time cost: 704.64 seconds ==  11.74 minutes == 0.20 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 712.39 seconds ==  11.87 minutes == 0.20 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+///////////限定Gamma的汉明重量:小于等于////////////
+[root@jws038 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:7 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+Searching Bn_w: 15 
+Time: 0.00 seconds.  
+Searching Bn_w: 16 
+Time: 0.00 seconds.  
+Searching Bn_w: 17 
+Time: 0.00 seconds.  
+Searching Bn_w: 18 
+Time: 0.00 seconds.  
+Searching Bn_w: 19 
+Time: 6.00 seconds.  
+Searching Bn_w: 20 
+Time: 116.00 seconds.  
+Searching Bn_w: 21 
+Time: 735.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000092400040    0x400000104200     -6 
+02     0x000000820200    0x000000001202     -4 
+03     0x000000009000    0x000000000010     -2 
+04     0x000000000080    0x000000000000     -0 
+05     0x800000000000    0x800000000000     -1 
+06     0x808000000000    0x808000000004     -3 
+07     0x800080000004    0x840080000020     -5 
+08     0x808080800020    0xa08480800124     NULL 
+7 Round Total Weight: -21 
+Time cost: 735.09 seconds ==  12.25 minutes == 0.20 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 742.99 seconds ==  12.38 minutes == 0.21 hours. 
+Auto-search END! 
+|************************************************************************|
+
+///////////限定Gamma的汉明重量:小于设定的阈值:稍微快一丢丢////////////
+[root@jws038 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:7 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+Searching Bn_w: 15 
+Time: 0.00 seconds.  
+Searching Bn_w: 16 
+Time: 0.00 seconds.  
+Searching Bn_w: 17 
+Time: 0.00 seconds.  
+Searching Bn_w: 18 
+Time: 0.00 seconds.  
+Searching Bn_w: 19 
+Time: 6.00 seconds.  
+Searching Bn_w: 20 
+Time: 116.00 seconds.  
+Searching Bn_w: 21 
+Time: 732.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000092400040    0x400000104200     -6 
+02     0x000000820200    0x000000001202     -4 
+03     0x000000009000    0x000000000010     -2 
+04     0x000000000080    0x000000000000     -0 
+05     0x800000000000    0x800000000000     -1 
+06     0x808000000000    0x808000000004     -3 
+07     0x800080000004    0x840080000020     -5 
+08     0x808080800020    0xa08480800124     NULL 
+7 Round Total Weight: -21 
+Time cost: 732.61 seconds ==  12.21 minutes == 0.20 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 740.50 seconds ==  12.34 minutes == 0.21 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:8 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+Searching Bn_w: 21 
+Time: 0.00 seconds.  
+Searching Bn_w: 22 
+Time: 0.00 seconds.  
+Searching Bn_w: 23 
+Time: 0.00 seconds.  
+Searching Bn_w: 24 
+Time: 1.00 seconds.  
+Searching Bn_w: 25 
+Time: 15.00 seconds.  
+Searching Bn_w: 26 
+Time: 174.00 seconds.  
+Searching Bn_w: 27 
+Time: 2466.00 seconds.  
+Searching Bn_w: 28 
+Time: 38196.00 seconds.  
+Searching Bn_w: 29 
+Time: 571160.00 seconds.  
+Searching Bn_w: 30 
+Time: 581212.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000092400040    0x400000104200     -6 
+02     0x000000820200    0x000000001202     -4 
+03     0x000000009000    0x000000000010     -2 
+04     0x000000000080    0x000000000000     -0 
+05     0x800000000000    0x800000000000     -1 
+06     0x808000000000    0x808000000004     -3 
+07     0x800080000004    0x840080000020     -5 
+08     0x808080800020    0xa08480800124     -9 
+09     0x800400008124    0x842004008801     NULL 
+8 Round Total Weight: -30 
+Time cost: 581212.70 seconds ==  9686.88 minutes == 161.45 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+
+
+
+
+
+[root@fws012 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:9 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 8.00 seconds.  
+Searching Bn_w: 30 
+Time: 0.00 seconds.  
+Searching Bn_w: 31 
+Time: 1.00 seconds.  
+Searching Bn_w: 32 
+Time: 8.00 seconds.  
+Searching Bn_w: 33 
+Time: 59.00 seconds.  
+Searching Bn_w: 34 
+
+
+
+
+[root@fws011 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:10 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+Searching Bn_w: 39 
+Time: 4.00 seconds.  
+Searching Bn_w: 40 
+Time: 47.00 seconds.  
+Searching Bn_w: 41 
+Time: 355.00 seconds.  
+Searching Bn_w: 42 
+Time: 1943.00 seconds.  
+Searching Bn_w: 43 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|************************************************************************|
+|************************************************************************|
+|****************第1轮输入输出差分组合为{3/5/6,1/2/4}全空间组合************|
+|************************************************************************|
+|************************************************************************|
+
+[root@fws012 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:6 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+Searching Bn_w: 10 
+Time: 0.00 seconds.  
+Searching Bn_w: 11 
+Time: 0.00 seconds.  
+Searching Bn_w: 12 
+Time: 0.00 seconds.  
+Searching Bn_w: 13 
+Time: 1.00 seconds.  
+Searching Bn_w: 14 
+Time: 89.00 seconds.  
+Searching Bn_w: 15 
+Time: 177.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000000820200    0x000000001202     -4 
+02     0x000000009000    0x000000000010     -2 
+03     0x000000000080    0x000000000000     -0 
+04     0x800000000000    0x800000000000     -1 
+05     0x808000000000    0x808000000004     -3 
+06     0x800080000004    0x840080000020     -5 
+07     0x808080800020    0xa08480800124     NULL 
+6 Round Total Weight: -15 
+Time cost: 177.42 seconds ==  2.96 minutes == 0.05 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

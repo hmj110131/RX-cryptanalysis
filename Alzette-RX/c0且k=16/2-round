@@ -1,0 +1,89 @@
+//2020年09月29日14:25:05
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper: alzette 
+blocksize: 64 
+rotational parameter: 16 
+rounds: 2 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+Constructing Alzette_Constant_RX ... 
+rk=16   Alzette_C[0]: b7e15162   Alzette_C_RX[0]: e683e683 
+RX_zeta_total: 289  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing Alzette info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct Alzette cDDT: 28.00 seconds.  
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 16.000000  --Max expected weight-- 
+**thr_d**: 0  
+**thr_d**: 1  
+**thr_d**: 2  
+Update: 1   RX_Bn_w: 15.999912  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     07800000    07800000   00000000   1.999956    2.000000    3.999956 
+01     e103e683    87800007   00000000   1.999956    10.000000    11.999956 
+02     c7840442    76e09084      NULL        NULL         NULL      NULL
+2 Round Total Weight: -15.999912 
+|-----------------------------------------------------------------------|
+Time: 0.00 seconds.
+**************************************************************************|
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     07800000    07800000   00000000   1.999956    2.000000    3.999956 
+01     e103e683    87800007   00000000   1.999956    10.000000    11.999956 
+02     c7840442    76e09084      NULL        NULL         NULL      NULL
+2 Round Total Weight: -15.999912 
+|-----------------------------------------------------------------------|
+Time cost: 0.04 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search 2-Round Alzette optimal RX-differential trails END! 
+|************************************************************************|
+Time cost: 28.22 seconds ==  0.47 minutes == 0.01 hours. 
+Auto-RX-search END! 
+|************************************************************************|
+
+
+
+[huangmingjiang@localhost Debug]$ 
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper: alzette 
+blocksize: 64 
+rotational parameter: 16 
+rounds: 2 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+Constructing Alzette_Constant_RX ... 
+rk=16   Alzette_C[0]: b7e15162   Alzette_C_RX[0]: e683e683 
+RX_zeta_total: 289  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing Alzette info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct Alzette cDDT: 28.00 seconds.  
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 15.000000  --Max expected weight-- 
+**thr_d**: 0  
+**thr_d**: 1  
+**thr_d**: 2  
+**thr_d**: 3  
+**thr_d**: 4  
+**thr_d**: 5  
+^C
+
+
+
+
+
+
+
+
+

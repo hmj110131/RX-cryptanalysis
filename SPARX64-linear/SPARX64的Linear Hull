@@ -1,0 +1,319 @@
+//2019年03月28日11:40:33
+
+
+//2019年03月28日11:47:14
+huangmingjiang@ubuntu:~/hmj123/sparx64/cor/3/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:3 
+mode: 31 
+wt_min(:1)--->wt_max: 8 
+Constructing SPARX64 cLAT Tables... 
+Time of Construct SPARX64 cLAT: 3.00 seconds.  
+-----------------------Search SPARX64 Linear Hulls---------------------------
+count: 1    weight: 1 
+-----------------------Search SPARX64 Linear Hulls END-----------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:1   prob_sum:-2.000000 
+wt:-2   wt_num:0   prob_sum:-2.000000 
+wt:-3   wt_num:0   prob_sum:-2.000000 
+wt:-4   wt_num:0   prob_sum:-2.000000 
+wt:-5   wt_num:0   prob_sum:-2.000000 
+wt:-6   wt_num:0   prob_sum:-2.000000 
+wt:-7   wt_num:0   prob_sum:-2.000000 
+wt:-8   wt_num:0   prob_sum:-2.000000 
+++++++++++++++++++
+ cipher: sparx_64 
+ 0x0000 0000 0080 4001 ======>> 0x2c10 2010 2c1c 201c 
+ wt_min: -1 ===>> wt_max: -8 
+ 3 Rounds Differential with total 1 trails.
+ Probability weight is: -2.00 
+++++++++++++++++++
+ Time cost: 3.25 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+huangmingjiang@ubuntu:~/hmj123/sparx64/cor/3/auto_search/Debug$
+
+//2019年03月28日11:51:20
+huangmingjiang@ubuntu:~/hmj123/sparx64/cor/4/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:4 
+mode: 31 
+wt_min(:3)--->wt_max: 10 
+Constructing SPARX64 cLAT Tables... 
+Time of Construct SPARX64 cLAT: 3.00 seconds.  
+-----------------------Search SPARX64 Linear Hulls---------------------------
+count: 1    weight: 3 
+-----------------------Search SPARX64 Linear Hulls END-----------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:1   prob_sum:-6.000000 
+wt:-4   wt_num:0   prob_sum:-6.000000 
+wt:-5   wt_num:0   prob_sum:-6.000000 
+wt:-6   wt_num:0   prob_sum:-6.000000 
+wt:-7   wt_num:0   prob_sum:-6.000000 
+wt:-8   wt_num:0   prob_sum:-6.000000 
+wt:-9   wt_num:0   prob_sum:-6.000000 
+wt:-10   wt_num:0   prob_sum:-6.000000 
+++++++++++++++++++
+ cipher: sparx_64 
+ 0x0090 6021 0000 0000 ======>> 0x0000 0000 0b00 0800 
+ wt_min: -3 ===>> wt_max: -10 
+ 4 Rounds Differential with total 1 trails.
+ Probability weight is: -6.00 
+++++++++++++++++++
+ Time cost: 3.27 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+huangmingjiang@ubuntu:~/hmj123/sparx64/cor/4/auto_search/Debug$
+
+
+
+//2019年03月28日11:53:29
+
+huangmingjiang@ubuntu:~/hmj123/sparx64/cor/5/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:5 
+mode: 31 
+wt_min(:5)--->wt_max: 10 
+Constructing SPARX64 cLAT Tables... 
+Time of Construct SPARX64 cLAT: 3.00 seconds.  
+-----------------------Search SPARX64 Linear Hulls---------------------------
+count: 1    weight: 10 
+count: 2    weight: 5 
+count: 3    weight: 8 
+-----------------------Search SPARX64 Linear Hulls END-----------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:1   prob_sum:-10.000000 
+wt:-6   wt_num:0   prob_sum:-10.000000 
+wt:-7   wt_num:0   prob_sum:-10.000000 
+wt:-8   wt_num:1   prob_sum:-9.977632 
+wt:-9   wt_num:0   prob_sum:-9.977632 
+wt:-10   wt_num:1   prob_sum:-9.976246 
+++++++++++++++++++
+ cipher: sparx_64 
+ 0x00a0 3021 0000 0000 ======>> 0x0000 0000 85c2 8442 
+ wt_min: -5 ===>> wt_max: -10 
+ 5 Rounds Differential with total 3 trails.
+ Probability weight is: -9.98 
+++++++++++++++++++
+ Time cost: 3.26 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+huangmingjiang@ubuntu:~/hmj123/sparx64/cor/5/auto_search/Debug$ 
+
+
+//2019年03月28日11:57:21
+-----------------------Search SPARX64 Linear Hulls END-----------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:0   prob_sum:-inf 
+wt:-6   wt_num:0   prob_sum:-inf 
+wt:-7   wt_num:1   prob_sum:-14.000000 
+wt:-8   wt_num:0   prob_sum:-14.000000 
+wt:-9   wt_num:1   prob_sum:-13.912537 
+wt:-10   wt_num:0   prob_sum:-13.912537 
+wt:-11   wt_num:1   prob_sum:-13.907243 
+wt:-12   wt_num:0   prob_sum:-13.907243 
+wt:-13   wt_num:2   prob_sum:-13.906582 
+wt:-14   wt_num:2   prob_sum:-13.906417 
+wt:-15   wt_num:4   prob_sum:-13.906335 
+++++++++++++++++++
+ cipher: sparx_64 
+ 0x0080 5021 0000 0000 ======>> 0x4285 4284 4385 4384 
+ wt_min: -7 ===>> wt_max: -15 
+ 6 Rounds Differential with total 11 trails.
+ Probability weight is: -13.91 
+++++++++++++++++++
+ Time cost: 22.36 seconds ==  0.37 minutes == 0.01 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+huangmingjiang@ubuntu:~/hmj123/sparx64/cor/6/auto_search/Debug$ 
+
+
+
+// 2019年03月28日11:40:56
+wt:-8   wt_num:0   prob_sum:-inf 
+wt:-9   wt_num:0   prob_sum:-inf 
+wt:-10   wt_num:0   prob_sum:-inf 
+wt:-11   wt_num:1   prob_sum:-22.000000 
+wt:-12   wt_num:0   prob_sum:-22.000000 
+wt:-13   wt_num:1   prob_sum:-21.912537 
+wt:-14   wt_num:2   prob_sum:-21.870717 
+wt:-15   wt_num:0   prob_sum:-21.870717 
+++++++++++++++++++
+ cipher: sparx_64 
+ 0x0090 6021 0000 0000 ======>> 0x170b 130a 17cf 130f 
+ wt_min: -11 ===>> wt_max: -15 
+ 7 Rounds Differential with total 4 trails.
+ Probability weight is: -21.87 
+++++++++++++++++++
+ Time cost: 8.74 seconds ==  0.15 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年03月28日11:45:16
+wt:-8   wt_num:0   prob_sum:-inf 
+wt:-9   wt_num:0   prob_sum:-inf 
+wt:-10   wt_num:0   prob_sum:-inf 
+wt:-11   wt_num:1   prob_sum:-22.000000 
+wt:-12   wt_num:0   prob_sum:-22.000000 
+wt:-13   wt_num:1   prob_sum:-21.912537 
+wt:-14   wt_num:2   prob_sum:-21.870717 
+wt:-15   wt_num:0   prob_sum:-21.870717 
+wt:-16   wt_num:0   prob_sum:-21.870717 
+wt:-17   wt_num:1   prob_sum:-21.870395 
+++++++++++++++++++
+ cipher: sparx_64 
+ 0x0090 6021 0000 0000 ======>> 0x170b 130a 17cf 130f 
+ wt_min: -11 ===>> wt_max: -17 
+ 7 Rounds Differential with total 5 trails.
+ Probability weight is: -21.87 
+++++++++++++++++++
+ Time cost: 112.47 seconds ==  1.87 minutes == 0.03 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+huangmingjiang@ubuntu:~/hmj123/sparx64/cor/7/auto_search/Debug$ 
+
+
+
+//2019年03月28日12:01:59
+-----------------------Search SPARX64 Linear Hulls END-----------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:0   prob_sum:-inf 
+wt:-6   wt_num:0   prob_sum:-inf 
+wt:-7   wt_num:0   prob_sum:-inf 
+wt:-8   wt_num:0   prob_sum:-inf 
+wt:-9   wt_num:0   prob_sum:-inf 
+wt:-10   wt_num:0   prob_sum:-inf 
+wt:-11   wt_num:0   prob_sum:-inf 
+wt:-12   wt_num:0   prob_sum:-inf 
+wt:-13   wt_num:0   prob_sum:-inf 
+wt:-14   wt_num:0   prob_sum:-inf 
+wt:-15   wt_num:1   prob_sum:-30.000000 
+wt:-16   wt_num:0   prob_sum:-30.000000 
+wt:-17   wt_num:1   prob_sum:-29.912537 
+wt:-18   wt_num:7   prob_sum:-29.771181 
+wt:-19   wt_num:7   prob_sum:-29.737905 
+wt:-20   wt_num:6   prob_sum:-29.730873 
+++++++++++++++++++
+ cipher: sparx_64 
+ 0x0880 503d 0090 6021 ======>> 0x0000 0000 0e81 1eb0 
+ wt_min: -15 ===>> wt_max: -20 
+ 8 Rounds Differential with total 22 trails.
+ Probability weight is: -29.73 
+++++++++++++++++++
+ Time cost: 130.09 seconds ==  2.17 minutes == 0.04 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年03月29日16:49:12
+wt:-15   wt_num:0   prob_sum:-inf 
+wt:-16   wt_num:0   prob_sum:-inf 
+wt:-17   wt_num:0   prob_sum:-inf 
+wt:-18   wt_num:0   prob_sum:-inf 
+wt:-19   wt_num:1   prob_sum:-38.000000 
+wt:-20   wt_num:4   prob_sum:-37.000000 
+wt:-21   wt_num:10   prob_sum:-36.607683 
+wt:-22   wt_num:41   prob_sum:-36.292641 
+wt:-23   wt_num:91   prob_sum:-36.143574 
+wt:-24   wt_num:261   prob_sum:-36.045440 
+wt:-25   wt_num:807   prob_sum:-35.973909 
+++++++++++++++++++
+ cipher: sparx_64 
+ 0x0080 5021 2000 0058 ======>> 0x2058 2040 3858 3840 
+ wt_min: -19 ===>> wt_max: -25 
+ 9 Rounds Differential with total 1215 trails.
+ Probability weight is: -35.97 
+++++++++++++++++++
+ Time cost: 103406.49 seconds ==  1723.44 minutes == 28.72 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+huangmingjiang@ubuntu:~/hmj123/sparx64/cor/9/auto_search/Debug$ 
+
+
+
+//2019年03月28日13:55:30
+wt:-17   wt_num:0   prob_sum:-inf 
+wt:-18   wt_num:0   prob_sum:-inf 
+wt:-19   wt_num:0   prob_sum:-inf 
+wt:-20   wt_num:0   prob_sum:-inf 
+wt:-21   wt_num:0   prob_sum:-inf 
+wt:-22   wt_num:2   prob_sum:-43.000000 
+wt:-23   wt_num:13   prob_sum:-41.607683 
+wt:-24   wt_num:25   prob_sum:-41.231816 
+wt:-25   wt_num:104   prob_sum:-40.923184 
+++++++++++++++++++
+ cipher: sparx_64 
+ 0x0080 4001 00c0 f001 ======>> 0x0205 0204 0205 0204 
+ wt_min: -21 ===>> wt_max: -25 
+ 10 Rounds Differential with total 144 trails.
+ Probability weight is: -40.92 
+++++++++++++++++++
+ Time cost: 3358.56 seconds ==  55.98 minutes == 0.93 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+huangmingjiang@ubuntu:~/hmj123/sparx64/cor/10/auto_search/Debug$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

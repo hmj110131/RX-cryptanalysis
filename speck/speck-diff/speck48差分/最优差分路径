@@ -1,0 +1,48 @@
+
+
+///////////ssh huangmingjiang@10.10.4.225/////////////////////////////////////////////////////
+2018年12月18日11:20:39
+huangmingjiang@node1:~/speck64/48-8/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 48 
+rounds:8 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 13.00 seconds.  
+Searching Bn_w: 19 
+Time: 0.00 seconds.  
+Searching Bn_w: 20 
+Time: 0.00 seconds.  
+Searching Bn_w: 21 
+Time: 0.00 seconds.  
+Searching Bn_w: 22 
+Time: 0.00 seconds.  
+Searching Bn_w: 23 
+Time: 9.00 seconds.  
+Searching Bn_w: 24 
+Time: 166.00 seconds.  
+Searching Bn_w: 25 
+Time: 2642.00 seconds.  
+Searching Bn_w: 26 
+Time: 2755.00 seconds.  
+round----left--------right----weight 
+01     0x000080    0x504200     -5 
+02     0x820200    0x001202     -4 
+03     0x009000    0x000010     -2 
+04     0x000080    0x000000     -0 
+05     0x800000    0x800000     -1 
+06     0x808000    0x808004     -3 
+07     0x800084    0x8400a0     -4 
+08     0x0080a0    0x2085a4     -7 
+09     0x808424    0x84a905     NULL 
+8 Round Total Weight: -26 
+Time cost: 2755.44 seconds ==  45.92 minutes == 0.77 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 2768.54 seconds ==  46.14 minutes == 0.77 hours. 
+Auto-search END! 
+|************************************************************************|
+

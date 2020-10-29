@@ -1,0 +1,127 @@
+[root@jws015 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck
+blocksize: 128
+rounds:9
+mode: 4
+SPECK_128 trail-core round: 8 
+Constructing ARX Tables... 
+Time of Construct HIGHT tables: 13.00 seconds.  
+up_round: 0  up_wt_min:0   down_wt_min:9 
+up_round: 1  up_wt_min:10   down_wt_min:0 
+round---------left---------------right-------------weight 
+01     0x0000000092400040    0x4000000000104200     -6 
+02     0x0000000000820200    0x0000000000001202     -4 
+03     0x0000000000009000    0x0000000000000010     -2 
+04     0x0000000000000080    0x0000000000000000     -0 
+05     0x8000000000000000    0x8000000000000000     -1 
+06     0x8080000000000000    0x8080000000000004     -3 
+07     0x8000800000000004    0x8400800000000020     -5 
+08     0x8080808000000020    0xa084808000000124     -9 
+09     0x8004000080000124    0x8420040080000801     -9 
+10     0xa0a0000080800800    0x81a020048080480c     NULL 
+9 round Total trail weight:  -39 
+------------------------------------------------------------ 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+[root@jws015 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck
+blocksize: 128
+rounds:10
+mode: 4
+SPECK_128 trail-core round: 8 
+Constructing ARX Tables... 
+Time of Construct HIGHT tables: 13.00 seconds.  
+up_round: 0  up_wt_min:0   down_wt_min:22 
+up_round: 1  up_wt_min:10   down_wt_min:9 
+up_round: 2  up_wt_min:21   down_wt_min:0 
+round---------left---------------right-------------weight 
+01     0x000000800a080800    0x08000000124a0848     -10 
+02     0x0000000092400040    0x4000000000104200     -6 
+03     0x0000000000820200    0x0000000000001202     -4 
+04     0x0000000000009000    0x0000000000000010     -2 
+05     0x0000000000000080    0x0000000000000000     -0 
+06     0x8000000000000000    0x8000000000000000     -1 
+07     0x8080000000000000    0x8080000000000004     -3 
+08     0x8000800000000004    0x8400800000000020     -5 
+09     0x8080808000000020    0xa084808000000124     -9 
+10     0x8004000080000124    0x8420040080000801     -9 
+11     0xa0a0000080800800    0x81a020048080480c     NULL 
+10 round Total trail weight:  -49 
+------------------------------------------------------------ 
+Time cost: 0.08 seconds ==  0.00 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@jws015 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck
+blocksize: 128
+rounds:11
+mode: 4
+SPECK_128 trail-core round: 8 
+Constructing ARX Tables... 
+Time of Construct HIGHT tables: 13.00 seconds.  
+up_round: 0  up_wt_min:0   down_wt_min:37 
+up_round: 1  up_wt_min:10   down_wt_min:22 
+up_round: 2  up_wt_min:21   down_wt_min:9 
+up_round: 3  up_wt_min:37   down_wt_min:0 
+round---------left---------------right-------------weight 
+01     0x0000900700480900    0x0100001003084009     -11 
+02     0x000000800a080800    0x08000000124a0848     -10 
+03     0x0000000092400040    0x4000000000104200     -6 
+04     0x0000000000820200    0x0000000000001202     -4 
+05     0x0000000000009000    0x0000000000000010     -2 
+06     0x0000000000000080    0x0000000000000000     -0 
+07     0x8000000000000000    0x8000000000000000     -1 
+08     0x8080000000000000    0x8080000000000004     -3 
+09     0x8000800000000004    0x8400800000000020     -5 
+10     0x8080808000000020    0xa084808000000124     -9 
+11     0x8004000080000124    0x8420040080000801     -9 
+12     0xa0a0000080800800    0x81a020048080480c     NULL 
+11 round Total trail weight:  -60 
+------------------------------------------------------------ 
+Time cost: 1316.38 seconds ==  21.94 minutes == 0.37 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

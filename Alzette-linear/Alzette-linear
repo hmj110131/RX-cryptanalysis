@@ -1,0 +1,298 @@
+//2020年04月23日14:35:17
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:alzette 
+Note: blocksize Now only fixed for bits for Alzette.  
+blocksize: 64 
+rounds:3 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing cLAT Lookup Tables... 
+Time of Construct Alzette cLAT: 6.00 seconds.  
+Searching Alzette Cor_w: 1 
+OK------------------------OK 
+Time: 0.00 seconds.  
+round-----left---------right------weight 
+00     0x00000001    0x80000100     -0 
+01     0x00000000    0x00000100     -0 
+02     0x02000000    0x00000100     -1 
+03     0x02000080    0x02000100     NULL 
+3 Round Total Correlation Weight: -1 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search 3-Round Alzette optimal Linear trails END! 
+|************************************************************************|
+Time cost: 6.79 seconds ==  0.11 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2020年04月23日14:37:02
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:alzette 
+Note: blocksize Now only fixed for bits for Alzette.  
+blocksize: 64 
+rounds:4 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing cLAT Lookup Tables... 
+Time of Construct Alzette cLAT: 6.00 seconds.  
+Searching Alzette Cor_w: 1 
+Time: 0.00 seconds.  
+Searching Alzette Cor_w: 2 
+OK------------------------OK 
+Time: 0.00 seconds.  
+|*************************************************|
+round-----left---------right------weight 
+00     0x00000201    0x80020180     -1 
+01     0x00000001    0x00020000     -0 
+02     0x00000001    0x00000000     -0 
+03     0x80000001    0x00000001     -1 
+04     0xc0010181    0x01800001     NULL 
+4 Round Total Correlation Weight: -2 
+Time cost: 0.02 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search 4-Round Alzette optimal Linear trails END! 
+|************************************************************************|
+Time cost: 6.77 seconds ==  0.11 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2020年04月23日18:03:57
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:alzette 
+Note: blocksize Now only fixed for bits for Alzette.  
+blocksize: 64 
+rounds:5 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing cLAT Lookup Tables... 
+Time of Construct Alzette cLAT: 6.00 seconds.  
+Searching Alzette Cor_w: 2 
+Time: 0.00 seconds.  
+Searching Alzette Cor_w: 3 
+Time: 0.00 seconds.  
+Searching Alzette Cor_w: 4 
+Time: 1.00 seconds.  
+Searching Alzette Cor_w: 5 
+OK------------------------OK 
+Time: 27.00 seconds.  
+|-------------------------------------------|
+round-----left---------right------weight 
+00     0x00000201    0x80020180     -1 
+01     0x00000001    0x00020000     -0 
+02     0x00000001    0x00000000     -0 
+03     0x80000001    0x00000001     -1 
+04     0xc0010181    0x01800001     -3 
+05     0x01c00181    0xc1808081     NULL 
+5 Round Total Correlation Weight: -5 
+|-------------------------------------------|
+Time cost: 27.85 seconds ==  0.46 minutes == 0.01 hours == 0.00 days. 
+Auto-search 5-Round Alzette optimal Linear trails END! 
+|************************************************************************|
+Time cost: 34.60 seconds ==  0.58 minutes == 0.01 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2020年04月24日08:34:34
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:alzette 
+Note: blocksize Now only fixed for bits for Alzette.  
+blocksize: 64 
+rounds:6 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing cLAT Lookup Tables... 
+Time of Construct Alzette cLAT: 6.00 seconds.  
+Searching Alzette Cor_w: 5 
+Time: 0.00 seconds.  
+Searching Alzette Cor_w: 6 
+Time: 33.00 seconds.  
+Searching Alzette Cor_w: 7 
+Time: 2538.00 seconds.  
+Searching Alzette Cor_w: 8 
+OK------------------------OK 
+Time: 15438.00 seconds.  
+|-------------------------------------------|
+round-----left---------right------weight 
+00     0x00000201    0x80020180     -1 
+01     0x00000001    0x00020000     -0 
+02     0x00000001    0x00000000     -0 
+03     0x80000001    0x00000001     -1 
+04     0xc0010181    0x01800001     -3 
+05     0x01c00181    0xc1808081     -3 
+06     0x04838604    0xc3828281     NULL 
+6 Round Total Correlation Weight: -8 
+|-------------------------------------------|
+Time cost: 15438.68 seconds ==  257.31 minutes == 4.29 hours == 0.18 days. 
+Auto-search 6-Round Alzette optimal Linear trails END! 
+|************************************************************************|
+Time cost: 15445.45 seconds ==  257.42 minutes == 4.29 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+//2020年04月26日09:00:21
+Searching Alzette Cor_w: 8 
+Time: 0.00 seconds.  
+Searching Alzette Cor_w: 9 
+Time: 42.00 seconds.  
+Searching Alzette Cor_w: 10 
+Time: 2968.00 seconds.  
+//2020年07月27日08:34:32
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:alzette 
+Note: blocksize Now only fixed for bits for Alzette.  
+blocksize: 64 
+rounds:7 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing cLAT Lookup Tables... 
+Time of Construct Alzette cLAT: 8.00 seconds.  
+Searching Alzette Cor_w: 13 
+Time: 3073105.00 seconds.  
+|-------------------------------------------|
+round-----left---------right------weight 
+00     0x00000201    0x80020180     -1 
+01     0x00000001    0x00020000     -0 
+02     0x00000001    0x00000000     -0 
+03     0x80000001    0x00000001     -1 
+04     0xc0010181    0x01800001     -3 
+05     0x01c00181    0xc1808081     -3 
+06     0x06038604    0xc3828381     -5 
+07     0xe7c2c7c4    0xc7800785     NULL 
+7 Round Total Correlation Weight: -13 
+|-------------------------------------------|
+Time cost: 3073105.48 seconds ==  51218.42 minutes == 853.64 hours == 35.57 days. 
+Auto-search 7-Round Alzette optimal Linear trails END! 
+|************************************************************************|
+Time cost: 3073114.28 seconds ==  51218.57 minutes == 853.64 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+//2020年04月30日10:02:03
+/usr/bin/bg: 第 2 行:bg: 无任务控制
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:alzette 
+Note: blocksize Now only fixed for bits for Alzette.  
+blocksize: 64 
+rounds:9 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing cLAT Lookup Tables... 
+Time of Construct Alzette cLAT: 7.00 seconds.  
+Searching Alzette Cor_w: 17 
+Time: 186.00 seconds.  
+Searching Alzette Cor_w: 18 
+Time: 19598.00 seconds.  
+Searching Alzette Cor_w: 19 
+Time: 520186.00 seconds.  
+|-------------------------------------------|
+round-----left---------right------weight 
+00     0x04000201    0x81020106     -2 
+01     0x00030101    0x03020006     -3 
+02     0x00000101    0x00000001     -1 
+03     0x00000101    0x00000100     -1 
+04     0x01018001    0x81000101     -2 
+05     0x00808080    0x01808101     -3 
+06     0x01818081    0x80008080     -3 
+07     0xc18100c1    0x81010001     -4 
+08     0x00000001    0x00808181     -0 
+09     0x81808080    0x80808181     NULL 
+9 Round Total Correlation Weight: -19 
+|-------------------------------------------|
+Time cost: 520186.93 seconds ==  8669.78 minutes == 144.50 hours == 6.02 days. 
+Auto-search 9-Round Alzette optimal Linear trails END! 
+|************************************************************************|
+Time cost: 520194.32 seconds ==  8669.91 minutes == 144.50 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+
+
+//2020年05月18日09:56:30
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:alzette 
+Note: blocksize Now only fixed for bits for Alzette.  
+blocksize: 64 
+rounds:10 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing cLAT Lookup Tables... 
+Time of Construct Alzette cLAT: 6.00 seconds.  
+Searching Alzette Cor_w: 19 
+Time: 30.00 seconds.  
+Searching Alzette Cor_w: 20 
+Time: 4482.00 seconds.  
+Searching Alzette Cor_w: 21 
+Time: 106001.00 seconds.  
+Searching Alzette Cor_w: 22 
+Time: 465784.00 seconds.  
+|-------------------------------------------|
+round-----left---------right------weight 
+00     0x04000201    0x81020106     -2 
+01     0x00030101    0x03020006     -3 
+02     0x00000101    0x00000001     -1 
+03     0x00000101    0x00000100     -1 
+04     0x01018001    0x81000101     -3 
+05     0x00c0c080    0x01c08101     -3 
+06     0x0081c001    0x80408000     -3 
+07     0xc0c18001    0x80810001     -3 
+08     0x01000100    0x81018181     -2 
+09     0x00018001    0x81818101     -1 
+10     0x02060306    0x81838103     NULL 
+10 Round Total Correlation Weight: -22 
+|-------------------------------------------|
+Time cost: 465784.03 seconds ==  7763.07 minutes == 129.38 hours == 5.39 days. 
+Auto-search 10-Round Alzette optimal Linear trails END! 
+|************************************************************************|
+Time cost: 465790.88 seconds ==  7763.18 minutes == 129.39 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,459 @@
+//2019年03月01日16:03:50
+[root@gpu001 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 48 
+rounds:3 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 2.00 seconds.  
+Searching correlation weight: 1 	Time: 0.00 seconds.  
+round----left--------right----weight 
+01     0x000100    0x200001     -0 
+02     0x000000    0x000001     -0 
+03     0x000008    0x000008     -1 
+04     0x4c0040    0x400040     NULL 
+3 Round Total Weight: -1 
+---------------------------------
+Time cost: 0.00 seconds == 0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 2.65 seconds ==  0.04 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@gpu001 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 48 
+rounds:4 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 2.00 seconds.  
+Searching correlation weight: 1 	Time: 0.00 seconds.  
+Searching correlation weight: 2 	Time: 0.00 seconds.  
+Searching correlation weight: 3 	Time: 0.00 seconds.  
+round----left--------right----weight 
+01     0x010120    0x140181     -2 
+02     0x000100    0x200001     -0 
+03     0x000000    0x000001     -0 
+04     0x000008    0x000008     -1 
+05     0x4c0040    0x400040     NULL 
+4 Round Total Weight: -3 
+---------------------------------
+Time cost: 0.25 seconds == 0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 2.94 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+[root@gpu001 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 48 
+rounds:5 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 2.00 seconds.  
+Searching correlation weight: 3 	Time: 0.00 seconds.  
+Searching correlation weight: 4 	Time: 0.00 seconds.  
+Searching correlation weight: 5 	Time: 12.00 seconds.  
+Searching correlation weight: 6 	Time: 77.00 seconds.  
+round----left--------right----weight 
+01     0x010100    0x200181     -1 
+02     0x000100    0x000001     -0 
+03     0x000001    0x000000     -1 
+04     0x098000    0x080000     -2 
+05     0x406100    0x406800     -2 
+06     0x01224b    0x01420a     NULL 
+5 Round Total Weight: -6 
+---------------------------------
+Time cost: 77.29 seconds == 1.29 minutes == 0.02 hours == 0.00 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 79.90 seconds ==  1.33 minutes == 0.02 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年03月01日16:12:26
+[root@fws012 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 48 
+rounds:6 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 2.00 seconds.  
+Searching correlation weight: 6 	Time: 0.00 seconds.  
+Searching correlation weight: 7 	Time: 7.00 seconds.  
+Searching correlation weight: 8 	Time: 171.00 seconds.  
+round----left--------right----weight 
+01     0x000121    0x150021     -2 
+02     0x018100    0x200101     -1 
+03     0x000100    0x000001     -0 
+04     0x000001    0x000000     -1 
+05     0x098000    0x080000     -2 
+06     0x406100    0x406800     -2 
+07     0x01224b    0x01420a     NULL 
+6 Round Total Weight: -8 
+---------------------------------
+Time cost: 171.08 seconds == 2.85 minutes == 0.05 hours == 0.00 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 173.80 seconds ==  2.90 minutes == 0.05 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+[root@fws013 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 48 
+rounds:7 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 2.00 seconds.  
+Searching correlation weight: 8 	Time: 0.00 seconds.  
+Searching correlation weight: 9 	Time: 1.00 seconds.  
+Searching correlation weight: 10 	Time: 64.00 seconds.  
+Searching correlation weight: 11 	Time: 2369.00 seconds.  
+Searching correlation weight: 12 	Time: 10682.00 seconds.  
+round----left--------right----weight 
+01     0x000121    0x150021     -2 
+02     0x018100    0x200101     -1 
+03     0x000100    0x000001     -0 
+04     0x000001    0x000000     -1 
+05     0x098000    0x080000     -2 
+06     0x406100    0x406800     -2 
+07     0x00024b    0x00420a     -4 
+08     0x3c1040    0x521042     NULL 
+7 Round Total Weight: -12 
+---------------------------------
+Time cost: 10682.46 seconds == 178.04 minutes == 2.97 hours == 0.12 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 10685.11 seconds ==  178.09 minutes == 2.97 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@gpu001 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 48 
+rounds:8 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 2.00 seconds.  
+Searching correlation weight: 12 	Time: 1.00 seconds.  
+Searching correlation weight: 13 	Time: 169.00 seconds.  
+Searching correlation weight: 14 	Time: 8589.00 seconds.  
+Searching correlation weight: 15 	Time: 45622.00 seconds.  
+round----left--------right----weight 
+01     0x000121    0x150021     -2 
+02     0x018100    0x200101     -1 
+03     0x000100    0x000001     -0 
+04     0x000001    0x000000     -1 
+05     0x098000    0x080000     -2 
+06     0x406100    0x406800     -2 
+07     0x00024b    0x00420a     -4 
+08     0x181040    0x721042     -3 
+09     0xf01289    0x900291     NULL 
+8 Round Total Weight: -15 
+---------------------------------
+Time cost: 45622.27 seconds == 760.37 minutes == 12.67 hours == 0.53 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 45624.96 seconds ==  760.42 minutes == 12.67 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+[root@gpu001 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 48 
+rounds:9 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 2.00 seconds.  
+Searching correlation weight: 15 
+Time: 0.00 seconds.  
+Searching correlation weight: 16 
+Time: 17.00 seconds.  
+Searching correlation weight: 17 
+Time: 589.00 seconds.  
+Searching correlation weight: 18 
+Time: 16835.00 seconds.  
+Searching correlation weight: 19 
+Time: 17929.00 seconds.  
+round----left--------right----weight 
+01     0x000100    0x140021     -0 
+02     0xa00101    0xa00100     -2 
+03     0x08380c    0x09080d     -4 
+04     0x000d20    0x080108     -4 
+05     0x080800    0x200809     -4 
+06     0x000c00    0x000009     -1 
+07     0x000000    0x000008     -0 
+08     0x000040    0x000040     -1 
+09     0x600202    0x000202     -3 
+10     0x115002    0x121000     NULL 
+9 Round Total Weight: -19 
+---------------------------------
+Time cost: 17929.93 seconds == 298.83 minutes == 4.98 hours == 0.21 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 17932.68 seconds ==  298.88 minutes == 4.98 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+
+
+
+//2019年03月04日15:23:33
+[root@gpu001 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 48 
+rounds:10 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 3.00 seconds.  
+Searching correlation weight: 19 
+Time: 2.00 seconds.  
+Searching correlation weight: 20 
+Time: 252.00 seconds.  
+Searching correlation weight: 21 
+Time: 9035.00 seconds.  
+Searching correlation weight: 22 
+Time: 11596.00 seconds.  
+round----left--------right----weight 
+01     0x000180    0xb80001     -1 
+02     0x000000    0xc00001     -0 
+03     0x00000e    0x00000e     -2 
+04     0x7a0070    0x700070     -5 
+05     0xc2c080    0x829380     -6 
+06     0xd00000    0x108300     -2 
+07     0x800000    0x809800     -1 
+08     0x000004    0x00c004     -1 
+09     0x200020    0x260020     -2 
+10     0x013100    0x310100     -2 
+11     0x8800a8    0x880109     NULL 
+10 Round Total Weight: -22 
+---------------------------------
+Time cost: 11596.07 seconds == 193.27 minutes == 3.22 hours == 0.13 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 11599.37 seconds ==  193.32 minutes == 3.22 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年03月05日08:37:10
+[root@gpu001 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 48 
+rounds:11 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 2.00 seconds.  
+Searching correlation weight: 22 
+Time: 2.00 seconds.  
+Searching correlation weight: 23 
+Time: 404.00 seconds.  
+Searching correlation weight: 24 
+Time: 12233.00 seconds.  
+Searching correlation weight: 25 
+Time: 27662.00 seconds.  
+round----left--------right----weight 
+01     0x000800    0x800009     -1 
+02     0x000000    0x00000c     -0 
+03     0x000060    0x000060     -3 
+04     0x000303    0x400303     -2 
+05     0x121800    0x101802     -4 
+06     0x800200    0x801090     -2 
+07     0x06049e    0x06849c     -5 
+08     0x0000c0    0x9404c6     -1 
+09     0x202630    0xa02630     -4 
+10     0x200000    0x003024     -1 
+11     0x002120    0x000120     -2 
+12     0x300838    0x000809     NULL 
+11 Round Total Weight: -25 
+---------------------------------
+Time cost: 27662.16 seconds == 461.04 minutes == 7.68 hours == 0.32 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 27664.85 seconds ==  461.08 minutes == 7.68 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@gpu001 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 48 
+rounds:12 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 2.00 seconds.  
+Searching correlation weight: 25 
+Time: 3.00 seconds.  
+Searching correlation weight: 26 
+Time: 712.00 seconds.  
+Searching correlation weight: 27 
+Time: 27959.00 seconds.  
+Searching correlation weight: 28 
+Time: 49182.00 seconds.  
+round----left--------right----weight 
+01     0x010100    0x200181     -1 
+02     0x000100    0x000001     -0 
+03     0x000001    0x000000     -1 
+04     0x098000    0x080000     -2 
+05     0x406100    0x406800     -2 
+06     0x00024b    0x00420a     -8 
+07     0x100040    0x7a1042     -5 
+08     0x001a10    0x700210     -3 
+09     0x181000    0x001013     -2 
+10     0x001000    0x000018     -1 
+11     0x000010    0x000000     -1 
+12     0x980000    0x800000     -2 
+13     0x045004    0x048004     NULL 
+12 Round Total Weight: -28 
+---------------------------------
+Time cost: 49182.17 seconds == 819.70 minutes == 13.66 hours == 0.57 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 49184.81 seconds ==  819.75 minutes == 13.66 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+[root@gpu001 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 48 
+rounds:13 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 2.00 seconds.  
+Searching correlation weight: 28 
+Time: 1.00 seconds.  
+Searching correlation weight: 29 
+Time: 909.00 seconds.  
+Searching correlation weight: 30 
+Time: 9023.00 seconds.  
+round----left--------right----weight 
+01     0x000121    0x150021     -2 
+02     0x018100    0x200101     -1 
+03     0x000100    0x000001     -0 
+04     0x000001    0x000000     -1 
+05     0x098000    0x080000     -2 
+06     0x406100    0x406800     -2 
+07     0x00024b    0x00420a     -8 
+08     0x100040    0x7a1042     -5 
+09     0x001a10    0x700210     -3 
+10     0x181000    0x001013     -2 
+11     0x001000    0x000018     -1 
+12     0x000010    0x000000     -1 
+13     0x980000    0x800000     -2 
+14     0x045004    0x048004     NULL 
+13 Round Total Weight: -30 
+---------------------------------
+Time cost: 9023.98 seconds == 150.40 minutes == 2.51 hours == 0.10 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 9026.71 seconds ==  150.45 minutes == 2.51 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,3080 @@
+//|************************************************************************|
+|************************************************************************|
+|************************************************************************|
+|************************************************************************|
+|***********************奇数轮开始的最优路径*******************************|
+|************************************************************************|
+|*******************************ODD-START*********************************|
+|************************************************************************|
+|************************************************************************|
+//2019年05月22日09:53:18
+huangmingjiang@ubuntu:~/hmj123/cham128/new/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:8 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 1 
+Time: 0.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x8000     0x00c1     0x8000    -0 
+02     0x8000    0x00c1     0x8000     0x0000    -1 
+03     0x0001    0x8000     0x0000     0x0001    -0 
+04     0x0000    0x0000     0x0001     0x0100    -0 
+05     0x0000    0x0001     0x0100     0x0000    -0 
+06     0x0001    0x0100     0x0000     0x0000    -0 
+07     0x0000    0x0000     0x0000     0x0002    -0 
+08     0x0000    0x0000     0x0002     0x0000    -0 
+09     0x0000    0x0002     0x0000     0x0000    -   
+------------------ 
+8 Round CHAM-64 Total Weight: -1 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.33 seconds ==  0.06 minutes == 0.00 hours. 
+Auto-search END! 
+
+
+//2019年05月29日16:57:36
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:9 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 1 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 2 
+Time: 0.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0001     0x0102     0x0001    -0 
+02     0x0001    0x0102     0x0001     0x0000    -0 
+03     0x0002    0x0001     0x0000     0x0002    -1 
+04     0x0000    0x0000     0x0002     0x0200    -0 
+05     0x0000    0x0002     0x0200     0x0000    -0 
+06     0x0002    0x0200     0x0000     0x0000    -1 
+07     0x0000    0x0000     0x0000     0x0004    -0 
+08     0x0000    0x0000     0x0004     0x0000    -0 
+09     0x0000    0x0004     0x0000     0x0000    -0 
+10     0x0004    0x0000     0x0000     0x0000    -   
+------------------ 
+9 Round CHAM-64 Total Weight: -2 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.14 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月29日17:05:30
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:10 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 2 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 3 
+Time: 0.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0001     0x0102     0x0001    -0 
+02     0x0001    0x0102     0x0001     0x0000    -0 
+03     0x0002    0x0001     0x0000     0x0002    -1 
+04     0x0000    0x0000     0x0002     0x0200    -0 
+05     0x0000    0x0002     0x0200     0x0000    -0 
+06     0x0002    0x0200     0x0000     0x0000    -1 
+07     0x0000    0x0000     0x0000     0x0004    -0 
+08     0x0000    0x0000     0x0004     0x0000    -0 
+09     0x0000    0x0004     0x0000     0x0000    -0 
+10     0x0004    0x0000     0x0000     0x0000    -1 
+11     0x0400    0x0000     0x0000     0x000c    -   
+------------------ 
+10 Round CHAM-64 odd-satrt Total Weight: -3 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.04 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月29日17:11:18
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:11 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 3 
+Time: 0.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0001    0x8000     0x0000     0x0001    -0 
+02     0x0000    0x0000     0x0001     0x0100    -0 
+03     0x0000    0x0001     0x0100     0x0000    -0 
+04     0x0001    0x0100     0x0000     0x0000    -0 
+05     0x0000    0x0000     0x0000     0x0002    -0 
+06     0x0000    0x0000     0x0002     0x0000    -0 
+07     0x0000    0x0002     0x0000     0x0000    -0 
+08     0x0002    0x0000     0x0000     0x0000    -1 
+09     0x0200    0x0000     0x0000     0x0004    -1 
+10     0x0100    0x0000     0x0004     0x0003    -1 
+11     0x0001    0x0004     0x0003     0x0300    -0 
+12     0x8004    0x0003     0x0300     0x0100    -   
+------------------ 
+11 Round CHAM-64 odd-satrt Total Weight: -3 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.33 seconds ==  0.06 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月29日17:20:12
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:12 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 3 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 4 
+Time: 0.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x8000     0x00c1     0x8000    -0 
+02     0x8000    0x00c1     0x8000     0x0000    -1 
+03     0x0001    0x8000     0x0000     0x0001    -0 
+04     0x0000    0x0000     0x0001     0x0100    -0 
+05     0x0000    0x0001     0x0100     0x0000    -0 
+06     0x0001    0x0100     0x0000     0x0000    -0 
+07     0x0000    0x0000     0x0000     0x0002    -0 
+08     0x0000    0x0000     0x0002     0x0000    -0 
+09     0x0000    0x0002     0x0000     0x0000    -0 
+10     0x0002    0x0000     0x0000     0x0000    -1 
+11     0x0200    0x0000     0x0000     0x0004    -1 
+12     0x0100    0x0000     0x0004     0x0003    -1 
+13     0x0001    0x0004     0x0003     0x0300    -   
+------------------ 
+12 Round CHAM-64 odd-satrt Total Weight: -4 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.46 seconds ==  0.06 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+
+//2019年05月29日17:22:41
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:13 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 4 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 5 
+Time: 0.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x8000     0x00c1     0x8000    -0 
+02     0x8000    0x00c1     0x8000     0x0000    -1 
+03     0x0001    0x8000     0x0000     0x0001    -0 
+04     0x0000    0x0000     0x0001     0x0100    -0 
+05     0x0000    0x0001     0x0100     0x0000    -0 
+06     0x0001    0x0100     0x0000     0x0000    -0 
+07     0x0000    0x0000     0x0000     0x0002    -0 
+08     0x0000    0x0000     0x0002     0x0000    -0 
+09     0x0000    0x0002     0x0000     0x0000    -0 
+10     0x0002    0x0000     0x0000     0x0000    -1 
+11     0x0200    0x0000     0x0000     0x0004    -2 
+12     0x0100    0x0000     0x0004     0x8002    -1 
+13     0x0001    0x0004     0x8002     0x0300    -0 
+14     0x8004    0x8002     0x0300     0x0100    -   
+------------------ 
+13 Round CHAM-64 odd-satrt Total Weight: -5 
+Time cost: 0.01 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.06 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月29日17:26:26
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:14 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 5 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 6 
+Time: 0.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x8000     0x00c1     0x8000    -0 
+02     0x8000    0x00c1     0x8000     0x0000    -1 
+03     0x0001    0x8000     0x0000     0x0001    -0 
+04     0x0000    0x0000     0x0001     0x0100    -0 
+05     0x0000    0x0001     0x0100     0x0000    -0 
+06     0x0001    0x0100     0x0000     0x0000    -0 
+07     0x0000    0x0000     0x0000     0x0002    -0 
+08     0x0000    0x0000     0x0002     0x0000    -0 
+09     0x0000    0x0002     0x0000     0x0000    -0 
+10     0x0002    0x0000     0x0000     0x0000    -1 
+11     0x0200    0x0000     0x0000     0x0004    -1 
+12     0x0100    0x0000     0x0004     0x0003    -1 
+13     0x0001    0x0004     0x0003     0x0300    -0 
+14     0x8004    0x0003     0x0300     0x0100    -2 
+15     0x0483    0x0300     0x0100     0x800d    -   
+------------------ 
+14 Round CHAM-64 odd-satrt Total Weight: -6 
+Time cost: 0.02 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.25 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年05月29日17:27:52
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:15 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 6 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 7 
+Time: 0.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0001    0x8000     0x0400     0x0301    -0 
+02     0x0000    0x0400     0x0301     0x0100    -0 
+03     0x0400    0x0301     0x0100     0x0000    -1 
+04     0x0001    0x0100     0x0000     0x0004    -0 
+05     0x0000    0x0000     0x0004     0x0002    -0 
+06     0x0000    0x0004     0x0002     0x0000    -0 
+07     0x0004    0x0002     0x0000     0x0000    -1 
+08     0x0000    0x0000     0x0000     0x0600    -0 
+09     0x0000    0x0000     0x0600     0x0000    -0 
+10     0x0000    0x0600     0x0000     0x0000    -0 
+11     0x0600    0x0000     0x0000     0x0000    -1 
+12     0x0200    0x0000     0x0000     0x0004    -1 
+13     0x0002    0x0000     0x0004     0x0600    -1 
+14     0x0001    0x0004     0x0600     0x0200    -0 
+15     0x0104    0x0600     0x0200     0x0002    -2 
+16     0x0682    0x0200     0x0002     0x8601    -   
+------------------ 
+15 Round CHAM-64 odd-satrt Total Weight: -7 
+Time cost: 0.06 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.09 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月29日17:32:06
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:16 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 7 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 8 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 9 
+Time: 5.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0001    0x8001     0x0502     0x0300    -0 
+02     0x0001    0x0502     0x0300     0x0100    -0 
+03     0x0402    0x0300     0x0100     0x0002    -2 
+04     0x0001    0x0100     0x0002     0x0204    -0 
+05     0x0000    0x0002     0x0204     0x0002    -0 
+06     0x0002    0x0204     0x0002     0x0000    -1 
+07     0x0004    0x0002     0x0000     0x0004    -1 
+08     0x0000    0x0000     0x0004     0x0600    -0 
+09     0x0000    0x0004     0x0600     0x0000    -0 
+10     0x0004    0x0600     0x0000     0x0000    -1 
+11     0x0000    0x0000     0x0000     0x0008    -0 
+12     0x0000    0x0000     0x0008     0x0000    -0 
+13     0x0000    0x0008     0x0000     0x0000    -0 
+14     0x0008    0x0000     0x0000     0x0000    -1 
+15     0x0800    0x0000     0x0000     0x0018    -1 
+16     0x0400    0x0000     0x0018     0x000c    -2 
+17     0x0004    0x0018     0x000c     0x0a00    -   
+------------------ 
+16 Round CHAM-64 odd-satrt Total Weight: -9 
+Time cost: 5.16 seconds ==  0.09 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 8.42 seconds ==  0.14 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月29日17:34:10
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:17 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 9 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 10 
+Time: 0.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x8000     0x00c1     0x8000    -0 
+02     0x8000    0x00c1     0x8000     0x0000    -1 
+03     0x0001    0x8000     0x0000     0x0001    -0 
+04     0x0000    0x0000     0x0001     0x0100    -0 
+05     0x0000    0x0001     0x0100     0x0000    -0 
+06     0x0001    0x0100     0x0000     0x0000    -0 
+07     0x0000    0x0000     0x0000     0x0002    -0 
+08     0x0000    0x0000     0x0002     0x0000    -0 
+09     0x0000    0x0002     0x0000     0x0000    -0 
+10     0x0002    0x0000     0x0000     0x0000    -1 
+11     0x0200    0x0000     0x0000     0x0004    -1 
+12     0x0100    0x0000     0x0004     0x0003    -1 
+13     0x0001    0x0004     0x0003     0x0300    -0 
+14     0x8004    0x0003     0x0300     0x0100    -2 
+15     0x0483    0x0300     0x0100     0x800d    -4 
+16     0x0001    0x0100     0x800d     0x0206    -0 
+17     0x0000    0x800d     0x0206     0x0002    -0 
+18     0x800d    0x0206     0x0002     0x0000    -   
+------------------ 
+17 Round CHAM-64 odd-satrt Total Weight: -10 
+Time cost: 0.71 seconds ==  0.01 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.75 seconds ==  0.06 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月29日17:37:28
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:18 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 10 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 11 
+Time: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 12 
+Time: 23.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x8000     0x00c1     0x8000    -0 
+02     0x8000    0x00c1     0x8000     0x0000    -1 
+03     0x0001    0x8000     0x0000     0x0001    -0 
+04     0x0000    0x0000     0x0001     0x0100    -0 
+05     0x0000    0x0001     0x0100     0x0000    -0 
+06     0x0001    0x0100     0x0000     0x0000    -0 
+07     0x0000    0x0000     0x0000     0x0002    -0 
+08     0x0000    0x0000     0x0002     0x0000    -0 
+09     0x0000    0x0002     0x0000     0x0000    -0 
+10     0x0002    0x0000     0x0000     0x0000    -1 
+11     0x0200    0x0000     0x0000     0x0004    -1 
+12     0x0100    0x0000     0x0004     0x0003    -1 
+13     0x0001    0x0004     0x0003     0x0300    -0 
+14     0x8004    0x0003     0x0300     0x0100    -2 
+15     0x0483    0x0300     0x0100     0x800d    -3 
+16     0x0141    0x0100     0x800d     0xc206    -2 
+17     0x0001    0x800d     0xc206     0x0202    -0 
+18     0x000d    0xc206     0x0202     0x0100    -1 
+19     0xcb06    0x0202     0x0100     0x0012    -   
+------------------ 
+18 Round CHAM-64 odd-satrt Total Weight: -12 
+Time cost: 23.29 seconds ==  0.39 minutes == 0.01 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 26.30 seconds ==  0.44 minutes == 0.01 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月29日17:44:29
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:19 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 12 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 13 
+Time: 28.00 seconds.  
+Searching CHAM-64 Bn_w: 14 
+Time: 223.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x1000     0x0019     0x8000    -0 
+02     0x1000    0x0019     0x8000     0x0000    -1 
+03     0x0001    0x8000     0x0000     0x2000    -0 
+04     0x0000    0x0000     0x2000     0x0100    -0 
+05     0x0000    0x2000     0x0100     0x0000    -0 
+06     0x2000    0x0100     0x0000     0x0000    -1 
+07     0x0120    0x0000     0x0000     0x6000    -3 
+08     0x0080    0x0000     0x6000     0x0001    -1 
+09     0xc000    0x6000     0x0001     0x0100    -1 
+10     0x0000    0x0001     0x0100     0x00c0    -0 
+11     0x0001    0x0100     0x00c0     0x0000    -0 
+12     0x8100    0x00c0     0x0000     0x0100    -2 
+13     0x0001    0x0000     0x0100     0x0301    -0 
+14     0x8000    0x0100     0x0301     0x0100    -1 
+15     0x0180    0x0301     0x0100     0x8001    -1 
+16     0x0381    0x0100     0x8001     0x0001    -2 
+17     0x0002    0x8001     0x0001     0x0602    -1 
+18     0x0000    0x0001     0x0602     0x0200    -0 
+19     0x0001    0x0602     0x0200     0x0000    -0 
+20     0x8602    0x0200     0x0000     0x0100    -   
+------------------ 
+19 Round CHAM-64 odd-satrt Total Weight: -14 
+Time cost: 223.99 seconds ==  3.73 minutes == 0.06 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 227.00 seconds ==  3.78 minutes == 0.06 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月30日08:19:25
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:20 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 14 
+Time: 5.00 seconds.  
+Searching CHAM-64 Bn_w: 15 
+Time: 248.00 seconds.  
+Searching CHAM-64 Bn_w: 16 
+Time: 1408.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x8000     0x00c1     0x8000    -0 
+02     0x8000    0x00c1     0x8000     0x0000    -1 
+03     0x0001    0x8000     0x0000     0x0001    -0 
+04     0x0000    0x0000     0x0001     0x0100    -0 
+05     0x0000    0x0001     0x0100     0x0000    -0 
+06     0x0001    0x0100     0x0000     0x0000    -0 
+07     0x0000    0x0000     0x0000     0x0002    -0 
+08     0x0000    0x0000     0x0002     0x0000    -0 
+09     0x0000    0x0002     0x0000     0x0000    -0 
+10     0x0002    0x0000     0x0000     0x0000    -1 
+11     0x0200    0x0000     0x0000     0x0004    -1 
+12     0x0100    0x0000     0x0004     0x0003    -1 
+13     0x0001    0x0004     0x0003     0x0300    -0 
+14     0x8004    0x0003     0x0300     0x0100    -2 
+15     0x0483    0x0300     0x0100     0x800d    -4 
+16     0x0101    0x0100     0x800d     0x0204    -1 
+17     0x0001    0x800d     0x0204     0x0302    -0 
+18     0x000d    0x0204     0x0302     0x0100    -1 
+19     0x0b04    0x0302     0x0100     0x0012    -3 
+20     0x0600    0x0100     0x0012     0x060e    -1 
+21     0x0104    0x0012     0x060e     0x0800    -   
+------------------ 
+20 Round CHAM-64 odd-satrt Total Weight: -16 
+Time cost: 1408.18 seconds ==  23.47 minutes == 0.39 hours == 0.02 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 1411.20 seconds ==  23.52 minutes == 0.39 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月30日08:40:52
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:21 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 16 
+Time: 48.00 seconds.  
+Searching CHAM-64 Bn_w: 17 
+Time: 931.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x8000     0x00c1     0x8000    -0 
+02     0x8000    0x00c1     0x8000     0x0000    -1 
+03     0x0001    0x8000     0x0000     0x0001    -0 
+04     0x0000    0x0000     0x0001     0x0100    -0 
+05     0x0000    0x0001     0x0100     0x0000    -0 
+06     0x0001    0x0100     0x0000     0x0000    -0 
+07     0x0000    0x0000     0x0000     0x0002    -0 
+08     0x0000    0x0000     0x0002     0x0000    -0 
+09     0x0000    0x0002     0x0000     0x0000    -0 
+10     0x0002    0x0000     0x0000     0x0000    -1 
+11     0x0200    0x0000     0x0000     0x0004    -1 
+12     0x0100    0x0000     0x0004     0x0003    -1 
+13     0x0001    0x0004     0x0003     0x0300    -0 
+14     0x8004    0x0003     0x0300     0x0100    -2 
+15     0x0483    0x0300     0x0100     0x800d    -4 
+16     0x0101    0x0100     0x800d     0x0204    -1 
+17     0x0001    0x800d     0x0204     0x0302    -0 
+18     0x000d    0x0204     0x0302     0x0100    -1 
+19     0x0b04    0x0302     0x0100     0x0012    -3 
+20     0x0601    0x0100     0x0012     0x040e    -1 
+21     0x0004    0x0012     0x040e     0x0802    -1 
+22     0x0010    0x040e     0x0802     0x0600    -   
+------------------ 
+21 Round CHAM-64 odd-satrt Total Weight: -17 
+Time cost: 931.05 seconds ==  15.52 minutes == 0.26 hours == 0.01 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 934.23 seconds ==  15.57 minutes == 0.26 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月30日09:06:37
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/even/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:21 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 16 
+Time: 17.00 seconds.  
+Searching CHAM-64 Bn_w: 17 
+Time: 1755.00 seconds.  
+Searching CHAM-64 Bn_w: 18 
+Time: 2707.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0000     0x4000     0x0060    -0 
+02     0x0000    0x4000     0x0060     0x0000    -0 
+03     0x4000    0x0060     0x0000     0x0000    -1 
+04     0x0000    0x0000     0x0000     0x8000    -0 
+05     0x0000    0x0000     0x8000     0x0000    -0 
+06     0x0000    0x8000     0x0000     0x0000    -0 
+07     0x8000    0x0000     0x0000     0x0000    -1 
+08     0x0080    0x0000     0x0000     0x8001    -1 
+09     0x0040    0x0000     0x8001     0xc000    -1 
+10     0x4000    0x8001     0xc000     0x00c0    -1 
+11     0xa001    0xc000     0x00c0     0x0060    -2 
+12     0xc1c0    0x00c0     0x0060     0x8003    -3 
+13     0x4000    0x0060     0x8003     0x0081    -1 
+14     0x0000    0x8003     0x0081     0x8000    -0 
+15     0x8003    0x0081     0x8000     0x0000    -2 
+16     0x0201    0x8000     0x0000     0x8005    -1 
+17     0x0100    0x0000     0x8005     0x0103    -1 
+18     0x0001    0x8005     0x0103     0x0300    -0 
+19     0x0005    0x0103     0x0300     0x0100    -1 
+20     0x0403    0x0300     0x0100     0x000e    -2 
+21     0x0001    0x0100     0x000e     0x0204    -0 
+22     0x0000    0x000e     0x0204     0x0002    -   
+------------------ 
+21 Round CHAM-64 even-start Total Weight: -18 
+Time cost: 2707.88 seconds ==  45.13 minutes == 0.75 hours == 0.03 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 2710.93 seconds ==  45.18 minutes == 0.75 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月30日09:12:52  、//有问题
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:22 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 17 
+Time: 85.00 seconds.  
+Searching CHAM-64 Bn_w: 18 
+Time: 1716.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x8000     0x00c1     0x8000    -0 
+02     0x8000    0x00c1     0x8000     0x0000    -1 
+03     0x0001    0x8000     0x0000     0x0001    -0 
+04     0x0000    0x0000     0x0001     0x0100    -0 
+05     0x0000    0x0001     0x0100     0x0000    -0 
+06     0x0001    0x0100     0x0000     0x0000    -0 
+07     0x0000    0x0000     0x0000     0x0002    -0 
+08     0x0000    0x0000     0x0002     0x0000    -0 
+09     0x0000    0x0002     0x0000     0x0000    -0 
+10     0x0002    0x0000     0x0000     0x0000    -1 
+11     0x0200    0x0000     0x0000     0x0004    -1 
+12     0x0100    0x0000     0x0004     0x0003    -1 
+13     0x0001    0x0004     0x0003     0x0300    -0 
+14     0x8004    0x0003     0x0300     0x0100    -2 
+15     0x0483    0x0300     0x0100     0x800d    -4 
+16     0x0101    0x0100     0x800d     0x0204    -1 
+17     0x0001    0x800d     0x0204     0x0302    -0 
+18     0x000d    0x0204     0x0302     0x0100    -1 
+19     0x0b04    0x0302     0x0100     0x0012    -3 
+20     0x0601    0x0100     0x0012     0x040e    -1 
+21     0x0004    0x0012     0x040e     0x0802    -1 
+22     0x0010    0x040e     0x0802     0x0600    -1 
+23     0x140e    0x0802     0x0600     0x0030    -   
+------------------ 
+22 Round CHAM-64 odd-satrt Total Weight: -18 
+Time cost: 1716.19 seconds ==  28.60 minutes == 0.48 hours == 0.02 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 1719.48 seconds ==  28.66 minutes == 0.48 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月31日08:28:04
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:23 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 18 
+Time: 125.00 seconds.  
+Searching CHAM-64 Bn_w: 19 
+Time: 8108.00 seconds.  
+Searching CHAM-64 Bn_w: 20 
+Time: 44645.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x4000     0x0062     0x0001    -0 
+02     0x4000    0x0062     0x0001     0x0000    -1 
+03     0x0002    0x0001     0x0000     0x8000    -1 
+04     0x0000    0x0000     0x8000     0x0200    -0 
+05     0x0000    0x8000     0x0200     0x0000    -0 
+06     0x8000    0x0200     0x0000     0x0000    -1 
+07     0x0280    0x0000     0x0000     0x8001    -7 
+08     0x0140    0x0000     0x8001     0x0402    -2 
+09     0x0001    0x8001     0x0402     0x0200    -0 
+10     0x0001    0x0402     0x0200     0x0100    -0 
+11     0x0502    0x0200     0x0100     0x0002    -3 
+12     0x0001    0x0100     0x0002     0x0204    -0 
+13     0x0000    0x0002     0x0204     0x0002    -0 
+14     0x0002    0x0204     0x0002     0x0000    -1 
+15     0x0004    0x0002     0x0000     0x0004    -1 
+16     0x0000    0x0000     0x0004     0x0600    -0 
+17     0x0000    0x0004     0x0600     0x0000    -0 
+18     0x0004    0x0600     0x0000     0x0000    -1 
+19     0x0000    0x0000     0x0000     0x0008    -0 
+20     0x0000    0x0000     0x0008     0x0000    -0 
+21     0x0000    0x0008     0x0000     0x0000    -0 
+22     0x0008    0x0000     0x0000     0x0000    -1 
+23     0x0800    0x0000     0x0000     0x0018    -1 
+24     0x0400    0x0000     0x0018     0x000c    -   
+------------------ 
+23 Round CHAM-64 odd-satrt Total Weight: -20 
+Time cost: 44645.02 seconds ==  744.08 minutes == 12.40 hours == 0.52 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 44648.11 seconds ==  744.14 minutes == 12.40 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年06月03日09:02:13
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:24 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 20 
+Time: 734.00 seconds.  
+Searching CHAM-64 Bn_w: 21 
+Time: 42504.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x2000     0x0021     0x8000    -0 
+02     0x2000    0x0021     0x8000     0x0000    -1 
+03     0x0001    0x8000     0x0000     0x6000    -0 
+04     0x0000    0x0000     0x6000     0x0100    -0 
+05     0x0000    0x6000     0x0100     0x0000    -0 
+06     0x6000    0x0100     0x0000     0x0000    -1 
+07     0x0140    0x0000     0x0000     0x8000    -7 
+08     0x00a0    0x0000     0x8000     0x0201    -2 
+09     0x8000    0x8000     0x0201     0x0100    -1 
+10     0xc000    0x0201     0x0100     0x00c0    -1 
+11     0x0281    0x0100     0x00c0     0x0001    -2 
+12     0x8000    0x00c0     0x0001     0x0102    -1 
+13     0x0000    0x0001     0x0102     0x0001    -0 
+14     0x0001    0x0102     0x0001     0x0000    -0 
+15     0x0002    0x0001     0x0000     0x0002    -1 
+16     0x0000    0x0000     0x0002     0x0200    -0 
+17     0x0000    0x0002     0x0200     0x0000    -0 
+18     0x0002    0x0200     0x0000     0x0000    -1 
+19     0x0000    0x0000     0x0000     0x0004    -0 
+20     0x0000    0x0000     0x0004     0x0000    -0 
+21     0x0000    0x0004     0x0000     0x0000    -0 
+22     0x0004    0x0000     0x0000     0x0000    -1 
+23     0x0400    0x0000     0x0000     0x000c    -1 
+24     0x0200    0x0000     0x000c     0x0006    -1 
+25     0x0002    0x000c     0x0006     0x0600    -   
+------------------ 
+24 Round CHAM-64 odd-satrt Total Weight: -21 
+Time cost: 42504.61 seconds ==  708.41 minutes == 11.81 hours == 0.49 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 42508.42 seconds ==  708.47 minutes == 11.81 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年06月03日09:26:51，后面的那个23的搜索有问题 
+//2019年05月23日08:28:24
+huangmingjiang@ubuntu:~/hmj123/cham64/25/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:25 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 21 
+Time: 1268.00 seconds.  
+Searching CHAM-64 Bn_w: 22 
+Time: 73323.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x2000     0x0021     0x8000    -0 
+02     0x2000    0x0021     0x8000     0x0000    -1 
+03     0x0001    0x8000     0x0000     0x6000    -0 
+04     0x0000    0x0000     0x6000     0x0100    -0 
+05     0x0000    0x6000     0x0100     0x0000    -0 
+06     0x6000    0x0100     0x0000     0x0000    -1 
+07     0x0140    0x0000     0x0000     0x8000    -7 
+08     0x00a0    0x0000     0x8000     0x0201    -2 
+09     0x8000    0x8000     0x0201     0x0100    -1 
+10     0xc000    0x0201     0x0100     0x00c0    -1 
+11     0x0281    0x0100     0x00c0     0x0001    -2 
+12     0x8000    0x00c0     0x0001     0x0102    -1 
+13     0x0000    0x0001     0x0102     0x0001    -0 
+14     0x0001    0x0102     0x0001     0x0000    -0 
+15     0x0002    0x0001     0x0000     0x0002    -1 
+16     0x0000    0x0000     0x0002     0x0200    -0 
+17     0x0000    0x0002     0x0200     0x0000    -0 
+18     0x0002    0x0200     0x0000     0x0000    -1 
+19     0x0000    0x0000     0x0000     0x0004    -0 
+20     0x0000    0x0000     0x0004     0x0000    -0 
+21     0x0000    0x0004     0x0000     0x0000    -0 
+22     0x0004    0x0000     0x0000     0x0000    -1 
+23     0x0400    0x0000     0x0000     0x000c    -1 
+24     0x0200    0x0000     0x000c     0x0006    -1 
+25     0x0002    0x000c     0x0006     0x0600    -1 
+26     0x000d    0x0006     0x0600     0x0200    -   
+------------------ 
+25 Round CHAM-64 Total Weight: -22 
+Time cost: 73323.94 seconds ==  1222.07 minutes == 20.37 hours == 0.85 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 73327.39 seconds ==  1222.12 minutes == 20.37 hours. 
+Auto-search END! 
+|************************************************************************|
+//2019年06月03日09:02:39
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/even/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:25 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 22 
+Time: 4605.00 seconds.  
+Searching CHAM-64 Bn_w: 23 
+Time: 213331.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x8000     0x00c1     0x8000    -0 
+02     0x8000    0x00c1     0x8000     0x0000    -1 
+03     0x0001    0x8000     0x0000     0x0001    -0 
+04     0x0000    0x0000     0x0001     0x0100    -0 
+05     0x0000    0x0001     0x0100     0x0000    -0 
+06     0x0001    0x0100     0x0000     0x0000    -0 
+07     0x0000    0x0000     0x0000     0x0002    -0 
+08     0x0000    0x0000     0x0002     0x0000    -0 
+09     0x0000    0x0002     0x0000     0x0000    -0 
+10     0x0002    0x0000     0x0000     0x0000    -1 
+11     0x0200    0x0000     0x0000     0x0004    -1 
+12     0x0100    0x0000     0x0004     0x0003    -1 
+13     0x0001    0x0004     0x0003     0x0300    -0 
+14     0x8004    0x0003     0x0300     0x0100    -2 
+15     0x0483    0x0300     0x0100     0x800d    -4 
+16     0x0101    0x0100     0x800d     0x0204    -1 
+17     0x0001    0x800d     0x0204     0x0302    -0 
+18     0x000d    0x0204     0x0302     0x0100    -1 
+19     0x0b04    0x0302     0x0100     0x0012    -3 
+20     0x0601    0x0100     0x0012     0x040e    -1 
+21     0x0004    0x0012     0x040e     0x0802    -1 
+22     0x0010    0x040e     0x0802     0x0600    -1 
+23     0x140e    0x0802     0x0600     0x0030    -4 
+24     0x0006    0x0600     0x0030     0x0c10    -1 
+25     0x0000    0x0030     0x0c10     0x000c    -0 
+26     0x0030    0x0c10     0x000c     0x0000    -   
+------------------ 
+25 Round CHAM-64 odd-satrt Total Weight: -23 
+Time cost: 213331.90 seconds ==  3555.53 minutes == 59.26 hours == 2.47 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 213335.08 seconds ==  3555.58 minutes == 59.26 hours. 
+Auto-search END! 
+|************************************************************************|
+//2019年06月04日08:37:21
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:25 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 21 
+Time: 970.00 seconds.  
+Searching CHAM-64 Bn_w: 22 
+Time: 69449.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x2000     0x0021     0x8000    -0 
+02     0x2000    0x0021     0x8000     0x0000    -1 
+03     0x0001    0x8000     0x0000     0x6000    -0 
+04     0x0000    0x0000     0x6000     0x0100    -0 
+05     0x0000    0x6000     0x0100     0x0000    -0 
+06     0x6000    0x0100     0x0000     0x0000    -1 
+07     0x0140    0x0000     0x0000     0x8000    -7 
+08     0x00a0    0x0000     0x8000     0x0201    -2 
+09     0x8000    0x8000     0x0201     0x0100    -1 
+10     0xc000    0x0201     0x0100     0x00c0    -1 
+11     0x0281    0x0100     0x00c0     0x0001    -2 
+12     0x8000    0x00c0     0x0001     0x0102    -1 
+13     0x0000    0x0001     0x0102     0x0001    -0 
+14     0x0001    0x0102     0x0001     0x0000    -0 
+15     0x0002    0x0001     0x0000     0x0002    -1 
+16     0x0000    0x0000     0x0002     0x0200    -0 
+17     0x0000    0x0002     0x0200     0x0000    -0 
+18     0x0002    0x0200     0x0000     0x0000    -1 
+19     0x0000    0x0000     0x0000     0x0004    -0 
+20     0x0000    0x0000     0x0004     0x0000    -0 
+21     0x0000    0x0004     0x0000     0x0000    -0 
+22     0x0004    0x0000     0x0000     0x0000    -1 
+23     0x0400    0x0000     0x0000     0x000c    -1 
+24     0x0200    0x0000     0x000c     0x0006    -1 
+25     0x0002    0x000c     0x0006     0x0600    -1 
+26     0x000d    0x0006     0x0600     0x0200    -   
+------------------ 
+25 Round CHAM-64 odd-satrt Total Weight: -22 
+Time cost: 69449.61 seconds ==  1157.49 minutes == 19.29 hours == 0.80 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 69452.74 seconds ==  1157.55 minutes == 19.29 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年06月05日10:03:50
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:26 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 22 
+Time: 1326.00 seconds.  
+Searching CHAM-64 Bn_w: 23 
+Time: 90599.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x2000     0x0021     0x8000    -0 
+02     0x2000    0x0021     0x8000     0x0000    -1 
+03     0x0001    0x8000     0x0000     0x6000    -0 
+04     0x0000    0x0000     0x6000     0x0100    -0 
+05     0x0000    0x6000     0x0100     0x0000    -0 
+06     0x6000    0x0100     0x0000     0x0000    -1 
+07     0x0140    0x0000     0x0000     0x8000    -7 
+08     0x00a0    0x0000     0x8000     0x0201    -2 
+09     0x8000    0x8000     0x0201     0x0100    -1 
+10     0xc000    0x0201     0x0100     0x00c0    -1 
+11     0x0281    0x0100     0x00c0     0x0001    -2 
+12     0x8000    0x00c0     0x0001     0x0102    -1 
+13     0x0000    0x0001     0x0102     0x0001    -0 
+14     0x0001    0x0102     0x0001     0x0000    -0 
+15     0x0002    0x0001     0x0000     0x0002    -1 
+16     0x0000    0x0000     0x0002     0x0200    -0 
+17     0x0000    0x0002     0x0200     0x0000    -0 
+18     0x0002    0x0200     0x0000     0x0000    -1 
+19     0x0000    0x0000     0x0000     0x0004    -0 
+20     0x0000    0x0000     0x0004     0x0000    -0 
+21     0x0000    0x0004     0x0000     0x0000    -0 
+22     0x0004    0x0000     0x0000     0x0000    -1 
+23     0x0400    0x0000     0x0000     0x000c    -1 
+24     0x0200    0x0000     0x000c     0x0006    -1 
+25     0x0002    0x000c     0x0006     0x0600    -1 
+26     0x000d    0x0006     0x0600     0x0200    -1 
+27     0x0906    0x0600     0x0200     0x0012    -   
+------------------ 
+26 Round CHAM-64 odd-satrt Total Weight: -23 
+Time cost: 90599.77 seconds ==  1510.00 minutes == 25.17 hours == 1.05 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 90602.81 seconds ==  1510.05 minutes == 25.17 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年06月17日08:21:47
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:27 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 23 
+Time: 1941.00 seconds.  
+Searching CHAM-64 Bn_w: 24 
+Time: 197327.00 seconds.  
+Searching CHAM-64 Bn_w: 25 
+
+Time: 1016940.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x2000     0x4030     0x3000    -0 
+02     0x2000    0x4030     0x3000     0x0000    -1 
+03     0x4000    0x3000     0x0000     0x4000    -1 
+04     0x0000    0x0000     0x4000     0x0040    -0 
+05     0x0000    0x4000     0x0040     0x0000    -0 
+06     0x4000    0x0040     0x0000     0x0000    -1 
+07     0x0000    0x0000     0x0000     0xc000    -0 
+08     0x0000    0x0000     0xc000     0x0000    -0 
+09     0x0000    0xc000     0x0000     0x0000    -0 
+10     0xc000    0x0000     0x0000     0x0000    -2 
+11     0x00c0    0x0000     0x0000     0x4001    -1 
+12     0x0040    0x0000     0x4001     0x8000    -1 
+13     0x6000    0x4001     0x8000     0x0080    -1 
+14     0x6001    0x8000     0x0080     0x0040    -1 
+15     0x8140    0x0080     0x0040     0x8002    -3 
+16     0x6000    0x0040     0x8002     0x0081    -1 
+17     0x0000    0x8002     0x0081     0x8000    -0 
+18     0x8002    0x0081     0x8000     0x0000    -2 
+19     0x0201    0x8000     0x0000     0x8005    -1 
+20     0x0100    0x0000     0x8005     0x0103    -1 
+21     0x0001    0x8005     0x0103     0x0300    -0 
+22     0x0005    0x0103     0x0300     0x0100    -1 
+23     0x0403    0x0300     0x0100     0x000e    -2 
+24     0x0001    0x0100     0x000e     0x0204    -0 
+25     0x0000    0x000e     0x0204     0x0002    -0 
+26     0x000e    0x0204     0x0002     0x0000    -2 
+27     0x0a04    0x0002     0x0000     0x0018    -3 
+28     0x0400    0x0000     0x0018     0x0608    -   
+------------------ 
+27 Round CHAM-64 odd-satrt Total Weight: -25 
+Time cost: 1016940.85 seconds ==  16949.01 minutes == 282.48 hours == 11.77 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 1016943.90 seconds ==  16949.06 minutes == 282.48 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年06月12日14:30:34
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:28 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 2.00 seconds.  
+Searching CHAM-64 Bn_w: 25 
+Time: 12462.00 seconds.  
+Searching CHAM-64 Bn_w: 26 
+Time: 14136.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0000     0x0001     0x8000    -0 
+02     0x0000    0x0001     0x8000     0x0000    -0 
+03     0x0001    0x8000     0x0000     0x0000    -0 
+04     0x0000    0x0000     0x0000     0x0100    -0 
+05     0x0000    0x0000     0x0100     0x0000    -0 
+06     0x0000    0x0100     0x0000     0x0000    -0 
+07     0x0100    0x0000     0x0000     0x0000    -1 
+08     0x00c0    0x0000     0x0000     0x0001    -1 
+09     0x8000    0x0000     0x0001     0x0100    -1 
+10     0x6000    0x0001     0x0100     0x0080    -1 
+11     0x0041    0x0100     0x0080     0x8000    -1 
+12     0x8120    0x0080     0x8000     0x6100    -6 
+13     0x0001    0x8000     0x6100     0x2201    -0 
+14     0x0000    0x6100     0x2201     0x0100    -0 
+15     0x6100    0x2201     0x0100     0x0000    -6 
+16     0x00c1    0x0100     0x0000     0x0067    -1 
+17     0x8000    0x0000     0x0067     0x0102    -1 
+18     0x4000    0x0067     0x0102     0x00c0    -1 
+19     0x0007    0x0102     0x00c0     0x8000    -1 
+20     0x8100    0x00c0     0x8000     0x0500    -2 
+21     0x0001    0x8000     0x0500     0x0301    -0 
+22     0x0000    0x0500     0x0301     0x0100    -0 
+23     0x0500    0x0301     0x0100     0x0000    -2 
+24     0x0001    0x0100     0x0000     0x0006    -0 
+25     0x0000    0x0000     0x0006     0x0002    -0 
+26     0x0000    0x0006     0x0002     0x0000    -0 
+27     0x0006    0x0002     0x0000     0x0000    -1 
+28     0x0000    0x0000     0x0000     0x0400    -0 
+29     0x0000    0x0000     0x0400     0x0000    -   
+------------------ 
+28 Round CHAM-64 odd-satrt Total Weight: -26 
+Time cost: 14136.69 seconds ==  235.61 minutes == 3.93 hours == 0.16 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 14139.68 seconds ==  235.66 minutes == 3.93 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年06月17日10:19:06
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:29 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 2.00 seconds.  
+Searching CHAM-64 Bn_w: 26 
+Time: 141.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0000     0x0001     0x8000    -0 
+02     0x0000    0x0001     0x8000     0x0000    -0 
+03     0x0001    0x8000     0x0000     0x0000    -0 
+04     0x0000    0x0000     0x0000     0x0100    -0 
+05     0x0000    0x0000     0x0100     0x0000    -0 
+06     0x0000    0x0100     0x0000     0x0000    -0 
+07     0x0100    0x0000     0x0000     0x0000    -1 
+08     0x00c0    0x0000     0x0000     0x0001    -1 
+09     0x8000    0x0000     0x0001     0x0100    -1 
+10     0x6000    0x0001     0x0100     0x0080    -1 
+11     0x0041    0x0100     0x0080     0x8000    -1 
+12     0x8120    0x0080     0x8000     0x6100    -6 
+13     0x0001    0x8000     0x6100     0x2201    -0 
+14     0x0000    0x6100     0x2201     0x0100    -0 
+15     0x6100    0x2201     0x0100     0x0000    -6 
+16     0x00c1    0x0100     0x0000     0x0067    -1 
+17     0x8000    0x0000     0x0067     0x0102    -1 
+18     0x4000    0x0067     0x0102     0x00c0    -1 
+19     0x0007    0x0102     0x00c0     0x8000    -1 
+20     0x8100    0x00c0     0x8000     0x0500    -2 
+21     0x0001    0x8000     0x0500     0x0301    -0 
+22     0x0000    0x0500     0x0301     0x0100    -0 
+23     0x0500    0x0301     0x0100     0x0000    -2 
+24     0x0001    0x0100     0x0000     0x0006    -0 
+25     0x0000    0x0000     0x0006     0x0002    -0 
+26     0x0000    0x0006     0x0002     0x0000    -0 
+27     0x0006    0x0002     0x0000     0x0000    -1 
+28     0x0000    0x0000     0x0000     0x0400    -0 
+29     0x0000    0x0000     0x0400     0x0000    -0 
+30     0x0000    0x0400     0x0000     0x0000    -   
+------------------ 
+29 Round CHAM-64 odd-satrt Total Weight: -26 
+Time cost: 141.36 seconds ==  2.36 minutes == 0.04 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 144.17 seconds ==  2.40 minutes == 0.04 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年06月17日11:07:46
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:30 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 26 
+Time: 12.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0000     0x0001     0x8000    -0 
+02     0x0000    0x0001     0x8000     0x0000    -0 
+03     0x0001    0x8000     0x0000     0x0000    -0 
+04     0x0000    0x0000     0x0000     0x0100    -0 
+05     0x0000    0x0000     0x0100     0x0000    -0 
+06     0x0000    0x0100     0x0000     0x0000    -0 
+07     0x0100    0x0000     0x0000     0x0000    -1 
+08     0x00c0    0x0000     0x0000     0x0001    -1 
+09     0x8000    0x0000     0x0001     0x0100    -1 
+10     0x6000    0x0001     0x0100     0x0080    -1 
+11     0x0041    0x0100     0x0080     0x8000    -1 
+12     0x8120    0x0080     0x8000     0x6100    -6 
+13     0x0001    0x8000     0x6100     0x2201    -0 
+14     0x0000    0x6100     0x2201     0x0100    -0 
+15     0x6100    0x2201     0x0100     0x0000    -6 
+16     0x00c1    0x0100     0x0000     0x0067    -1 
+17     0x8000    0x0000     0x0067     0x0102    -1 
+18     0x4000    0x0067     0x0102     0x00c0    -1 
+19     0x0007    0x0102     0x00c0     0x8000    -1 
+20     0x8100    0x00c0     0x8000     0x0500    -2 
+21     0x0001    0x8000     0x0500     0x0301    -0 
+22     0x0000    0x0500     0x0301     0x0100    -0 
+23     0x0500    0x0301     0x0100     0x0000    -2 
+24     0x0001    0x0100     0x0000     0x0006    -0 
+25     0x0000    0x0000     0x0006     0x0002    -0 
+26     0x0000    0x0006     0x0002     0x0000    -0 
+27     0x0006    0x0002     0x0000     0x0000    -1 
+28     0x0000    0x0000     0x0000     0x0400    -0 
+29     0x0000    0x0000     0x0400     0x0000    -0 
+30     0x0000    0x0400     0x0000     0x0000    -0 
+31     0x0400    0x0000     0x0000     0x0000    -   
+------------------ 
+30 Round CHAM-64 odd-satrt Total Weight: -26 
+Time cost: 12.18 seconds ==  0.20 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 15.27 seconds ==  0.25 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年06月17日15:59:53
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:31 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 26 
+Time: 307.00 seconds.  
+Searching CHAM-64 Bn_w: 27 
+Time: 317.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0000     0x0001     0x8000    -0 
+02     0x0000    0x0001     0x8000     0x0000    -0 
+03     0x0001    0x8000     0x0000     0x0000    -0 
+04     0x0000    0x0000     0x0000     0x0100    -0 
+05     0x0000    0x0000     0x0100     0x0000    -0 
+06     0x0000    0x0100     0x0000     0x0000    -0 
+07     0x0100    0x0000     0x0000     0x0000    -1 
+08     0x00c0    0x0000     0x0000     0x0001    -1 
+09     0x8000    0x0000     0x0001     0x0100    -1 
+10     0x6000    0x0001     0x0100     0x0080    -1 
+11     0x0041    0x0100     0x0080     0x8000    -1 
+12     0x8120    0x0080     0x8000     0x6100    -6 
+13     0x0001    0x8000     0x6100     0x2201    -0 
+14     0x0000    0x6100     0x2201     0x0100    -0 
+15     0x6100    0x2201     0x0100     0x0000    -6 
+16     0x00c1    0x0100     0x0000     0x0067    -1 
+17     0x8000    0x0000     0x0067     0x0102    -1 
+18     0x4000    0x0067     0x0102     0x00c0    -1 
+19     0x0007    0x0102     0x00c0     0x8000    -1 
+20     0x8100    0x00c0     0x8000     0x0500    -2 
+21     0x0001    0x8000     0x0500     0x0301    -0 
+22     0x0000    0x0500     0x0301     0x0100    -0 
+23     0x0500    0x0301     0x0100     0x0000    -2 
+24     0x0001    0x0100     0x0000     0x0006    -0 
+25     0x0000    0x0000     0x0006     0x0002    -0 
+26     0x0000    0x0006     0x0002     0x0000    -0 
+27     0x0006    0x0002     0x0000     0x0000    -1 
+28     0x0000    0x0000     0x0000     0x0400    -0 
+29     0x0000    0x0000     0x0400     0x0000    -0 
+30     0x0000    0x0400     0x0000     0x0000    -0 
+31     0x0400    0x0000     0x0000     0x0000    -1 
+32     0x0200    0x0000     0x0000     0x0006    -   
+------------------ 
+31 Round CHAM-64 odd-satrt Total Weight: -27 
+Time cost: 317.39 seconds ==  5.29 minutes == 0.09 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 320.45 seconds ==  5.34 minutes == 0.09 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+
+//2019年06月18日08:36:22
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:32 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 2.00 seconds.  
+Searching CHAM-64 Bn_w: 27 
+Time: 257.00 seconds.  
+Searching CHAM-64 Bn_w: 28 
+Time: 263.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0000     0x0001     0x8000    -0 
+02     0x0000    0x0001     0x8000     0x0000    -0 
+03     0x0001    0x8000     0x0000     0x0000    -0 
+04     0x0000    0x0000     0x0000     0x0100    -0 
+05     0x0000    0x0000     0x0100     0x0000    -0 
+06     0x0000    0x0100     0x0000     0x0000    -0 
+07     0x0100    0x0000     0x0000     0x0000    -1 
+08     0x00c0    0x0000     0x0000     0x0001    -1 
+09     0x8000    0x0000     0x0001     0x0100    -1 
+10     0x6000    0x0001     0x0100     0x0080    -1 
+11     0x0041    0x0100     0x0080     0x8000    -1 
+12     0x8120    0x0080     0x8000     0x6100    -6 
+13     0x0001    0x8000     0x6100     0x2201    -0 
+14     0x0000    0x6100     0x2201     0x0100    -0 
+15     0x6100    0x2201     0x0100     0x0000    -6 
+16     0x00c1    0x0100     0x0000     0x0067    -1 
+17     0x8000    0x0000     0x0067     0x0102    -1 
+18     0x4000    0x0067     0x0102     0x00c0    -1 
+19     0x0007    0x0102     0x00c0     0x8000    -1 
+20     0x8100    0x00c0     0x8000     0x0500    -2 
+21     0x0001    0x8000     0x0500     0x0301    -0 
+22     0x0000    0x0500     0x0301     0x0100    -0 
+23     0x0500    0x0301     0x0100     0x0000    -2 
+24     0x0001    0x0100     0x0000     0x0006    -0 
+25     0x0000    0x0000     0x0006     0x0002    -0 
+26     0x0000    0x0006     0x0002     0x0000    -0 
+27     0x0006    0x0002     0x0000     0x0000    -1 
+28     0x0000    0x0000     0x0000     0x0400    -0 
+29     0x0000    0x0000     0x0400     0x0000    -0 
+30     0x0000    0x0400     0x0000     0x0000    -0 
+31     0x0400    0x0000     0x0000     0x0000    -1 
+32     0x0200    0x0000     0x0000     0x0006    -1 
+33     0x0002    0x0000     0x0006     0x0600    -   
+------------------ 
+32 Round CHAM-64 odd-satrt Total Weight: -28 
+Time cost: 263.39 seconds ==  4.39 minutes == 0.07 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 266.36 seconds ==  4.44 minutes == 0.07 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年06月18日15:14:37
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:33 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 28 
+Time: 189.00 seconds.  
+Searching CHAM-64 Bn_w: 29 
+Time: 193.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0000     0x0001     0x8000    -0 
+02     0x0000    0x0001     0x8000     0x0000    -0 
+03     0x0001    0x8000     0x0000     0x0000    -0 
+04     0x0000    0x0000     0x0000     0x0100    -0 
+05     0x0000    0x0000     0x0100     0x0000    -0 
+06     0x0000    0x0100     0x0000     0x0000    -0 
+07     0x0100    0x0000     0x0000     0x0000    -1 
+08     0x00c0    0x0000     0x0000     0x0001    -1 
+09     0x8000    0x0000     0x0001     0x0100    -1 
+10     0x6000    0x0001     0x0100     0x0080    -1 
+11     0x0041    0x0100     0x0080     0x8000    -1 
+12     0x8120    0x0080     0x8000     0x6100    -6 
+13     0x0001    0x8000     0x6100     0x2201    -0 
+14     0x0000    0x6100     0x2201     0x0100    -0 
+15     0x6100    0x2201     0x0100     0x0000    -6 
+16     0x00c1    0x0100     0x0000     0x0067    -1 
+17     0x8000    0x0000     0x0067     0x0102    -1 
+18     0x4000    0x0067     0x0102     0x00c0    -1 
+19     0x0007    0x0102     0x00c0     0x8000    -1 
+20     0x8100    0x00c0     0x8000     0x0500    -2 
+21     0x0001    0x8000     0x0500     0x0301    -0 
+22     0x0000    0x0500     0x0301     0x0100    -0 
+23     0x0500    0x0301     0x0100     0x0000    -2 
+24     0x0001    0x0100     0x0000     0x0006    -0 
+25     0x0000    0x0000     0x0006     0x0002    -0 
+26     0x0000    0x0006     0x0002     0x0000    -0 
+27     0x0006    0x0002     0x0000     0x0000    -1 
+28     0x0000    0x0000     0x0000     0x0400    -0 
+29     0x0000    0x0000     0x0400     0x0000    -0 
+30     0x0000    0x0400     0x0000     0x0000    -0 
+31     0x0400    0x0000     0x0000     0x0000    -1 
+32     0x0200    0x0000     0x0000     0x0006    -1 
+33     0x0002    0x0000     0x0006     0x0600    -1 
+34     0x0001    0x0006     0x0600     0x0200    -   
+------------------ 
+33 Round CHAM-64 odd-satrt Total Weight: -29 
+Time cost: 193.65 seconds ==  3.23 minutes == 0.05 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 197.06 seconds ==  3.28 minutes == 0.05 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年06月19日16:53:34
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:34 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 29 
+Time: 136.00 seconds.  
+Searching CHAM-64 Bn_w: 30 
+Time: 90916.00 seconds.  
+Searching CHAM-64 Bn_w: 31 
+Time: 90987.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0000     0x0001     0x8000    -0 
+02     0x0000    0x0001     0x8000     0x0000    -0 
+03     0x0001    0x8000     0x0000     0x0000    -0 
+04     0x0000    0x0000     0x0000     0x0100    -0 
+05     0x0000    0x0000     0x0100     0x0000    -0 
+06     0x0000    0x0100     0x0000     0x0000    -0 
+07     0x0100    0x0000     0x0000     0x0000    -1 
+08     0x00c0    0x0000     0x0000     0x0001    -1 
+09     0x8000    0x0000     0x0001     0x0100    -1 
+10     0x4000    0x0001     0x0100     0x00c0    -3 
+11     0x0041    0x0100     0x00c0     0x9000    -1 
+12     0x8120    0x00c0     0x9000     0x6100    -3 
+13     0x3001    0x9000     0x6100     0x0341    -1 
+14     0x0000    0x6100     0x0341     0x0120    -0 
+15     0x6100    0x0341     0x0120     0x0000    -6 
+16     0x2081    0x0120     0x0000     0x0065    -2 
+17     0x8000    0x0000     0x0065     0x6182    -1 
+18     0x4000    0x0065     0x6182     0x00c0    -1 
+19     0x0005    0x6182     0x00c0     0x8000    -1 
+20     0xe180    0x00c0     0x8000     0x0700    -3 
+21     0x0001    0x8000     0x0700     0x0201    -0 
+22     0x0000    0x0700     0x0201     0x0100    -0 
+23     0x0700    0x0201     0x0100     0x0000    -2 
+24     0x0001    0x0100     0x0000     0x0006    -0 
+25     0x0000    0x0000     0x0006     0x0002    -0 
+26     0x0000    0x0006     0x0002     0x0000    -0 
+27     0x0006    0x0002     0x0000     0x0000    -1 
+28     0x0000    0x0000     0x0000     0x0400    -0 
+29     0x0000    0x0000     0x0400     0x0000    -0 
+30     0x0000    0x0400     0x0000     0x0000    -0 
+31     0x0400    0x0000     0x0000     0x0000    -1 
+32     0x0200    0x0000     0x0000     0x0006    -1 
+33     0x0002    0x0000     0x0006     0x0600    -1 
+34     0x0001    0x0006     0x0600     0x0200    -0 
+35     0x0106    0x0600     0x0200     0x0002    -   
+------------------ 
+34 Round CHAM-64 odd-satrt Total Weight: -31 
+Time cost: 90987.95 seconds ==  1516.47 minutes == 25.27 hours == 1.05 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 90991.22 seconds ==  1516.52 minutes == 25.28 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年06月24日14:14:43
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:35 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 31 
+Time: 740.00 seconds.  
+Searching CHAM-64 Bn_w: 32 
+Time: 418112.00 seconds.  
+Searching CHAM-64 Bn_w: 33 
+Time: 419108.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0000     0x0001     0x8000    -0 
+02     0x0000    0x0001     0x8000     0x0000    -0 
+03     0x0001    0x8000     0x0000     0x0000    -0 
+04     0x0000    0x0000     0x0000     0x0100    -0 
+05     0x0000    0x0000     0x0100     0x0000    -0 
+06     0x0000    0x0100     0x0000     0x0000    -0 
+07     0x0100    0x0000     0x0000     0x0000    -1 
+08     0x00c0    0x0000     0x0000     0x0001    -1 
+09     0x8000    0x0000     0x0001     0x0100    -1 
+10     0x4000    0x0001     0x0100     0x00c0    -1 
+11     0x0061    0x0100     0x00c0     0x8000    -1 
+12     0x8120    0x00c0     0x8000     0x4100    -4 
+13     0x0041    0x8000     0x4100     0x8201    -1 
+14     0x0030    0x4100     0x8201     0x4100    -3 
+15     0x6500    0x8201     0x4100     0x0060    -3 
+16     0xa0c1    0x4100     0x0060     0x0047    -3 
+17     0xc080    0x0060     0x0047     0x0103    -2 
+18     0x6000    0x0047     0x0103     0x80c0    -1 
+19     0x0007    0x0103     0x80c0     0x8000    -1 
+20     0x8100    0x80c0     0x8000     0x0700    -2 
+21     0x0001    0x8000     0x0700     0x0201    -0 
+22     0x0000    0x0700     0x0201     0x0100    -0 
+23     0x0700    0x0201     0x0100     0x0000    -2 
+24     0x0001    0x0100     0x0000     0x0006    -0 
+25     0x0000    0x0000     0x0006     0x0002    -0 
+26     0x0000    0x0006     0x0002     0x0000    -0 
+27     0x0006    0x0002     0x0000     0x0000    -1 
+28     0x0000    0x0000     0x0000     0x0400    -0 
+29     0x0000    0x0000     0x0400     0x0000    -0 
+30     0x0000    0x0400     0x0000     0x0000    -0 
+31     0x0400    0x0000     0x0000     0x0000    -1 
+32     0x0200    0x0000     0x0000     0x0006    -1 
+33     0x0002    0x0000     0x0006     0x0600    -1 
+34     0x0001    0x0006     0x0600     0x0200    -0 
+35     0x0106    0x0600     0x0200     0x0002    -2 
+36     0x0682    0x0200     0x0002     0x8401    -   
+------------------ 
+35 Round CHAM-64 odd-satrt Total Weight: -33 
+Time cost: 419108.91 seconds ==  6985.15 minutes == 116.42 hours == 4.85 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 419111.97 seconds ==  6985.20 minutes == 116.42 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|************************************************************************|
+|************************************************************************|
+|************************************************************************|
+|************************************************************************|
+|********************************even-start******************************|
+|************************************************************************|
+|************************************************************************|
+|**************************偶数轮开始的最优路径***************************|
+|************************************************************************|
+|************************************************************************|
+|************************************************************************|
+|************************************************************************|
+
+//2019年05月29日16:54:07
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:8 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 2.00 seconds.  
+Searching CHAM-64 Bn_w: 1 
+Time: 0.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x8000    0x00c1     0x8000     0x0000    -1 
+02     0x0001    0x8000     0x0000     0x0001    -0 
+03     0x0000    0x0000     0x0001     0x0100    -0 
+04     0x0000    0x0001     0x0100     0x0000    -0 
+05     0x0001    0x0100     0x0000     0x0000    -0 
+06     0x0000    0x0000     0x0000     0x0002    -0 
+07     0x0000    0x0000     0x0002     0x0000    -0 
+08     0x0000    0x0002     0x0000     0x0000    -0 
+09     0x0002    0x0000     0x0000     0x0000    -   
+------------------ 
+8 Round CHAM-64 Total Weight: -0 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 2.99 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年05月29日17:03:20
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:9 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 1 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 2 
+Time: 0.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0001     0x8040     0x6000    -0 
+02     0x0001    0x8040     0x6000     0x0000    -0 
+03     0x0040    0x6000     0x0000     0x0100    -1 
+04     0x0000    0x0000     0x0100     0x0080    -0 
+05     0x0000    0x0100     0x0080     0x0000    -0 
+06     0x0100    0x0080     0x0000     0x0000    -1 
+07     0x0000    0x0000     0x0000     0x8001    -0 
+08     0x0000    0x0000     0x8001     0x0000    -0 
+09     0x0000    0x8001     0x0000     0x0000    -0 
+10     0x8001    0x0000     0x0000     0x0000    -   
+------------------ 
+9 Round CHAM-64 even-start Total Weight: -2 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.21 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月29日17:06:35
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:10 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 2 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 3 
+Time: 0.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0000     0x0001     0x0100    -0 
+02     0x0000    0x0001     0x0100     0x0000    -0 
+03     0x0001    0x0100     0x0000     0x0000    -0 
+04     0x0000    0x0000     0x0000     0x0002    -0 
+05     0x0000    0x0000     0x0002     0x0000    -0 
+06     0x0000    0x0002     0x0000     0x0000    -0 
+07     0x0002    0x0000     0x0000     0x0000    -1 
+08     0x0200    0x0000     0x0000     0x0004    -1 
+09     0x0100    0x0000     0x0004     0x0003    -1 
+10     0x0001    0x0004     0x0003     0x0300    -0 
+11     0x8004    0x0003     0x0300     0x0100    -   
+------------------ 
+10 Round CHAM-64 even-start Total Weight: -3 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.38 seconds ==  0.06 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年05月29日17:18:43
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:11 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 3 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 4 
+Time: 0.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0001     0x8040     0x6000    -0 
+02     0x0001    0x8040     0x6000     0x0000    -0 
+03     0x0040    0x6000     0x0000     0x0100    -1 
+04     0x0000    0x0000     0x0100     0x0080    -0 
+05     0x0000    0x0100     0x0080     0x0000    -0 
+06     0x0100    0x0080     0x0000     0x0000    -1 
+07     0x0000    0x0000     0x0000     0x8001    -0 
+08     0x0000    0x0000     0x8001     0x0000    -0 
+09     0x0000    0x8001     0x0000     0x0000    -0 
+10     0x8001    0x0000     0x0000     0x0000    -1 
+11     0xc000    0x0000     0x0000     0x01c0    -1 
+12     0x0080    0x0000     0x01c0     0x0001    -   
+------------------ 
+11 Round CHAM-64 even-start Total Weight: -4 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.33 seconds ==  0.06 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月29日17:21:02
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:12 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 3 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 4 
+Time: 0.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0001     0x8040     0x4000    -0 
+02     0x0001    0x8040     0x4000     0x0000    -0 
+03     0x0040    0x4000     0x0000     0x0100    -1 
+04     0x0000    0x0000     0x0100     0x00c0    -0 
+05     0x0000    0x0100     0x00c0     0x0000    -0 
+06     0x0100    0x00c0     0x0000     0x0000    -1 
+07     0x0000    0x0000     0x0000     0x0001    -0 
+08     0x0000    0x0000     0x0001     0x0000    -0 
+09     0x0000    0x0001     0x0000     0x0000    -0 
+10     0x0001    0x0000     0x0000     0x0000    -0 
+11     0x8000    0x0000     0x0000     0x0100    -1 
+12     0x0080    0x0000     0x0100     0x8001    -1 
+13     0x0040    0x0100     0x8001     0xc000    -   
+------------------ 
+12 Round CHAM-64 even-start Total Weight: -4 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.27 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月29日17:23:22
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:13 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 4 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 5 
+Time: 0.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0001     0x8040     0x4000    -0 
+02     0x0001    0x8040     0x4000     0x0000    -0 
+03     0x0040    0x4000     0x0000     0x0100    -1 
+04     0x0000    0x0000     0x0100     0x00c0    -0 
+05     0x0000    0x0100     0x00c0     0x0000    -0 
+06     0x0100    0x00c0     0x0000     0x0000    -1 
+07     0x0000    0x0000     0x0000     0x0001    -0 
+08     0x0000    0x0000     0x0001     0x0000    -0 
+09     0x0000    0x0001     0x0000     0x0000    -0 
+10     0x0001    0x0000     0x0000     0x0000    -0 
+11     0x8000    0x0000     0x0000     0x0100    -1 
+12     0x0080    0x0000     0x0100     0x8001    -1 
+13     0x0040    0x0100     0x8001     0xc000    -1 
+14     0x4100    0x8001     0xc000     0x00c0    -   
+------------------ 
+13 Round CHAM-64 even-start Total Weight: -5 
+Time cost: 0.01 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.45 seconds ==  0.06 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月29日17:25:18
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:14 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 5 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 6 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 7 
+Time: 0.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0001     0x8040     0x4000    -0 
+02     0x0001    0x8040     0x4000     0x0000    -0 
+03     0x0040    0x4000     0x0000     0x0100    -1 
+04     0x0000    0x0000     0x0100     0x00c0    -0 
+05     0x0000    0x0100     0x00c0     0x0000    -0 
+06     0x0100    0x00c0     0x0000     0x0000    -1 
+07     0x0000    0x0000     0x0000     0x0001    -0 
+08     0x0000    0x0000     0x0001     0x0000    -0 
+09     0x0000    0x0001     0x0000     0x0000    -0 
+10     0x0001    0x0000     0x0000     0x0000    -0 
+11     0x8000    0x0000     0x0000     0x0100    -1 
+12     0x0080    0x0000     0x0100     0x8001    -1 
+13     0x0040    0x0100     0x8001     0xc000    -1 
+14     0x4100    0x8001     0xc000     0x00c0    -2 
+15     0xa081    0xc000     0x00c0     0x8061    -   
+------------------ 
+14 Round CHAM-64 even-start Total Weight: -7 
+Time cost: 0.42 seconds ==  0.01 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 3.44 seconds ==  0.06 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月29日17:28:39
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:15 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 2.00 seconds.  
+Searching CHAM-64 Bn_w: 6 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 7 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 8 
+Time: 3.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0001    0x0502     0x0300     0x0100    -0 
+02     0x0402    0x0300     0x0100     0x0002    -2 
+03     0x0001    0x0100     0x0002     0x0204    -0 
+04     0x0000    0x0002     0x0204     0x0002    -0 
+05     0x0002    0x0204     0x0002     0x0000    -1 
+06     0x0004    0x0002     0x0000     0x0004    -1 
+07     0x0000    0x0000     0x0004     0x0600    -0 
+08     0x0000    0x0004     0x0600     0x0000    -0 
+09     0x0004    0x0600     0x0000     0x0000    -1 
+10     0x0000    0x0000     0x0000     0x0008    -0 
+11     0x0000    0x0000     0x0008     0x0000    -0 
+12     0x0000    0x0008     0x0000     0x0000    -0 
+13     0x0008    0x0000     0x0000     0x0000    -1 
+14     0x0800    0x0000     0x0000     0x0018    -1 
+15     0x0400    0x0000     0x0018     0x000c    -1 
+16     0x0004    0x0018     0x000c     0x0c00    -   
+------------------ 
+15 Round CHAM-64 even-start Total Weight: -8 
+Time cost: 3.05 seconds ==  0.05 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 6.03 seconds ==  0.10 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月29日17:32:48
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:16 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 7 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 8 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 9 
+Time: 4.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0001    0x0502     0x0300     0x0100    -0 
+02     0x0402    0x0300     0x0100     0x0002    -2 
+03     0x0001    0x0100     0x0002     0x0204    -0 
+04     0x0000    0x0002     0x0204     0x0002    -0 
+05     0x0002    0x0204     0x0002     0x0000    -1 
+06     0x0004    0x0002     0x0000     0x0004    -1 
+07     0x0000    0x0000     0x0004     0x0600    -0 
+08     0x0000    0x0004     0x0600     0x0000    -0 
+09     0x0004    0x0600     0x0000     0x0000    -1 
+10     0x0000    0x0000     0x0000     0x0008    -0 
+11     0x0000    0x0000     0x0008     0x0000    -0 
+12     0x0000    0x0008     0x0000     0x0000    -0 
+13     0x0008    0x0000     0x0000     0x0000    -1 
+14     0x0800    0x0000     0x0000     0x0018    -1 
+15     0x0400    0x0000     0x0018     0x000c    -1 
+16     0x0004    0x0018     0x000c     0x0c00    -1 
+17     0x001a    0x000c     0x0c00     0x0600    -   
+------------------ 
+16 Round CHAM-64 even-start Total Weight: -9 
+Time cost: 4.79 seconds ==  0.08 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 7.85 seconds ==  0.13 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月29日17:35:33
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:17 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 9 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 10 
+Time: 1.00 seconds.  
+Searching CHAM-64 Bn_w: 11 
+Time: 11.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0001     0x8040     0x4000    -0 
+02     0x0001    0x8040     0x4000     0x0000    -0 
+03     0x0040    0x4000     0x0000     0x0100    -1 
+04     0x0000    0x0000     0x0100     0x00c0    -0 
+05     0x0000    0x0100     0x00c0     0x0000    -0 
+06     0x0100    0x00c0     0x0000     0x0000    -1 
+07     0x0000    0x0000     0x0000     0x0001    -0 
+08     0x0000    0x0000     0x0001     0x0000    -0 
+09     0x0000    0x0001     0x0000     0x0000    -0 
+10     0x0001    0x0000     0x0000     0x0000    -0 
+11     0x8000    0x0000     0x0000     0x0100    -1 
+12     0x0080    0x0000     0x0100     0x8001    -1 
+13     0x0040    0x0100     0x8001     0xc000    -1 
+14     0x4100    0x8001     0xc000     0x00c0    -2 
+15     0xa081    0xc000     0x00c0     0x8061    -3 
+16     0x0180    0x00c0     0x8061     0x0103    -1 
+17     0x0000    0x8061     0x0103     0x8001    -0 
+18     0x8061    0x0103     0x8001     0x0000    -   
+------------------ 
+17 Round CHAM-64 even-start Total Weight: -11 
+Time cost: 11.64 seconds ==  0.19 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 14.92 seconds ==  0.25 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月29日17:38:48
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:18 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 10 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 11 
+Time: 2.00 seconds.  
+Searching CHAM-64 Bn_w: 12 
+Time: 19.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0001     0x8040     0x4000    -0 
+02     0x0001    0x8040     0x4000     0x0000    -0 
+03     0x0040    0x4000     0x0000     0x0100    -1 
+04     0x0000    0x0000     0x0100     0x00c0    -0 
+05     0x0000    0x0100     0x00c0     0x0000    -0 
+06     0x0100    0x00c0     0x0000     0x0000    -1 
+07     0x0000    0x0000     0x0000     0x0001    -0 
+08     0x0000    0x0000     0x0001     0x0000    -0 
+09     0x0000    0x0001     0x0000     0x0000    -0 
+10     0x0001    0x0000     0x0000     0x0000    -0 
+11     0x8000    0x0000     0x0000     0x0100    -1 
+12     0x0080    0x0000     0x0100     0x8001    -1 
+13     0x0040    0x0100     0x8001     0xc000    -1 
+14     0x4100    0x8001     0xc000     0x00c0    -2 
+15     0xa0c1    0xc000     0x00c0     0x0061    -3 
+16     0x0180    0x00c0     0x0061     0x0183    -1 
+17     0x0000    0x0061     0x0183     0x8001    -0 
+18     0x0061    0x0183     0x8001     0x0000    -1 
+19     0x81a3    0x8001     0x0000     0x4100    -   
+------------------ 
+18 Round CHAM-64 even-start Total Weight: -12 
+Time cost: 19.40 seconds ==  0.32 minutes == 0.01 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 22.45 seconds ==  0.37 minutes == 0.01 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月29日17:49:15
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/even/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:19 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 12 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 13 
+Time: 22.00 seconds.  
+Searching CHAM-64 Bn_w: 14 
+Time: 371.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0001    0x0100     0x0002     0x0206    -0 
+02     0x0000    0x0002     0x0206     0x0002    -0 
+03     0x0002    0x0206     0x0002     0x0000    -1 
+04     0x0006    0x0002     0x0000     0x0004    -1 
+05     0x0000    0x0000     0x0004     0x0400    -0 
+06     0x0000    0x0004     0x0400     0x0000    -0 
+07     0x0004    0x0400     0x0000     0x0000    -1 
+08     0x0000    0x0000     0x0000     0x000c    -0 
+09     0x0000    0x0000     0x000c     0x0000    -0 
+10     0x0000    0x000c     0x0000     0x0000    -0 
+11     0x000c    0x0000     0x0000     0x0000    -1 
+12     0x0800    0x0000     0x0000     0x0010    -1 
+13     0x0400    0x0000     0x0010     0x000c    -1 
+14     0x0004    0x0010     0x000c     0x0c00    -1 
+15     0x0012    0x000c     0x0c00     0x0600    -3 
+16     0x100c    0x0c00     0x0600     0x0020    -2 
+17     0x0004    0x0600     0x0020     0x0810    -1 
+18     0x0000    0x0020     0x0810     0x0008    -0 
+19     0x0020    0x0810     0x0008     0x0000    -1 
+20     0x2810    0x0008     0x0000     0x0060    -   
+------------------ 
+19 Round CHAM-64 even-start Total Weight: -14 
+Time cost: 371.61 seconds ==  6.19 minutes == 0.10 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 374.88 seconds ==  6.25 minutes == 0.10 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月30日08:19:37
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/even/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:20 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 14 
+Time: 2.00 seconds.  
+Searching CHAM-64 Bn_w: 15 
+Time: 201.00 seconds.  
+Searching CHAM-64 Bn_w: 16 
+Time: 4007.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0001    0x0502     0x0300     0x0100    -0 
+02     0x0402    0x0300     0x0100     0x0002    -2 
+03     0x0001    0x0100     0x0002     0x0204    -0 
+04     0x0000    0x0002     0x0204     0x0002    -0 
+05     0x0002    0x0204     0x0002     0x0000    -1 
+06     0x0004    0x0002     0x0000     0x0004    -1 
+07     0x0000    0x0000     0x0004     0x0600    -0 
+08     0x0000    0x0004     0x0600     0x0000    -0 
+09     0x0004    0x0600     0x0000     0x0000    -1 
+10     0x0000    0x0000     0x0000     0x0008    -0 
+11     0x0000    0x0000     0x0008     0x0000    -0 
+12     0x0000    0x0008     0x0000     0x0000    -0 
+13     0x0008    0x0000     0x0000     0x0000    -1 
+14     0x0800    0x0000     0x0000     0x0018    -1 
+15     0x0400    0x0000     0x0018     0x000c    -1 
+16     0x0004    0x0018     0x000c     0x0c00    -1 
+17     0x001a    0x000c     0x0c00     0x0600    -2 
+18     0x120c    0x0c00     0x0600     0x0024    -3 
+19     0x0104    0x0600     0x0024     0x0813    -2 
+20     0x0001    0x0024     0x0813     0x0308    -0 
+21     0x8024    0x0813     0x0308     0x0100    -   
+------------------ 
+20 Round CHAM-64 even-start Total Weight: -16 
+Time cost: 4007.48 seconds ==  66.79 minutes == 1.11 hours == 0.05 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 4010.56 seconds ==  66.84 minutes == 1.11 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年05月30日09:14:49
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/even/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:21 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 16 
+Time: 17.00 seconds.  
+Searching CHAM-64 Bn_w: 17 
+Time: 1755.00 seconds.  
+Searching CHAM-64 Bn_w: 18 
+Time: 2707.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0000     0x4000     0x0060    -0 
+02     0x0000    0x4000     0x0060     0x0000    -0 
+03     0x4000    0x0060     0x0000     0x0000    -1 
+04     0x0000    0x0000     0x0000     0x8000    -0 
+05     0x0000    0x0000     0x8000     0x0000    -0 
+06     0x0000    0x8000     0x0000     0x0000    -0 
+07     0x8000    0x0000     0x0000     0x0000    -1 
+08     0x0080    0x0000     0x0000     0x8001    -1 
+09     0x0040    0x0000     0x8001     0xc000    -1 
+10     0x4000    0x8001     0xc000     0x00c0    -1 
+11     0xa001    0xc000     0x00c0     0x0060    -2 
+12     0xc1c0    0x00c0     0x0060     0x8003    -3 
+13     0x4000    0x0060     0x8003     0x0081    -1 
+14     0x0000    0x8003     0x0081     0x8000    -0 
+15     0x8003    0x0081     0x8000     0x0000    -2 
+16     0x0201    0x8000     0x0000     0x8005    -1 
+17     0x0100    0x0000     0x8005     0x0103    -1 
+18     0x0001    0x8005     0x0103     0x0300    -0 
+19     0x0005    0x0103     0x0300     0x0100    -1 
+20     0x0403    0x0300     0x0100     0x000e    -2 
+21     0x0001    0x0100     0x000e     0x0204    -0 
+22     0x0000    0x000e     0x0204     0x0002    -   
+------------------ 
+21 Round CHAM-64 even-start Total Weight: -18 
+Time cost: 2707.88 seconds ==  45.13 minutes == 0.75 hours == 0.03 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 2710.93 seconds ==  45.18 minutes == 0.75 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年05月30日09:14:32
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/even/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:22 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 18 
+Time: 220.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0000     0x4000     0x0060    -0 
+02     0x0000    0x4000     0x0060     0x0000    -0 
+03     0x4000    0x0060     0x0000     0x0000    -1 
+04     0x0000    0x0000     0x0000     0x8000    -0 
+05     0x0000    0x0000     0x8000     0x0000    -0 
+06     0x0000    0x8000     0x0000     0x0000    -0 
+07     0x8000    0x0000     0x0000     0x0000    -1 
+08     0x0080    0x0000     0x0000     0x8001    -1 
+09     0x0040    0x0000     0x8001     0xc000    -1 
+10     0x4000    0x8001     0xc000     0x00c0    -1 
+11     0xa001    0xc000     0x00c0     0x0060    -2 
+12     0xc1c0    0x00c0     0x0060     0x8003    -3 
+13     0x4000    0x0060     0x8003     0x0081    -1 
+14     0x0000    0x8003     0x0081     0x8000    -0 
+15     0x8003    0x0081     0x8000     0x0000    -2 
+16     0x0201    0x8000     0x0000     0x8005    -1 
+17     0x0100    0x0000     0x8005     0x0103    -1 
+18     0x0001    0x8005     0x0103     0x0300    -0 
+19     0x0005    0x0103     0x0300     0x0100    -1 
+20     0x0403    0x0300     0x0100     0x000e    -2 
+21     0x0001    0x0100     0x000e     0x0204    -0 
+22     0x0000    0x000e     0x0204     0x0002    -0 
+23     0x000e    0x0204     0x0002     0x0000    -   
+------------------ 
+22 Round CHAM-64 even-start Total Weight: -18 
+Time cost: 220.98 seconds ==  3.68 minutes == 0.06 hours == 0.00 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 224.04 seconds ==  3.73 minutes == 0.06 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年05月30日11:10:24
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/even/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:23 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 18 
+Time: 30.00 seconds.  
+Searching CHAM-64 Bn_w: 19 
+Time: 4821.00 seconds.  
+Searching CHAM-64 Bn_w: 20 
+Time: 6518.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0000     0x4000     0x0060    -0 
+02     0x0000    0x4000     0x0060     0x0000    -0 
+03     0x4000    0x0060     0x0000     0x0000    -1 
+04     0x0000    0x0000     0x0000     0x8000    -0 
+05     0x0000    0x0000     0x8000     0x0000    -0 
+06     0x0000    0x8000     0x0000     0x0000    -0 
+07     0x8000    0x0000     0x0000     0x0000    -1 
+08     0x0080    0x0000     0x0000     0x8001    -1 
+09     0x0040    0x0000     0x8001     0xc000    -1 
+10     0x4000    0x8001     0xc000     0x00c0    -1 
+11     0xa001    0xc000     0x00c0     0x0060    -2 
+12     0xc1c0    0x00c0     0x0060     0x8003    -3 
+13     0x4000    0x0060     0x8003     0x0081    -1 
+14     0x0000    0x8003     0x0081     0x8000    -0 
+15     0x8003    0x0081     0x8000     0x0000    -2 
+16     0x0201    0x8000     0x0000     0x8005    -1 
+17     0x0100    0x0000     0x8005     0x0103    -1 
+18     0x0001    0x8005     0x0103     0x0300    -0 
+19     0x0005    0x0103     0x0300     0x0100    -1 
+20     0x0403    0x0300     0x0100     0x000e    -2 
+21     0x0001    0x0100     0x000e     0x0204    -0 
+22     0x0000    0x000e     0x0204     0x0002    -0 
+23     0x000e    0x0204     0x0002     0x0000    -2 
+24     0x0a04    0x0002     0x0000     0x0018    -   
+------------------ 
+23 Round CHAM-64 even-start Total Weight: -20 
+Time cost: 6518.48 seconds ==  108.64 minutes == 1.81 hours == 0.08 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 6521.63 seconds ==  108.69 minutes == 1.81 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+//2019年05月31日08:28:32
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/even/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:24 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 20 
+Time: 191.00 seconds.  
+Searching CHAM-64 Bn_w: 21 
+Time: 35527.00 seconds.  
+Searching CHAM-64 Bn_w: 22 
+Time: 46184.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0000     0x4000     0x0060    -0 
+02     0x0000    0x4000     0x0060     0x0000    -0 
+03     0x4000    0x0060     0x0000     0x0000    -1 
+04     0x0000    0x0000     0x0000     0x8000    -0 
+05     0x0000    0x0000     0x8000     0x0000    -0 
+06     0x0000    0x8000     0x0000     0x0000    -0 
+07     0x8000    0x0000     0x0000     0x0000    -1 
+08     0x0080    0x0000     0x0000     0x8001    -1 
+09     0x0040    0x0000     0x8001     0xc000    -1 
+10     0x4000    0x8001     0xc000     0x00c0    -1 
+11     0xa001    0xc000     0x00c0     0x0060    -2 
+12     0xc1c0    0x00c0     0x0060     0x8003    -3 
+13     0x4000    0x0060     0x8003     0x0081    -1 
+14     0x0000    0x8003     0x0081     0x8000    -0 
+15     0x8003    0x0081     0x8000     0x0000    -2 
+16     0x0201    0x8000     0x0000     0x8005    -1 
+17     0x0100    0x0000     0x8005     0x0103    -1 
+18     0x0001    0x8005     0x0103     0x0300    -0 
+19     0x0005    0x0103     0x0300     0x0100    -1 
+20     0x0403    0x0300     0x0100     0x000e    -2 
+21     0x0001    0x0100     0x000e     0x0204    -0 
+22     0x0000    0x000e     0x0204     0x0002    -0 
+23     0x000e    0x0204     0x0002     0x0000    -2 
+24     0x0804    0x0002     0x0000     0x0014    -2 
+25     0x0400    0x0000     0x0014     0x060c    -   
+------------------ 
+24 Round CHAM-64 even-start Total Weight: -22 
+Time cost: 46184.59 seconds ==  769.74 minutes == 12.83 hours == 0.53 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 46187.60 seconds ==  769.79 minutes == 12.83 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年06月04日08:38:01
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/even/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:25 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 22 
+Time: 48788.00 seconds.  
+Searching CHAM-64 Bn_w: 23 
+Time: 62668.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0000     0x4000     0x0060    -0 
+02     0x0000    0x4000     0x0060     0x0000    -0 
+03     0x4000    0x0060     0x0000     0x0000    -1 
+04     0x0000    0x0000     0x0000     0x8000    -0 
+05     0x0000    0x0000     0x8000     0x0000    -0 
+06     0x0000    0x8000     0x0000     0x0000    -0 
+07     0x8000    0x0000     0x0000     0x0000    -1 
+08     0x0080    0x0000     0x0000     0x8001    -1 
+09     0x0040    0x0000     0x8001     0xc000    -1 
+10     0x4000    0x8001     0xc000     0x00c0    -1 
+11     0xa001    0xc000     0x00c0     0x0060    -2 
+12     0xc1c0    0x00c0     0x0060     0x8003    -3 
+13     0x4000    0x0060     0x8003     0x0081    -1 
+14     0x0000    0x8003     0x0081     0x8000    -0 
+15     0x8003    0x0081     0x8000     0x0000    -2 
+16     0x0201    0x8000     0x0000     0x8005    -1 
+17     0x0100    0x0000     0x8005     0x0103    -1 
+18     0x0001    0x8005     0x0103     0x0300    -0 
+19     0x0005    0x0103     0x0300     0x0100    -1 
+20     0x0403    0x0300     0x0100     0x000e    -2 
+21     0x0001    0x0100     0x000e     0x0204    -0 
+22     0x0000    0x000e     0x0204     0x0002    -0 
+23     0x000e    0x0204     0x0002     0x0000    -2 
+24     0x0804    0x0002     0x0000     0x0014    -2 
+25     0x0400    0x0000     0x0014     0x060c    -1 
+26     0x0004    0x0014     0x060c     0x0c00    -   
+------------------ 
+25 Round CHAM-64 even-start Total Weight: -23 
+Time cost: 62668.74 seconds ==  1044.48 minutes == 17.41 hours == 0.73 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 62672.15 seconds ==  1044.54 minutes == 17.41 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年06月05日08:31:43
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/even/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:26 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 6.00 seconds.  
+Searching CHAM-64 Bn_w: 23 
+Time: 63283.00 seconds.  
+Searching CHAM-64 Bn_w: 24 
+Time: 83205.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0000     0x4000     0x0060    -0 
+02     0x0000    0x4000     0x0060     0x0000    -0 
+03     0x4000    0x0060     0x0000     0x0000    -1 
+04     0x0000    0x0000     0x0000     0x8000    -0 
+05     0x0000    0x0000     0x8000     0x0000    -0 
+06     0x0000    0x8000     0x0000     0x0000    -0 
+07     0x8000    0x0000     0x0000     0x0000    -1 
+08     0x0080    0x0000     0x0000     0x8001    -1 
+09     0x0040    0x0000     0x8001     0xc000    -1 
+10     0x4000    0x8001     0xc000     0x00c0    -1 
+11     0xa001    0xc000     0x00c0     0x0060    -2 
+12     0xc1c0    0x00c0     0x0060     0x8003    -3 
+13     0x4000    0x0060     0x8003     0x0081    -1 
+14     0x0000    0x8003     0x0081     0x8000    -0 
+15     0x8003    0x0081     0x8000     0x0000    -2 
+16     0x0201    0x8000     0x0000     0x8005    -1 
+17     0x0100    0x0000     0x8005     0x0103    -1 
+18     0x0001    0x8005     0x0103     0x0300    -0 
+19     0x0005    0x0103     0x0300     0x0100    -1 
+20     0x0403    0x0300     0x0100     0x000e    -2 
+21     0x0001    0x0100     0x000e     0x0204    -0 
+22     0x0000    0x000e     0x0204     0x0002    -0 
+23     0x000e    0x0204     0x0002     0x0000    -2 
+24     0x0804    0x0002     0x0000     0x0014    -2 
+25     0x0400    0x0000     0x0014     0x060c    -1 
+26     0x0004    0x0014     0x060c     0x0c00    -1 
+27     0x0016    0x060c     0x0c00     0x0600    -   
+------------------ 
+26 Round CHAM-64 even-start Total Weight: -24 
+Time cost: 83205.62 seconds ==  1386.76 minutes == 23.11 hours == 0.96 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 83212.11 seconds ==  1386.87 minutes == 23.11 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年06月10日08:55:02
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/even/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:27 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 6.00 seconds.  
+Searching CHAM-64 Bn_w: 24 
+Time: 79925.00 seconds.  
+Searching CHAM-64 Bn_w: 25 
+Time: 286116.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0001     0xc000     0x0062    -0 
+02     0x0001    0xc000     0x0062     0x0000    -0 
+03     0x4000    0x0062     0x0000     0x0100    -1 
+04     0x0002    0x0000     0x0100     0x8000    -1 
+05     0x0001    0x0100     0x8000     0x0200    -0 
+06     0x0000    0x8000     0x0200     0x0002    -0 
+07     0x8000    0x0200     0x0002     0x0000    -1 
+08     0x0280    0x0002     0x0000     0x8001    -8 
+09     0x0140    0x0000     0x8001     0x0602    -2 
+10     0x0001    0x8001     0x0602     0x0200    -0 
+11     0x0001    0x0602     0x0200     0x0100    -0 
+12     0x0702    0x0200     0x0100     0x0002    -3 
+13     0x0001    0x0100     0x0002     0x0206    -0 
+14     0x0000    0x0002     0x0206     0x0002    -0 
+15     0x0002    0x0206     0x0002     0x0000    -1 
+16     0x0006    0x0002     0x0000     0x0004    -1 
+17     0x0000    0x0000     0x0004     0x0400    -0 
+18     0x0000    0x0004     0x0400     0x0000    -0 
+19     0x0004    0x0400     0x0000     0x0000    -1 
+20     0x0000    0x0000     0x0000     0x000c    -0 
+21     0x0000    0x0000     0x000c     0x0000    -0 
+22     0x0000    0x000c     0x0000     0x0000    -0 
+23     0x000c    0x0000     0x0000     0x0000    -1 
+24     0x0800    0x0000     0x0000     0x0010    -1 
+25     0x0400    0x0000     0x0010     0x000c    -1 
+26     0x0004    0x0010     0x000c     0x0c00    -1 
+27     0x0012    0x000c     0x0c00     0x0600    -2 
+28     0x120c    0x0c00     0x0600     0x0034    -   
+------------------ 
+27 Round CHAM-64 even-start Total Weight: -25 
+Time cost: 286116.75 seconds ==  4768.61 minutes == 79.48 hours == 3.31 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 286123.13 seconds ==  4768.72 minutes == 79.48 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年06月12日08:21:07
+huangmingjiang@ubuntu:~/hmj123/cham64/even-round/even/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:28 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 4.00 seconds.  
+Searching CHAM-64 Bn_w: 25 
+Time: 2607.00 seconds.  
+Searching CHAM-64 Bn_w: 26 
+Time: 114387.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0001     0x8000     0x0000    -0 
+02     0x0001    0x8000     0x0000     0x0000    -0 
+03     0x0000    0x0000     0x0000     0x0100    -0 
+04     0x0000    0x0000     0x0100     0x0000    -0 
+05     0x0000    0x0100     0x0000     0x0000    -0 
+06     0x0100    0x0000     0x0000     0x0000    -1 
+07     0x00c0    0x0000     0x0000     0x0001    -1 
+08     0x8000    0x0000     0x0001     0x0100    -1 
+09     0x6000    0x0001     0x0100     0x0080    -1 
+10     0x0041    0x0100     0x0080     0x8000    -1 
+11     0x8120    0x0080     0x8000     0x6100    -6 
+12     0x0001    0x8000     0x6100     0x2201    -0 
+13     0x0000    0x6100     0x2201     0x0100    -0 
+14     0x6100    0x2201     0x0100     0x0000    -6 
+15     0x00c1    0x0100     0x0000     0x0067    -1 
+16     0x8000    0x0000     0x0067     0x0102    -1 
+17     0x4000    0x0067     0x0102     0x00c0    -1 
+18     0x0007    0x0102     0x00c0     0x8000    -1 
+19     0x8100    0x00c0     0x8000     0x0500    -2 
+20     0x0001    0x8000     0x0500     0x0301    -0 
+21     0x0000    0x0500     0x0301     0x0100    -0 
+22     0x0500    0x0301     0x0100     0x0000    -2 
+23     0x0001    0x0100     0x0000     0x0006    -0 
+24     0x0000    0x0000     0x0006     0x0002    -0 
+25     0x0000    0x0006     0x0002     0x0000    -0 
+26     0x0006    0x0002     0x0000     0x0000    -1 
+27     0x0000    0x0000     0x0000     0x0400    -0 
+28     0x0000    0x0000     0x0400     0x0000    -0 
+29     0x0000    0x0400     0x0000     0x0000    -   
+------------------ 
+28 Round CHAM-64 even-start Total Weight: -26 
+Time cost: 114387.48 seconds ==  1906.46 minutes == 31.77 hours == 1.32 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 114391.51 seconds ==  1906.53 minutes == 31.78 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年06月17日11:04:51
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:29 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 2.00 seconds.  
+Searching CHAM-64 Bn_w: 26 
+Time: 2077.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0001     0x8000     0x0000    -0 
+02     0x0001    0x8000     0x0000     0x0000    -0 
+03     0x0000    0x0000     0x0000     0x0100    -0 
+04     0x0000    0x0000     0x0100     0x0000    -0 
+05     0x0000    0x0100     0x0000     0x0000    -0 
+06     0x0100    0x0000     0x0000     0x0000    -1 
+07     0x00c0    0x0000     0x0000     0x0001    -1 
+08     0x8000    0x0000     0x0001     0x0100    -1 
+09     0x6000    0x0001     0x0100     0x0080    -1 
+10     0x0041    0x0100     0x0080     0x8000    -1 
+11     0x8120    0x0080     0x8000     0x6100    -6 
+12     0x0001    0x8000     0x6100     0x2201    -0 
+13     0x0000    0x6100     0x2201     0x0100    -0 
+14     0x6100    0x2201     0x0100     0x0000    -6 
+15     0x00c1    0x0100     0x0000     0x0067    -1 
+16     0x8000    0x0000     0x0067     0x0102    -1 
+17     0x4000    0x0067     0x0102     0x00c0    -1 
+18     0x0007    0x0102     0x00c0     0x8000    -1 
+19     0x8100    0x00c0     0x8000     0x0500    -2 
+20     0x0001    0x8000     0x0500     0x0301    -0 
+21     0x0000    0x0500     0x0301     0x0100    -0 
+22     0x0500    0x0301     0x0100     0x0000    -2 
+23     0x0001    0x0100     0x0000     0x0006    -0 
+24     0x0000    0x0000     0x0006     0x0002    -0 
+25     0x0000    0x0006     0x0002     0x0000    -0 
+26     0x0006    0x0002     0x0000     0x0000    -1 
+27     0x0000    0x0000     0x0000     0x0400    -0 
+28     0x0000    0x0000     0x0400     0x0000    -0 
+29     0x0000    0x0400     0x0000     0x0000    -0 
+30     0x0400    0x0000     0x0000     0x0000    -   
+------------------ 
+29 Round CHAM-64 even-start Total Weight: -26 
+Time cost: 2077.46 seconds ==  34.62 minutes == 0.58 hours == 0.02 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 2080.45 seconds ==  34.67 minutes == 0.58 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年06月17日15:42:33
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:30 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 26 
+Time: 282.00 seconds.  
+Searching CHAM-64 Bn_w: 27 
+Time: 16482.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0001     0x8000     0x0000    -0 
+02     0x0001    0x8000     0x0000     0x0000    -0 
+03     0x0000    0x0000     0x0000     0x0100    -0 
+04     0x0000    0x0000     0x0100     0x0000    -0 
+05     0x0000    0x0100     0x0000     0x0000    -0 
+06     0x0100    0x0000     0x0000     0x0000    -1 
+07     0x00c0    0x0000     0x0000     0x0001    -1 
+08     0x8000    0x0000     0x0001     0x0100    -1 
+09     0x6000    0x0001     0x0100     0x0080    -1 
+10     0x0041    0x0100     0x0080     0x8000    -1 
+11     0x8120    0x0080     0x8000     0x6100    -6 
+12     0x0001    0x8000     0x6100     0x2201    -0 
+13     0x0000    0x6100     0x2201     0x0100    -0 
+14     0x6100    0x2201     0x0100     0x0000    -6 
+15     0x00c1    0x0100     0x0000     0x0067    -1 
+16     0x8000    0x0000     0x0067     0x0102    -1 
+17     0x4000    0x0067     0x0102     0x00c0    -1 
+18     0x0007    0x0102     0x00c0     0x8000    -1 
+19     0x8100    0x00c0     0x8000     0x0500    -2 
+20     0x0001    0x8000     0x0500     0x0301    -0 
+21     0x0000    0x0500     0x0301     0x0100    -0 
+22     0x0500    0x0301     0x0100     0x0000    -2 
+23     0x0001    0x0100     0x0000     0x0006    -0 
+24     0x0000    0x0000     0x0006     0x0002    -0 
+25     0x0000    0x0006     0x0002     0x0000    -0 
+26     0x0006    0x0002     0x0000     0x0000    -1 
+27     0x0000    0x0000     0x0000     0x0400    -0 
+28     0x0000    0x0000     0x0400     0x0000    -0 
+29     0x0000    0x0400     0x0000     0x0000    -0 
+30     0x0400    0x0000     0x0000     0x0000    -1 
+31     0x0200    0x0000     0x0000     0x0006    -   
+------------------ 
+30 Round CHAM-64 even-start Total Weight: -27 
+Time cost: 16482.55 seconds ==  274.71 minutes == 4.58 hours == 0.19 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 16485.95 seconds ==  274.77 minutes == 4.58 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年06月18日08:24:47
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:31 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 2.00 seconds.  
+Searching CHAM-64 Bn_w: 27 
+Time: 27540.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x4000    0x0060     0x0000     0x0001    -1 
+02     0x0000    0x0000     0x0001     0x8000    -0 
+03     0x0000    0x0001     0x8000     0x0000    -0 
+04     0x0001    0x8000     0x0000     0x0000    -0 
+05     0x0000    0x0000     0x0000     0x0100    -0 
+06     0x0000    0x0000     0x0100     0x0000    -0 
+07     0x0000    0x0100     0x0000     0x0000    -0 
+08     0x0100    0x0000     0x0000     0x0000    -1 
+09     0x00c0    0x0000     0x0000     0x0001    -1 
+10     0x8000    0x0000     0x0001     0x0100    -1 
+11     0x6000    0x0001     0x0100     0x0080    -1 
+12     0x0041    0x0100     0x0080     0x8000    -1 
+13     0x8120    0x0080     0x8000     0x6100    -6 
+14     0x0001    0x8000     0x6100     0x2201    -0 
+15     0x0000    0x6100     0x2201     0x0100    -0 
+16     0x6100    0x2201     0x0100     0x0000    -6 
+17     0x00c1    0x0100     0x0000     0x0067    -1 
+18     0x8000    0x0000     0x0067     0x0102    -1 
+19     0x4000    0x0067     0x0102     0x00c0    -1 
+20     0x0007    0x0102     0x00c0     0x8000    -1 
+21     0x8100    0x00c0     0x8000     0x0500    -2 
+22     0x0001    0x8000     0x0500     0x0301    -0 
+23     0x0000    0x0500     0x0301     0x0100    -0 
+24     0x0500    0x0301     0x0100     0x0000    -2 
+25     0x0001    0x0100     0x0000     0x0006    -0 
+26     0x0000    0x0000     0x0006     0x0002    -0 
+27     0x0000    0x0006     0x0002     0x0000    -0 
+28     0x0006    0x0002     0x0000     0x0000    -1 
+29     0x0000    0x0000     0x0000     0x0400    -0 
+30     0x0000    0x0000     0x0400     0x0000    -0 
+31     0x0000    0x0400     0x0000     0x0000    -0 
+32     0x0400    0x0000     0x0000     0x0000    -   
+------------------ 
+31 Round CHAM-64 even-start Total Weight: -27 
+Time cost: 27540.03 seconds ==  459.00 minutes == 7.65 hours == 0.32 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 27542.94 seconds ==  459.05 minutes == 7.65 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年06月18日15:07:28
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:32 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 27 
+Time: 25.00 seconds.  
+Searching CHAM-64 Bn_w: 28 
+Time: 22920.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x4000    0x0060     0x0000     0x0001    -1 
+02     0x0000    0x0000     0x0001     0x8000    -0 
+03     0x0000    0x0001     0x8000     0x0000    -0 
+04     0x0001    0x8000     0x0000     0x0000    -0 
+05     0x0000    0x0000     0x0000     0x0100    -0 
+06     0x0000    0x0000     0x0100     0x0000    -0 
+07     0x0000    0x0100     0x0000     0x0000    -0 
+08     0x0100    0x0000     0x0000     0x0000    -1 
+09     0x00c0    0x0000     0x0000     0x0001    -1 
+10     0x8000    0x0000     0x0001     0x0100    -1 
+11     0x6000    0x0001     0x0100     0x0080    -1 
+12     0x0041    0x0100     0x0080     0x8000    -1 
+13     0x8120    0x0080     0x8000     0x6100    -6 
+14     0x0001    0x8000     0x6100     0x2201    -0 
+15     0x0000    0x6100     0x2201     0x0100    -0 
+16     0x6100    0x2201     0x0100     0x0000    -6 
+17     0x00c1    0x0100     0x0000     0x0067    -1 
+18     0x8000    0x0000     0x0067     0x0102    -1 
+19     0x4000    0x0067     0x0102     0x00c0    -1 
+20     0x0007    0x0102     0x00c0     0x8000    -1 
+21     0x8100    0x00c0     0x8000     0x0500    -2 
+22     0x0001    0x8000     0x0500     0x0301    -0 
+23     0x0000    0x0500     0x0301     0x0100    -0 
+24     0x0500    0x0301     0x0100     0x0000    -2 
+25     0x0001    0x0100     0x0000     0x0006    -0 
+26     0x0000    0x0000     0x0006     0x0002    -0 
+27     0x0000    0x0006     0x0002     0x0000    -0 
+28     0x0006    0x0002     0x0000     0x0000    -1 
+29     0x0000    0x0000     0x0000     0x0400    -0 
+30     0x0000    0x0000     0x0400     0x0000    -0 
+31     0x0000    0x0400     0x0000     0x0000    -0 
+32     0x0400    0x0000     0x0000     0x0000    -1 
+33     0x0200    0x0000     0x0000     0x0006    -   
+------------------ 
+32 Round CHAM-64 even-start Total Weight: -28 
+Time cost: 22920.58 seconds ==  382.01 minutes == 6.37 hours == 0.27 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 22924.43 seconds ==  382.07 minutes == 6.37 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年06月19日08:25:46
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:33 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 4.00 seconds.  
+Searching CHAM-64 Bn_w: 28 
+Time: 17.00 seconds.  
+Searching CHAM-64 Bn_w: 29 
+Time: 18162.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x4000    0x0060     0x0000     0x0001    -1 
+02     0x0000    0x0000     0x0001     0x8000    -0 
+03     0x0000    0x0001     0x8000     0x0000    -0 
+04     0x0001    0x8000     0x0000     0x0000    -0 
+05     0x0000    0x0000     0x0000     0x0100    -0 
+06     0x0000    0x0000     0x0100     0x0000    -0 
+07     0x0000    0x0100     0x0000     0x0000    -0 
+08     0x0100    0x0000     0x0000     0x0000    -1 
+09     0x00c0    0x0000     0x0000     0x0001    -1 
+10     0x8000    0x0000     0x0001     0x0100    -1 
+11     0x6000    0x0001     0x0100     0x0080    -1 
+12     0x0041    0x0100     0x0080     0x8000    -1 
+13     0x8120    0x0080     0x8000     0x6100    -6 
+14     0x0001    0x8000     0x6100     0x2201    -0 
+15     0x0000    0x6100     0x2201     0x0100    -0 
+16     0x6100    0x2201     0x0100     0x0000    -6 
+17     0x00c1    0x0100     0x0000     0x0067    -1 
+18     0x8000    0x0000     0x0067     0x0102    -1 
+19     0x4000    0x0067     0x0102     0x00c0    -1 
+20     0x0007    0x0102     0x00c0     0x8000    -1 
+21     0x8100    0x00c0     0x8000     0x0500    -2 
+22     0x0001    0x8000     0x0500     0x0301    -0 
+23     0x0000    0x0500     0x0301     0x0100    -0 
+24     0x0500    0x0301     0x0100     0x0000    -2 
+25     0x0001    0x0100     0x0000     0x0006    -0 
+26     0x0000    0x0000     0x0006     0x0002    -0 
+27     0x0000    0x0006     0x0002     0x0000    -0 
+28     0x0006    0x0002     0x0000     0x0000    -1 
+29     0x0000    0x0000     0x0000     0x0400    -0 
+30     0x0000    0x0000     0x0400     0x0000    -0 
+31     0x0000    0x0400     0x0000     0x0000    -0 
+32     0x0400    0x0000     0x0000     0x0000    -1 
+33     0x0200    0x0000     0x0000     0x0006    -1 
+34     0x0002    0x0000     0x0006     0x0600    -   
+------------------ 
+33 Round CHAM-64 even-start Total Weight: -29 
+Time cost: 18162.71 seconds ==  302.71 minutes == 5.05 hours == 0.21 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 18166.82 seconds ==  302.78 minutes == 5.05 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年06月19日12:58:58
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:34 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 29 
+Time: 10.00 seconds.  
+Searching CHAM-64 Bn_w: 30 
+Time: 14262.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x4000    0x0060     0x0000     0x0001    -1 
+02     0x0000    0x0000     0x0001     0x8000    -0 
+03     0x0000    0x0001     0x8000     0x0000    -0 
+04     0x0001    0x8000     0x0000     0x0000    -0 
+05     0x0000    0x0000     0x0000     0x0100    -0 
+06     0x0000    0x0000     0x0100     0x0000    -0 
+07     0x0000    0x0100     0x0000     0x0000    -0 
+08     0x0100    0x0000     0x0000     0x0000    -1 
+09     0x00c0    0x0000     0x0000     0x0001    -1 
+10     0x8000    0x0000     0x0001     0x0100    -1 
+11     0x6000    0x0001     0x0100     0x0080    -1 
+12     0x0041    0x0100     0x0080     0x8000    -1 
+13     0x8120    0x0080     0x8000     0x6100    -6 
+14     0x0001    0x8000     0x6100     0x2201    -0 
+15     0x0000    0x6100     0x2201     0x0100    -0 
+16     0x6100    0x2201     0x0100     0x0000    -6 
+17     0x00c1    0x0100     0x0000     0x0067    -1 
+18     0x8000    0x0000     0x0067     0x0102    -1 
+19     0x4000    0x0067     0x0102     0x00c0    -1 
+20     0x0007    0x0102     0x00c0     0x8000    -1 
+21     0x8100    0x00c0     0x8000     0x0500    -2 
+22     0x0001    0x8000     0x0500     0x0301    -0 
+23     0x0000    0x0500     0x0301     0x0100    -0 
+24     0x0500    0x0301     0x0100     0x0000    -2 
+25     0x0001    0x0100     0x0000     0x0006    -0 
+26     0x0000    0x0000     0x0006     0x0002    -0 
+27     0x0000    0x0006     0x0002     0x0000    -0 
+28     0x0006    0x0002     0x0000     0x0000    -1 
+29     0x0000    0x0000     0x0000     0x0400    -0 
+30     0x0000    0x0000     0x0400     0x0000    -0 
+31     0x0000    0x0400     0x0000     0x0000    -0 
+32     0x0400    0x0000     0x0000     0x0000    -1 
+33     0x0200    0x0000     0x0000     0x0006    -1 
+34     0x0002    0x0000     0x0006     0x0600    -1 
+35     0x0001    0x0006     0x0600     0x0200    -   
+------------------ 
+34 Round CHAM-64 even-start Total Weight: -30 
+Time cost: 14262.41 seconds ==  237.71 minutes == 3.96 hours == 0.17 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 14265.73 seconds ==  237.76 minutes == 3.96 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年06月20日08:25:24
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:35 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 2.00 seconds.  
+Searching CHAM-64 Bn_w: 30 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 31 
+Time: 75.00 seconds.  
+Searching CHAM-64 Bn_w: 32 
+Time: 17115.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0001     0x8040     0x4000    -0 
+02     0x0001    0x8040     0x4000     0x0000    -0 
+03     0x0040    0x4000     0x0000     0x0100    -1 
+04     0x0000    0x0000     0x0100     0x00c0    -0 
+05     0x0000    0x0100     0x00c0     0x0000    -0 
+06     0x0100    0x00c0     0x0000     0x0000    -1 
+07     0x0000    0x0000     0x0000     0x0001    -0 
+08     0x0000    0x0000     0x0001     0x0000    -0 
+09     0x0000    0x0001     0x0000     0x0000    -0 
+10     0x0001    0x0000     0x0000     0x0000    -0 
+11     0x8000    0x0000     0x0000     0x0100    -1 
+12     0x0080    0x0000     0x0100     0x8001    -1 
+13     0x0040    0x0100     0x8001     0xc000    -1 
+14     0x4100    0x8001     0xc000     0x00c0    -2 
+15     0xa0c1    0xc000     0x00c0     0x0061    -3 
+16     0x0180    0x00c0     0x0061     0x0183    -1 
+17     0x0000    0x0061     0x0183     0x8001    -0 
+18     0x0061    0x0183     0x8001     0x0000    -5 
+19     0x81a0    0x8001     0x0000     0x6500    -4 
+20     0x00c0    0x0000     0x6500     0x0201    -1 
+21     0x0040    0x6500     0x0201     0x8000    -1 
+22     0x0500    0x0201     0x8000     0x0080    -2 
+23     0x00c1    0x8000     0x0080     0x0007    -1 
+24     0x0100    0x0080     0x0007     0x0102    -1 
+25     0x0000    0x0007     0x0102     0x8001    -0 
+26     0x0007    0x0102     0x8001     0x0000    -2 
+27     0x0100    0x8001     0x0000     0x0600    -1 
+28     0x0000    0x0000     0x0600     0x0200    -0 
+29     0x0000    0x0600     0x0200     0x0000    -0 
+30     0x0600    0x0200     0x0000     0x0000    -1 
+31     0x0000    0x0000     0x0000     0x0004    -0 
+32     0x0000    0x0000     0x0004     0x0000    -0 
+33     0x0000    0x0004     0x0000     0x0000    -0 
+34     0x0004    0x0000     0x0000     0x0000    -1 
+35     0x0002    0x0000     0x0000     0x0600    -1 
+36     0x0200    0x0000     0x0600     0x0004    -   
+------------------ 
+35 Round CHAM-64 even-start Total Weight: -32 
+Time cost: 17115.31 seconds ==  285.26 minutes == 4.75 hours == 0.20 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 17118.19 seconds ==  285.30 minutes == 4.76 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年06月27日14:28:40
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:cham 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:36 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHAM-64 cLAT Tables... 
+Time of Construct CHAM-64 cLAT: 3.00 seconds.  
+Searching CHAM-64 Bn_w: 32 
+Time: 0.00 seconds.  
+Searching CHAM-64 Bn_w: 33 
+Time: 381.00 seconds.  
+Searching CHAM-64 Bn_w: 34 
+Time: 100028.00 seconds.  
+round----XV0-------XV1--------XV2--------XV3-----Add-wt 
+01     0x0000    0x0001     0x8040     0x4000    -0 
+02     0x0001    0x8040     0x4000     0x0000    -0 
+03     0x0040    0x4000     0x0000     0x0100    -1 
+04     0x0000    0x0000     0x0100     0x00c0    -0 
+05     0x0000    0x0100     0x00c0     0x0000    -0 
+06     0x0100    0x00c0     0x0000     0x0000    -1 
+07     0x0000    0x0000     0x0000     0x0001    -0 
+08     0x0000    0x0000     0x0001     0x0000    -0 
+09     0x0000    0x0001     0x0000     0x0000    -0 
+10     0x0001    0x0000     0x0000     0x0000    -0 
+11     0x8000    0x0000     0x0000     0x0100    -1 
+12     0x0080    0x0000     0x0100     0x8001    -1 
+13     0x0040    0x0100     0x8001     0xc000    -1 
+14     0x4100    0x8001     0xc000     0x00c0    -2 
+15     0xa0c1    0xc000     0x00c0     0x0061    -3 
+16     0x0180    0x00c0     0x0061     0x0183    -1 
+17     0x0000    0x0061     0x0183     0x8001    -0 
+18     0x0061    0x0183     0x8001     0x0000    -5 
+19     0x81a0    0x8001     0x0000     0x6500    -4 
+20     0x0080    0x0000     0x6500     0x8201    -1 
+21     0x0040    0x6500     0x8201     0xc000    -1 
+22     0x0500    0x8201     0xc000     0x0080    -2 
+23     0x80c1    0xc000     0x0080     0x0007    -2 
+24     0x0180    0x0080     0x0007     0x8183    -1 
+25     0x0000    0x0007     0x8183     0x0001    -0 
+26     0x0007    0x8183     0x0001     0x0000    -1 
+27     0x0180    0x0001     0x0000     0x0700    -1 
+28     0x0000    0x0000     0x0700     0x0200    -0 
+29     0x0000    0x0700     0x0200     0x0000    -0 
+30     0x0700    0x0200     0x0000     0x0000    -2 
+31     0x0000    0x0000     0x0000     0x0006    -0 
+32     0x0000    0x0000     0x0006     0x0000    -0 
+33     0x0000    0x0006     0x0000     0x0000    -0 
+34     0x0006    0x0000     0x0000     0x0000    -1 
+35     0x0002    0x0000     0x0000     0x0400    -1 
+36     0x0200    0x0000     0x0400     0x0004    -1 
+37     0x0100    0x0400     0x0004     0x0003    -   
+------------------ 
+36 Round CHAM-64 even-start Total Weight: -34 
+Time cost: 100028.45 seconds ==  1667.14 minutes == 27.79 hours == 1.16 days. 
+Auto-search CHAM-64 optimal linear trails END! 
+|************************************************************************|
+Time cost: 100031.57 seconds ==  1667.19 minutes == 27.79 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
