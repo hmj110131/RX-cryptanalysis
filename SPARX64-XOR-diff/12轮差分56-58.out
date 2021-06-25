@@ -1,0 +1,108 @@
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:12 
+mode: 0 
+wt_min(:*)--->wt_max:
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 12.00 seconds.  
+-----------------------Search SPARX64 Differntials---------------------------
+count: 1    weight: 60 
+count: 2    weight: 59 
+count: 3    weight: 60 
+count: 4    weight: 60 
+count: 5    weight: 59 
+count: 6    weight: 60 
+count: 7    weight: 60 
+count: 8    weight: 60 
+count: 9    weight: 60 
+count: 10    weight: 58 
+count: 11    weight: 60 
+count: 12    weight: 59 
+count: 13    weight: 56 
+count: 14    weight: 60 
+count: 15    weight: 60 
+count: 16    weight: 60 
+count: 17    weight: 59 
+count: 18    weight: 59 
+count: 19    weight: 60 
+count: 20    weight: 58 
+count: 21    weight: 60 
+count: 22    weight: 60 
+count: 23    weight: 60 
+count: 24    weight: 59 
+-----------------------Record SPARX64 Differntial trails---------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:0   prob_sum:-inf 
+wt:-6   wt_num:0   prob_sum:-inf 
+wt:-7   wt_num:0   prob_sum:-inf 
+wt:-8   wt_num:0   prob_sum:-inf 
+wt:-9   wt_num:0   prob_sum:-inf 
+wt:-10   wt_num:0   prob_sum:-inf 
+wt:-11   wt_num:0   prob_sum:-inf 
+wt:-12   wt_num:0   prob_sum:-inf 
+wt:-13   wt_num:0   prob_sum:-inf 
+wt:-14   wt_num:0   prob_sum:-inf 
+wt:-15   wt_num:0   prob_sum:-inf 
+wt:-16   wt_num:0   prob_sum:-inf 
+wt:-17   wt_num:0   prob_sum:-inf 
+wt:-18   wt_num:0   prob_sum:-inf 
+wt:-19   wt_num:0   prob_sum:-inf 
+wt:-20   wt_num:0   prob_sum:-inf 
+wt:-21   wt_num:0   prob_sum:-inf 
+wt:-22   wt_num:0   prob_sum:-inf 
+wt:-23   wt_num:0   prob_sum:-inf 
+wt:-24   wt_num:0   prob_sum:-inf 
+wt:-25   wt_num:0   prob_sum:-inf 
+wt:-26   wt_num:0   prob_sum:-inf 
+wt:-27   wt_num:0   prob_sum:-inf 
+wt:-28   wt_num:0   prob_sum:-inf 
+wt:-29   wt_num:0   prob_sum:-inf 
+wt:-30   wt_num:0   prob_sum:-inf 
+wt:-31   wt_num:0   prob_sum:-inf 
+wt:-32   wt_num:0   prob_sum:-inf 
+wt:-33   wt_num:0   prob_sum:-inf 
+wt:-34   wt_num:0   prob_sum:-inf 
+wt:-35   wt_num:0   prob_sum:-inf 
+wt:-36   wt_num:0   prob_sum:-inf 
+wt:-37   wt_num:0   prob_sum:-inf 
+wt:-38   wt_num:0   prob_sum:-inf 
+wt:-39   wt_num:0   prob_sum:-inf 
+wt:-40   wt_num:0   prob_sum:-inf 
+wt:-41   wt_num:0   prob_sum:-inf 
+wt:-42   wt_num:0   prob_sum:-inf 
+wt:-43   wt_num:0   prob_sum:-inf 
+wt:-44   wt_num:0   prob_sum:-inf 
+wt:-45   wt_num:0   prob_sum:-inf 
+wt:-46   wt_num:0   prob_sum:-inf 
+wt:-47   wt_num:0   prob_sum:-inf 
+wt:-48   wt_num:0   prob_sum:-inf 
+wt:-49   wt_num:0   prob_sum:-inf 
+wt:-50   wt_num:0   prob_sum:-inf 
+wt:-51   wt_num:0   prob_sum:-inf 
+wt:-52   wt_num:0   prob_sum:-inf 
+wt:-53   wt_num:0   prob_sum:-inf 
+wt:-54   wt_num:0   prob_sum:-inf 
+wt:-55   wt_num:0   prob_sum:-inf 
+wt:-56   wt_num:1   prob_sum:-56.000000 
+wt:-57   wt_num:0   prob_sum:-56.000000 
+wt:-58   wt_num:2   prob_sum:-55.415037 
+wt:-59   wt_num:6   prob_sum:-54.830075 
+++++++++++++++++++
+ cipher: sparx_64 
+ 0x2800 0010 2800 0010 ======>> 0x0291 0291 2400 b502 
+ wt_min: -56 ===>> wt_max: -58 
+ 12 Rounds Differential with total 24 trails.
+ Probability weight is: -54.83 
+++++++++++++++++++
+ Time cost: 63442.56 seconds ==  1057.38 minutes == 17.62 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------

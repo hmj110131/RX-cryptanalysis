@@ -1,0 +1,69 @@
+//2020年10月09日08:52:27
+huangmingjiang@ubuntu:~/hmj123/alzette-rx/k8/auto_search/Debug$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper  #blocksize  #rounds  #mode 
+ciper: alzette 
+blocksize: 64 
+rotational parameter: 1 
+rounds: 2 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+Constructing Alzette_Constant_RX ... 
+rk=1   Alzette_C[7]: c2b3293d   Alzette_C_RX[7]: 47d57b46 
+RX_zeta_total: 64  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing Alzette info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct Alzette cDDT: 21.00 seconds.  
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 21.000000  --Max expected weight-- 
+**thr_d**: 0  
+Update: 1   RX_Bn_w: 20.830074  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     47d57b46    00000000   00000000   1.415038    18.000000    19.415037 
+02     07807204    84a1202a      NULL        NULL         NULL      NULL
+2 Round Total Weight: -20.830074 
+|-----------------------------------------------------------------------|
+Update: 2   RX_Bn_w: 20.415037  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000006   5.000000    0.000000    5.000000 
+01     47d57b40    00000600   00000000   1.415038    14.000000    15.415037 
+02     04807206    84a027aa      NULL        NULL         NULL      NULL
+2 Round Total Weight: -20.415037 
+|-----------------------------------------------------------------------|
+**thr_d**: 1  
+Update: 3   RX_Bn_w: 18.830074  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    60000000   00000000   1.415038    1.000000    2.415038 
+01     87d57b46    600000c0   00000000   1.415038    15.000000    16.415037 
+02     c7804204    fca140ea      NULL        NULL         NULL      NULL
+2 Round Total Weight: -18.830074 
+|-----------------------------------------------------------------------|
+Time: 0.00 seconds.
+**************************************************************************|
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    60000000   00000000   1.415038    1.000000    2.415038 
+01     87d57b46    600000c0   00000000   1.415038    15.000000    16.415037 
+02     c7804204    fca140ea      NULL        NULL         NULL      NULL
+2 Round Total Weight: -18.830074 
+|-----------------------------------------------------------------------|
+Time cost: 0.01 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search 2-Round Alzette optimal RX-differential trails END! 
+|************************************************************************|
+Time cost: 21.10 seconds ==  0.35 minutes == 0.01 hours. 
+Auto-RX-search END! 
+|************************************************************************|
+huangmingjiang@ubuntu:~/hmj123/alzette-rx/k8/auto_search/Debug$ 
+
+
+
+
+

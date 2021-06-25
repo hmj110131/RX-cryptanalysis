@@ -1,0 +1,648 @@
+//2019年03月01日16:18:08
+[root@fws014 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:3 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 2.00 seconds.  
+Searching correlation weight: 1 	Time: 0.00 seconds.  
+round-----left---------right------weight 
+01     0x00000100    0x20000001     -0 
+02     0x00000000    0x00000001     -0 
+03     0x00000008    0x00000008     -1 
+04     0x4c000040    0x40000040     NULL 
+3 Round Total Weight: -1 
+---------------------------------
+Time cost: 0.00 seconds == 0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 2.71 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@fws014 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:4 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 2.00 seconds.  
+Searching correlation weight: 1 	Time: 0.00 seconds.  
+Searching correlation weight: 2 	Time: 0.00 seconds.  
+Searching correlation weight: 3 	Time: 0.00 seconds.  
+round-----left---------right------weight 
+01     0x00010120    0x14000181     -2 
+02     0x00000100    0x20000001     -0 
+03     0x00000000    0x00000001     -0 
+04     0x00000008    0x00000008     -1 
+05     0x4c000040    0x40000040     NULL 
+4 Round Total Weight: -3 
+---------------------------------
+Time cost: 0.73 seconds == 0.01 minutes == 0.00 hours == 0.00 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 3.44 seconds ==  0.06 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@fws014 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:5 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 2.00 seconds.  
+Searching correlation weight: 3 	Time: 0.00 seconds.  
+Searching correlation weight: 4 	Time: 0.00 seconds.  
+Searching correlation weight: 5 	Time: 45.00 seconds.  
+Searching correlation weight: 6 	Time: 717.00 seconds.  
+round-----left---------right------weight 
+01     0x01000120    0x14010021     -2 
+02     0x00018100    0x20000101     -1 
+03     0x00000100    0x00000001     -0 
+04     0x00000001    0x00000000     -1 
+05     0x09800000    0x08000000     -2 
+06     0x40450000    0x40480000     NULL 
+5 Round Total Weight: -6 
+---------------------------------
+Time cost: 717.05 seconds == 11.95 minutes == 0.20 hours == 0.01 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 719.76 seconds ==  12.00 minutes == 0.20 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年03月04日08:37:36
+[root@fws014 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:6 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 2.00 seconds.  
+Searching correlation weight: 6 	Time: 0.00 seconds.  
+Searching correlation weight: 7 	Time: 29.00 seconds.  
+Searching correlation weight: 8 	Time: 2157.00 seconds.  
+Searching correlation weight: 9 	Time: 24710.00 seconds.  
+round-----left---------right------weight 
+01     0x01000120    0x14010021     -2 
+02     0x00018100    0x20000101     -1 
+03     0x00000100    0x00000001     -0 
+04     0x00000001    0x00000000     -1 
+05     0x09800000    0x08000000     -2 
+06     0x40418000    0x404c0000     -3 
+07     0x00026902    0x00620802     NULL 
+6 Round Total Weight: -9 
+---------------------------------
+Time cost: 24710.79 seconds == 411.85 minutes == 6.86 hours == 0.29 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 24713.50 seconds ==  411.89 minutes == 6.86 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年03月12日08:36:08
+huangmingjiang@ubuntu:~/hmj123/speck64/6/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:6 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 3.00 seconds.  
+Searching correlation weight: 6 
+Time: 0.00 seconds.  
+Searching correlation weight: 7 
+Time: 18.00 seconds.  
+Searching correlation weight: 8 
+Time: 1443.00 seconds.  
+Searching correlation weight: 9 
+
+Time: 17218.00 seconds.  
+round-----left---------right------weight 
+01     0x01000120    0x14010021     -2 
+02     0x00018100    0x20000101     -1 
+03     0x00000100    0x00000001     -0 
+04     0x00000001    0x00000000     -1 
+05     0x0d000000    0x0c000000     -2 
+06     0x60610000    0x606c0000     -3 
+07     0x01224983    0x01620803     NULL 
+6 Round Total Weight: -9 
+---------------------------------
+Time cost: 17218.21 seconds == 286.97 minutes == 4.78 hours == 0.20 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 17221.32 seconds ==  287.02 minutes == 4.78 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年03月12日08:58:32
+huangmingjiang@ubuntu:~/hmj123/speck64/7/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:7 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 3.00 seconds.  
+Searching correlation weight: 9 
+Time: 0.00 seconds.  
+Searching correlation weight: 10 
+Time: 29.00 seconds.  
+Searching correlation weight: 11 
+Time: 2105.00 seconds.  
+Searching correlation weight: 12 
+Time: 89636.00 seconds.  
+Searching correlation weight: 13
+
+
+
+//2019年03月18日08:32:55
+huangmingjiang@ubuntu:~/hmj123/speck64/7/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:7 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 3.00 seconds.  
+Searching correlation weight: 9 
+Time: 0.00 seconds.  
+Searching correlation weight: 10 
+Time: 29.00 seconds.  
+Searching correlation weight: 11 
+Time: 2105.00 seconds.  
+Searching correlation weight: 12 
+Time: 89636.00 seconds.  
+Searching correlation weight: 13 
+Time: 415303.00 seconds.  
+round-----left---------right------weight 
+01     0x01000120    0x14010021     -2 
+02     0x00018100    0x20000101     -1 
+03     0x00000100    0x00000001     -0 
+04     0x00000001    0x00000000     -1 
+05     0x0d000000    0x0c000000     -2 
+06     0x60610000    0x606c0000     -3 
+07     0x00024d03    0x00620c03     -4 
+08     0x11107139    0x13107250     NULL 
+7 Round Total Weight: -13 
+---------------------------------
+Time cost: 415303.03 seconds == 6921.72 minutes == 115.36 hours == 4.81 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 415306.04 seconds ==  6921.77 minutes == 115.36 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+//2019年03月12日08:59:07
+huangmingjiang@ubuntu:~/hmj123/speck64/8/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:8 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 3.00 seconds.  
+Searching correlation weight: 13 
+Time: 4.00 seconds.  
+Searching correlation weight: 14 
+Time: 754.00 seconds.  
+Searching correlation weight: 15 
+Time: 50972.00 seconds.  
+Searching correlation weight: 16 
+
+
+//2019年04月01日09:32:38
+huangmingjiang@ubuntu:~/hmj123/speck64/8/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:8 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 3.00 seconds.  
+Searching correlation weight: 13 
+Time: 5.00 seconds.  
+Searching correlation weight: 14 
+Time: 768.00 seconds.  
+Searching correlation weight: 15 
+Time: 50972.00 seconds.  
+Searching correlation weight: 16 
+
+
+
+
+//2019年03月11日16:36:04
+[era@sce Debug]$ scerun ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:9 
+mode: 0 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 6.00 seconds.  
+Searching correlation weight: 17 
+Time: 29.00 seconds.  
+Searching correlation weight: 18 
+packet_write_wait: Connection to 
+
+
+
+
+//2019年03月28日12:49:11
+huangmingjiang@ubuntu:~/hmj123/speck64/9/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:9 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 3.00 seconds.  
+Searching correlation weight: 17 
+Time: 28.00 seconds.  
+Searching correlation weight: 18 
+Time: 4609.00 seconds.  
+Searching correlation weight: 19 
+
+Time: 347313.00 seconds.  
+Searching correlation weight: 20 
+Time: 873174.00 seconds.  
+round-----left---------right------weight 
+01     0x80000000    0x80d00000     -1 
+02     0x00000004    0x00800004     -1 
+03     0x30000020    0x34000020     -2 
+04     0x01200100    0x21000100     -2 
+05     0x080c3808    0x080d0809     -5 
+06     0x0c0009a0    0x00080188     -5 
+07     0x00080c00    0x80000c0d     -2 
+08     0x00000800    0x0000000c     -1 
+09     0x00000008    0x00000000     -1 
+10     0x4c000000    0x40000000     NULL 
+9 Round Total Weight: -20 
+---------------------------------
+Time cost: 873174.37 seconds == 14552.91 minutes == 242.55 hours == 10.11 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 873177.49 seconds ==  14552.96 minutes == 242.55 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+//2019年03月22日08:44:24  //有问题
+huangmingjiang@ubuntu:~/hmj123/speck64/10/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:10 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 3.00 seconds.  
+Searching correlation weight: 19 
+Time: 1.00 seconds.  
+Searching correlation weight: 20 
+Time: 695.00 seconds.  
+Searching correlation weight: 21 
+Time: 43390.00 seconds.  
+Searching correlation weight: 22 
+Time: 55302.00 seconds.  
+round-----left---------right------weight 
+01     0x80000000    0x80d00000     -1 
+02     0x00000004    0x00800004     -1 
+03     0x30000020    0x34000020     -2 
+04     0x01200100    0x21000100     -2 
+05     0x080c3808    0x080d0809     -5 
+06     0x0c0009a0    0x00080188     -5 
+07     0x00080c00    0x80000c0d     -2 
+08     0x00000800    0x0000000c     -1 
+09     0x00000008    0x00000000     -1 
+10     0x4c000000    0x40000000     -2 
+11     0x02280002    0x02400002     NULL 
+10 Round Total Weight: -22 
+---------------------------------
+Time cost: 55302.71 seconds == 921.71 minutes == 15.36 hours == 0.64 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 55305.80 seconds ==  921.76 minutes == 15.36 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+//2019年03月25日08:47:14
+huangmingjiang@ubuntu:~/hmj123/speck64/10/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:10 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 3.00 seconds.  
+Searching correlation weight: 19 
+Time: 1.00 seconds.  
+Searching correlation weight: 20 
+Time: 705.00 seconds.  
+Searching correlation weight: 21 
+Time: 43054.00 seconds.  
+Searching correlation weight: 22 
+Time: 54817.00 seconds.  
+round-----left---------right------weight 
+01     0x80000000    0x80d00000     -1 
+02     0x00000004    0x00800004     -1 
+03     0x30000020    0x34000020     -2 
+04     0x01200100    0x21000100     -2 
+05     0x080c3808    0x080d0809     -5 
+06     0x0c0009a0    0x00080188     -5 
+07     0x00080c00    0x80000c0d     -2 
+08     0x00000800    0x0000000c     -1 
+09     0x00000008    0x00000000     -1 
+10     0x4c000000    0x40000000     -2 
+11     0x02280002    0x02400002     NULL 
+10 Round Total Weight: -22 
+---------------------------------
+Time cost: 54817.83 seconds == 913.63 minutes == 15.23 hours == 0.63 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 54821.29 seconds ==  913.69 minutes == 15.23 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+//2019年03月25日13:28:35
+
+huangmingjiang@ubuntu:~/hmj123/speck64/11/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:11 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 3.00 seconds.  
+Searching correlation weight: 22 
+Time: 1.00 seconds.  
+Searching correlation weight: 23 
+Time: 746.00 seconds.  
+Searching correlation weight: 24 
+Time: 11162.00 seconds.  
+round-----left---------right------weight 
+01     0x90000000    0x10820000     -2 
+02     0x80000000    0x80d00000     -1 
+03     0x00000004    0x00800004     -1 
+04     0x30000020    0x34000020     -2 
+05     0x01200100    0x21000100     -2 
+06     0x080c3808    0x080d0809     -5 
+07     0x0c0009a0    0x00080188     -5 
+08     0x00080c00    0x80000c0d     -2 
+09     0x00000800    0x0000000c     -1 
+10     0x00000008    0x00000000     -1 
+11     0x4c000000    0x40000000     -2 
+12     0x02280002    0x02400002     NULL 
+11 Round Total Weight: -24 
+---------------------------------
+Time cost: 11162.42 seconds == 186.04 minutes == 3.10 hours == 0.13 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 11166.31 seconds ==  186.11 minutes == 3.10 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+//2019年03月25日17:21:14
+huangmingjiang@ubuntu:~/hmj123/speck64/12/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:12 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 3.00 seconds.  
+Searching correlation weight: 24 
+Time: 0.00 seconds.  
+Searching correlation weight: 25 
+Time: 72.00 seconds.  
+Searching correlation weight: 26 
+Time: 3591.00 seconds.  
+Searching correlation weight: 27 
+Time: 13500.00 seconds.  
+round-----left---------right------weight 
+01     0x90000000    0x10820000     -2 
+02     0x80000000    0x80d00000     -1 
+03     0x00000004    0x00800004     -1 
+04     0x30000020    0x34000020     -2 
+05     0x01200100    0x21000100     -2 
+06     0x080c3808    0x080d0809     -5 
+07     0x0c0009a0    0x00080188     -5 
+08     0x00080c00    0x80000c0d     -2 
+09     0x00000800    0x0000000c     -1 
+10     0x00000008    0x00000000     -1 
+11     0x4c000000    0x40000000     -2 
+12     0x020c0002    0x02600002     -3 
+13     0x00134810    0x03104010     NULL 
+12 Round Total Weight: -27 
+---------------------------------
+Time cost: 13500.05 seconds == 225.00 minutes == 3.75 hours == 0.16 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 13503.39 seconds ==  225.06 minutes == 3.75 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年03月26日08:43:34
+huangmingjiang@ubuntu:~/hmj123/speck64/13/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:13 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 3.00 seconds.  
+Searching correlation weight: 27 
+Time: 0.00 seconds.  
+Searching correlation weight: 28 
+Time: 47.00 seconds.  
+Searching correlation weight: 29 
+Time: 4866.00 seconds.  
+Searching correlation weight: 30 
+
+Time: 31005.00 seconds.  
+round-----left---------right------weight 
+01     0x01000120    0x14010021     -2 
+02     0x00018100    0x20000101     -1 
+03     0x00000100    0x00000001     -0 
+04     0x00000001    0x00000000     -1 
+05     0x0d000000    0x0c000000     -2 
+06     0x60610000    0x606c0000     -3 
+07     0x00024d03    0x00620c03     -6 
+08     0x18107014    0x1b107358     -6 
+09     0x00130018    0x18031840     -3 
+10     0x18180000    0x00181200     -2 
+11     0x00180000    0x00001000     -1 
+12     0x00001000    0x00000000     -1 
+13     0x00000098    0x00000080     -2 
+14     0x50000404    0x80000404     NULL 
+13 Round Total Weight: -30 
+---------------------------------
+Time cost: 31005.23 seconds == 516.75 minutes == 8.61 hours == 0.36 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 31008.44 seconds ==  516.81 minutes == 8.61 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年03月27日10:25:47
+huangmingjiang@ubuntu:~/hmj123/speck64/14/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:14 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 3.00 seconds.  
+Searching correlation weight: 30 
+Time: 0.00 seconds.  
+Searching correlation weight: 31 
+Time: 44.00 seconds.  
+Searching correlation weight: 32 
+Time: 3772.00 seconds.  
+Searching correlation weight: 33 
+Time: 92010.00 seconds.  
+round-----left---------right------weight 
+01     0x01000120    0x14010021     -2 
+02     0x00018100    0x20000101     -1 
+03     0x00000100    0x00000001     -0 
+04     0x00000001    0x00000000     -1 
+05     0x0d000000    0x0c000000     -2 
+06     0x60610000    0x606c0000     -3 
+07     0x00024d03    0x00620c03     -6 
+08     0x18107014    0x1b107358     -6 
+09     0x00130018    0x18031840     -3 
+10     0x18180000    0x00181200     -2 
+11     0x00180000    0x00001000     -1 
+12     0x00001000    0x00000000     -1 
+13     0x00000098    0x00000080     -2 
+14     0x18000404    0xc0000404     -3 
+15     0x26902000    0x20802006     NULL 
+14 Round Total Weight: -33 
+---------------------------------
+Time cost: 92010.94 seconds == 1533.52 minutes == 25.56 hours == 1.06 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 92014.11 seconds ==  1533.57 minutes == 25.56 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+
+//2019年03月27日18:50:14
+wt:-28   wt_num:0   prob_sum:-inf 
+wt:-29   wt_num:0   prob_sum:-inf 
+wt:-30   wt_num:16   prob_sum:-56.000000 
+wt:-31   wt_num:0   prob_sum:-56.000000 
+wt:-32   wt_num:162   prob_sum:-55.292641 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_64 
+ input:0x01000120 14010021 ======>> output:0x50000404 80000404 
+ wt_min(:-30)--->wt_max: -32 
+ 13 Rounds Linear Hull with total 178 trails.
+ Square Correlation weight is: -55.29 
+++++++++++++++++++++++++++++++++++++
+ Time: 26219.00 seconds.  
+Time cost: 26219.36 seconds ==  436.99 minutes == 7.28 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+huangmingjiang@ubuntu:~/hmj123/speck64/cor-13-32/auto_search/Debug$ 
+
+
+
+//2019年03月28日08:33:30
+wt:-31   wt_num:0   prob_sum:-inf 
+wt:-32   wt_num:0   prob_sum:-inf 
+wt:-33   wt_num:16   prob_sum:-62.000000 
+wt:-34   wt_num:0   prob_sum:-62.000000 
+wt:-35   wt_num:178   prob_sum:-61.238449 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_64 
+ input:0x01000120 14010021 ======>> output:0x26902000 20802006 
+ wt_min(:-0)--->wt_max: -35 
+ 14 Rounds Linear Hull with total 194 trails.
+ Square Correlation weight is: -61.24 
+++++++++++++++++++++++++++++++++++++
+ Time: 20883.00 seconds.  
+Time cost: 20883.30 seconds ==  348.05 minutes == 5.80 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+huangmingjiang@ubuntu:~/hmj123/speck64/cor-14-35/auto_search/Debug$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

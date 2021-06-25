@@ -1,0 +1,950 @@
+
+
+[root@jws037 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx
+Note: blocksize only fixed for 64, and round shoud >= 7.  
+blocksize: 64
+rounds:2
+mode: 0
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 6.00 seconds.  
+Searching Bn_w: 1 
+Time: 0.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x0000    0x0000    0x0000    0x0000    -0    -0     -0 
+02     0x8000    0x8000    0x0000    0x0000    -1    -0     -1 
+03     0x8100    0x8102    0x0000    0x0000    -    -     NULL 
+------------------ 
+2 Round SPARX64 Total Weight: -1 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 6.20 seconds ==  0.10 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+[root@jws037 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx
+Note: blocksize only fixed for 64, and round shoud >= 7.  
+blocksize: 64
+rounds:3
+mode: 0
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 6.00 seconds.  
+Searching Bn_w: 1 
+Time: 0.00 seconds.  
+Searching Bn_w: 2 
+Time: 0.00 seconds.  
+Searching Bn_w: 3 
+Time: 0.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x0000    0x0000    0x0000    0x0000    -0    -0     -0 
+02     0x8000    0x8000    0x0000    0x0000    -1    -0     -1 
+03     0x8100    0x8102    0x0000    0x0000    -2    -0     -2 
+04     0x8a04    0x8e0e    0x8000    0x840a    -    -     NULL 
+------------------ 
+3 Round SPARX64 Total Weight: -3 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 6.24 seconds ==  0.10 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@jws037 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx
+Note: blocksize only fixed for 64, and round shoud >= 7.  
+blocksize: 64
+rounds:4
+mode: 0
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 6.00 seconds.  
+Searching Bn_w: 3 
+Time: 0.00 seconds.  
+Searching Bn_w: 4 
+Time: 0.00 seconds.  
+Searching Bn_w: 5 
+Time: 0.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x0000    0x0000    0x2800    0x0010    -0    -2     -2 
+02     0x0000    0x0000    0x0040    0x0000    -0    -0     -0 
+03     0x0000    0x0000    0x8000    0x8000    -0    -1     -1 
+04     0x8100    0x8102    0x0000    0x0000    -2    -0     -2 
+05     0x8000    0x840a    0x0000    0x0000    -    -     NULL 
+------------------ 
+4 Round SPARX64 Total Weight: -5 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 6.30 seconds ==  0.10 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@jws037 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx
+Note: blocksize only fixed for 64, and round shoud >= 7.  
+blocksize: 64
+rounds:5
+mode: 0
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 6.00 seconds.  
+Searching Bn_w: 5 
+Time: 0.00 seconds.  
+Searching Bn_w: 6 
+Time: 0.00 seconds.  
+Searching Bn_w: 7 
+Time: 0.00 seconds.  
+Searching Bn_w: 8 
+Time: 0.00 seconds.  
+Searching Bn_w: 9 
+Time: 1.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x0000    0x0000    0x2800    0x0010    -0    -2     -2 
+02     0x0000    0x0000    0x0040    0x0000    -0    -0     -0 
+03     0x0000    0x0000    0x8000    0x8000    -0    -1     -1 
+04     0x8100    0x8102    0x0000    0x0000    -2    -0     -2 
+05     0x8000    0x840a    0x0000    0x0000    -4    -0     -4 
+06     0x850a    0x9520    0x0000    0x0000    -    -     NULL 
+------------------ 
+5 Round SPARX64 Total Weight: -9 
+Time cost: 1.42 seconds ==  0.02 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 7.68 seconds ==  0.13 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@jws037 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx
+Note: blocksize only fixed for 64, and round shoud >= 7.  
+blocksize: 64
+rounds:6
+mode: 0
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 6.00 seconds.  
+Searching Bn_w: 9 
+Time: 0.00 seconds.  
+Searching Bn_w: 10 
+Time: 0.00 seconds.  
+Searching Bn_w: 11 
+Time: 0.00 seconds.  
+Searching Bn_w: 12 
+Time: 0.00 seconds.  
+Searching Bn_w: 13 
+Time: 3.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x0000    0x0000    0x0211    0x0a04    -0    -4     -4 
+02     0x0000    0x0000    0x2800    0x0010    -0    -2     -2 
+03     0x0000    0x0000    0x0040    0x0000    -0    -0     -0 
+04     0x8000    0x8000    0x0000    0x0000    -1    -0     -1 
+05     0x8100    0x8102    0x0000    0x0000    -2    -0     -2 
+06     0x8000    0x840a    0x0000    0x0000    -4    -0     -4 
+07     0xaf1a    0xbf30    0x850a    0x9520    -    -     NULL 
+------------------ 
+6 Round SPARX64 Total Weight: -13 
+Time cost: 3.41 seconds ==  0.06 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 9.65 seconds ==  0.16 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+////先搜左边，再搜右边分块，
+[root@jws053 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 bits.  
+blocksize: 64 
+rounds:6 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 6.00 seconds.  
+Searching Bn_w: 9 
+Time: 0.00 seconds.  
+Searching Bn_w: 10 
+Time: 0.00 seconds.  
+Searching Bn_w: 11 
+Time: 0.00 seconds.  
+Searching Bn_w: 12 
+Time: 1.00 seconds.  
+Searching Bn_w: 13 
+Time: 2.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x0000    0x0000    0x0000    0x0000    -0    -0     -4 
+02     0x0000    0x0000    0x2800    0x0010    -0    -2     -2 
+03     0x0000    0x0000    0x0040    0x0000    -0    -0     -0 
+04     0x8000    0x8000    0x0000    0x0000    -1    -0     -1 
+05     0x8100    0x8102    0x0000    0x0000    -2    -0     -2 
+06     0x8000    0x840a    0x0000    0x0000    -4    -0     -4 
+07     0xaf1a    0xbf30    0x850a    0x9520    -    -     NULL 
+------------------ 
+6 Round SPARX64 Total Weight: -13 
+Time cost: 2.14 seconds ==  0.04 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 8.42 seconds ==  0.14 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+[root@jws017 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 bits.  
+blocksize: 64 
+rounds:6 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 8.00 seconds.  
+Searching Bn_w: 9 
+Time: 0.00 seconds.  
+Searching Bn_w: 10 
+Time: 0.00 seconds.  
+Searching Bn_w: 11 
+Time: 0.00 seconds.  
+Searching Bn_w: 12 
+Time: 1.00 seconds.  
+Searching Bn_w: 13 
+Time: 4.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x0000    0x0000    0x0211    0x0a04    -0    -4     -4 
+02     0x0000    0x0000    0x2800    0x0010    -0    -2     -2 
+03     0x0000    0x0000    0x0040    0x0000    -0    -0     -0 
+04     0x8000    0x8000    0x0000    0x0000    -1    -0     -1 
+05     0x8100    0x8102    0x0000    0x0000    -2    -0     -2 
+06     0x8000    0x840a    0x0000    0x0000    -4    -0     -4 
+07     0xaf1a    0xbf30    0x850a    0x9520    -    -     NULL 
+------------------ 
+03-L   0x0000    0x0000    0x8000    0x8000    -     -      - 
+06-L   0x850a    0x9520    0x0000    0x0000    -     -      - 
+------------------ 
+6 Round SPARX64 Total Weight: -13 
+Time cost: 4.72 seconds ==  0.08 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 13.52 seconds ==  0.23 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+[root@jws053 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 bits.  
+blocksize: 64 
+rounds:7 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 6.00 seconds.  
+Searching Bn_w: 24 
+Time: 1277.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x0000    0x0000    0x1488    0x1008    -0    -4     -4 
+02     0x0000    0x0000    0x0021    0x4001    -0    -4     -4 
+03     0x0000    0x0000    0x0601    0x0604    -0    -6     -6 
+04     0x1800    0x0010    0x0000    0x0000    -3    -0     -3 
+05     0x0040    0x0000    0x0000    0x0000    -0    -0     -0 
+06     0x8000    0x8000    0x0000    0x0000    -1    -0     -1 
+07     0x8300    0x8302    0x8100    0x8102    -4    -2     -6 
+08     0x8000    0x8c0a    0x8000    0x840a    -    -     NULL 
+------------------ 
+7 Round SPARX64 Total Weight: -24 
+Time cost: 1277.75 seconds ==  21.30 minutes == 0.35 hours. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 1283.99 seconds ==  21.40 minutes == 0.36 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+.///通过限定第1轮的概率重量为<5，这样可以快速的得到7轮wt=24的结果
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 bits.  
+blocksize: 64 
+rounds:7 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 8.00 seconds.  
+Searching Bn_w: 13 
+Time: 0.00 seconds.  
+Searching Bn_w: 14 
+Time: 0.00 seconds.  
+Searching Bn_w: 15 
+Time: 0.00 seconds.  
+Searching Bn_w: 16 
+Time: 1.00 seconds.  
+Searching Bn_w: 17 
+Time: 62.00 seconds.  
+Searching Bn_w: 18 
+Time: 136.00 seconds.  
+Searching Bn_w: 19 
+Time: 250.00 seconds.  
+Searching Bn_w: 20 
+Time: 477.00 seconds.  
+Searching Bn_w: 21 
+Time: 1048.00 seconds.  
+Searching Bn_w: 22 
+Time: 2585.00 seconds.  
+Searching Bn_w: 23 
+Time: 6733.00 seconds.  
+Searching Bn_w: 24 
+Time: 9451.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x0000    0x0000    0x1488    0x1008    -0    -4     -4 
+02     0x0000    0x0000    0x0021    0x4001    -0    -4     -4 
+03     0x0000    0x0000    0x0601    0x0604    -0    -6     -6 
+04     0x1800    0x0010    0x0000    0x0000    -3    -0     -3 
+05     0x0040    0x0000    0x0000    0x0000    -0    -0     -0 
+06     0x8000    0x8000    0x0000    0x0000    -1    -0     -1 
+07     0x8300    0x8302    0x8100    0x8102    -4    -2     -6 
+08     0x8000    0x8c0a    0x8000    0x840a    -    -     NULL 
+------------------ 
+7 Round SPARX64 Total Weight: -24 
+Time cost: 9451.43 seconds ==  157.52 minutes == 2.63 hours. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 9460.21 seconds ==  157.67 minutes == 2.63 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+//从右边往左边开始搜索
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize only fixed for 64, and round shoud >= 7.  
+blocksize: 64 
+rounds:8 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 6.00 seconds.  
+Searching Bn_w: 24 
+Time: 0.00 seconds.  
+Searching Bn_w: 25 
+Time: 1.00 seconds.  
+Searching Bn_w: 26 
+Time: 20.00 seconds.  
+Searching Bn_w: 27 
+Time: 210.00 seconds.  
+Searching Bn_w: 28 
+Time: 2109.00 seconds.  
+Searching Bn_w: 29 
+Time: 15328.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x0000    0x0000    0x0050    0x8402    -0    -3     -3 
+02     0x0000    0x0000    0x2402    0x3408    -0    -7     -7 
+03     0x0000    0x0000    0x50c0    0x80e0    -0    -4     -4 
+04     0x0181    0x0203    0x0000    0x0000    -5    -0     -5 
+05     0x000c    0x0800    0x0000    0x0000    -3    -0     -3 
+06     0x2000    0x0000    0x0000    0x0000    -1    -0     -1 
+07     0x0040    0x0040    0x0040    0x0040    -1    -1     -2 
+08     0x8040    0x8140    0x8040    0x8140    -2    -2     -4 
+09     0x0040    0x0542    0x0040    0x0542    -    -     NULL 
+------------------ 
+8 Round SPARX64 Total Weight: -29 
+Time cost: 15328.65 seconds ==  255.48 minutes == 4.26 hours. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 15334.84 seconds ==  255.58 minutes == 4.26 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//从左往右开始搜索
+[root@jws015 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 bits.  
+blocksize: 64 
+rounds:8 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 6.00 seconds.  
+Searching Bn_w: 24 
+Time: 0.00 seconds.  
+Searching Bn_w: 25 
+Time: 2.00 seconds.  
+Searching Bn_w: 26 
+Time: 50.00 seconds.  
+Searching Bn_w: 27 
+Time: 927.00 seconds.  
+Searching Bn_w: 28 
+Time: 17147.00 seconds.  
+Searching Bn_w: 29 
+Time: 18604.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x0000    0x0000    0x0010    0x8402    -0    -3     -3 
+02     0x0000    0x0000    0x2402    0x3408    -0    -7     -7 
+03     0x0000    0x0000    0x50c0    0x80e0    -0    -4     -4 
+04     0x0181    0x0203    0x0000    0x0000    -5    -0     -5 
+05     0x000c    0x0800    0x0000    0x0000    -3    -0     -3 
+06     0x2000    0x0000    0x0000    0x0000    -1    -0     -1 
+07     0x0040    0x0040    0x0040    0x0040    -1    -1     -2 
+08     0x8040    0x8140    0x8040    0x8140    -2    -2     -4 
+09     0x0040    0x0542    0x0040    0x0542    -    -     NULL 
+------------------ 
+8 Round SPARX64 Total Weight: -29 
+Time cost: 18604.54 seconds ==  310.08 minutes == 5.17 hours. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 18610.81 seconds ==  310.18 minutes == 5.17 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2018年12月25日17:44:29， 指定搜索额外的路径
+[era@sce Debug]$ scerun ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:8 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 12.00 seconds.  
+Searching Bn_w: 29 
+Time: 0.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x0000    0x0000    0x0010    0x8402    -0    -3     -3 
+02     0x0000    0x0000    0x2402    0x3408    -0    -7     -7 
+03     0x0000    0x0000    0x50c0    0x80e0    -0    -4     -4 
+04     0x0181    0x0203    0x0000    0x0000    -5    -0     -5 
+05     0x000c    0x0800    0x0000    0x0000    -3    -0     -3 
+06     0x2000    0x0000    0x0000    0x0000    -1    -0     -1 
+07     0x0040    0x0040    0x0040    0x0040    -1    -1     -2 
+08     0x8040    0x8140    0x8040    0x8140    -2    -2     -4 
+09     0x0040    0x0542    0x0040    0x0542    -     -    NULL 
+------------------ 
+03-L   0x0000    0x0000    0x0181    0x0203    -     -      - 
+06-L   0x0040    0x0040    0x0000    0x0000    -     -      - 
+------------------ 
+8 Round SPARX64 Total Weight: -29 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize only fixed for 64, and round shoud >= 7.  
+blocksize: 64 
+rounds:9 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 6.00 seconds.  
+Searching Bn_w: 29 
+Time: 0.00 seconds.  
+Searching Bn_w: 30 
+Time: 11.00 seconds.  
+Searching Bn_w: 31 
+Time: 83.00 seconds.  
+Searching Bn_w: 32 
+Time: 444.00 seconds.  
+Searching Bn_w: 33 
+Time: 2030.00 seconds.  
+Searching Bn_w: 34 
+Time: 8499.00 seconds.  
+Searching Bn_w: 35 
+Time: 17625.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x2800    0x0010    0x2800    0x0010    -2    -2     -4 
+02     0x0040    0x0000    0x0040    0x0000    -0    -0     -0 
+03     0x8000    0x8000    0x8000    0x8000    -1    -2     -3 
+04     0x0000    0x0000    0x8100    0x8102    -0    -3     -3 
+05     0x0000    0x0000    0x8004    0x840e    -0    -8     -8 
+06     0x0000    0x0000    0x8532    0x9508    -0    -7     -7 
+07     0x5002    0x0420    0x0000    0x0000    -3    -0     -3 
+08     0x0080    0x1000    0x0000    0x0000    -2    -0     -2 
+09     0x1001    0x5001    0x0000    0x0000    -5    -0     -5 
+10     0x5761    0x1764    0x5221    0x1224    -    -     NULL 
+------------------ 
+9 Round SPARX64 Total Weight: -35 
+Time cost: 17625.69 seconds ==  293.76 minutes == 4.90 hours. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 17632.03 seconds ==  293.87 minutes == 4.90 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+//与Ankele不同的差分路径
+huangmingjiang@node1:~/sparx64/9-35-other/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:9 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 12.00 seconds.  
+Searching Bn_w: 35 
+Time: 0.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x2800    0x0010    0x2800    0x0010    -2    -2     -4 
+02     0x0040    0x0000    0x0040    0x0000    -0    -0     -0 
+03     0x8000    0x8000    0x8000    0x8000    -1    -2     -3 
+04     0x0000    0x0000    0x8100    0x8102    -0    -3     -3 
+05     0x0000    0x0000    0x8004    0x840e    -0    -8     -8 
+06     0x0000    0x0000    0x8532    0x9508    -0    -7     -7 
+07     0x5002    0x0420    0x0000    0x0000    -3    -0     -3 
+08     0x0080    0x1000    0x0000    0x0000    -2    -0     -2 
+09     0x1001    0x5001    0x0000    0x0000    -5    -0     -5 
+10     0xd761    0x9764    0xd221    0x9224    -     -    NULL 
+------------------ 
+03-L   0x8100    0x8102    0x8300    0x8302    -     -      - 
+06-L   0x0000    0x0000    0x5002    0x0420    -     -      - 
+09-L   0xd221    0x9224    0x0000    0x0000    -     -      - 
+------------------ 
+9 Round SPARX64 Total Weight: -35 
+Time cost: 0.60 seconds ==  0.01 minutes == 0.00 hours == 0.00 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 13.45 seconds ==  0.22 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize only fixed for 64, and round shoud >= 7.  
+blocksize: 64 
+rounds:10 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 6.00 seconds.  
+Searching Bn_w: 35 
+Time: 12.00 seconds.  
+Searching Bn_w: 36 
+Time: 192.00 seconds.  
+Searching Bn_w: 37 
+Time: 1103.00 seconds.  
+Searching Bn_w: 38 
+Time: 4794.00 seconds.  
+Searching Bn_w: 39 
+Time: 17808.00 seconds.  
+Searching Bn_w: 40 
+Time: 60609.00 seconds.  
+Searching Bn_w: 41 
+Time: 196862.00 seconds.  
+Searching Bn_w: 42 
+Time: 288262.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x2800    0x0010    0x2800    0x0010    -2    -2     -4 
+02     0x0040    0x0000    0x0040    0x0000    -0    -0     -0 
+03     0x8000    0x8000    0x8000    0x8000    -1    -2     -3 
+04     0x0000    0x0000    0x8100    0x8102    -0    -3     -3 
+05     0x0000    0x0000    0x8200    0x860a    -0    -7     -7 
+06     0x0000    0x0000    0x8716    0x9f3c    -0    -9     -9 
+07     0x6c0a    0x10f8    0x0000    0x0000    -7    -0     -7 
+08     0x03e0    0x4000    0x0000    0x0000    -4    -0     -4 
+09     0x0001    0x0000    0x0000    0x0000    -1    -0     -1 
+10     0x0200    0x0200    0x0200    0x0200    -2    -2     -4 
+11     0x0204    0x0a04    0x0204    0x0a04    -    -     NULL 
+------------------ 
+10 Round SPARX64 Total Weight: -42 
+Time cost: 288262.92 seconds ==  4804.38 minutes == 80.07 hours. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 288269.16 seconds ==  4804.49 minutes == 80.07 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+[root@jws038 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 bits.  
+blocksize: 64 
+rounds:11 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 8.00 seconds.  
+Searching Bn_w: 42 
+Time: 1.00 seconds.  
+Searching Bn_w: 43 
+Time: 34.00 seconds.  
+Searching Bn_w: 44 
+Time: 1242.00 seconds.  
+Searching Bn_w: 45 
+
+
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 bits.  
+blocksize: 64 
+rounds:11 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 8.00 seconds.  
+Searching Bn_w: 42 
+Time: 1.00 seconds.  
+Searching Bn_w: 43 
+Time: 34.00 seconds.  
+Searching Bn_w: 44 
+Time: 1246.00 seconds.  
+Searching Bn_w: 45 
+Time: 10850.00 seconds.  
+Searching Bn_w: 46 
+Time: 72486.00 seconds.  
+Searching Bn_w: 47 
+Time: 245280.00 seconds.  
+Searching Bn_w: 48 
+Time: 700472.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x2800    0x0010    0x2800    0x0010    -2    -2     -4 
+02     0x0040    0x0000    0x0040    0x0000    -0    -0     -0 
+03     0x8000    0x8000    0x8000    0x8000    -1    -2     -3 
+04     0x0000    0x0000    0x8100    0x8102    -0    -3     -3 
+05     0x0000    0x0000    0x8200    0x860a    -0    -7     -7 
+06     0x0000    0x0000    0x8716    0x9f3c    -0    -9     -9 
+07     0x6c0a    0x10f8    0x0000    0x0000    -7    -0     -7 
+08     0x03e0    0x4000    0x0000    0x0000    -4    -0     -4 
+09     0x0001    0x0000    0x0000    0x0000    -1    -0     -1 
+10     0x0200    0x0200    0x0200    0x0200    -2    -2     -4 
+11     0x0204    0x0a04    0x0204    0x0a04    -3    -3     -6 
+12     0x0200    0x2a10    0x0200    0x2a10    -    -     NULL 
+------------------ 
+11 Round SPARX64 Total Weight: -48 
+Time cost: 700472.90 seconds ==  11674.55 minutes == 194.58 hours. 
+Auto-search END! 
+|************************************************************************|
+
+/home/huangmingjiang/sparx64/20181127/11-48/auto_search/Debug
+[root@fws012 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 bits.  
+blocksize: 64 
+rounds:11 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 7.00 seconds.  
+Searching Bn_w: 48 
+Time: 32.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x2800    0x0010    0x2800    0x0010    -2    -2     -4 
+02     0x0040    0x0000    0x0040    0x0000    -0    -0     -0 
+03     0x8000    0x8000    0x8000    0x8000    -1    -2     -3 
+04     0x0000    0x0000    0x8100    0x8102    -0    -3     -3 
+05     0x0000    0x0000    0x8200    0x860a    -0    -7     -7 
+06     0x0000    0x0000    0x8716    0x9f3c    -0    -9     -9 
+07     0x6c0a    0x10f8    0x0000    0x0000    -7    -0     -7 
+08     0x03e0    0x4000    0x0000    0x0000    -4    -0     -4 
+09     0x0001    0x0000    0x0000    0x0000    -1    -0     -1 
+10     0x0200    0x0200    0x0200    0x0200    -2    -2     -4 
+11     0x0204    0x0a04    0x0204    0x0a04    -3    -3     -6 
+12     0x0200    0x2a10    0x0200    0x2a10    -     -    NULL 
+------------------ 
+03-L   0x8100    0x8102    0x8300    0x8302    -     -      - 
+06-L   0x0000    0x0000    0x6c0a    0x10f8    -     -      - 
+09-L   0x0200    0x0200    0x0000    0x0000    -     -      - 
+------------------ 
+11 Round SPARX64 Total Weight: -48 
+Time cost: 32.92 seconds ==  0.55 minutes == 0.01 hours. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 40.66 seconds ==  0.68 minutes == 0.01 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+You have new mail in /var/spool/mail/root
+
+
+[root@fws012 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 bits.  
+blocksize: 64 
+rounds:12 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 8.00 seconds.  
+Searching Bn_w: 48 
+Time: 0.00 seconds.  
+Searching Bn_w: 49 
+Time: 0.00 seconds.  
+Searching Bn_w: 50 
+Time: 63.00 seconds.  
+Searching Bn_w: 51 
+
+//2018年12月29日13:59:32
+[root@fws013 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:12 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 7.00 seconds.  
+Searching Bn_w: 48 
+Time: 540.00 seconds.  
+Searching Bn_w: 49 
+Time: 10852.00 seconds.  
+SearSearching Bn_w: 50 
+Time: 77056.00 seconds.  
+Searching Bn_w: 51 
+
+
+//2019年01月09日08:40:27
+[root@jws049 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:12 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 8.00 seconds.  
+Searching Bn_w: 48 
+Time: 574.00 seconds.  
+Searching Bn_w: 49 
+Time: 11578.00 seconds.  
+Searching Bn_w: 50 
+Time: 82167.00 seconds.  
+Searching Bn_w: 51 
+Time: 561324.00 seconds.  
+Searching Bn_w: 52
+Time: 1883389.00 seconds.  
+Searching Bn_w: 53 
+
+
+
+/home/huangmingjiang/sparx64/20181127/12-56
+[root@fws012 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 bits.  
+blocksize: 64 
+rounds:12 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 7.00 seconds.  
+Searching Bn_w: 56 
+Time: 5169.00 seconds.  
+round----Xr0-------Xr1--------Xr2-------Xr3----w_l----w_r----Pw 
+01     0x2800    0x0010    0x2800    0x0010    -2    -2     -4 
+02     0x0040    0x0000    0x0040    0x0000    -0    -0     -0 
+03     0x8000    0x8000    0x8000    0x8000    -2    -1     -3 
+04     0x0000    0x0000    0x8300    0x8302    -0    -5     -5 
+05     0x0000    0x0000    0x8404    0x880e    -0    -6     -6 
+06     0x0000    0x0000    0x911a    0xb120    -0    -8     -8 
+07     0xc406    0x0084    0x0000    0x0000    -8    -0     -8 
+08     0x0a14    0x0804    0x0000    0x0000    -4    -0     -4 
+09     0x2010    0x0000    0x0000    0x0000    -2    -0     -2 
+10     0x2040    0x2040    0x2040    0x2040    -2    -2     -4 
+11     0xa000    0x2100    0xa000    0x2100    -3    -3     -6 
+12     0x2040    0xa440    0x2040    0xa440    -3    -3     -6 
+13     0x0291    0x0291    0x2400    0xb502    -     -    NULL 
+------------------ 
+03-L   0x8300    0x8302    0x8100    0x8102    -     -      - 
+06-L   0x0000    0x0000    0xc406    0x0084    -     -      - 
+09-L   0x2040    0x2040    0x0000    0x0000    -     -      - 
+12-L   0x2400    0xb502    0x2400    0xb502    -     -      - 
+------------------ 
+12 Round SPARX64 Total Weight: -56 
+Time cost: 5169.31 seconds ==  86.16 minutes == 1.44 hours. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 5177.05 seconds ==  86.28 minutes == 1.44 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+[root@fws013 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 bits.  
+blocksize: 64 
+rounds:13 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 8.00 seconds.  
+Searching Bn_w: 56 
+Time: 424.00 seconds.  
+Searching Bn_w: 57 
+Time: 13968.00 seconds.  
+Searching Bn_w: 58 
+
+
+13轮由12轮的结果推导可得 wt = -68
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+//固定输入为 0x2800    0x0010    0x2800    0x0010  
+huangmingjiang@node1:~/sparx64/13-fixed-input/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 64 
+rounds:13 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing SPARX64 Tables... 
+Time of Construct SPARX tables: 13.00 seconds.  
+Searching Bn_w: 58 
+Time: 2483.00 seconds.  
+Searching Bn_w: 59 
+Time: 9541.00 seconds.  
+Searching Bn_w: 60 
+Time: 29556.00 seconds.  
+Searching Bn_w: 61 
+Time: 85651.00 seconds.  
+Searching Bn_w: 62 
+Time: 239641.00 seconds.  
+Searching Bn_w: 63 
+
+41532 huangmi+  20   0 33.923g 0.016t   2240 R 100.0 25.6   5771:58 auto_search 
+41532 huangmi+  20   0 33.923g 0.016t   2240 R 100.0 25.6   8344:33 auto_search  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

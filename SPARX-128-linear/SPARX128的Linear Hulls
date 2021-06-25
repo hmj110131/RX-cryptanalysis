@@ -1,0 +1,424 @@
+//2019年04月01日15:21:42
+huangmingjiang@ubuntu:~/hmj123/sparx128/cor/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:3 
+mode: 31 
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+wt_min(:1)--->wt_max: 3 
+-----------------------Search SPARX-128 Linear Hulls---------------------------
+ search_round cur_round :1 
+0 0 0 0 0 0 0 1 
+  search_round cur_round :2 
+0 0 0 0 0 0 4 4 
+ count: 1    weight: 1 
+-----------------------Record SPARX-128 Linear Hulls---------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:1   prob_sum:-2.000000 
+wt:-2   wt_num:0   prob_sum:-2.000000 
+wt:-3   wt_num:0   prob_sum:-2.000000 
+++++++++++++++++++
+ cipher: sparx_128 
+ 0x0000 0000 0000 0000 0000 0000 0080 4001 
+==================>> 
+0x0000 0000 0000 0000 0000 0000 2c10 2010 
+ wt_min: -1 ===>> wt_max: -3 
+ 3 Rounds Differential with total 1 trails.
+ Correlation weight is: -2.00 
+++++++++++++++++++
+ Time cost: 3.03 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年04月01日16:50:03
+huangmingjiang@ubuntu:~/hmj123/sparx128/cor/4/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:4 
+mode: 31 
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+wt_min(:3)--->wt_max: 10 
+-----------------------Search SPARX-128 Linear Hulls---------------------------
+count: 1    weight: 3 
+-----------------------Record SPARX-128 Linear Hulls---------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:1   prob_sum:-6.000000 
+wt:-4   wt_num:0   prob_sum:-6.000000 
+wt:-5   wt_num:0   prob_sum:-6.000000 
+wt:-6   wt_num:0   prob_sum:-6.000000 
+wt:-7   wt_num:0   prob_sum:-6.000000 
+wt:-8   wt_num:0   prob_sum:-6.000000 
+wt:-9   wt_num:0   prob_sum:-6.000000 
+wt:-10   wt_num:0   prob_sum:-6.000000 
+++++++++++++++++++
+ cipher: sparx_128 
+ 0x0000 0000 0000 0000 0000 0000 0090 6021 
+==================>>
+0x0000 0000 0b00 0800 0b03 0003 0003 0803 
+ wt_min: -3 ===>> wt_max: -10 
+ 4 Rounds Linear Hull with total 1 trails.
+ Correlation potential is: -6.00 
+++++++++++++++++++
+ Time cost: 3.09 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+//2019年04月01日16:53:57
+huangmingjiang@ubuntu:~/hmj123/sparx128/cor/4/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:5 
+mode: 31 
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+wt_min(:5)--->wt_max: 10 
+-----------------------Search SPARX-128 Linear Hulls---------------------------
+count: 1    weight: 10 
+count: 2    weight: 5 
+count: 3    weight: 8 
+-----------------------Record SPARX-128 Linear Hulls---------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:1   prob_sum:-10.000000 
+wt:-6   wt_num:0   prob_sum:-10.000000 
+wt:-7   wt_num:0   prob_sum:-10.000000 
+wt:-8   wt_num:1   prob_sum:-9.977632 
+wt:-9   wt_num:0   prob_sum:-9.977632 
+wt:-10   wt_num:1   prob_sum:-9.976246 
+++++++++++++++++++
+ cipher: sparx_128 
+ 0x0000 0000 00a0 3021 0000 0000 0000 0000 
+==================>>
+0x0000 0000 0000 0000 0000 0000 85c2 8442 
+ wt_min: -5 ===>> wt_max: -10 
+ 5 Rounds Linear Hull with total 3 trails.
+ Correlation potential is: -9.98 
+++++++++++++++++++
+ Time cost: 3.18 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年04月01日16:57:06
+huangmingjiang@ubuntu:~/hmj123/sparx128/cor/4/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:6 
+mode: 31 
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+wt_min(:7)--->wt_max: 12 
+-----------------------Search SPARX-128 Linear Hulls---------------------------
+count: 1    weight: 7 
+count: 2    weight: 9 
+count: 3    weight: 11 
+-----------------------Record SPARX-128 Linear Hulls---------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:0   prob_sum:-inf 
+wt:-6   wt_num:0   prob_sum:-inf 
+wt:-7   wt_num:1   prob_sum:-14.000000 
+wt:-8   wt_num:0   prob_sum:-14.000000 
+wt:-9   wt_num:1   prob_sum:-13.912537 
+wt:-10   wt_num:0   prob_sum:-13.912537 
+wt:-11   wt_num:1   prob_sum:-13.907243 
+wt:-12   wt_num:0   prob_sum:-13.907243 
+++++++++++++++++++
+ cipher: sparx_128 
+ 0x0000 0000 0080 5021 0000 0000 0000 0000 
+==================>>
+0x0000 0000 0000 0000 0000 0000 4285 4284 
+ wt_min: -7 ===>> wt_max: -12 
+ 6 Rounds Linear Hull with total 3 trails.
+ Correlation potential is: -13.91 
+++++++++++++++++++
+ Time cost: 3.83 seconds ==  0.06 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+//2019年04月01日16:59:52
+huangmingjiang@ubuntu:~/hmj123/sparx128/cor/4/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:7 
+mode: 31 
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+wt_min(:9)--->wt_max: 15 
+-----------------------Search SPARX-128 Linear Hulls---------------------------
+count: 1    weight: 11 
+count: 2    weight: 9 
+count: 3    weight: 15 
+count: 4    weight: 12 
+count: 5    weight: 12 
+-----------------------Record SPARX-128 Linear Hulls---------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:0   prob_sum:-inf 
+wt:-6   wt_num:0   prob_sum:-inf 
+wt:-7   wt_num:0   prob_sum:-inf 
+wt:-8   wt_num:0   prob_sum:-inf 
+wt:-9   wt_num:1   prob_sum:-18.000000 
+wt:-10   wt_num:0   prob_sum:-18.000000 
+wt:-11   wt_num:1   prob_sum:-17.912537 
+wt:-12   wt_num:2   prob_sum:-17.870717 
+wt:-13   wt_num:0   prob_sum:-17.870717 
+wt:-14   wt_num:0   prob_sum:-17.870717 
+wt:-15   wt_num:1   prob_sum:-17.870395 
+++++++++++++++++++
+ cipher: sparx_128 
+ 0x0000 0000 0090 6021 0000 0000 0000 0000 
+==================>>
+0x0000 0000 0000 0000 0000 0000 170b 130a 
+ wt_min: -9 ===>> wt_max: -15 
+ 7 Rounds Linear Hull with total 5 trails.
+ Correlation potential is: -17.87 
+++++++++++++++++++
+ Time cost: 16.29 seconds ==  0.27 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+//2019年04月01日17:06:12
+huangmingjiang@ubuntu:~/hmj123/sparx128/cor/4/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:8 
+mode: 31 
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+wt_min(:12)--->wt_max: 18 
+-----------------------Search SPARX-128 Linear Hulls---------------------------
+count: 1    weight: 13 
+count: 2    weight: 12 
+count: 3    weight: 18 
+count: 4    weight: 18 
+count: 5    weight: 18 
+count: 6    weight: 16 
+count: 7    weight: 15 
+count: 8    weight: 17 
+count: 9    weight: 16 
+count: 10    weight: 18 
+count: 11    weight: 17 
+-----------------------Record SPARX-128 Linear Hulls---------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:0   prob_sum:-inf 
+wt:-6   wt_num:0   prob_sum:-inf 
+wt:-7   wt_num:0   prob_sum:-inf 
+wt:-8   wt_num:0   prob_sum:-inf 
+wt:-9   wt_num:0   prob_sum:-inf 
+wt:-10   wt_num:0   prob_sum:-inf 
+wt:-11   wt_num:0   prob_sum:-inf 
+wt:-12   wt_num:1   prob_sum:-24.000000 
+wt:-13   wt_num:1   prob_sum:-23.678072 
+wt:-14   wt_num:0   prob_sum:-23.678072 
+wt:-15   wt_num:1   prob_sum:-23.660150 
+wt:-16   wt_num:2   prob_sum:-23.651272 
+wt:-17   wt_num:2   prob_sum:-23.649061 
+wt:-18   wt_num:4   prob_sum:-23.647957 
+++++++++++++++++++
+ cipher: sparx_128 
+ 0x0081 1381 0000 0000 0000 0000 0000 0000 
+==================>>
+0x170b 130a 0000 0000 0104 120e 160f 0104 
+ wt_min: -12 ===>> wt_max: -18 
+ 8 Rounds Linear Hull with total 11 trails.
+ Correlation potential is: -23.65 
+++++++++++++++++++
+ Time cost: 104.65 seconds ==  1.74 minutes == 0.03 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年04月25日14:56:50
+huangmingjiang@ubuntu:~/hmj123/sparx128/9-18-20/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:9 
+mode: 31 
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+wt_min(:18)--->wt_max: 20 
+-----------------------Search SPARX-128 Linear Hulls---------------------------
+count: 1    weight: 18 
+count: 2    weight: 20 
+count: 3    weight: 20 
+count: 4    weight: 19 
+count: 5    weight: 20 
+-----------------------Record SPARX-128 Linear Hulls---------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:0   prob_sum:-inf 
+wt:-6   wt_num:0   prob_sum:-inf 
+wt:-7   wt_num:0   prob_sum:-inf 
+wt:-8   wt_num:0   prob_sum:-inf 
+wt:-9   wt_num:0   prob_sum:-inf 
+wt:-10   wt_num:0   prob_sum:-inf 
+wt:-11   wt_num:0   prob_sum:-inf 
+wt:-12   wt_num:0   prob_sum:-inf 
+wt:-13   wt_num:0   prob_sum:-inf 
+wt:-14   wt_num:0   prob_sum:-inf 
+wt:-15   wt_num:0   prob_sum:-inf 
+wt:-16   wt_num:0   prob_sum:-inf 
+wt:-17   wt_num:0   prob_sum:-inf 
+wt:-18   wt_num:1   prob_sum:-36.000000 
+wt:-19   wt_num:1   prob_sum:-35.678072 
+wt:-20   wt_num:3   prob_sum:-35.476438 
+++++++++++++++++++
+ cipher: sparx_128 
+ 0x0000 0000 0000 0200 0000 0000 0000 0000 
+==================>>
+0x0000 0000 2c10 2010 2c00 2000 0010 0010 
+ wt_min: -18 ===>> wt_max: -20 
+ 9 Rounds Linear Hull with total 5 trails.
+ Correlation potential is: -35.48 
+++++++++++++++++++
+ Time cost: 612.30 seconds ==  10.21 minutes == 0.17 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+//2019年04月26日08:35:09
+-----------------------Record SPARX-128 Linear Hulls---------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:0   prob_sum:-inf 
+wt:-6   wt_num:0   prob_sum:-inf 
+wt:-7   wt_num:0   prob_sum:-inf 
+wt:-8   wt_num:0   prob_sum:-inf 
+wt:-9   wt_num:0   prob_sum:-inf 
+wt:-10   wt_num:0   prob_sum:-inf 
+wt:-11   wt_num:0   prob_sum:-inf 
+wt:-12   wt_num:0   prob_sum:-inf 
+wt:-13   wt_num:0   prob_sum:-inf 
+wt:-14   wt_num:0   prob_sum:-inf 
+wt:-15   wt_num:0   prob_sum:-inf 
+wt:-16   wt_num:0   prob_sum:-inf 
+wt:-17   wt_num:0   prob_sum:-inf 
+wt:-18   wt_num:1   prob_sum:-36.000000 
+wt:-19   wt_num:1   prob_sum:-35.678072 
+wt:-20   wt_num:3   prob_sum:-35.476438 
+wt:-21   wt_num:8   prob_sum:-35.356144 
+wt:-22   wt_num:40   prob_sum:-35.218640 
+++++++++++++++++++
+ cipher: sparx_128 
+ 0x0000 0000 0000 0200 0000 0000 0000 0000 
+==================>>
+0x0000 0000 2c10 2010 2c00 2000 0010 0010 
+ wt_min: -18 ===>> wt_max: -22 
+ 9 Rounds Linear Hull with total 53 trails.
+ Correlation potential is: -35.22 
+++++++++++++++++++
+ Time cost: 21482.22 seconds ==  358.04 minutes == 5.97 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

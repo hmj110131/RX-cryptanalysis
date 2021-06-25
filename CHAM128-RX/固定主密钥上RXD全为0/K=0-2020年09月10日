@@ -1,0 +1,147 @@
+////////////////////////
+///////Odd-round////////
+////////////////////////
+////////////////////////
+//2020年09月10日09:08:25
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper: cham 
+blocksize: 128 
+rotational parameter: 1 
+rounds: 2 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+RX_zeta_total: 64  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct CHAM cDDTs: 28.00 seconds.  
+===============Search odd-round============= 
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 43.000000  --Max expected weight-- 
+Update: 1   RX_Bn_w: 4.830075  --Time: 0.00 seconds. ==>>
+round----X0---------X1----------X2----------X3----------zeta-------Pr_zeta----Pr_XOR-----Pr-RX
+01  0x00000000  0x00000000  0x00000000  0x00000000   0x00000000   1.415038   0.000000   1.415038 
+02  0x00000000  0x00000000  0x00000002  0x00000200   0x00000000   1.415038   2.000000   3.415038 
+03  0x00000000  0x00000002  0x00000200  0x00000002       
+------------------ 
+2 Round CHAM-128 Total Weight: -4.830075 
+Update: 2   RX_Bn_w: 4.830075  --Time: 0.00 seconds. ==>>
+round----X0---------X1----------X2----------X3----------zeta-------Pr_zeta----Pr_XOR-----Pr-RX
+01  0x00000000  0x00000000  0x00000000  0x00000000   0x00000000   1.415038   0.000000   1.415038 
+02  0x00000000  0x00000000  0x00000002  0x00000200   0x00000000   1.415038   2.000000   3.415038 
+03  0x00000000  0x00000002  0x00000200  0x00000006       
+------------------ 
+2 Round CHAM-128 Total Weight: -4.830075 
+Time: 28.00 seconds.  
+**************************************************************************|
+round----X0---------X1----------X2----------X3----------zeta-------Pr_zeta----Pr_XOR-----Pr-RX
+01  0x00000000  0x00000000  0x00000000  0x00000000   0x00000000   1.415038   0.000000   1.415038 
+02  0x00000000  0x00000000  0x00000002  0x00000200   0x00000000   1.415038   2.000000   3.415038 
+03  0x00000000  0x00000002  0x00000200  0x00000006       
+------------------ 
+2 Round CHAM-128 Total Weight: -4.830075 
+Time cost: 0.01 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 RX-differential trails END! 
+|************************************************************************|
+Time cost: 28.88 seconds ==  0.48 minutes == 0.01 hours. 
+Auto-RX-search END! 
+|************************************************************************|
+[huangmingjiang@localhost Debug]$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////
+///////Even-round////////
+////////////////////////
+////////////////////////
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper: cham 
+blocksize: 128 
+rotational parameter: 1 
+rounds: 2 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+RX_zeta_total: 64  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct CHAM cDDTs: 31.00 seconds.  
+===============Search even-round============= 
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 43.000000  --Max expected weight-- 
+Update: 1   RX_Bn_w: 4.830075  --Time: 0.00 seconds. ==>>
+round----X0---------X1----------X2----------X3----------zeta-------Pr_zeta----Pr_XOR-----Pr-RX
+01  0x00000000  0x00000000  0x00000000  0x00000000   0x00000000   1.415038   0.000000   1.415038 
+02  0x00000000  0x00000000  0x00000100  0x00000004   0x00000000   1.415038   2.000000   3.415038 
+03  0x00000000  0x00000100  0x00000004  0x00000100       
+------------------ 
+2 Round CHAM-128 Total Weight: -4.830075 
+Update: 2   RX_Bn_w: 4.830075  --Time: 0.00 seconds. ==>>
+round----X0---------X1----------X2----------X3----------zeta-------Pr_zeta----Pr_XOR-----Pr-RX
+01  0x00000000  0x00000000  0x00000000  0x00000000   0x00000000   1.415038   0.000000   1.415038 
+02  0x00000000  0x00000000  0x00000100  0x00000004   0x00000000   1.415038   2.000000   3.415038 
+03  0x00000000  0x00000100  0x00000004  0x00000300       
+------------------ 
+2 Round CHAM-128 Total Weight: -4.830075 
+Time: 31.00 seconds.  
+**************************************************************************|
+round----X0---------X1----------X2----------X3----------zeta-------Pr_zeta----Pr_XOR-----Pr-RX
+01  0x00000000  0x00000000  0x00000000  0x00000000   0x00000000   1.415038   0.000000   1.415038 
+02  0x00000000  0x00000000  0x00000100  0x00000004   0x00000000   1.415038   2.000000   3.415038 
+03  0x00000000  0x00000100  0x00000004  0x00000300       
+------------------ 
+2 Round CHAM-128 Total Weight: -4.830075 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 RX-differential trails END! 
+|************************************************************************|
+Time cost: 31.18 seconds ==  0.52 minutes == 0.01 hours. 
+Auto-RX-search END! 
+|************************************************************************|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+
+//2019年03月27日18:26:10
+wt:-28   wt_num:0   prob_sum:-inf 
+wt:-29   wt_num:0   prob_sum:-inf 
+wt:-30   wt_num:16   prob_sum:-56.000000 
+wt:-31   wt_num:0   prob_sum:-56.000000 
+wt:-32   wt_num:162   prob_sum:-55.292641 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_64 
+ input:0x01000120 14010021 ======>> output:0x50000404 80000404 
+ wt_min(:-30)--->wt_max: -32 
+ 13 Rounds Linear Hull with total 178 trails.
+ Square Correlation weight is: -55.29 
+++++++++++++++++++++++++++++++++++++
+ Time: 26219.00 seconds.  
+Time cost: 26219.36 seconds ==  436.99 minutes == 7.28 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+huangmingjiang@ubuntu:~/hmj123/speck64/cor-13-32/auto_search/Debug$ 
+
+
+//2019年03月28日08:55:36
+wt:-32   wt_num:0   prob_sum:-inf 
+wt:-33   wt_num:16   prob_sum:-62.000000 
+wt:-34   wt_num:0   prob_sum:-62.000000 
+wt:-35   wt_num:178   prob_sum:-61.238449 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_64 
+ input:0x01000120 14010021 ======>> output:0x26902000 20802006 
+ wt_min(:-0)--->wt_max: -35 
+ 14 Rounds Linear Hull with total 194 trails.
+ Square Correlation weight is: -61.24 
+++++++++++++++++++++++++++++++++++++
+ Time: 20883.00 seconds.  
+Time cost: 20883.30 seconds ==  348.05 minutes == 5.80 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+huangmingjiang@ubuntu:~/hmj123/speck64/cor-14-35/auto_search/Debug$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

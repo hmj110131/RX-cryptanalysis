@@ -1,0 +1,51 @@
+//2020年10月19日09:44:29
+
+huangmingjiang@node1:~/cham-rx/16r-6-15/auto_search/Debug$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper  #blocksize  #rounds  #mode 
+ciper: cham 
+blocksize: 128 
+rotational parameter: 1 
+rounds: 4 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+ ===============3/6 4/7-round injected Key RXD======== 
+RX_zeta_total: 64  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct CHAM cDDTs: 28.00 seconds.  
+===============Search odd-round============= 
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 32.000000  --Max expected weight-- 
+Update: 1   RX_Bn_w: 13.660151  --Time: 0.00 seconds. ==>>
+round----X0---------X1----------X2----------X3----------zeta-------Pr_zeta----Pr_XOR-----Pr-RX
+01  0x00000000  0x00000000  0x00000000  0x00000000   0x00000000   1.415038   0.000000   1.415038 
+02  0x00000000  0x00000000  0x00000000  0x00000000   0x00000000   1.415038   2.000000   3.415038 
+03  0x00000000  0x00000000  0x00000000  0x00000002   0x00000000   1.415038   2.000000   3.415038 
+04  0x00000000  0x00000000  0x00000002  0x00000200   0x00000000   1.415038   4.000000   5.415038 
+05  0x00000000  0x00000002  0x00000200  0x00000200       
+------------------ 
+4 Round CHAM-128 Total Weight: -13.660151 
+Update: 2   RX_Bn_w: 12.660151  --Time: 0.00 seconds. ==>>
+round----X0---------X1----------X2----------X3----------zeta-------Pr_zeta----Pr_XOR-----Pr-RX
+01  0x00000000  0x00000000  0x00000000  0x00000002   0x00000000   1.415038   0.000000   1.415038 
+02  0x00000000  0x00000000  0x00000002  0x00000000   0x00000000   1.415038   2.000000   3.415038 
+03  0x00000000  0x00000002  0x00000000  0x00000002   0x00000000   1.415038   2.000000   3.415038 
+04  0x00000002  0x00000000  0x00000002  0x00000200   0x00000000   1.415038   3.000000   4.415038 
+05  0x00000000  0x00000002  0x00000200  0x00000204       
+------------------ 
+4 Round CHAM-128 Total Weight: -12.660151 
+
+
+
+
+
+
+
+
+
+

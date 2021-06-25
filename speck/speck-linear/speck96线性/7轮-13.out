@@ -1,0 +1,30 @@
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:7 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 8.00 seconds.  
+Searching correlation weight: 13 
+For speck 1-round, thrd_cor_1 = 2; thrd_cor_1 < 5 ;thrd_cor_1++ 
+ Time: 216345.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000001002104    0x268000010001     -3 
+02     0x000000018130    0x040000000101     -2 
+03     0x000000000100    0x200000000001     -0 
+04     0x000000000000    0x000000000001     -0 
+05     0x000000000008    0x000000000008     -1 
+06     0x4c0000000040    0x400000000040     -3 
+07     0x620c00000200    0x026000000200     -4 
+08     0x115348001012    0x111040001010     NULL 
+7 Round Total Weight: -13 
+---------------------------------
+Time cost: 216345.52 seconds == 3605.76 minutes == 60.10 hours == 2.50 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 216354.45 seconds ==  3605.91 minutes == 60.10 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------

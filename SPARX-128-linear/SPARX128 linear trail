@@ -1,0 +1,855 @@
+//2019年03月14日16:15:21
+[era@sce Debug]$ scerun ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:3 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 4.00 seconds.  
+Searching SPARX-128 Bn_w: 1 
+Time: 0.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+01   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0080  0x4001    -0   -0   -0   -0     -0 
+02   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0001    -0   -0   -0   -0     -0 
+03   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0004  0x0004    -0   -0   -0   -1     -1 
+04   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x2c10  0x2010    -    -    -    -     NULL 
+------------------ 
+------------------ 
+3 Round SPARX-128 Total Weight: -1 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 4.29 seconds ==  0.07 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年03月14日16:54:39
+huangmingjiang@ubuntu:~/hmj123/sparx128/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:4 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 1 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 2 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 3 
+Time: 0.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+01   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0090  0x6021    -0   -0   -0   -1     -1 
+02   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x6080  0x4081    -0   -0   -0   -1     -1 
+03   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0080  0x0001    -0   -0   -0   -0     -0 
+04   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0001  0x0000    -0   -0   -0   -1     -1 
+05   0x0000  0x0000  0x0b00  0x0800  0x0b03  0x0003  0x0003  0x0803    -    -    -    -     NULL 
+------------------ 
+04-L 0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0b00  0x0800    -    -    -    -      - 
+------------------ 
+4 Round SPARX-128 Total Weight: -3 
+Time cost: 0.05 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 3.22 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年03月14日16:55:39
+
+huangmingjiang@ubuntu:~/hmj123/sparx128/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:5 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 3 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 4 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 5 
+Time: 1.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+01   0x0000  0x0000  0x00a0  0x3021  0x0000  0x0000  0x0000  0x0000    -0   -1   -0   -0     -1 
+02   0x0000  0x0000  0x0080  0x4081  0x0000  0x0000  0x0000  0x0000    -0   -0   -0   -0     -0 
+03   0x0000  0x0000  0x0200  0x0201  0x0000  0x0000  0x0000  0x0000    -0   -1   -0   -0     -1 
+04   0x0000  0x0000  0x0818  0x081c  0x0000  0x0000  0x0000  0x0000    -0   -2   -0   -0     -2 
+05   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x8000  0xa010    -0   -0   -0   -1     -1 
+06   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x85c2  0x8442    -    -    -    -     NULL 
+------------------ 
+04-L 0x0000  0x0000  0x8000  0xa010  0x0000  0x0000  0x0000  0x0000    -    -    -    -      - 
+------------------ 
+5 Round SPARX-128 Total Weight: -5 
+Time cost: 1.58 seconds ==  0.03 minutes == 0.00 hours == 0.00 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 4.63 seconds ==  0.08 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年03月14日16:56:53
+huangmingjiang@ubuntu:~/hmj123/sparx128/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:6 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 2.00 seconds.  
+Searching SPARX-128 Bn_w: 5 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 6 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 7 
+Time: 0.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+01   0x0000  0x0000  0x0080  0x5021  0x0000  0x0000  0x0000  0x0000    -0   -0   -0   -0     -0 
+02   0x0000  0x0000  0x4080  0x4081  0x0000  0x0000  0x0000  0x0000    -0   -1   -0   -0     -1 
+03   0x0000  0x0000  0x00c0  0x0001  0x0000  0x0000  0x0000  0x0000    -0   -1   -0   -0     -1 
+04   0x0000  0x0000  0xc003  0x0002  0x0000  0x0000  0x0000  0x0000    -0   -3   -0   -0     -3 
+05   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x1808  0x1c08    -0   -0   -0   -2     -2 
+06   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0080  0x10a0    -0   -0   -0   -0     -0 
+07   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x4285  0x4284    -    -    -    -     NULL 
+------------------ 
+04-L 0x0000  0x0000  0x1808  0x1c08  0x0000  0x0000  0x0000  0x0000    -    -    -    -      - 
+------------------ 
+6 Round SPARX-128 Total Weight: -7 
+Time cost: 0.24 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 3.23 seconds ==  0.05 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年03月14日16:57:35
+
+huangmingjiang@ubuntu:~/hmj123/sparx128/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:7 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 2.00 seconds.  
+Searching SPARX-128 Bn_w: 7 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 8 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 9 
+Time: 4.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+01   0x0000  0x0000  0x0090  0x6021  0x0000  0x0000  0x0000  0x0000    -0   -1   -0   -0     -1 
+02   0x0000  0x0000  0x6080  0x4081  0x0000  0x0000  0x0000  0x0000    -0   -1   -0   -0     -1 
+03   0x0000  0x0000  0x0080  0x0001  0x0000  0x0000  0x0000  0x0000    -0   -0   -0   -0     -0 
+04   0x0000  0x0000  0x0001  0x0000  0x0000  0x0000  0x0000  0x0000    -0   -1   -0   -0     -1 
+05   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0b00  0x0800    -0   -0   -0   -3     -3 
+06   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x2040  0x2050    -0   -0   -0   -2     -2 
+07   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0083  0x80c3    -0   -0   -0   -1     -1 
+08   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x170b  0x130a    -    -    -    -     NULL 
+------------------ 
+04-L 0x0000  0x0000  0x0b00  0x0800  0x0000  0x0000  0x0000  0x0000    -    -    -    -      - 
+------------------ 
+7 Round SPARX-128 Total Weight: -9 
+Time cost: 4.13 seconds ==  0.07 minutes == 0.00 hours == 0.00 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 7.07 seconds ==  0.12 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+//期望的8轮的SPARX128的最优线性路径
+[era@sce Debug]$ scerun ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:8 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 4.00 seconds.  
+Searching SPARX-128 Bn_w: 9 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 10 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 11 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 12 
+Time: 0.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+01   0x0081  0x1381  0x0000  0x0000  0x0000  0x0000  0x0000  0x0000    -1   -0   -0   -0     -1 
+02   0x4001  0x4200  0x0000  0x0000  0x0000  0x0000  0x0000  0x0000    -2   -0   -0   -0     -2 
+03   0x0081  0x0201  0x0000  0x0000  0x0000  0x0000  0x0000  0x0000    -2   -0   -0   -0     -2 
+04   0x0001  0x0200  0x0000  0x0000  0x0000  0x0000  0x0000  0x0000    -2   -0   -0   -0     -2 
+05   0x0000  0x0000  0x0000  0x0000  0x0000  0x0200  0x0000  0x0000    -0   -0   -0   -0     -0 
+06   0x0000  0x0000  0x0000  0x0000  0x0800  0x0800  0x0000  0x0000    -0   -0   -2   -0     -2 
+07   0x0000  0x0000  0x0000  0x0000  0x2040  0x2050  0x0000  0x0000    -0   -0   -2   -0     -2 
+08   0x0000  0x0000  0x0000  0x0000  0x0083  0x80c3  0x0000  0x0000    -0   -0   -1   -0     -1 
+09   0x170b  0x130a  0x0000  0x0000  0x0104  0x120e  0x160f  0x0104    -    -    -    -     NULL 
+------------------ 
+04-L 0x0000  0x0200  0x0000  0x0000  0x0000  0x0000  0x0000  0x0000    -    -    -    -      - 
+08-L 0x0000  0x0000  0x0000  0x0000  0x170b  0x130a  0x0000  0x0000    -    -    -    -      - 
+------------------ 
+8 Round SPARX-128 Total Weight: -12 
+Time cost: 0.01 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 4.43 seconds ==  0.07 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////
+2019年03月18日16:54:53   重新利用第1/2轮概率直接构造
+但是搜索速度貌似变慢了，wt1+wt2的情况，看似快，实际慢
+////////////////////////////////////////////////////////////////////////////
+
+huangmingjiang@ubuntu:~/hmj123/sparx128/fuck/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:4 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 2.00 seconds.  
+Searching SPARX-128 Bn_w: 1 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 2 
+Time: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 3 
+Time: 104.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+01   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0090  0x6021    -0   -0   -0   -1     -1 
+02   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x6080  0x4081    -0   -0   -0   -1     -1 
+03   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0080  0x0001    -0   -0   -0   -0     -0 
+04   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0001  0x0000    -0   -0   -0   -1     -1 
+05   0x0000  0x0000  0x0b00  0x0800  0x0b03  0x0003  0x0003  0x0803    -    -    -    -     NULL 
+------------------ 
+04-L 0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0b00  0x0800    -    -    -    -      - 
+------------------ 
+4 Round SPARX-128 Total Weight: -3 
+Time cost: 104.49 seconds ==  1.74 minutes == 0.03 hours == 0.00 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 107.36 seconds ==  1.79 minutes == 0.03 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+//2019年03月18日18:42:12
+huangmingjiang@ubuntu:~/hmj123/sparx128/fuck/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:5 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 3 
+Time: 1.00 seconds.  
+Searching SPARX-128 Bn_w: 4 
+Time: 408.00 seconds.  
+Searching SPARX-128 Bn_w: 5 
+Time: 6202.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+01   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x1000  0x063a    -0   -0   -0   -1     -1 
+02   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x1808  0x1828    -0   -0   -0   -2     -2 
+03   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x1000  0x0020    -0   -0   -0   -2     -2 
+04   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0020    -0   -0   -0   -0     -0 
+05   0x0000  0x0000  0x0080  0x0080  0x0080  0x0000  0x0000  0x0080    -0   -0   -0   -0     -0 
+06   0x0000  0x0000  0x0205  0x0204  0x0005  0x0004  0x0200  0x0200    -    -    -    -     NULL 
+------------------ 
+04-L 0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0080  0x0080    -    -    -    -      - 
+------------------ 
+5 Round SPARX-128 Total Weight: -5 
+Time cost: 6202.72 seconds ==  103.38 minutes == 1.72 hours == 0.07 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 6206.02 seconds ==  103.43 minutes == 1.72 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+//2019年03月19日09:57:39、///////有wt在1/2轮增加的模式，搜索效率更加低
+////////////////////////////////////////////////////////////////
+huangmingjiang@ubuntu:~/hmj123/sparx128/20190319/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:4 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 1 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 2 
+Time: 4.00 seconds.  
+Searching SPARX-128 Bn_w: 3 
+Time: 106.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+01   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0090  0x6021    -0   -0   -0   -1     -1 
+02   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x6080  0x4081    -0   -0   -0   -1     -1 
+03   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0080  0x0001    -0   -0   -0   -0     -0 
+04   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0001  0x0000    -0   -0   -0   -1     -1 
+05   0x0000  0x0000  0x0b00  0x0800  0x0b03  0x0003  0x0003  0x0803    -    -    -    -     NULL 
+------------------ 
+04-L 0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0b00  0x0800    -    -    -    -      - 
+------------------ 
+4 Round SPARX-128 Total Weight: -3 
+Time cost: 106.89 seconds ==  1.78 minutes == 0.03 hours == 0.00 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 110.53 seconds ==  1.84 minutes == 0.03 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+////////////////////////////////////////////////////////////////////////////
+修复了3月14日之前的版本，可以搜索SPARX128的低8轮的线性路径，但是效率变慢了,无wt增加
+//2019年03月19日09:49:15
+//////////////////////////////////////////////////////////////////////////////////
+huangmingjiang@ubuntu:~/hmj123/sparx128/20190319/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:4 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 1 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 2 
+Time: 4.00 seconds.  
+Searching SPARX-128 Bn_w: 3 
+Time: 19.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+01   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0090  0x6021    -0   -0   -0   -1     -1 
+02   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x6080  0x4081    -0   -0   -0   -1     -1 
+03   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0080  0x0001    -0   -0   -0   -0     -0 
+04   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0001  0x0000    -0   -0   -0   -1     -1 
+05   0x0000  0x0000  0x0b00  0x0800  0x0b03  0x0003  0x0003  0x0803    -    -    -    -     NULL 
+------------------ 
+04-L 0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0b00  0x0800    -    -    -    -      - 
+------------------ 
+4 Round SPARX-128 Total Weight: -3 
+Time cost: 19.41 seconds ==  0.32 minutes == 0.01 hours == 0.00 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 22.72 seconds ==  0.38 minutes == 0.01 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//实验结果，第MSB的构造的时候，不要考虑if(Corr_tmp_inc > part_wt) 的情况
+//2019年03月19日10:36:47
+huangmingjiang@ubuntu:~/hmj123/sparx128/20190319/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:5 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 3 
+Time: 1.00 seconds.  
+Searching SPARX-128 Bn_w: 4 
+Time: 442.00 seconds.  
+Searching SPARX-128 Bn_w: 5 
+Time: 1783.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+01   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x1000  0x063a    -0   -0   -0   -1     -1 
+02   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x1808  0x1828    -0   -0   -0   -2     -2 
+03   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x1000  0x0020    -0   -0   -0   -2     -2 
+04   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0020    -0   -0   -0   -0     -0 
+05   0x0000  0x0000  0x0080  0x0080  0x0080  0x0000  0x0000  0x0080    -0   -0   -0   -0     -0 
+06   0x0000  0x0000  0x0205  0x0204  0x0005  0x0004  0x0200  0x0200    -    -    -    -     NULL 
+------------------ 
+04-L 0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0080  0x0080    -    -    -    -      - 
+------------------ 
+5 Round SPARX-128 Total Weight: -5 
+Time cost: 1783.56 seconds ==  29.73 minutes == 0.50 hours == 0.02 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 1786.84 seconds ==  29.78 minutes == 0.50 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年03月19日12:54:06
+huangmingjiang@ubuntu:~/hmj123/sparx128/20190319/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:6 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 5 
+Time: 1.00 seconds.  
+Searching SPARX-128 Bn_w: 6 
+Time: 463.00 seconds.  
+Searching SPARX-128 Bn_w: 7 
+Time: 7764.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+01   0x0000  0x0000  0x0080  0x5021  0x0000  0x0000  0x0000  0x0000    -0   -0   -0   -0     -0 
+02   0x0000  0x0000  0x4080  0x4081  0x0000  0x0000  0x0000  0x0000    -0   -1   -0   -0     -1 
+03   0x0000  0x0000  0x00c0  0x0001  0x0000  0x0000  0x0000  0x0000    -0   -1   -0   -0     -1 
+04   0x0000  0x0000  0xc003  0x0002  0x0000  0x0000  0x0000  0x0000    -0   -3   -0   -0     -3 
+05   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x1808  0x1c08    -0   -0   -0   -2     -2 
+06   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0080  0x10a0    -0   -0   -0   -0     -0 
+07   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x4285  0x4284    -    -    -    -     NULL 
+------------------ 
+04-L 0x0000  0x0000  0x1808  0x1c08  0x0000  0x0000  0x0000  0x0000    -    -    -    -      - 
+------------------ 
+6 Round SPARX-128 Total Weight: -7 
+Time cost: 7764.61 seconds ==  129.41 minutes == 2.16 hours == 0.09 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 7767.88 seconds ==  129.46 minutes == 2.16 hours. 
+Auto-search END! 
+
+
+
+//2019年03月19日15:09:28
+huangmingjiang@ubuntu:~/hmj123/sparx128/20190319/7/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:7 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 7 
+Time: 1.00 seconds.  
+Searching SPARX-128 Bn_w: 8 
+Time: 440.00 seconds.  
+Searching SPARX-128 Bn_w: 9 
+Time: 7799.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+01   0x0000  0x0000  0x0080  0x5b25  0x0000  0x0000  0x0000  0x0000    -0   -0   -0   -0     -0 
+02   0x0000  0x0000  0x6c90  0x6c91  0x0000  0x0000  0x0000  0x0000    -0   -3   -0   -0     -3 
+03   0x0000  0x0000  0x00b8  0x3021  0x0000  0x0000  0x0000  0x0000    -0   -2   -0   -0     -2 
+04   0x0000  0x0000  0x0080  0x4081  0x0000  0x0000  0x0000  0x0000    -0   -0   -0   -0     -0 
+05   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0200  0x0201    -0   -0   -0   -1     -1 
+06   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0818  0x081c    -0   -0   -0   -2     -2 
+07   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x8000  0xa010    -0   -0   -0   -1     -1 
+08   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x85c2  0x8442    -    -    -    -     NULL 
+------------------ 
+04-L 0x0000  0x0000  0x0200  0x0201  0x0000  0x0000  0x0000  0x0000    -    -    -    -      - 
+------------------ 
+7 Round SPARX-128 Total Weight: -9 
+Time cost: 7799.96 seconds ==  130.00 minutes == 2.17 hours == 0.09 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 7803.11 seconds ==  130.05 minutes == 2.17 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年03月25日10:40:17
+huangmingjiang@ubuntu:~/hmj123/sparx128/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:8 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 2.00 seconds.  
+Searching SPARX-128 Bn_w: 9 
+Time: 1.00 seconds.  
+Searching SPARX-128 Bn_w: 10 
+Time: 422.00 seconds.  
+Searching SPARX-128 Bn_w: 11 
+Time: 67786.00 seconds.  
+Searching SPARX-128 Bn_w: 12 
+
+
+
+//2019年03月19日15:41:02
+huangmingjiang@ubuntu:~/hmj123/sparx128/20190319/8/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:8 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 9 
+Time: 1.00 seconds.  
+Searching SPARX-128 Bn_w: 10 
+Time: 448.00 seconds.  
+Searching SPARX-128 Bn_w: 11 
+Time: 73020.00 seconds.  
+Searching SPARX-128 Bn_w: 12 
+
+
+
+//2019年03月28日08:33:55
+huangmingjiang@ubuntu:~/hmj123/sparx128/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:8 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 2.00 seconds.  
+Searching SPARX-128 Bn_w: 9 
+Time: 1.00 seconds.  
+Searching SPARX-128 Bn_w: 10 
+Time: 422.00 seconds.  
+Searching SPARX-128 Bn_w: 11 
+Time: 67786.00 seconds.  
+Searching SPARX-128 Bn_w: 12 
+Time: 1125248.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+01   0x0000  0x0000  0x0081  0x1381  0x0000  0x0000  0x0000  0x0000    -0   -1   -0   -0     -1 
+02   0x0000  0x0000  0x4001  0x4200  0x0000  0x0000  0x0000  0x0000    -0   -2   -0   -0     -2 
+03   0x0000  0x0000  0x0081  0x0201  0x0000  0x0000  0x0000  0x0000    -0   -2   -0   -0     -2 
+04   0x0000  0x0000  0x0001  0x0200  0x0000  0x0000  0x0000  0x0000    -0   -2   -0   -0     -2 
+05   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0200    -0   -0   -0   -0     -0 
+06   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0800  0x0800    -0   -0   -0   -2     -2 
+07   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x2040  0x2050    -0   -0   -0   -2     -2 
+08   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0083  0x80c3    -0   -0   -0   -1     -1 
+09   0x0000  0x0000  0x170b  0x130a  0x160f  0x0104  0x0104  0x120e    -    -    -    -     NULL 
+------------------ 
+04-L 0x0000  0x0000  0x0000  0x0200  0x0000  0x0000  0x0000  0x0000    -    -    -    -      - 
+08-L 0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x170b  0x130a    -    -    -    -      - 
+------------------ 
+8 Round SPARX-128 Total Weight: -12 
+Time cost: 1125248.66 seconds ==  18754.14 minutes == 312.57 hours == 13.02 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 1125251.65 seconds ==  18754.19 minutes == 312.57 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+//2019年04月01日09:39:26
+huangmingjiang@ubuntu:~/hmj123/sparx128/9/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:9 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 12 
+Time: 108.00 seconds.  
+Searching SPARX-128 Bn_w: 13 
+Time: 32750.00 seconds.  
+Searching SPARX-128 Bn_w: 14 
+
+
+
+
+
+
+//2019年04月22日08:40:21
+//限定每第1、2轮的每个模加的相关性重量<3
+huangmingjiang@ubuntu:~/hmj123/sparx128/9-18-2/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:9 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 18 
+Time: 3536.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+01   0x0000  0x0000  0x0000  0x0200  0x0000  0x0000  0x0000  0x0000    -0   -0   -0   -0     -0 
+02   0x0000  0x0000  0x0800  0x0800  0x0000  0x0000  0x0000  0x0000    -0   -1   -0   -0     -1 
+03   0x0000  0x0000  0x2070  0x2060  0x0000  0x0000  0x0000  0x0000    -0   -4   -0   -0     -4 
+04   0x0000  0x0000  0xa083  0x40c3  0x0000  0x0000  0x0000  0x0000    -0   -5   -0   -0     -5 
+05   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x18a8  0x1c09    -0   -0   -0   -4     -4 
+06   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x60b0  0x1081    -0   -0   -0   -2     -2 
+07   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0080  0x4001    -0   -0   -0   -0     -0 
+08   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0001    -0   -0   -0   -0     -0 
+09   0x0000  0x0000  0x0004  0x0004  0x0004  0x0000  0x0000  0x0004    -0   -1   -1   -0     -2 
+10   0x0000  0x0000  0x2c10  0x2010  0x2c00  0x2000  0x0010  0x0010    -    -    -    -     NULL 
+------------------ 
+04-L 0x0000  0x0000  0x18a8  0x1c09  0x0000  0x0000  0x0000  0x0000    -    -    -    -      - 
+08-L 0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0004  0x0004    -    -    -    -      - 
+------------------ 
+9 Round SPARX-128 Total Weight: -18 
+Time cost: 3536.26 seconds ==  58.94 minutes == 0.98 hours == 0.04 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 3539.34 seconds ==  58.99 minutes == 0.98 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+huangmingjiang@ubuntu:~/hmj123/sparx128/9-18-2/auto_search/Debug$ 
+
+
+//2019年04月25日15:29:08
+// 以第9轮到的输出掩码，扩展1轮得到的18 + 6 =24 的10轮的相关性重量
+huangmingjiang@ubuntu:~/hmj123/sparx128/test/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:1 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 1 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 2 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 3 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 4 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 5 
+Time: 0.00 seconds.  
+Searching SPARX-128 Bn_w: 6 
+Time: 0.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+10   0x0000  0x0000  0x2c10  0x2010  0x2c00  0x2000  0x0010  0x0010    -0   -3   -2   -1     -6 
+02   0x0000  0x0000  0x3170  0x0100  0x8130  0x8140  0xb040  0x8040    -    -    -    -     NULL 
+------------------ 
+------------------ 
+1 Round SPARX-128 Total Weight: -6 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 3.94 seconds ==  0.07 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年04月28日08:35:15
+//
+huangmingjiang@ubuntu:~/hmj123/sparx128/10-23-0/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:10 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 23 
+Time: 160733.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+01   0x0000  0x0000  0x0000  0x4020  0x0000  0x0000  0x0000  0x0000    -0   -0   -0   -0     -0 
+02   0x0000  0x0000  0x0081  0x0081  0x0000  0x0000  0x0000  0x0000    -0   -1   -0   -0     -1 
+03   0x0000  0x0000  0x0c01  0x0e00  0x0000  0x0000  0x0000  0x0000    -0   -3   -0   -0     -3 
+04   0x0000  0x0000  0x3648  0x3450  0x0000  0x0000  0x0000  0x0000    -0   -5   -0   -0     -5 
+05   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x008a  0x90e2    -0   -0   -0   -2     -2 
+06   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x078f  0x138e    -0   -0   -0   -4     -4 
+07   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x000e  0x1600    -0   -0   -0   -2     -2 
+08   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x1800    -0   -0   -0   -0     -0 
+09   0x0000  0x0000  0x6000  0x6000  0x6000  0x0000  0x0000  0x6000    -0   -1   -1   -0     -2 
+10   0x0000  0x0000  0x8281  0x8201  0x0280  0x0200  0x8001  0x8001    -0   -2   -1   -1     -4 
+11   0x0000  0x0000  0x0215  0x0012  0x0813  0x0814  0x0a06  0x0806    -    -    -    -     NULL 
+------------------ 
+04-L 0x0000  0x0000  0x008a  0x90e2  0x0000  0x0000  0x0000  0x0000    -    -    -    -      - 
+08-L 0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x6000  0x6000    -    -    -    -      - 
+------------------ 
+10 Round SPARX-128 Total Weight: -23 
+Time cost: 160733.35 seconds ==  2678.89 minutes == 44.65 hours == 1.86 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 160736.83 seconds ==  2678.95 minutes == 44.65 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+huangmingjiang@ubuntu:~/hmj123/sparx128/10-23-0/auto_search/Debug$ 
+
+
+//2019年05月05日08:38:14
+//有问题呀。。。。。。。。。。。。。。。。。。。。。。
+huangmingjiang@ubuntu:~/hmj123/sparx128/10-22-2round/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:sparx 
+Note: blocksize Now only fixed for 64 or 128 bits.  
+blocksize: 128 
+rounds:10 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing SPARX-128 cLAT Tables... 
+Time of Construct SPARX-128 cLAT: 3.00 seconds.  
+Searching SPARX-128 Bn_w: 22 
+Time: 382839.00 seconds.  
+round---Xr0----Xr1-----Xr2-----Xr3-----Xr4-----Xr5-----Xr6-----Xr7----w_0---w_1--w_2--w_3----Pw 
+01   0x0000  0x0000  0x0080  0x4001  0x0000  0x0000  0x0000  0x0000    -0   -0   -0   -0     -0 
+02   0x0000  0x0000  0x0000  0x0001  0x0000  0x0000  0x0000  0x0000    -0   -0   -0   -0     -1 
+03   0x0000  0x0000  0x0004  0x0004  0x0000  0x0000  0x0000  0x0000    -0   -12   -0   -0     -12 
+04   0x0000  0x0000  0xe10b  0x7e73  0x0000  0x0000  0x0000  0x0000    -0   -3   -0   -0     -3 
+05   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0xe5cd  0xe00d    -0   -0   -0   -2     -2 
+06   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x9bd0  0x9b17    -0   -0   -0   -2     -2 
+07   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0xe84c  0xdc4c    -0   -0   -0   -2     -2 
+08   0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x8bf1  0x9331    -0   -0   -0   -2     -2 
+09   0x0000  0x0000  0x6185  0x2144  0xa0c5  0xc140  0xc140  0xe004    -0   -3   -1   -0     -4 
+10   0x0000  0x0000  0x3210  0x3c10  0x3800  0x3000  0x0010  0x0010    -0   -2   -2   -0     -4 
+11   0x0000  0x0000  0x0b81  0x0800  0x0984  0x0a04  0x0205  0x0204    -    -    -    -     NULL 
+------------------ 
+04-L 0x0000  0x0000  0xe5cd  0xe00d  0x0000  0x0000  0x0000  0x0000    -    -    -    -      - 
+08-L 0x0000  0x0000  0x0000  0x0000  0x0000  0x0000  0x6185  0x2144    -    -    -    -      - 
+------------------ 
+10 Round SPARX-128 Total Weight: -22 
+Time cost: 382839.03 seconds ==  6380.65 minutes == 106.34 hours == 4.43 days. 
+Auto-search END! 
+|************************************************************************|
+Time cost: 382842.30 seconds ==  6380.70 minutes == 106.35 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

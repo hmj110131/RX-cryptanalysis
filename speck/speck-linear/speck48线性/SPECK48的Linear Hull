@@ -1,0 +1,252 @@
+//2019年03月13日13:03:38
+wt:-21   wt_num:0   prob_sum:-inf 
+wt:-22   wt_num:1   prob_sum:-44.000000 
+wt:-23   wt_num:0   prob_sum:-44.000000 
+wt:-24   wt_num:3   prob_sum:-43.752072 
+wt:-25   wt_num:3   prob_sum:-43.696219 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_48 
+ input:0x000180 b80001 ======>> output:0x8800a8 880109 
+ wt_min(:-22)--->wt_max: -25 
+ 10 Rounds Linear Hull with total 7 trails.
+ Square Correlation weight is: -43.70 
+++++++++++++++++++++++++++++++++++++
+ Time: 1796.00 seconds.  
+Time cost: 1796.10 seconds ==  29.94 minutes == 0.50 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年03月21日08:34:37
+huangmingjiang@ubuntu:~/hmj123/speck48/10-28/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 48 
+rounds:10 
+mode: 30 
+Time of Construct ARX_cLAT: 3.00 seconds.  
+--------------------Search SPECK Linear Hulls-------------------
+count: 1    weight: 26 
+count: 2    weight: 28 
+count: 3    weight: 28 
+count: 4    weight: 26 
+count: 5    weight: 28 
+count: 6    weight: 28 
+count: 7    weight: 27 
+count: 8    weight: 27 
+count: 9    weight: 28 
+count: 10    weight: 22 
+count: 11    weight: 24 
+count: 12    weight: 26 
+count: 13    weight: 28 
+count: 14    weight: 28 
+count: 15    weight: 25 
+count: 16    weight: 25 
+count: 17    weight: 27 
+count: 18    weight: 28 
+count: 19    weight: 28 
+count: 20    weight: 24 
+count: 21    weight: 26 
+count: 22    weight: 28 
+count: 23    weight: 27 
+count: 24    weight: 26 
+count: 25    weight: 28 
+count: 26    weight: 27 
+count: 27    weight: 28 
+count: 28    weight: 24 
+count: 29    weight: 26 
+count: 30    weight: 28 
+count: 31    weight: 27 
+count: 32    weight: 27 
+count: 33    weight: 26 
+count: 34    weight: 28 
+count: 35    weight: 28 
+count: 36    weight: 26 
+count: 37    weight: 28 
+count: 38    weight: 28 
+count: 39    weight: 26 
+count: 40    weight: 28 
+count: 41    weight: 28 
+
+count: 42    weight: 27 
+count: 43    weight: 28 
+count: 44    weight: 25 
+count: 45    weight: 27 
+count: 46    weight: 28 
+count: 47    weight: 28 
+count: 48    weight: 27 
+count: 49    weight: 27 
+count: 50    weight: 28 
+--------------------Record SPECK Linear Hulls-------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:0   prob_sum:-inf 
+wt:-6   wt_num:0   prob_sum:-inf 
+wt:-7   wt_num:0   prob_sum:-inf 
+wt:-8   wt_num:0   prob_sum:-inf 
+wt:-9   wt_num:0   prob_sum:-inf 
+wt:-10   wt_num:0   prob_sum:-inf 
+wt:-11   wt_num:0   prob_sum:-inf 
+wt:-12   wt_num:0   prob_sum:-inf 
+wt:-13   wt_num:0   prob_sum:-inf 
+wt:-14   wt_num:0   prob_sum:-inf 
+wt:-15   wt_num:0   prob_sum:-inf 
+wt:-16   wt_num:0   prob_sum:-inf 
+wt:-17   wt_num:0   prob_sum:-inf 
+wt:-18   wt_num:0   prob_sum:-inf 
+wt:-19   wt_num:0   prob_sum:-inf 
+wt:-20   wt_num:0   prob_sum:-inf 
+wt:-21   wt_num:0   prob_sum:-inf 
+wt:-22   wt_num:1   prob_sum:-44.000000 
+wt:-23   wt_num:0   prob_sum:-44.000000 
+wt:-24   wt_num:3   prob_sum:-43.752072 
+wt:-25   wt_num:3   prob_sum:-43.696219 
+wt:-26   wt_num:9   prob_sum:-43.655704 
+wt:-27   wt_num:11   prob_sum:-43.643548 
+wt:-28   wt_num:23   prob_sum:-43.637234 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_48 
+ input:0x000180 b80001 ======>> output:0x8800a8 880109 
+ wt_min(:-22)--->wt_max: -28 
+ 10 Rounds Linear Hull with total 50 trails.
+ Square Correlation weight is: -43.64 
+++++++++++++++++++++++++++++++++++++
+ Time: 565999.00 seconds.  
+Time cost: 565999.88 seconds ==  9433.33 minutes == 157.22 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+
+huangmingjiang@ubuntu:~/hmj123/speck48/11-25-26/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 48 
+rounds:11 
+mode: 30 
+Time of Construct ARX_cLAT: 3.00 seconds.  
+--------------------Search SPECK Linear Hulls-------------------
+count: 1    weight: 25 
+--------------------Record SPECK Linear Hulls-------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:0   prob_sum:-inf 
+wt:-6   wt_num:0   prob_sum:-inf 
+wt:-7   wt_num:0   prob_sum:-inf 
+wt:-8   wt_num:0   prob_sum:-inf 
+wt:-9   wt_num:0   prob_sum:-inf 
+wt:-10   wt_num:0   prob_sum:-inf 
+wt:-11   wt_num:0   prob_sum:-inf 
+wt:-12   wt_num:0   prob_sum:-inf 
+wt:-13   wt_num:0   prob_sum:-inf 
+wt:-14   wt_num:0   prob_sum:-inf 
+wt:-15   wt_num:0   prob_sum:-inf 
+wt:-16   wt_num:0   prob_sum:-inf 
+wt:-17   wt_num:0   prob_sum:-inf 
+wt:-18   wt_num:0   prob_sum:-inf 
+wt:-19   wt_num:0   prob_sum:-inf 
+wt:-20   wt_num:0   prob_sum:-inf 
+wt:-21   wt_num:0   prob_sum:-inf 
+wt:-22   wt_num:0   prob_sum:-inf 
+wt:-23   wt_num:0   prob_sum:-inf 
+wt:-24   wt_num:0   prob_sum:-inf 
+wt:-25   wt_num:1   prob_sum:-50.000000 
+wt:-26   wt_num:0   prob_sum:-50.000000 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_48 
+ input:0x000800 800009 ======>> output:0x300838 000809 
+ wt_min(:-25)--->wt_max: -26 
+ 11 Rounds Linear Hull with total 1 trails.
+ Square Correlation weight is: -50.00 
+++++++++++++++++++++++++++++++++++++
+ Time: 1032.00 seconds.  
+Time cost: 1032.84 seconds ==  17.21 minutes == 0.29 hours. 
+Auto-search END! 
+|************************************************************************|
+
+era@sce Debug]$ scerun ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:chaskey 
+blocksize: 128 
+rounds:1 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Constructing CHASKEY-128 cLAT Tables... 
+Time of Construct CHASKEY-128 cLAT: 4.00 seconds.  
+Searching SPARX-128 Bn_w: 0 
+Time: 0.00 seconds.  
+round----XV0-----------XV1------------XV2------------XV3---------w_0--w_1--w_2--w_3---Pw 
+01     0x00000001    0x08000001     0x00000000     0x00000000    -0   -0   -0   -0    -0 
+02     0x00000000    0x00000080     0x00800000     0x00000000     -    -    -    -   NULL 
+------------------ 
+1 Round Chaskey Total Weight: -0 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHASKEY optimal linear trails END! 
+|************************************************************************|
+Time cost: 4.30 seconds ==  0.07 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

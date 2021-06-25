@@ -1,0 +1,51 @@
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:8 
+mode: 2 
+----------------Search Optimal Linear Trail-------------------
+Time of Construct ARX_cLAT: 5.00 seconds.  
+Searching correlation weight: 18 
+Time: 10739259.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000001000520    0x940000010027     -3 
+02     0x000000018100    0x200000000105     -1 
+03     0x000000000120    0x000000000021     -3 
+04     0x000000000100    0x200000000101     -0 
+05     0x000000000800    0x000000000801     -1 
+06     0x000000004060    0x000000004068     -2 
+07     0x400000020002    0x000000020042     -3 
+08     0x104000101110    0x130000101210     -5 
+09     0x009a60800811    0x188200801008     NULL 
+8 Round Total Weight: -18 
+---------------------------------
+Time cost: 10739259.54 seconds == 178987.66 minutes == 2983.13 hours == 124.30 days. 
+Auto-search_speck linear trail END! 
+|************************************************************************|
+Time cost: 10739264.61 seconds ==  178987.74 minutes == 2983.13 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+
+
+huangmingjiang@ubuntu:~/hmj123/speck96/8-18/auto_search/Debug$ ls -l
+total 2768
+-rwxrwxr-x 1 huangmingjiang huangmingjiang 2657768 Jun  8 12:02 auto_search
+drwxr-xr-x 2 huangmingjiang huangmingjiang    4096 Jun  8 12:02 ciphers
+drwxr-xr-x 2 huangmingjiang huangmingjiang    4096 Jun  8 12:02 cryptanalysis
+-rw-rw-r-- 1 huangmingjiang huangmingjiang    1210 Jun  8 12:02 main.d
+-rw-rw-r-- 1 huangmingjiang huangmingjiang  128912 Jun  8 12:02 main.o
+-rw-r--r-- 1 huangmingjiang huangmingjiang    1126 Jun  8 12:02 makefile
+-rw-r--r-- 1 huangmingjiang huangmingjiang    1832 Jun  8 12:02 nodes.txt
+-rw------- 1 huangmingjiang huangmingjiang    1313 Oct 10 20:44 nohup.out
+-rw-r--r-- 1 huangmingjiang huangmingjiang     264 Jun  8 12:02 objects.mk
+drwxr-xr-x 2 huangmingjiang huangmingjiang    4096 Jun  8 12:02 printf
+-rw-r--r-- 1 huangmingjiang huangmingjiang       0 Jun  8 12:02 simon_diff_trail.txt
+-rw-r--r-- 1 huangmingjiang huangmingjiang     437 Jun  8 12:02 sources.mk
+-rw-r--r-- 1 huangmingjiang huangmingjiang     885 Jun  8 12:02 subdir.mk
+drwxr-xr-x 2 huangmingjiang huangmingjiang    4096 Jun  8 12:02 variables
+huangmingjiang@ubuntu:~/hmj123/speck96/8-18/auto_search/Debug$ 
+
+

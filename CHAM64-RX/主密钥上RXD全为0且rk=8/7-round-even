@@ -1,0 +1,63 @@
+//2020年10月09日10:34:57
+huangmingjiang@ubuntu:~/hmj123/alzette-rx/k8/auto_search/Debug$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper  #blocksize  #rounds  #mode 
+ciper: cham 
+blocksize: 64 
+rotational parameter: 8 
+rounds: 7 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+RX_zeta_total: 81  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct CHAM cDDTs: 41.00 seconds.  
+===============Search even-round============= 
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 24.000000  --Max expected weight-- 
+Time: 41.00 seconds.  
+Update: 0   RX_Bn_w: 25.000000  --Max expected weight-- 
+Time: 41.00 seconds.  
+Update: 0   RX_Bn_w: 26.000000  --Max expected weight-- 
+Time: 41.00 seconds.  
+Update: 0   RX_Bn_w: 27.000000  --Max expected weight-- 
+Time: 41.00 seconds.  
+Update: 0   RX_Bn_w: 28.000000  --Max expected weight-- 
+Update: 1   RX_Bn_w: 27.921255  --Time: 0.00 seconds. ==>>
+round----X0------X1-------X2-------X3-----zeta-----Pr_zeta----Pr_XOR-----Pr-RX 
+01     0x0000  0x0000   0x0000   0x0303   0x0000   1.988751  0.000000  1.988751
+02     0x0000  0x0000   0x0303   0x0000   0x0000   1.988751  2.000000  3.988751
+03     0x0000  0x0303   0x0000   0x0101   0x0000   1.988751  4.000000  5.988751
+04     0x0303  0x0000   0x0101   0x0202   0x0000   1.988751  0.000000  1.988751
+05     0x0000  0x0101   0x0202   0x0000   0x0000   1.988751  4.000000  5.988751
+06     0x0101  0x0202   0x0000   0x0a0a   0x0000   1.988751  2.000000  3.988751
+07     0x0202  0x0000   0x0a0a   0x0000   0x0000   1.988751  2.000000  3.988751
+08     0x0000  0x0a0a   0x0000   0x0808    -   
+------------------ 
+7 Round CHAM-64 Total Weight: -27.921255 
+Time: 41.00 seconds.  
+**************************************************************************|
+round----X0------X1-------X2-------X3-----zeta-----Pr_zeta----Pr_XOR-----Pr-RX 
+01     0x0000  0x0000   0x0000   0x0303   0x0000   1.988751  0.000000  1.988751
+02     0x0000  0x0000   0x0303   0x0000   0x0000   1.988751  2.000000  3.988751
+03     0x0000  0x0303   0x0000   0x0101   0x0000   1.988751  4.000000  5.988751
+04     0x0303  0x0000   0x0101   0x0202   0x0000   1.988751  0.000000  1.988751
+05     0x0000  0x0101   0x0202   0x0000   0x0000   1.988751  4.000000  5.988751
+06     0x0101  0x0202   0x0000   0x0a0a   0x0000   1.988751  2.000000  3.988751
+07     0x0202  0x0000   0x0a0a   0x0000   0x0000   1.988751  2.000000  3.988751
+08     0x0000  0x0a0a   0x0000   0x0808    -   
+------------------ 
+7 Round CHAM-64 Total Weight: -27.921255 
+Time cost: 0.03 seconds ==  0.00 minutes == 0.00 hours == 0.00 days. 
+Auto-search CHAM-64 RX-differential trails END! 
+|************************************************************************|
+Time cost: 41.73 seconds ==  0.70 minutes == 0.01 hours. 
+Auto-RX-search END! 
+|************************************************************************|
+huangmingjiang@ubuntu:~/hmj123/alzette-rx/k8/auto_search/Debug$ 
+
+

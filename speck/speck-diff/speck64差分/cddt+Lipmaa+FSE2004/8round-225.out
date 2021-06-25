@@ -1,0 +1,45 @@
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 64 
+rounds:8 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 13.00 seconds.  
+Searching Bn_w: 21 
+Time: 0.00 seconds.  
+Searching Bn_w: 22 
+Time: 0.00 seconds.  
+Searching Bn_w: 23 
+Time: 0.00 seconds.  
+Searching Bn_w: 24 
+Time: 2.00 seconds.  
+Searching Bn_w: 25 
+Time: 51.00 seconds.  
+Searching Bn_w: 26 
+Time: 1063.00 seconds.  
+Searching Bn_w: 27 
+Time: 21594.00 seconds.  
+Searching Bn_w: 28 
+Time: 411753.00 seconds.  
+Searching Bn_w: 29 
+Time: 412910.00 seconds.  
+round-----left---------right------weight 
+01     0x00820200    0x00001202     -4 
+02     0x00009000    0x00000010     -2 
+03     0x00000080    0x00000000     -0 
+04     0x80000000    0x80000000     -1 
+05     0x80800000    0x80800004     -3 
+06     0x80008004    0x84008020     -5 
+07     0x808080a0    0xa08481a4     -8 
+08     0x00040124    0x04200c01     -6 
+09     0x20200000    0x01206008     NULL 
+8 Round Total Weight: -29 
+Time cost: 412910.68 seconds ==  6881.84 minutes == 114.70 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 412923.69 seconds ==  6882.06 minutes == 114.70 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------

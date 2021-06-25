@@ -1,0 +1,119 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+//限定第1轮的概率重量小于7
+[root@jws020 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:7 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+Searching Bn_w: 15 
+Time: 0.00 seconds.  
+Searching Bn_w: 16 
+Time: 0.00 seconds.  
+Searching Bn_w: 17 
+Time: 0.00 seconds.  
+Searching Bn_w: 18 
+Time: 0.00 seconds.  
+Searching Bn_w: 19 
+Time: 9.00 seconds.  
+Searching Bn_w: 20 
+Time: 140.00 seconds.  
+Searching Bn_w: 21 
+Time: 866.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000092400040    0x400000104200     -6 
+02     0x000000820200    0x000000001202     -4 
+03     0x000000009000    0x000000000010     -2 
+04     0x000000000080    0x000000000000     -0 
+05     0x800000000000    0x800000000000     -1 
+06     0x808000000000    0x808000000004     -3 
+07     0x800080000004    0x840080000020     -5 
+08     0x808080800020    0xa08480800124     NULL 
+7 Round Total Weight: -21 
+Time cost: 866.16 seconds ==  14.44 minutes == 0.24 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 873.99 seconds ==  14.57 minutes == 0.24 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+///////////ssh huangmingjiang@10.10.4.229/////////////////////////////////////////////////////
+
+huangmingjiang@node2:~/speck64/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:6 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 6.00 seconds.  
+Searching Bn_w: 10 
+Time: 0.00 seconds.  
+Searching Bn_w: 11 
+Time: 0.00 seconds.  
+Searching Bn_w: 12 
+Time: 0.00 seconds.  
+Searching Bn_w: 13 
+Time: 1.00 seconds.  
+Searching Bn_w: 14 
+Time: 103.00 seconds.  
+Searching Bn_w: 15 
+Time: 198.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000000820200    0x000000001202     -4 
+02     0x000000009000    0x000000000010     -2 
+03     0x000000000080    0x000000000000     -0 
+04     0x800000000000    0x800000000000     -1 
+05     0x808000000000    0x808000000004     -3 
+06     0x800080000004    0x840080000020     -5 
+07     0x808080800020    0xa08480800124     NULL 
+6 Round Total Weight: -15 
+Time cost: 198.84 seconds ==  3.31 minutes == 0.06 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 205.42 seconds ==  3.42 minutes == 0.06 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

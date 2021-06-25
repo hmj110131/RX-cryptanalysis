@@ -1,0 +1,59 @@
+////2020年10月11日16:22:32
+huangmingjiang@node1:~/alzette-diff/8-34/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:alzette 
+Note: blocksize Now only fixed for bits for Alzette.  
+blocksize: 64 
+rounds:8 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing cDDT Lookup Tables... 
+Time of Construct Alzette cDDT: 21.00 seconds.  
+Searching Alzette Bn_w: 26 
+Time: 0.00 seconds.  
+Searching Alzette Bn_w: 27 
+Time: 0.00 seconds.  
+Searching Alzette Bn_w: 28 
+Time: 3.00 seconds. 
+Searching Alzette Bn_w: 29 
+Time: 61.00 seconds. 
+Searching Alzette Bn_w: 30 
+
+
+
+huangmingjiang@node1:~/alzette-diff/8-34/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:alzette 
+Note: blocksize Now only fixed for bits for Alzette.  
+blocksize: 64 
+rounds:8 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Constructing cDDT Lookup Tables... 
+Time of Construct Alzette cDDT: 21.00 seconds.  
+Searching Alzette Bn_w: 34 
+Time: 2011.00 seconds.  
+|-------------------------------------------|
+round-----left---------right------weight 
+00     0x80020100    0x00010080     -2 
+01     0x80000000    0x00010000     -0 
+02     0x00000000    0x00010000     -1 
+03     0x00010000    0x00030000     -3 
+04     0x01010000    0x00030101     -7 
+05     0x03030202    0x03010302     -8 
+06     0x81800182    0x03c043c2     -6 
+07     0x81c041c0    0x0040c043     -7 
+08     0x40800140    0x010080c3     NULL 
+8 Round Total Weight: -34 
+|-------------------------------------------|
+Time cost: 2011.98 seconds ==  33.53 minutes == 0.56 hours == 0.02 days. 
+Auto-search 8-Round Alzette optimal differential trails END! 
+|************************************************************************|
+Time cost: 2033.89 seconds ==  33.90 minutes == 0.56 hours. 
+Auto-search END! 
+|************************************************************************|
+

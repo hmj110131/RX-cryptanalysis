@@ -1,0 +1,336 @@
+[root@gpu001 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck
+blocksize: 96
+rounds:9
+mode: 4
+Constructing ARX Tables... 
+Time of Construct HIGHT tables: 11.00 seconds.  
+up_round: 0  up_wt_min:0   down_wt_min:7 
+up_round: 1  up_wt_min:10   down_wt_min:0 
+round-------left-------------right--------weight 
+01     0x000092400040    0x400000104200     -6 
+02     0x000000820200    0x000000001202     -4 
+03     0x000000009000    0x000000000010     -2 
+04     0x000000000080    0x000000000000     -0 
+05     0x800000000000    0x800000000000     -1 
+06     0x808000000000    0x808000000004     -3 
+07     0x800080000004    0x840080000020     -5 
+08     0x808080800020    0xa08480800124     -9 
+09     0x800400008124    0x842004008801     -7 
+10     0x842004008880    0x00000000c88c     NULL 
+Total trail weight:  -37 
+------------------------------------------------------------ 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+[root@gpu001 Debug]# clear
+
+
+
+[root@gpu001 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck
+blocksize: 96
+rounds:10
+mode: 4
+Constructing ARX Tables... 
+Time of Construct HIGHT tables: 12.00 seconds.  
+up_round: 0  up_wt_min:0   down_wt_min:13 
+up_round: 1  up_wt_min:10   down_wt_min:7 
+up_round: 2  up_wt_min:19   down_wt_min:0 
+round-------left-------------right--------weight 
+01     0x000092400040    0x400000104200     -6 
+02     0x000000820200    0x000000001202     -4 
+03     0x000000009000    0x000000000010     -2 
+04     0x000000000080    0x000000000000     -0 
+05     0x800000000000    0x800000000000     -1 
+06     0x808000000000    0x808000000004     -3 
+07     0x800080000004    0x840080000020     -5 
+08     0x808080800020    0xa08480800124     -9 
+09     0x800400008124    0x842004008801     -7 
+10     0x842004008880    0x00000000c88c     -6 
+11     0x00000000c81c    0x000000008c7c     NULL 
+Total trail weight:  -43 
+------------------------------------------------------------ 
+Time cost: 0.01 seconds ==  0.00 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+[root@gpu001 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck
+blocksize: 96
+rounds:11
+mode: 4
+Constructing ARX Tables... 
+Time of Construct HIGHT tables: 12.00 seconds.  
+up_round: 0  up_wt_min:0   down_wt_min:19 
+up_round: 1  up_wt_min:10   down_wt_min:13 
+up_round: 2  up_wt_min:19   down_wt_min:7 
+up_round: 3  up_wt_min:29   down_wt_min:0 
+round-------left-------------right--------weight 
+01     0x000092400040    0x400000104200     -6 
+02     0x000000820200    0x000000001202     -4 
+03     0x000000009000    0x000000000010     -2 
+04     0x000000000080    0x000000000000     -0 
+05     0x800000000000    0x800000000000     -1 
+06     0x808000000000    0x808000000004     -3 
+07     0x800080000004    0x840080000020     -5 
+08     0x808080800020    0xa08480800124     -9 
+09     0x800400008124    0x842004008801     -7 
+10     0x842004008880    0x00000000c88c     -7 
+11     0x00000000483c    0x000000000c5c     -5 
+12     0x000000000c0c    0x000000006eec     NULL 
+Total trail weight:  -49 
+------------------------------------------------------------ 
+Time cost: 5.40 seconds ==  0.09 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@fws011 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck
+blocksize: 96
+rounds:12
+mode: 4
+Constructing ARX Tables... 
+Time of Construct HIGHT tables: 13.00 seconds.  
+up_round: 0  up_wt_min:0   down_wt_min:23 
+up_round: 1  up_wt_min:10   down_wt_min:19 
+up_round: 2  up_wt_min:19   down_wt_min:13 
+up_round: 3  up_wt_min:29   down_wt_min:7 
+up_round: 4  up_wt_min:37   down_wt_min:0 
+round-------left-------------right--------weight 
+01     0x000092400040    0x400000104200     -6 
+02     0x000000820200    0x000000001202     -4 
+03     0x000000009000    0x000000000010     -2 
+04     0x000000000080    0x000000000000     -0 
+05     0x800000000000    0x800000000000     -1 
+06     0x808000000000    0x808000000004     -3 
+07     0x800080000004    0x840080000020     -5 
+08     0x808080800020    0xa08480800124     -9 
+09     0x800400008124    0x842004008801     -9 
+10     0x842004038880    0x00000000c88c     -9 
+11     0x000000004404    0x000000000064     -3 
+12     0x000000000020    0x000000000300     -2 
+13     0x000000000300    0x000000001b00     NULL 
+12 round Total trail weight:  -53 
+------------------------------------------------------------ 
+Time cost: 2880.16 seconds ==  48.00 minutes == 0.80 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//////////////////////////////////
+For SPECK96 of 8-->12 rounds to extend.,由8轮tc得到的12轮作为新的tc.
+//////////////////////////////////
+//////////////////////////////////
+[root@jws060 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck
+blocksize: 96
+rounds:13
+mode: 4
+SPECK_96 trail-core round: 12 
+Constructing ARX Tables... 
+Time of Construct HIGHT tables: 13.00 seconds.  
+up_round: 0  up_wt_min:0   down_wt_min:6 
+up_round: 1  up_wt_min:10   down_wt_min:0 
+round-------left-------------right--------weight 
+01     0x000092400040    0x400000104200     -6 
+02     0x000000820200    0x000000001202     -4 
+03     0x000000009000    0x000000000010     -2 
+04     0x000000000080    0x000000000000     -0 
+05     0x800000000000    0x800000000000     -1 
+06     0x808000000000    0x808000000004     -3 
+07     0x800080000004    0x840080000020     -5 
+08     0x808080800020    0xa08480800124     -9 
+09     0x800400008124    0x842004008801     -9 
+10     0x842004038880    0x00000000c88c     -9 
+11     0x000000004404    0x000000000064     -3 
+12     0x000000000020    0x000000000300     -2 
+13     0x000000000300    0x000000001b00     -6 
+14     0x000000001b03    0x00000000c303     NULL 
+13 round Total trail weight:  -59 
+------------------------------------------------------------ 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@jws060 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck
+blocksize: 96
+rounds:14
+mode: 4
+SPECK_96 trail-core round: 12 
+Constructing ARX Tables... 
+Time of Construct HIGHT tables: 13.00 seconds.  
+up_round: 0  up_wt_min:0   down_wt_min:12 
+up_round: 1  up_wt_min:10   down_wt_min:6 
+up_round: 2  up_wt_min:19   down_wt_min:0 
+round-------left-------------right--------weight 
+01     0x000092400040    0x400000104200     -6 
+02     0x000000820200    0x000000001202     -4 
+03     0x000000009000    0x000000000010     -2 
+04     0x000000000080    0x000000000000     -0 
+05     0x800000000000    0x800000000000     -1 
+06     0x808000000000    0x808000000004     -3 
+07     0x800080000004    0x840080000020     -5 
+08     0x808080800020    0xa08480800124     -9 
+09     0x800400008124    0x842004008801     -9 
+10     0x842004038880    0x00000000c88c     -9 
+11     0x000000004404    0x000000000064     -3 
+12     0x000000000020    0x000000000300     -2 
+13     0x000000000300    0x000000001b00     -6 
+14     0x000000001901    0x00000000c101     -6 
+15     0x00000000c118    0x00000000c910     NULL 
+14 round Total trail weight:  -65 
+------------------------------------------------------------ 
+Time cost: 0.02 seconds ==  0.00 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@jws060 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck
+blocksize: 96
+rounds:15
+mode: 4
+SPECK_96 trail-core round: 12 
+Constructing ARX Tables... 
+Time of Construct HIGHT tables: 13.00 seconds.  
+up_round: 0  up_wt_min:0   down_wt_min:17 
+up_round: 1  up_wt_min:10   down_wt_min:12 
+up_round: 2  up_wt_min:19   down_wt_min:6 
+up_round: 3  up_wt_min:29   down_wt_min:0 
+round-------left-------------right--------weight 
+01     0x000092400040    0x400000104200     -6 
+02     0x000000820200    0x000000001202     -4 
+03     0x000000009000    0x000000000010     -2 
+04     0x000000000080    0x000000000000     -0 
+05     0x800000000000    0x800000000000     -1 
+06     0x808000000000    0x808000000004     -3 
+07     0x800080000004    0x840080000020     -5 
+08     0x808080800020    0xa08480800124     -9 
+09     0x800400008124    0x842004008801     -9 
+10     0x842004038880    0x00000000c88c     -9 
+11     0x000000004404    0x000000000064     -3 
+12     0x000000000020    0x000000000300     -2 
+13     0x000000000300    0x000000001b00     -6 
+14     0x000000001901    0x00000000c101     -6 
+15     0x000000004108    0x000000004900     -5 
+16     0x000000004941    0x000000000141     NULL 
+15 round Total trail weight:  -70 
+------------------------------------------------------------ 
+Time cost: 5.39 seconds ==  0.09 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+///////////////////////不考虑 <= 不搜索向上extend_rounds,向下0轮的情况.
+// 根据搜索经验,向上轮数扩展越多,概率重量越大.
+
+[root@jws012 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck
+blocksize: 96
+rounds:16
+mode: 4
+SPECK_96 trail-core round: 12 
+Constructing ARX Tables... 
+Time of Construct HIGHT tables: 13.00 seconds.  
+up_round: 0  up_wt_min:0   down_wt_min:21 
+up_round: 1  up_wt_min:10   down_wt_min:17 
+up_round: 2  up_wt_min:19   down_wt_min:12 
+up_round: 3  up_wt_min:29   down_wt_min:6 
+round-------left-------------right--------weight 
+01     0x000092400040    0x400000104200     -6 
+02     0x000000820200    0x000000001202     -4 
+03     0x000000009000    0x000000000010     -2 
+04     0x000000000080    0x000000000000     -0 
+05     0x800000000000    0x800000000000     -1 
+06     0x808000000000    0x808000000004     -3 
+07     0x800080000004    0x840080000020     -5 
+08     0x808080800020    0xa08480800124     -9 
+09     0x800400008124    0x842004008801     -9 
+10     0x842004038880    0x00000000c88c     -9 
+11     0x000000004404    0x000000000064     -3 
+12     0x000000000020    0x000000000300     -2 
+13     0x000000000300    0x000000001b00     -6 
+14     0x000000001901    0x00000000c101     -7 
+15     0x000000014108    0x000000004900     -5 
+16     0x000000004841    0x000000000041     -3 
+17     0x000000000009    0x000000000201     NULL 
+16 round Total trail weight:  -74 
+------------------------------------------------------------ 
+Time cost: 5.43 seconds ==  0.09 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

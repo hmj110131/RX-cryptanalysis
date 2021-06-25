@@ -1,0 +1,1420 @@
+///
+///2020年07月29日16:00:57
+huangmingjiang@node1:~/alzette_rx/test2/auto_search/Debug$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:alzette 
+blocksize: 64 
+rotational parameter: 1 
+rounds:2 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+Constructing Alzette_Constant_RX ... 
+k=1   Alzette_C[0]: b7e15162   Alzette_C_RX[0]: d823f3a7 
+RX_zeta_total: 64  
+Constructing RX_Ek[4] ... 
+k=1  RX_Ek[0]: 1.415038 RX_Ek[1]: 1.415038 RX_Ek[2]: 3.000000 RX_Ek[3]: 3.000000 
+Constructing RX_XOR_offset_Table ... 
+Bn_wt_inc_max: 16.415037   
+RX_Expected_w: 17.830040  
+Time of Preprocessing Alzette info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct Alzette cDDT: 22.00 seconds.  
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 2.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 3.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 4.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 5.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 6.000000  --Max expected weight-- 
+Time: 1.00 seconds.
+Update: 0   RX_Bn_w: 7.000000  --Max expected weight-- 
+Time: 62.00 seconds.
+Update: 0   RX_Bn_w: 8.000000  --Max expected weight-- 
+Time: 2150.00 seconds.
+Update: 0   RX_Bn_w: 9.000000  --Max expected weight-- 
+Time: 51030.00 seconds.
+Update: 0   RX_Bn_w: 10.000000  --Max expected weight-- 
+Time: 1107700.00 seconds.
+Update: 0   RX_Bn_w: 11.000000  --Max expected weight--
+
+//2020年08月11日08:35:18 //指定首轮XOR的重量为5
+huangmingjiang@node1:~/auto_search/Debug$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper: alzette 
+blocksize: 64 
+rotational parameter: 1 
+rounds: 2 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+Constructing Alzette_Constant_RX ... 
+RX_zeta_total: 64  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing Alzette info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct Alzette cDDT: 21.00 seconds.  
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 19.000000  --Max expected weight-- 
+Update: 1   RX_Bn_w: 17.830074  --Time: 65.00 seconds. ==>>
+Update: 2   RX_Bn_w: 16.830074  --Time: 359.00 seconds. ==>>
+Update: 3   RX_Bn_w: 15.830074  --Time: 479.00 seconds. ==>>
+Update: 4   RX_Bn_w: 13.830075  --Time: 4761.00 seconds. ==>>
+Time: 8374.00 seconds.
+**************************************************************************|
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     003fe010    100ff81c   00000000   1.415038    5.000000    6.415038 
+01     f83c03bf    0fffe03c   00000000   1.415038    6.000000    7.415038 
+02     203df019    0e209c33      NULL        NULL         NULL      NULL
+2 Round Total Weight: -13.830075 
+|-----------------------------------------------------------------------|
+Time cost: 8374.42 seconds ==  139.57 minutes == 2.33 hours == 0.10 days. 
+Auto-search 2-Round Alzette optimal RX-differential trails END! 
+|************************************************************************|
+Time cost: 8396.28 seconds ==  139.94 minutes == 2.33 hours. 
+Auto-RX-search END! 
+|************************************************************************|
+d823f3a7 
+203df019
+F81e03be  18
+
+203df019
+0e209c33
+2e1d6c2a   15
+F81e03be 
+c6036e94  14
+
+
+//2020年07月29日16:01:14
+huangmingjiang@node1:~/alzette_rx/test/auto_search/Debug$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:alzette 
+blocksize: 64 
+rotational parameter: 1 
+rounds:3 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+Constructing Alzette_Constant_RX ... 
+RX_zeta_total: 64  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing Alzette info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct Alzette cDDT: 22.00 seconds.  
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 9.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 10.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 11.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 12.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 13.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 14.000000  --Max expected weight-- 
+Time: 1.00 seconds.
+Update: 0   RX_Bn_w: 15.000000  --Max expected weight-- 
+Time: 53.00 seconds.
+Update: 0   RX_Bn_w: 16.000000  --Max expected weight-- 
+Time: 1666.00 seconds.
+Update: 0   RX_Bn_w: 17.000000  --Max expected weight-- 
+
+
+//2020年08月14日14:58:56
+huangmingjiang@node1:~/auto_search/Debug$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper: alzette 
+blocksize: 64 
+rotational parameter: 1 
+rounds: 3 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+Constructing Alzette_Constant_RX ... 
+RX_zeta_total: 64  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing Alzette info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct Alzette cDDT: 27.00 seconds.  
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 14.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 15.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 16.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 17.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 18.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 19.000000  --Max expected weight-- 
+Time: 1.00 seconds.
+Update: 0   RX_Bn_w: 20.000000  --Max expected weight-- 
+Time: 60.00 seconds.
+Update: 0   RX_Bn_w: 21.000000  --Max expected weight-- 
+Time: 1876.00 seconds.
+Update: 0   RX_Bn_w: 22.000000  --Max expected weight-- 
+Time: 48401.00 seconds.
+Update: 0   RX_Bn_w: 23.000000  --Max expected weight-- 
+Time: 1026900.00 seconds.
+Update: 0   RX_Bn_w: 24.000000  --Max expected weight-- 
+
+
+
+//2020年08月24日08:49:15
+huangmingjiang@node1:~/alzette_rx/4r/auto_search/Debug$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper: alzette 
+blocksize: 64 
+rotational parameter: 1 
+rounds: 4 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+Constructing Alzette_Constant_RX ... 
+RX_zeta_total: 64  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing Alzette info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct Alzette cDDT: 22.00 seconds.  
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 22.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 23.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 24.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 25.000000  --Max expected weight-- 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 26.000000  --Max expected weight-- 
+Time: 1.00 seconds.
+Update: 0   RX_Bn_w: 27.000000  --Max expected weight-- 
+Time: 51.00 seconds.
+Update: 0   RX_Bn_w: 28.000000  --Max expected weight-- 
+Time: 1627.00 seconds.
+Update: 0   RX_Bn_w: 29.000000  --Max expected weight-- 
+Time: 41621.00 seconds.
+Update: 0   RX_Bn_w: 30.000000  --Max expected weight-- 
+Time: 887329.00 seconds.
+Update: 0   RX_Bn_w: 31.000000  --Max expected weight-- 
+
+
+
+
+
+
+/////////////////////
+//////////////
+//2020年08月28日11:54:46、、
+//固定首轮的汉明重量为5
+huangmingjiang@node1:~/alzette_rx/test2/auto_search/Debug$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper: alzette 
+blocksize: 64 
+rotational parameter: 1 
+rounds: 2 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+Constructing Alzette_Constant_RX ... 
+RX_zeta_total: 64  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing Alzette info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct Alzette cDDT: 22.00 seconds.  
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 19.000000  --Max expected weight-- 
+Update: 1   RX_Bn_w: 17.830074  --Time: 68.00 seconds. ==>>
+Update: 2   RX_Bn_w: 16.830074  --Time: 374.00 seconds. ==>>
+Update: 3   RX_Bn_w: 15.830074  --Time: 504.00 seconds. ==>>
+Update: 4   RX_Bn_w: 13.830075  --Time: 5025.00 seconds. ==>>
+Time: 8792.00 seconds.
+**************************************************************************|
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     003fe010    100ff81c   00000000   1.415038    5.000000    6.415038 
+01     f83c03bf    0fffe03c   00000000   1.415038    6.000000    7.415038 
+02     203df019    0e209c33      NULL        NULL         NULL      NULL
+2 Round Total Weight: -13.830075 
+|-----------------------------------------------------------------------|
+Time cost: 8792.73 seconds ==  146.55 minutes == 2.44 hours == 0.10 days. 
+Auto-search 2-Round Alzette optimal RX-differential trails END! 
+|************************************************************************|
+Time cost: 8815.19 seconds ==  146.92 minutes == 2.45 hours. 
+Auto-RX-search END! 
+|************************************************************************|
+//2020年08月28日11:55:12
+huangmingjiang@node1:~/alzette_rx/noconstant/auto_search/Debug$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper: alzette 
+blocksize: 64 
+rotational parameter: 1 
+rounds: 2 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+Constructing Alzette_Constant_RX ... 
+RX_zeta_total: 64  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing Alzette info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct Alzette cDDT: 26.00 seconds.  
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 19.000000  --Max expected weight-- 
+Update: 1   RX_Bn_w: 17.830074  --Time: 69.00 seconds. ==>>
+Update: 2   RX_Bn_w: 16.830074  --Time: 380.00 seconds. ==>>
+Update: 3   RX_Bn_w: 15.830074  --Time: 504.00 seconds. ==>>
+Update: 4   RX_Bn_w: 13.830075  --Time: 5029.00 seconds. ==>>
+Time: 8753.00 seconds.
+**************************************************************************|
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     003fe010    100ff81c   00000000   1.415038    5.000000    6.415038 
+01     f83c03bf    0fffe03c   00000000   1.415038    6.000000    7.415038 
+02     203df019    0e209c33      NULL        NULL         NULL      NULL
+2 Round Total Weight: -13.830075 
+|-----------------------------------------------------------------------|
+Time cost: 8753.88 seconds ==  145.90 minutes == 2.43 hours == 0.10 days. 
+Auto-search 2-Round Alzette optimal RX-differential trails END! 
+|************************************************************************|
+Time cost: 8779.94 seconds ==  146.33 minutes == 2.44 hours. 
+Auto-RX-search END! 
+|************************************************************************|
+
+
+//2020年08月28日12:13:02
+huangmingjiang@node1:~/alzette_rx/noconstant/auto_search/Debug$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper: alzette 
+blocksize: 64 
+rotational parameter: 1 
+rounds: 3 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+Constructing Alzette_Constant_RX ... 
+RX_zeta_total: 64  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing Alzette info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct Alzette cDDT: 21.00 seconds.  
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 29.000000  --Max expected weight-- 
+for(thr_d = 0; thr_d < blocksize_len-1; thr_d++) 
+Update: 1   RX_Bn_w: 27.245111  --Time: 3.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     000fe000    0003f800   00000000   1.415038    2.000000    3.415038 
+01     d82403a7    07f3f800   00000000   1.415038    11.000000    12.415037 
+02     0407f407    04239612   00000000   1.415038    10.000000    11.415037 
+03     d8006db4    0464aa34      NULL        NULL         NULL      NULL
+3 Round Total Weight: -27.245111 
+|-----------------------------------------------------------------------|
+Update: 2   RX_Bn_w: 26.245111  --Time: 5362.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     01f80ff0    00f803fc   00000000   1.415038    4.000000    5.415038 
+01     dbdbf45f    f8fffbff   00000001   1.415038    10.000000    11.415037 
+02     01f803b8    00f01712   00000000   1.415038    8.000000    9.415037 
+03     d8dbe03d    01003026      NULL        NULL         NULL      NULL
+3 Round Total Weight: -26.245111 
+|-----------------------------------------------------------------------|
+
+
+
+
+
+
+//2020年08月28日12:18:12
+huangmingjiang@node1:~/alzette_rx/test2/auto_search/Debug$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper: alzette 
+blocksize: 64 
+rotational parameter: 1 
+rounds: 4 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+Constructing Alzette_Constant_RX ... 
+RX_zeta_total: 64  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing Alzette info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+
+Constructing cDDT Lookup Tables ... 
+Time of Construct Alzette cDDT: 22.00 seconds.  
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 29.000000  --Max expected weight-- 
+Noted: for(thr_d = 0; thr_d < blocksize_len-1; thr_d++) 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 30.000000  --Max expected weight-- 
+Noted: for(thr_d = 0; thr_d < blocksize_len-1; thr_d++) 
+Time: 0.00 seconds.
+Update: 0   RX_Bn_w: 31.000000  --Max expected weight-- 
+Noted: for(thr_d = 0; thr_d < blocksize_len-1; thr_d++) 
+Time: 1.00 seconds.
+Update: 0   RX_Bn_w: 32.000000  --Max expected weight-- 
+Noted: for(thr_d = 0; thr_d < blocksize_len-1; thr_d++) 
+Time: 62.00 seconds.
+Update: 0   RX_Bn_w: 33.000000  --Max expected weight-- 
+Noted: for(thr_d = 0; thr_d < blocksize_len-1; thr_d++)
+
+
+//2020年08月28日12:19:14
+huangmingjiang@node1:~/alzette_rx/test2/auto_search/Debug$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper: alzette 
+blocksize: 64 
+rotational parameter: 1 
+rounds: 4 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+Constructing Alzette_Constant_RX ... 
+RX_zeta_total: 64  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing Alzette info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct Alzette cDDT: 27.00 seconds.  
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 43.000000  --Max expected weight-- 
+Noted: for(thr_d = 0; thr_d < blocksize_len-1; thr_d++) 
+Update: 1   RX_Bn_w: 41.245110  --Time: 4.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     bf000000    4fc00000   00000007   5.000000    2.000000    7.000000 
+01     c7a3f3a0    cfc0071f   00000000   1.415038    11.000000    12.415037 
+02     13000027    3600628e   00000000   1.415038    11.000000    12.415037 
+03     c323d100    000027c0   00000000   1.415038    8.000000    9.415037 
+04     992062a7    910066c3      NULL        NULL         NULL      NULL
+4 Round Total Weight: -41.245110 
+|-----------------------------------------------------------------------|
+Update: 2   RX_Bn_w: 39.245110  --Time: 11410.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     101ff800    001ffe20   0000001e   7.000000    4.000000    11.000000 
+01     c83c0ff9    1fe3a030   00000000   1.415038    8.000000    9.415037 
+02     403fec5f    101fec3e   00000000   1.415038    8.000000    9.415037 
+03     083c0bb8    b0201c01   00000000   1.415038    8.000000    9.415037 
+04     f03bfa5f    b9d83419      NULL        NULL         NULL      NULL
+4 Round Total Weight: -39.245110 
+|-----------------------------------------------------------------------|
+Update: 3   RX_Bn_w: 37.660149  --Time: 704402.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     0841fa08    0420f900   00000001   1.415038    6.000000    7.415038 
+01     d8200bae    07d8f000   00000000   1.415038    9.000000    10.415037 
+02     c803f419    0407f810   00000000   1.415038    10.000000    11.415037 
+03     042007ae    bc001003   00000000   1.415038    7.000000    8.415037 
+04     dc33f049    bfee1413      NULL        NULL         NULL      NULL
+4 Round Total Weight: -37.660149 
+|-----------------------------------------------------------------------|
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+huangmingjiang@node1:~/alzette-rx/k8/auto_search/Debug$ ./auto_search 
+|*******************************RX-Cryptanalysis****************************|
+Auto-search Begin... 
+Enter the parameters : #ciper  #blocksize  #rounds  #mode 
+ciper: alzette 
+blocksize: 64 
+rotational parameter: 1 
+rounds: 4 
+mode: 0 
+----------------Search Optimal pure RX-Differential Trail-------------------
+Constructing Alzette_Constant_RX ... 
+rk=1   Alzette_C[0]: b7e15162   Alzette_C_RX[0]: d823f3a7 
+RX_zeta_total: 64  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+Time of Preprocessing Alzette info: 0.00 seconds.  
+|--------------------------------------------------|
+Constructing cDDT Lookup Tables ... 
+Time of Construct Alzette cDDT: 22.00 seconds.  
+*****************************Searching processing**************************|
+Update: 0   RX_Bn_w: 64.000000  --Max expected weight-- 
+**thr_d**: 0  
+Update: 1   RX_Bn_w: 54.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000000   1.415038    14.000000    15.415037 
+03     507372b5    18f1a635   00000000   1.415038    18.000000    19.415037 
+04     9810d332    3864e606      NULL        NULL         NULL      NULL
+4 Round Total Weight: -54.660149 
+|-----------------------------------------------------------------------|
+Update: 2   RX_Bn_w: 54.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000000   1.415038    14.000000    15.415037 
+03     407372b5    38f1a635   00000000   1.415038    18.000000    19.415037 
+04     8810d3d2    1884f606      NULL        NULL         NULL      NULL
+4 Round Total Weight: -54.660149 
+|-----------------------------------------------------------------------|
+Update: 3   RX_Bn_w: 52.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    14.000000    15.415037 
+03     507372b4    18f1a637   00000000   1.415038    16.000000    17.415037 
+04     9810d133    3a65e604      NULL        NULL         NULL      NULL
+4 Round Total Weight: -52.660149 
+|-----------------------------------------------------------------------|
+Update: 4   RX_Bn_w: 52.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    14.000000    15.415037 
+03     407372b4    38f1a637   00000000   1.415038    16.000000    17.415037 
+04     8810d1d3    1a85f604      NULL        NULL         NULL      NULL
+4 Round Total Weight: -52.660149 
+|-----------------------------------------------------------------------|
+Update: 5   RX_Bn_w: 52.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     607372b4    78f1a637   00000000   1.415038    15.000000    16.415037 
+04     a810d193    5ac5d604      NULL        NULL         NULL      NULL
+4 Round Total Weight: -52.660149 
+|-----------------------------------------------------------------------|
+Update: 6   RX_Bn_w: 52.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    14.000000    15.415037 
+03     507376b4    18f1ae37   00000000   1.415038    16.000000    17.415037 
+04     9800cd33    2665ee14      NULL        NULL         NULL      NULL
+4 Round Total Weight: -52.660149 
+|-----------------------------------------------------------------------|
+Update: 7   RX_Bn_w: 52.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    14.000000    15.415037 
+03     407376b4    38f1ae37   00000000   1.415038    16.000000    17.415037 
+04     8800cdd3    0685fe14      NULL        NULL         NULL      NULL
+4 Round Total Weight: -52.660149 
+|-----------------------------------------------------------------------|
+Update: 8   RX_Bn_w: 52.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     607376b4    78f1ae37   00000000   1.415038    15.000000    16.415037 
+04     a800cd93    46c5de14      NULL        NULL         NULL      NULL
+4 Round Total Weight: -52.660149 
+|-----------------------------------------------------------------------|
+Update: 9   RX_Bn_w: 52.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     507776b4    18f9ae37   00000000   1.415038    15.000000    16.415037 
+04     8004cd33    266df610      NULL        NULL         NULL      NULL
+4 Round Total Weight: -52.660149 
+|-----------------------------------------------------------------------|
+Update: 10   RX_Bn_w: 52.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    16.000000    17.415037 
+03     406f76b4    38c9ae37   00000000   1.415038    14.000000    15.415037 
+04     d01ccdd3    06bda608      NULL        NULL         NULL      NULL
+4 Round Total Weight: -52.660149 
+|-----------------------------------------------------------------------|
+Update: 11   RX_Bn_w: 52.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    16.000000    17.415037 
+03     407f76b4    38e9ae37   00000000   1.415038    14.000000    15.415037 
+04     b00ccdd3    069dc618      NULL        NULL         NULL      NULL
+4 Round Total Weight: -52.660149 
+|-----------------------------------------------------------------------|
+Update: 12   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    14.000000    15.415037 
+03     507332b4    18f12637   00000000   1.415038    15.000000    16.415037 
+04     9910f133    1a656704      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 13   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    14.000000    15.415037 
+03     407332b4    38f12637   00000000   1.415038    15.000000    16.415037 
+04     8910f1d3    3a857704      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 14   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     607332b4    78f12637   00000000   1.415038    14.000000    15.415037 
+04     a910f193    7ac55704      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 15   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    14.000000    15.415037 
+03     507336b4    18f12e37   00000000   1.415038    15.000000    16.415037 
+04     99008d33    66656f14      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 16   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    14.000000    15.415037 
+03     407336b4    38f12e37   00000000   1.415038    15.000000    16.415037 
+04     89008dd3    46857f14      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 17   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     607336b4    78f12e37   00000000   1.415038    14.000000    15.415037 
+04     a9008d93    06c55f14      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 18   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     507736b4    18f92e37   00000000   1.415038    14.000000    15.415037 
+04     81048d33    666d7710      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 19   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    16.000000    17.415037 
+03     406f36b4    38c92e37   00000000   1.415038    13.000000    14.415037 
+04     d11c8dd3    46bd2708      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 20   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    16.000000    17.415037 
+03     407f36b4    38e92e37   00000000   1.415038    13.000000    14.415037 
+04     b10c8dd3    469d4718      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 21   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     50733eb4    18f13e37   00000000   1.415038    14.000000    15.415037 
+04     99108533    6e657f04      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 22   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     40733eb4    38f13e37   00000000   1.415038    14.000000    15.415037 
+04     891085d3    4e856f04      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 23   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    16.000000    17.415037 
+03     60733eb4    78f13e37   00000000   1.415038    13.000000    14.415037 
+04     a9108593    0ec54f04      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 24   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    16.000000    17.415037 
+03     50773eb4    18f93e37   00000000   1.415038    13.000000    14.415037 
+04     81148533    6e6d6700      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 25   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    17.000000    18.415037 
+03     407f3eb4    38e93e37   00000000   1.415038    12.000000    13.415037 
+04     b11c85d3    4e9d5708      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 26   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    14.000000    15.415037 
+03     507372b0    18f1a63f   00000000   1.415038    15.000000    16.415037 
+04     9810c13f    2a69e60c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 27   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    14.000000    15.415037 
+03     407372b0    38f1a63f   00000000   1.415038    15.000000    16.415037 
+04     8810c1df    0a89f60c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 28   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     607372b0    78f1a63f   00000000   1.415038    14.000000    15.415037 
+04     a810c19f    4ac9d60c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 29   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    14.000000    15.415037 
+03     507376b0    18f1ae3f   00000000   1.415038    15.000000    16.415037 
+04     9800c53f    2e69ee1c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 30   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    14.000000    15.415037 
+03     407376b0    38f1ae3f   00000000   1.415038    15.000000    16.415037 
+04     8800c5df    0e89fe1c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 31   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     607376b0    78f1ae3f   00000000   1.415038    14.000000    15.415037 
+04     a800c59f    4ec9de1c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 32   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     507776b0    18f9ae3f   00000000   1.415038    14.000000    15.415037 
+04     8004c53f    2e61f618      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 33   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    16.000000    17.415037 
+03     406f76b0    38c9ae3f   00000000   1.415038    13.000000    14.415037 
+04     d01cc5df    0eb1a600      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 34   RX_Bn_w: 51.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    16.000000    17.415037 
+03     407f76b0    38e9ae3f   00000000   1.415038    13.000000    14.415037 
+04     b00cc5df    0e91c610      NULL        NULL         NULL      NULL
+4 Round Total Weight: -51.660149 
+|-----------------------------------------------------------------------|
+Update: 35   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    14.000000    15.415037 
+03     507332b0    18f1263f   00000000   1.415038    14.000000    15.415037 
+04     9910813f    6a69670c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 36   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    14.000000    15.415037 
+03     407332b0    38f1263f   00000000   1.415038    14.000000    15.415037 
+04     891081df    4a89770c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 37   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     607332b0    78f1263f   00000000   1.415038    13.000000    14.415037 
+04     a910819f    0ac9570c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 38   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    14.000000    15.415037 
+03     507336b0    18f12e3f   00000000   1.415038    14.000000    15.415037 
+04     9900853f    6e696f1c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 39   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    14.000000    15.415037 
+03     407336b0    38f12e3f   00000000   1.415038    14.000000    15.415037 
+04     890085df    4e897f1c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 40   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     607336b0    78f12e3f   00000000   1.415038    13.000000    14.415037 
+04     a900859f    0ec95f1c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 41   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     507736b0    18f92e3f   00000000   1.415038    13.000000    14.415037 
+04     8104853f    6e617718      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 42   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    16.000000    17.415037 
+03     406f36b0    38c92e3f   00000000   1.415038    12.000000    13.415037 
+04     d11c85df    4eb12700      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 43   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    16.000000    17.415037 
+03     407f36b0    38e92e3f   00000000   1.415038    12.000000    13.415037 
+04     b10c85df    4e914710      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 44   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     50737eb0    18f1be3f   00000000   1.415038    13.000000    14.415037 
+04     9810cd3f    2669fe0c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 45   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     40737eb0    38f1be3f   00000000   1.415038    13.000000    14.415037 
+04     8810cddf    0689ee0c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 46   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    16.000000    17.415037 
+03     60737eb0    78f1be3f   00000000   1.415038    12.000000    13.415037 
+04     a810cd9f    46c9ce0c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 47   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    16.000000    17.415037 
+03     50777eb0    18f9be3f   00000000   1.415038    12.000000    13.415037 
+04     8014cd3f    2661e608      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 48   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    17.000000    18.415037 
+03     407f7eb0    38e9be3f   00000000   1.415038    11.000000    12.415037 
+04     b01ccddf    0691d600      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 49   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     50733ab0    18f1363f   00000000   1.415038    13.000000    14.415037 
+04     9900893f    6269771c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 50   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     40733ab0    38f1363f   00000000   1.415038    13.000000    14.415037 
+04     890089df    4289671c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 51   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    16.000000    17.415037 
+03     60733ab0    78f1363f   00000000   1.415038    12.000000    13.415037 
+04     a900899f    02c9471c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 52   RX_Bn_w: 50.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    16.000000    17.415037 
+03     50773ab0    18f9363f   00000000   1.415038    12.000000    13.415037 
+04     811c893f    62616f00      NULL        NULL         NULL      NULL
+4 Round Total Weight: -50.660149 
+|-----------------------------------------------------------------------|
+Update: 53   RX_Bn_w: 49.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     50733eb0    18f13e3f   00000000   1.415038    12.000000    13.415037 
+04     99108d3f    66697f0c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -49.660149 
+|-----------------------------------------------------------------------|
+Update: 54   RX_Bn_w: 49.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    15.000000    16.415037 
+03     40733eb0    38f13e3f   00000000   1.415038    12.000000    13.415037 
+04     89108ddf    46896f0c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -49.660149 
+|-----------------------------------------------------------------------|
+Update: 55   RX_Bn_w: 49.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    16.000000    17.415037 
+03     60733eb0    78f13e3f   00000000   1.415038    11.000000    12.415037 
+04     a9108d9f    06c94f0c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -49.660149 
+|-----------------------------------------------------------------------|
+Update: 56   RX_Bn_w: 49.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    16.000000    17.415037 
+03     50773eb0    18f93e3f   00000000   1.415038    11.000000    12.415037 
+04     81148d3f    66616708      NULL        NULL         NULL      NULL
+4 Round Total Weight: -49.660149 
+|-----------------------------------------------------------------------|
+Update: 57   RX_Bn_w: 49.660149  --Time: 0.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     9003e306    0850a410   00000001   1.415038    17.000000    18.415037 
+03     407f3eb0    38e93e3f   00000000   1.415038    10.000000    11.415037 
+04     b11c8ddf    46915700      NULL        NULL         NULL      NULL
+4 Round Total Weight: -49.660149 
+|-----------------------------------------------------------------------|
+Update: 58   RX_Bn_w: 49.660149  --Time: 2.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     8003e306    0850ac10   00000001   1.415038    14.000000    15.415037 
+03     50737eb0    18f1b63f   00000000   1.415038    13.000000    14.415037 
+04     9800cd3f    2669f61c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -49.660149 
+|-----------------------------------------------------------------------|
+Update: 59   RX_Bn_w: 49.660149  --Time: 2.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     8003e306    0850ac10   00000001   1.415038    15.000000    16.415037 
+03     50777eb0    18f9b63f   00000000   1.415038    12.000000    13.415037 
+04     801ccd3f    2661ee00      NULL        NULL         NULL      NULL
+4 Round Total Weight: -49.660149 
+|-----------------------------------------------------------------------|
+Update: 60   RX_Bn_w: 49.660149  --Time: 2.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     8003e306    0850ac10   00000001   1.415038    14.000000    15.415037 
+03     507336b0    18f1263f   00000000   1.415038    13.000000    14.415037 
+04     9910853f    6e69670c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -49.660149 
+|-----------------------------------------------------------------------|
+Update: 61   RX_Bn_w: 49.660149  --Time: 2.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     8003e306    0850ac10   00000001   1.415038    14.000000    15.415037 
+03     50733ab0    18f13e3f   00000000   1.415038    13.000000    14.415037 
+04     9910893f    62697f0c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -49.660149 
+|-----------------------------------------------------------------------|
+Update: 62   RX_Bn_w: 49.660149  --Time: 2.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     8003e306    0850ac10   00000001   1.415038    15.000000    16.415037 
+03     50773ab0    18f93e3f   00000000   1.415038    12.000000    13.415037 
+04     8114893f    62616708      NULL        NULL         NULL      NULL
+4 Round Total Weight: -49.660149 
+|-----------------------------------------------------------------------|
+Update: 63   RX_Bn_w: 48.660149  --Time: 2.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     8003e306    0850ac10   00000001   1.415038    14.000000    15.415037 
+03     50733eb0    18f1363f   00000000   1.415038    12.000000    13.415037 
+04     99008d3f    6669771c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -48.660149 
+|-----------------------------------------------------------------------|
+Update: 64   RX_Bn_w: 48.660149  --Time: 2.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     8003e306    0850ac10   00000001   1.415038    15.000000    16.415037 
+03     50773eb0    18f9363f   00000000   1.415038    11.000000    12.415037 
+04     811c8d3f    66616f00      NULL        NULL         NULL      NULL
+4 Round Total Weight: -48.660149 
+|-----------------------------------------------------------------------|
+Update: 65   RX_Bn_w: 48.660149  --Time: 4.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     1003e306    0850e410   00000001   1.415038    14.000000    15.415037 
+03     d0733eb0    18f17e3e   00000000   1.415038    12.000000    13.415037 
+04     18d08f3f    6469becd      NULL        NULL         NULL      NULL
+4 Round Total Weight: -48.660149 
+|-----------------------------------------------------------------------|
+Update: 66   RX_Bn_w: 48.660149  --Time: 4.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     1003e306    0850e410   00000001   1.415038    14.000000    15.415037 
+03     c0733eb0    38f17e3e   00000000   1.415038    12.000000    13.415037 
+04     08d08fdf    4489aecd      NULL        NULL         NULL      NULL
+4 Round Total Weight: -48.660149 
+|-----------------------------------------------------------------------|
+Update: 67   RX_Bn_w: 48.660149  --Time: 4.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     1003e306    0850e410   00000001   1.415038    15.000000    16.415037 
+03     e0733eb0    78f17e3e   00000000   1.415038    11.000000    12.415037 
+04     28d08f9f    04c98ecd      NULL        NULL         NULL      NULL
+4 Round Total Weight: -48.660149 
+|-----------------------------------------------------------------------|
+Update: 68   RX_Bn_w: 48.660149  --Time: 4.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     1003e306    0850e410   00000001   1.415038    15.000000    16.415037 
+03     d0773eb0    18f97e3e   00000000   1.415038    11.000000    12.415037 
+04     00d48f3f    6461a6c9      NULL        NULL         NULL      NULL
+4 Round Total Weight: -48.660149 
+|-----------------------------------------------------------------------|
+Update: 69   RX_Bn_w: 48.660149  --Time: 4.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     1003e306    0850e410   00000001   1.415038    16.000000    17.415037 
+03     c07f3eb0    38e97e3e   00000000   1.415038    10.000000    11.415037 
+04     30dc8fdf    449196c1      NULL        NULL         NULL      NULL
+4 Round Total Weight: -48.660149 
+|-----------------------------------------------------------------------|
+Update: 70   RX_Bn_w: 48.660149  --Time: 4.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     1003e306    0850e410   00000001   1.415038    14.000000    15.415037 
+03     d0733cb0    18f17a3e   00000000   1.415038    12.000000    13.415037 
+04     18d48d3f    6669bac9      NULL        NULL         NULL      NULL
+4 Round Total Weight: -48.660149 
+|-----------------------------------------------------------------------|
+Update: 71   RX_Bn_w: 48.660149  --Time: 4.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     1003e306    0850e410   00000001   1.415038    14.000000    15.415037 
+03     c0733cb0    38f17a3e   00000000   1.415038    12.000000    13.415037 
+04     08d48ddf    4689aac9      NULL        NULL         NULL      NULL
+4 Round Total Weight: -48.660149 
+|-----------------------------------------------------------------------|
+Update: 72   RX_Bn_w: 48.660149  --Time: 4.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     1003e306    0850e410   00000001   1.415038    15.000000    16.415037 
+03     e0733cb0    78f17a3e   00000000   1.415038    11.000000    12.415037 
+04     28d48d9f    06c98ac9      NULL        NULL         NULL      NULL
+4 Round Total Weight: -48.660149 
+|-----------------------------------------------------------------------|
+Update: 73   RX_Bn_w: 48.660149  --Time: 5.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     0003e306    0850ec10   00000001   1.415038    13.000000    14.415037 
+03     d07336b0    18f1663e   00000000   1.415038    13.000000    14.415037 
+04     18d0873f    6c69a6cd      NULL        NULL         NULL      NULL
+4 Round Total Weight: -48.660149 
+|-----------------------------------------------------------------------|
+Update: 74   RX_Bn_w: 48.660149  --Time: 5.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     0003e306    0850ec10   00000001   1.415038    13.000000    14.415037 
+03     d07334b0    18f1623e   00000000   1.415038    13.000000    14.415037 
+04     18d2853f    6e69a2cf      NULL        NULL         NULL      NULL
+4 Round Total Weight: -48.660149 
+|-----------------------------------------------------------------------|
+Update: 75   RX_Bn_w: 48.660149  --Time: 5.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     0003e306    0850ec10   00000001   1.415038    13.000000    14.415037 
+03     d0733ab0    18f17e3e   00000000   1.415038    13.000000    14.415037 
+04     18d08b3f    6069becd      NULL        NULL         NULL      NULL
+4 Round Total Weight: -48.660149 
+|-----------------------------------------------------------------------|
+Update: 76   RX_Bn_w: 48.660149  --Time: 5.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     0003e306    0850ec10   00000001   1.415038    14.000000    15.415037 
+03     d0773ab0    18f97e3e   00000000   1.415038    12.000000    13.415037 
+04     00d48b3f    6061a6c9      NULL        NULL         NULL      NULL
+4 Round Total Weight: -48.660149 
+|-----------------------------------------------------------------------|
+Update: 77   RX_Bn_w: 48.660149  --Time: 5.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     0003e306    0850ec10   00000000   1.415038    13.000000    14.415037 
+03     d07338b1    18f17a3c   00000000   1.415038    13.000000    14.415037 
+04     18d48f3e    6468bacb      NULL        NULL         NULL      NULL
+4 Round Total Weight: -48.660149 
+|-----------------------------------------------------------------------|
+Update: 78   RX_Bn_w: 48.660149  --Time: 5.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     0003e306    0850ec10   00000001   1.415038    13.000000    14.415037 
+03     d07338b0    18f17a3e   00000000   1.415038    13.000000    14.415037 
+04     18d4893f    6269bac9      NULL        NULL         NULL      NULL
+4 Round Total Weight: -48.660149 
+|-----------------------------------------------------------------------|
+Update: 79   RX_Bn_w: 48.660149  --Time: 5.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     0003e306    0850ec10   00000000   1.415038    13.000000    14.415037 
+03     d0733eb1    18f1763c   00000000   1.415038    13.000000    14.415037 
+04     18c08d3e    6668b6df      NULL        NULL         NULL      NULL
+4 Round Total Weight: -48.660149 
+|-----------------------------------------------------------------------|
+Update: 80   RX_Bn_w: 47.660149  --Time: 5.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     0003e306    0850ec10   00000001   1.415038    13.000000    14.415037 
+03     d0733eb0    18f1763e   00000000   1.415038    12.000000    13.415037 
+04     18c08f3f    6469b6dd      NULL        NULL         NULL      NULL
+4 Round Total Weight: -47.660149 
+|-----------------------------------------------------------------------|
+Update: 81   RX_Bn_w: 47.660149  --Time: 5.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     0003e306    0850ec10   00000001   1.415038    14.000000    15.415037 
+03     d0773eb0    18f9763e   00000000   1.415038    11.000000    12.415037 
+04     00dc8f3f    6461aec1      NULL        NULL         NULL      NULL
+4 Round Total Weight: -47.660149 
+|-----------------------------------------------------------------------|
+Update: 82   RX_Bn_w: 47.660149  --Time: 5.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     0003e306    0850ec10   00000001   1.415038    13.000000    14.415037 
+03     d0733cb0    18f1723e   00000000   1.415038    12.000000    13.415037 
+04     18c28d3f    6669b2df      NULL        NULL         NULL      NULL
+4 Round Total Weight: -47.660149 
+|-----------------------------------------------------------------------|
+Update: 83   RX_Bn_w: 47.660149  --Time: 82.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     0001e306    0850ec11   00000000   1.415038    13.000000    14.415037 
+03     d0733eb0    18f1763f   00000000   1.415038    12.000000    13.415037 
+04     18c08d3f    6669b6dc      NULL        NULL         NULL      NULL
+4 Round Total Weight: -47.660149 
+|-----------------------------------------------------------------------|
+Update: 84   RX_Bn_w: 47.660149  --Time: 118.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000000   1.415038    17.000000    18.415037 
+02     0000e306    8850ec11   00000000   1.415038    13.000000    14.415037 
+03     50723cb0    98f3723e   00000000   1.415038    12.000000    13.415037 
+04     98c38dbf    e6eb32de      NULL        NULL         NULL      NULL
+4 Round Total Weight: -47.660149 
+|-----------------------------------------------------------------------|
+Update: 85   RX_Bn_w: 47.660149  --Time: 122.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000001   1.415038    17.000000    18.415037 
+02     1000e307    88506411   00000001   1.415038    14.000000    15.415037 
+03     4073beb0    b8f0fe3e   00000000   1.415038    11.000000    12.415037 
+04     88518c5f    c708ae4c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -47.660149 
+|-----------------------------------------------------------------------|
+Update: 86   RX_Bn_w: 47.660149  --Time: 122.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000001   1.415038    17.000000    18.415037 
+02     1000e307    88506411   00000001   1.415038    15.000000    16.415037 
+03     6073beb0    f8f0fe3e   00000000   1.415038    10.000000    11.415037 
+04     a8518c1f    87488e4c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -47.660149 
+|-----------------------------------------------------------------------|
+Update: 87   RX_Bn_w: 47.660149  --Time: 123.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000001   1.415038    17.000000    18.415037 
+02     0000e307    88506c11   00000001   1.415038    13.000000    14.415037 
+03     5073beb0    98f0f63e   00000000   1.415038    12.000000    13.415037 
+04     98418fbf    e4e8b65c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -47.660149 
+|-----------------------------------------------------------------------|
+Update: 88   RX_Bn_w: 47.660149  --Time: 123.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000001   1.415038    17.000000    18.415037 
+02     0000e307    88506c11   00000001   1.415038    14.000000    15.415037 
+03     4073beb0    b8f0f63e   00000000   1.415038    11.000000    12.415037 
+04     88418c5f    c708a65c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -47.660149 
+|-----------------------------------------------------------------------|
+Update: 89   RX_Bn_w: 47.660149  --Time: 123.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000001   1.415038    17.000000    18.415037 
+02     0000e307    88506c11   00000001   1.415038    15.000000    16.415037 
+03     6073beb0    f8f0f63e   00000000   1.415038    10.000000    11.415037 
+04     a8418c1f    8748865c      NULL        NULL         NULL      NULL
+4 Round Total Weight: -47.660149 
+|-----------------------------------------------------------------------|
+Update: 90   RX_Bn_w: 47.660149  --Time: 123.00 seconds. ==>>
+|-----------------------------------------------------------------------|
+round------x----------y----------zeta-----Pr_zeta-------Pr_xor-----Pr_RX 
+00     00000000    00000000   00000000   1.415038    0.000000    1.415038 
+01     d823f3a7    00000000   00000001   1.415038    17.000000    18.415037 
+02     0000e307    88506c11   00000001   1.415038    13.000000    14.415037 
+03     5073bcb0    98f0f23e   00000000   1.415038    12.000000    13.415037 
+04     98438dbf    e6e8b25e      NULL        NULL         NULL      NULL
+4 Round Total Weight: -47.660149 
+|-----------------------------------------------------------------------|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

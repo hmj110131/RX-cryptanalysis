@@ -1,0 +1,1904 @@
+*********************************************************************
+*********************************************************************
+*********************************************************************
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 4
+rotation-parameter: 1
+Alpha: 0x2 
+Beta:  0x0
+Gamma: 0x2
+------------------------
+RX_zeta_total: 8  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.210937 
+------------------------
+Total of (x,y) pairs: 256 
+Number of (x,y) with theoretical Pr_T: 53 
+Pr_T = 0.210937: 
+Real number of (x,y) with experiment Pr_E: 60  
+Pr_E = 0.234375: 
+[huangmingjiang@localhost Debug]$
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 4
+rotation-parameter: 2
+Alpha: 0x4
+Beta:  0x0
+Gamma: 0x4
+------------------------
+RX_zeta_total: 9  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.195312 
+------------------------
+Total of (x,y) pairs: 256 
+Number of (x,y) with theoretical Pr_T: 49 
+Pr_T = 0.195312: 
+Real number of (x,y) with experiment Pr_E: 60  
+Pr_E = 0.234375: 
+[huangmingjiang@localhost Debug]$
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 4
+rotation-parameter: 3
+Alpha: 0x1
+Beta:  0x0
+Gamma: 0x1
+------------------------
+RX_zeta_total: 8  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.210937 
+------------------------
+Total of (x,y) pairs: 256 
+Number of (x,y) with theoretical Pr_T: 53 
+Pr_T = 0.210937: 
+Real number of (x,y) with experiment Pr_E: 60  
+Pr_E = 0.234375: 
+[huangmingjiang@localhost Debug]$
+
+
+*********************************************************************
+*********************************************************************
+*********************************************************************
+*********************************************************************
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 8
+rotation-parameter: 1
+Alpha: 0x02
+Beta:  0x02
+Gamma: 0x00
+------------------------
+RX_zeta_total: 16  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.188965 
+------------------------
+Total of (x,y) pairs: 65536 
+Number of (x,y) with theoretical Pr_T: 12383 
+Pr_T = 0.188965: 
+Real number of (x,y) with experiment Pr_E: 12480  
+Pr_E = 0.190430: 
+[huangmingjiang@localhost Debug]$
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 8
+rotation-parameter: 2
+Alpha: 0x4
+Beta:  0x4
+Gamma: 0x0
+------------------------
+RX_zeta_total: 21  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.158691 
+------------------------
+Total of (x,y) pairs: 65536 
+Number of (x,y) with theoretical Pr_T: 10399 
+Pr_T = 0.158691: 
+Real number of (x,y) with experiment Pr_E: 10560  
+Pr_E = 0.161133: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 8
+rotation-parameter: 3
+Alpha: 0x01
+Beta:  0x00
+Gamma: 0x01
+------------------------
+RX_zeta_total: 24  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.145020 
+------------------------
+Total of (x,y) pairs: 65536 
+Number of (x,y) with theoretical Pr_T: 9503 
+Pr_T = 0.145020: 
+Real number of (x,y) with experiment Pr_E: 10560  
+Pr_E = 0.161133: 
+[huangmingjiang@localhost Debug]$
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 8
+rotation-parameter: 4
+Alpha: 0x01
+Beta:  0x00
+Gamma: 0x01
+------------------------
+RX_zeta_total: 25  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.141113 
+------------------------
+Total of (x,y) pairs: 65536 
+Number of (x,y) with theoretical Pr_T: 9248 
+Pr_T = 0.141113: 
+Real number of (x,y) with experiment Pr_E: 9792  
+Pr_E = 0.149414: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 8
+rotation-parameter: 5
+Alpha: 0x04
+Beta:  0x00
+Gamma: 0x04
+------------------------
+RX_zeta_total: 24  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.145020 
+------------------------
+Total of (x,y) pairs: 65536 
+Number of (x,y) with theoretical Pr_T: 9503 
+Pr_T = 0.145020: 
+Real number of (x,y) with experiment Pr_E: 9792  
+Pr_E = 0.149414: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 8
+rotation-parameter: 6
+Alpha: 0x02
+Beta:  0x00
+Gamma: 0x02
+------------------------
+RX_zeta_total: 21  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.158691 
+------------------------
+Total of (x,y) pairs: 65536 
+Number of (x,y) with theoretical Pr_T: 10399 
+Pr_T = 0.158691: 
+Real number of (x,y) with experiment Pr_E: 10560  
+Pr_E = 0.161133: 
+[huangmingjiang@localhost Debug]$
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 8
+rotation-parameter: 7
+Alpha: 0x04
+Beta:  0x00
+Gamma: 0x04
+------------------------
+RX_zeta_total: 16  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.188965 
+------------------------
+Total of (x,y) pairs: 65536 
+Number of (x,y) with theoretical Pr_T: 12383 
+Pr_T = 0.188965: 
+Real number of (x,y) with experiment Pr_E: 12480  
+Pr_E = 0.190430: 
+[huangmingjiang@localhost Debug]$
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 8
+rotation-parameter: 1
+Alpha: 0x1
+Beta:  0x0
+Gamma: 0x1
+------------------------
+RX_zeta_total: 16  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.188965 
+------------------------
+Pr: 0.204712 
+------------------------
+Pr: 0.208649 
+------------------------
+Pr: 0.209633 
+------------------------
+Pr: 0.209879 
+------------------------
+Pr: 0.209940 
+------------------------
+Pr: 0.209956 
+------------------------
+Pr: 0.209971 
+------------------------
+Total of (x,y) pairs: 65536 
+Number of (x,y) with theoretical Pr_T: 13760 
+Pr_T = 0.209971 
+Real number of (x,y) with experiment Pr_E: 24768  
+Pr_E = 0.377930 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 8
+rotation-parameter: 2
+Alpha: 0x1
+Beta:  0x0
+Gamma: 0x1
+------------------------
+RX_zeta_total: 21  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.158691 
+------------------------
+Total of (x,y) pairs: 65536 
+Number of (x,y) with theoretical Pr_T: 10399 
+Pr_T = 0.158691 
+Real number of (x,y) with experiment Pr_E: 12480  
+Pr_E = 0.190430 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 8
+rotation-parameter: 3
+Alpha: 0x1
+Beta:  0x0
+Gamma: 0x1
+------------------------
+RX_zeta_total: 24  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.145020 
+------------------------
+Total of (x,y) pairs: 65536 
+Number of (x,y) with theoretical Pr_T: 9503 
+Pr_T = 0.145020 
+Real number of (x,y) with experiment Pr_E: 10560  
+Pr_E = 0.161133 
+[huangmingjiang@localhost Debug]$
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 8
+rotation-parameter: 4
+Alpha: 0x1
+Beta:  0x0
+Gamma: 0x1
+------------------------
+RX_zeta_total: 25  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.141113 
+------------------------
+Total of (x,y) pairs: 65536 
+Number of (x,y) with theoretical Pr_T: 9248 
+Pr_T = 0.141113 
+Real number of (x,y) with experiment Pr_E: 9792  
+Pr_E = 0.149414 
+[huangmingjiang@localhost Debug]$ 
+
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 8
+rotation-parameter: 5
+Alpha: 0x1
+Beta:  0x0
+Gamma: 0x1
+------------------------
+RX_zeta_total: 24  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.145020 
+------------------------
+Total of (x,y) pairs: 65536 
+Number of (x,y) with theoretical Pr_T: 9503 
+Pr_T = 0.145020 
+Real number of (x,y) with experiment Pr_E: 9792  
+Pr_E = 0.149414 
+[huangmingjiang@localhost Debug]$ 
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 8 
+rotation-parameter: 6
+Alpha: 0x1
+Beta:  0x0
+Gamma: 0x1
+------------------------
+RX_zeta_total: 21  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.158691 
+------------------------
+Total of (x,y) pairs: 65536 
+Number of (x,y) with theoretical Pr_T: 10399 
+Pr_T = 0.158691 
+Real number of (x,y) with experiment Pr_E: 10560  
+Pr_E = 0.161133 
+[huangmingjiang@localhost Debug]$ 
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 8
+rotation-parameter: 7
+Alpha: 0x1
+Beta:  0x0
+Gamma: 0x1
+------------------------
+RX_zeta_total: 16  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.188965 
+------------------------
+Total of (x,y) pairs: 65536 
+Number of (x,y) with theoretical Pr_T: 12383 
+Pr_T = 0.188965 
+Real number of (x,y) with experiment Pr_E: 12480  
+Pr_E = 0.190430 
+[huangmingjiang@localhost Debug]$
+
+
+*********************************************************************
+*********************************************************************
+*********************************************************************
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 12
+rotation-parameter: 1
+Alpha: 0x004
+Beta:  0x004
+Gamma: 0x000
+------------------------
+RX_zeta_total: 24  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.187592 
+------------------------
+Total of (x,y) pairs: 16777216 
+Number of (x,y) with theoretical Pr_T: 3147264 
+Pr_T = 0.187592: 
+Real number of (x,y) with experiment Pr_E: 3148800  
+Pr_E = 0.187683: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 12
+rotation-parameter: 2
+Alpha: 0x004
+Beta:  0x004
+Gamma: 0x000
+------------------------
+RX_zeta_total: 33  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.156403 
+------------------------
+Total of (x,y) pairs: 16777216 
+Number of (x,y) with theoretical Pr_T: 2623999 
+Pr_T = 0.156403: 
+Real number of (x,y) with experiment Pr_E: 2626560  
+Pr_E = 0.156555: 
+[huangmingjiang@localhost Debug]$
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 12
+rotation-parameter: 3
+Alpha: 0x002
+Beta:  0x000
+Gamma: 0x002
+------------------------
+RX_zeta_total: 40  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.140900 
+------------------------
+Total of (x,y) pairs: 16777216 
+Number of (x,y) with theoretical Pr_T: 2363903 
+Pr_T = 0.140900: 
+Real number of (x,y) with experiment Pr_E: 2626560  
+Pr_E = 0.156555: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 12
+rotation-parameter: 4
+Alpha: 0x002
+Beta:  0x000
+Gamma: 0x002
+------------------------
+RX_zeta_total: 45  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.133331 
+------------------------
+Total of (x,y) pairs: 16777216 
+Number of (x,y) with theoretical Pr_T: 2236928 
+Pr_T = 0.133331: 
+Real number of (x,y) with experiment Pr_E: 2368512  
+Pr_E = 0.141174: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 12
+rotation-parameter: 5
+Alpha: 0x004
+Beta:  0x000
+Gamma: 0x004
+------------------------
+RX_zeta_total: 48  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.129913 
+------------------------
+Total of (x,y) pairs: 16777216 
+Number of (x,y) with theoretical Pr_T: 2179584 
+Pr_T = 0.129913: 
+Real number of (x,y) with experiment Pr_E: 2245632  
+Pr_E = 0.133850: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 12
+rotation-parameter: 6
+Alpha: 0x004
+Beta:  0x004
+Gamma: 0x000
+------------------------
+RX_zeta_total: 49  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.128937 
+------------------------
+Total of (x,y) pairs: 16777216 
+Number of (x,y) with theoretical Pr_T: 2163200 
+Pr_T = 0.128937: 
+Real number of (x,y) with experiment Pr_E: 2196480  
+Pr_E = 0.130920: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 12
+rotation-parameter: 7
+Alpha: 0x006
+Beta:  0x006
+Gamma: 0x000
+------------------------
+RX_zeta_total: 48  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.064957 
+------------------------
+Total of (x,y) pairs: 16777216 
+Number of (x,y) with theoretical Pr_T: 1089792 
+Pr_T = 0.064957: 
+Real number of (x,y) with experiment Pr_E: 1115136  
+Pr_E = 0.066467: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 12
+rotation-parameter: 8
+Alpha: 0x002
+Beta:  0x000
+Gamma: 0x002
+------------------------
+RX_zeta_total: 45  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.133331 
+------------------------
+Total of (x,y) pairs: 16777216 
+Number of (x,y) with theoretical Pr_T: 2236928 
+Pr_T = 0.133331: 
+Real number of (x,y) with experiment Pr_E: 2245632  
+Pr_E = 0.133850: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 12
+rotation-parameter: 9
+Alpha: 0x004
+Beta:  0x000
+Gamma: 0x004
+------------------------
+RX_zeta_total: 40  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.140900 
+------------------------
+Total of (x,y) pairs: 16777216 
+Number of (x,y) with theoretical Pr_T: 2363903 
+Pr_T = 0.140900: 
+Real number of (x,y) with experiment Pr_E: 2368512  
+Pr_E = 0.141174: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 12
+rotation-parameter: 10
+Alpha: 0x001
+Beta:  0x001
+Gamma: 0x000
+------------------------
+RX_zeta_total: 33  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.156403 
+------------------------
+Total of (x,y) pairs: 16777216 
+Number of (x,y) with theoretical Pr_T: 2623999 
+Pr_T = 0.156403: 
+Real number of (x,y) with experiment Pr_E: 2626560  
+Pr_E = 0.156555: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 12
+rotation-parameter: 11
+Alpha: 0x003
+Beta:  0x002
+Gamma: 0x001
+------------------------
+RX_zeta_total: 24  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.093796 
+------------------------
+Total of (x,y) pairs: 16777216 
+Number of (x,y) with theoretical Pr_T: 1573632 
+Pr_T = 0.093796: 
+Real number of (x,y) with experiment Pr_E: 1575936  
+Pr_E = 0.093933: 
+[huangmingjiang@localhost Debug]$
+
+
+*********************************************************************
+*********************************************************************
+*********************************************************************
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 1
+Alpha: 0x0002
+Beta:  0x0000
+Gamma: 0x0002
+------------------------
+RX_zeta_total: 32  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.187506 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 805330914 
+Pr_T = 0.187506: 
+Real number of (x,y) with experiment Pr_E: 805355520  
+Pr_E = 0.187511: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 2
+Alpha: 0x0001
+Beta:  0x0001
+Gamma: 0x0000
+------------------------
+RX_zeta_total: 45  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.156260 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 671129587 
+Pr_T = 0.156260: 
+Real number of (x,y) with experiment Pr_E: 805355520  
+Pr_E = 0.187511: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 2
+Alpha: 0x2
+Beta:  0x0
+Gamma: 0x2
+------------------------
+RX_zeta_total: 45  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.156260 
+------------------------
+Pr: 0.179698 
+------------------------
+Pr: 0.185558 
+------------------------
+Pr: 0.187023 
+------------------------
+Pr: 0.187389 
+------------------------
+Pr: 0.187481 
+------------------------
+Pr: 0.187504 
+------------------------
+Pr: 0.187510 
+------------------------
+Pr: 0.187511 
+------------------------
+Pr: 0.187511 
+------------------------
+Pr: 0.187511 
+------------------------
+Pr: 0.187511 
+------------------------
+Pr: 0.187511 
+------------------------
+Pr: 0.187511 
+------------------------
+Pr: 0.187511 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 805355514 
+Pr_T = 0.187511 
+Real number of (x,y) with experiment Pr_E: 1342259200  
+Pr_E = 0.312519 
+[huangmingjiang@localhost Debug]$
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 3
+Alpha: 0x0001
+Beta:  0x0000
+Gamma: 0x0001
+------------------------
+RX_zeta_total: 56  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.140642 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 604053481 
+Pr_T = 0.140642: 
+Real number of (x,y) with experiment Pr_E: 671170560  
+Pr_E = 0.156269: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 4
+Alpha: 0x0002
+Beta:  0x0000
+Gamma: 0x0002
+------------------------
+RX_zeta_total: 65  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.132845 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 570564618 
+Pr_T = 0.132845: 
+Real number of (x,y) with experiment Pr_E: 604127232  
+Pr_E = 0.140659: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 5
+Alpha: 0x0001
+Beta:  0x0001
+Gamma: 0x0000
+------------------------
+RX_zeta_total: 72  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.128969 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 553918477 
+Pr_T = 0.128969: 
+Real number of (x,y) with experiment Pr_E: 570703872  
+Pr_E = 0.132877: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 6
+Alpha: 0x0004
+Beta:  0x0004
+Gamma: 0x0000
+------------------------
+RX_zeta_total: 77  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.127077 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 545792017 
+Pr_T = 0.127077: 
+Real number of (x,y) with experiment Pr_E: 554188800  
+Pr_E = 0.129032: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 7
+Alpha: 0x0001
+Beta:  0x0000
+Gamma: 0x0001
+------------------------
+RX_zeta_total: 80  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.126223 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 542121979 
+Pr_T = 0.126223: 
+Real number of (x,y) with experiment Pr_E: 546324480  
+Pr_E = 0.127201: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 8
+Alpha: 0x0003
+Beta:  0x0001
+Gamma: 0x0002
+------------------------
+RX_zeta_total: 81  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.062989 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 270536697 
+Pr_T = 0.062989: 
+Real number of (x,y) with experiment Pr_E: 273694720  
+Pr_E = 0.063725: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 9
+Alpha: 0x0001
+Beta:  0x0003
+Gamma: 0x0002
+------------------------
+RX_zeta_total: 80  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.063111 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 271060989 
+Pr_T = 0.063111: 
+Real number of (x,y) with experiment Pr_E: 272646144  
+Pr_E = 0.063480: 
+[huangmingjiang@localhost Debug]$
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 10
+Alpha: 0x0001
+Beta:  0x0001
+Gamma: 0x0000
+------------------------
+RX_zeta_total: 77  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.127077 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 545792017 
+Pr_T = 0.127077: 
+Real number of (x,y) with experiment Pr_E: 546324480  
+Pr_E = 0.127201: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 11
+Alpha: 0x0002
+Beta:  0x0002
+Gamma: 0x0000
+------------------------
+RX_zeta_total: 72  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.128969 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 553918477 
+Pr_T = 0.128969: 
+Real number of (x,y) with experiment Pr_E: 554188800  
+Pr_E = 0.129032: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 12
+Alpha: 0x0004
+Beta:  0x0000
+Gamma: 0x0004
+------------------------
+RX_zeta_total: 65  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.132845 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 570564618 
+Pr_T = 0.132845: 
+Real number of (x,y) with experiment Pr_E: 570703872  
+Pr_E = 0.132877: 
+[huangmingjiang@localhost Debug]$
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 13
+Alpha: 0x0000
+Beta:  0x0001
+Gamma: 0x0001
+------------------------
+RX_zeta_total: 56  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.140642 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 604053481 
+Pr_T = 0.140642: 
+Real number of (x,y) with experiment Pr_E: 604127232  
+Pr_E = 0.140659: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 14
+Alpha: 0x0005
+Beta:  0x0004
+Gamma: 0x0001
+------------------------
+RX_zeta_total: 45  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.078130 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 335564793 
+Pr_T = 0.078130: 
+Real number of (x,y) with experiment Pr_E: 335626240  
+Pr_E = 0.078144: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 15
+Alpha: 0x0002
+Beta:  0x0002
+Gamma: 0x0000
+------------------------
+RX_zeta_total: 32  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.187506 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 805330914 
+Pr_T = 0.187506: 
+Real number of (x,y) with experiment Pr_E: 805355520  
+Pr_E = 0.187511: 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 15
+Alpha: 0x2
+Beta:  0x0
+Gamma: 0x2
+------------------------
+RX_zeta_total: 32  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.187506 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 805330914 
+Pr_T = 0.187506: 
+Real number of (x,y) with experiment Pr_E: 805355520  
+Pr_E = 0.187511: 
+[huangmingjiang@localhost Debug]$ 
+
+
+*********************************************************************
+*********************************************************************
+*********************************************************************
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 1
+Alpha: 0x8
+Beta:  0x0
+Gamma: 0x8
+------------------------
+RX_zeta_total: 32  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.187506 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 805330914 
+Pr_T = 0.187506 
+Real number of (x,y) with experiment Pr_E: 805355520  
+Pr_E = 0.187511 
+[huangmingjiang@localhost Debug]$ 
+
+
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 2
+Alpha: 0x8
+Beta:  0x0
+Gamma: 0x8
+------------------------
+RX_zeta_total: 45  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.156260 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 671129587 
+Pr_T = 0.156260 
+Real number of (x,y) with experiment Pr_E: 671170560  
+Pr_E = 0.156269 
+[huangmingjiang@localhost Debug]$
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 3
+Alpha: 0x8
+Beta:  0x0
+Gamma: 0x8
+------------------------
+RX_zeta_total: 56  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.140642 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 604053481 
+Pr_T = 0.140642 
+Real number of (x,y) with experiment Pr_E: 604127232  
+Pr_E = 0.140659 
+[huangmingjiang@localhost Debug]$
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 4
+Alpha: 0x8
+Beta:  0x0
+Gamma: 0x8
+------------------------
+RX_zeta_total: 65  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.132845 
+------------------------
+Pr: 0.162149 
+------------------------
+Pr: 0.169475 
+------------------------
+Pr: 0.171306 
+------------------------
+Pr: 0.171764 
+------------------------
+Pr: 0.171879 
+------------------------
+Pr: 0.171907 
+------------------------
+Pr: 0.171915 
+------------------------
+Pr: 0.171916 
+------------------------
+Pr: 0.171917 
+------------------------
+Pr: 0.171917 
+------------------------
+Pr: 0.171917 
+------------------------
+Pr: 0.171917 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 738377819 
+Pr_T = 0.171917 
+Real number of (x,y) with experiment Pr_E: 1141129216  
+Pr_E = 0.265690 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 5
+Alpha: 0x8
+Beta:  0x0
+Gamma: 0x8
+------------------------
+RX_zeta_total: 72  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.128969 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 553918477 
+Pr_T = 0.128969 
+Real number of (x,y) with experiment Pr_E: 570703872  
+Pr_E = 0.132877 
+[huangmingjiang@localhost Debug]$ 
+
+
+huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 6
+Alpha: 0x8
+Beta:  0x0
+Gamma: 0x8
+------------------------
+RX_zeta_total: 77  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.127077 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 545792017 
+Pr_T = 0.127077 
+Real number of (x,y) with experiment Pr_E: 554188800  
+Pr_E = 0.129032 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 7
+Alpha: 0x8
+Beta:  0x0
+Gamma: 0x8
+------------------------
+RX_zeta_total: 80  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.126223 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 542121979 
+Pr_T = 0.126223 
+Real number of (x,y) with experiment Pr_E: 546324480  
+Pr_E = 0.127201 
+[huangmingjiang@localhost Debug]$
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 8
+Alpha: 0x8
+Beta:  0x0
+Gamma: 0x8
+------------------------
+RX_zeta_total: 81  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.125978 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 541073395 
+Pr_T = 0.125978 
+Real number of (x,y) with experiment Pr_E: 543178752  
+Pr_E = 0.126469 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 9
+Alpha: 0x8
+Beta:  0x0
+Gamma: 0x8
+------------------------
+RX_zeta_total: 80  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.126223 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 542121979 
+Pr_T = 0.126223 
+Real number of (x,y) with experiment Pr_E: 543178752  
+Pr_E = 0.126469 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 10
+Alpha: 0x8
+Beta:  0x0
+Gamma: 0x8
+------------------------
+RX_zeta_total: 77  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.127077 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 545792017 
+Pr_T = 0.127077 
+Real number of (x,y) with experiment Pr_E: 546324480  
+Pr_E = 0.127201 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 11
+Alpha: 0x8
+Beta:  0x0
+Gamma: 0x8
+------------------------
+RX_zeta_total: 72  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.128969 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 553918477 
+Pr_T = 0.128969 
+Real number of (x,y) with experiment Pr_E: 554188800  
+Pr_E = 0.129032 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 12
+Alpha: 0x8
+Beta:  0x0
+Gamma: 0x8
+------------------------
+RX_zeta_total: 65  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.132845 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 570564618 
+Pr_T = 0.132845 
+Real number of (x,y) with experiment Pr_E: 570703872  
+Pr_E = 0.132877 
+[huangmingjiang@localhost Debug]$
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 13
+Alpha: 0x8
+Beta:  0x0
+Gamma: 0x8
+------------------------
+RX_zeta_total: 56  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.140642 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 604053481 
+Pr_T = 0.140642 
+Real number of (x,y) with experiment Pr_E: 604127232  
+Pr_E = 0.140659 
+[huangmingjiang@localhost Debug]$
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 14
+Alpha: 0x8
+Beta:  0x0
+Gamma: 0x
+8
+------------------------
+RX_zeta_total: 45  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.156260 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 671129587 
+Pr_T = 0.156260 
+Real number of (x,y) with experiment Pr_E: 671170560  
+Pr_E = 0.156269 
+[huangmingjiang@localhost Debug]$
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 15
+Alpha: 0x8
+Beta:  0x0
+Gamma: 0x8
+------------------------
+RX_zeta_total: 32  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.187506 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 805330914 
+Pr_T = 0.187506 
+Real number of (x,y) with experiment Pr_E: 805355520  
+Pr_E = 0.187511 
+[huangmingjiang@localhost Debug]$ 
+
+
+*********************************************************************
+*********************************************************************
+*********************************************************************
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 1
+Alpha: 0x4
+Beta:  0x4
+Gamma: 0x0
+------------------------
+RX_zeta_total: 32  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.187506 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 805330914 
+Pr_T = 0.187506 
+Real number of (x,y) with experiment Pr_E: 805355520  
+Pr_E = 0.187511 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 2
+Alpha: 0x4        
+Beta:  0x4
+Gamma: 0x0
+------------------------
+RX_zeta_total: 45  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.156260 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 671129587 
+Pr_T = 0.156260 
+Real number of (x,y) with experiment Pr_E: 671170560  
+Pr_E = 0.156269 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 3
+Alpha: 0x4
+Beta:  0x4
+Gamma: 0x0
+------------------------
+RX_zeta_total: 56  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.140642 
+------------------------
+Pr: 0.167989 
+------------------------
+Pr: 0.174826 
+------------------------
+Pr: 0.176535 
+------------------------
+Pr: 0.176963 
+------------------------
+Pr: 0.177069 
+------------------------
+Pr: 0.177096 
+------------------------
+Pr: 0.177103 
+------------------------
+Pr: 0.177104 
+------------------------
+Pr: 0.177105 
+------------------------
+Pr: 0.177105 
+------------------------
+Pr: 0.177105 
+------------------------
+Pr: 0.177105 
+------------------------
+Pr: 0.177105 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 760659980 
+Pr_T = 0.177105 
+Real number of (x,y) with experiment Pr_E: 1208107008  
+Pr_E = 0.281284 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 4
+Alpha: 0x4
+Beta:  0x4
+Gamma: 0x0
+------------------------
+RX_zeta_total: 65  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.132845 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 570564618 
+Pr_T = 0.132845 
+Real number of (x,y) with experiment Pr_E: 604127232  
+Pr_E = 0.140659 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 5
+Alpha: 0x4
+Beta:  0x4
+Gamma: 0x0
+------------------------
+RX_zeta_total: 72  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.128969 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 553918477 
+Pr_T = 0.128969 
+Real number of (x,y) with experiment Pr_E: 570703872  
+Pr_E = 0.132877 
+[huangmingjiang@localhost Debug]$ 
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 6
+Alpha: 0x4
+Beta:  0x4
+Gamma: 0x0
+------------------------
+RX_zeta_total: 77  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.127077 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 545792017 
+Pr_T = 0.127077 
+Real number of (x,y) with experiment Pr_E: 554188800  
+Pr_E = 0.129032 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 7
+Alpha: 0x4
+Beta:  0x4
+Gamma: 0x0
+------------------------
+RX_zeta_total: 80  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.126223 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 542121979 
+Pr_T = 0.126223 
+Real number of (x,y) with experiment Pr_E: 546324480  
+Pr_E = 0.127201 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 8
+Alpha: 0x4
+Beta:  0x4
+Gamma: 0x0
+------------------------
+RX_zeta_total: 81  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.125978 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 541073395 
+Pr_T = 0.125978 
+Real number of (x,y) with experiment Pr_E: 543178752  
+Pr_E = 0.126469 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 9
+Alpha: 0x4
+Beta:  0x4
+Gamma: 0x0
+------------------------
+RX_zeta_total: 80  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.126223 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 542121979 
+Pr_T = 0.126223 
+Real number of (x,y) with experiment Pr_E: 543178752  
+Pr_E = 0.126469 
+[huangmingjiang@localhost Debug]$ .
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 10
+Alpha: 0x4
+Beta:  0x4
+Gamma: 0x0
+------------------------
+RX_zeta_total: 77  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.127077 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 545792017 
+Pr_T = 0.127077 
+Real number of (x,y) with experiment Pr_E: 546324480  
+Pr_E = 0.127201 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 11
+Alpha: 0x4
+Beta:  0x4
+Gamma: 0x0
+------------------------
+RX_zeta_total: 72  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.128969 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 553918477 
+Pr_T = 0.128969 
+Real number of (x,y) with experiment Pr_E: 554188800  
+Pr_E = 0.129032 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 12
+Alpha: 0x4
+Beta:  0x4
+Gamma: 0x0
+------------------------
+RX_zeta_total: 65  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.132845 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 570564618 
+Pr_T = 0.132845 
+Real number of (x,y) with experiment Pr_E: 570703872  
+Pr_E = 0.132877 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 13
+Alpha: 0x4
+Beta:  0x4
+Gamma: 0x0
+------------------------
+RX_zeta_total: 56  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.140642 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 604053481 
+Pr_T = 0.140642 
+Real number of (x,y) with experiment Pr_E: 604127232  
+Pr_E = 0.140659 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 14
+Alpha: 0x4
+Beta:  0x4
+Gamma: 0x0
+------------------------
+RX_zeta_total: 45  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.156260 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 671129587 
+Pr_T = 0.156260 
+Real number of (x,y) with experiment Pr_E: 671170560  
+Pr_E = 0.156269 
+[huangmingjiang@localhost Debug]$ 
+
+
+[huangmingjiang@localhost Debug]$ ./auto_search 
+|**************************Verification of Theorem 3.2*************************|
+Enter the parameters : #Blocksize  #rotaion-parameter  #alpha-beta-gamma 
+Blocksize of Addition: 16
+rotation-parameter: 15
+Alpha: 0x4
+Beta:  0x4
+Gamma: 0x0
+------------------------
+RX_zeta_total: 32  
+Constructing RX_Ek[4] ... 
+Constructing RX_XOR_offset_Table ... 
+------------------------
+Pr: 0.187506 
+------------------------
+Total of (x,y) pairs: 0 
+Number of (x,y) with theoretical Pr_T: 805330914 
+Pr_T = 0.187506 
+Real number of (x,y) with experiment Pr_E: 805355520  
+Pr_E = 0.187511 
+[huangmingjiang@localhost Debug]$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

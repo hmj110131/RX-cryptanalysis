@@ -1,0 +1,770 @@
+
+
+
+
+
+		Input_alpha = 0x000000000080;  //speck96  //101
+		Input_beta  = 0x000000000000;
+		Input_gamma = 0x800000000000;
+//前向搜索的最优路径
+
+[root@fws013 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:3 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+ Forward---------->   
+Searching Bn_w: 1 
+Time: 0.00 seconds.  
+Searching Bn_w: 2 
+Time: 0.00 seconds.  
+Searching Bn_w: 3 
+Time: 0.00 seconds.  
+Searching Bn_w: 4 
+Time: 0.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000000000000    0x000000000000     -0 
+02     0x000000000000    0x000000000000     -1 
+03     0x808000000000    0x808000000004     -3 
+04     0x800080000004    0x840080000020     NULL 
+3 Round Total Weight: -4 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 7.64 seconds ==  0.13 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@fws013 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:4 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+ Forward---------->   
+Searching Bn_w: 3 
+Time: 0.00 seconds.  
+Searching Bn_w: 4 
+Time: 0.00 seconds.  
+Searching Bn_w: 5 
+Time: 0.00 seconds.  
+Searching Bn_w: 6 
+Time: 0.00 seconds.  
+Searching Bn_w: 7 
+Time: 0.00 seconds.  
+Searching Bn_w: 8 
+Time: 0.00 seconds.  
+Searching Bn_w: 9 
+Time: 0.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000000000000    0x000000000000     -0 
+02     0x000000000000    0x000000000000     -1 
+03     0x808000000000    0x808000000004     -3 
+04     0x800080000004    0x840080000020     -5 
+05     0x808080800020    0xa08480800124     NULL 
+4 Round Total Weight: -9 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 7.64 seconds ==  0.13 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+[root@fws013 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:5 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+ Forward---------->   
+Searching Bn_w: 6 
+Time: 0.00 seconds.  
+Searching Bn_w: 7 
+Time: 0.00 seconds.  
+Searching Bn_w: 8 
+Time: 0.00 seconds.  
+Searching Bn_w: 9 
+Time: 0.00 seconds.  
+Searching Bn_w: 10 
+Time: 0.00 seconds.  
+Searching Bn_w: 11 
+Time: 0.00 seconds.  
+Searching Bn_w: 12 
+Time: 0.00 seconds.  
+Searching Bn_w: 13 
+Time: 0.00 seconds.  
+Searching Bn_w: 14 
+Time: 0.00 seconds.  
+Searching Bn_w: 15 
+Time: 0.00 seconds.  
+Searching Bn_w: 16 
+Time: 0.00 seconds.  
+Searching Bn_w: 17 
+Time: 0.00 seconds.  
+Searching Bn_w: 18 
+Time: 0.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000000000000    0x000000000000     -0 
+02     0x000000000000    0x000000000000     -1 
+03     0x808000000000    0x808000000004     -3 
+04     0x800080000004    0x840080000020     -5 
+05     0x808080800020    0xa08480800124     -9 
+06     0x800400008124    0x842004008801     NULL 
+5 Round Total Weight: -18 
+Time cost: 0.02 seconds ==  0.00 minutes == 0.00 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 7.65 seconds ==  0.13 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+[root@fws012 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:6 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 8.00 seconds.  
+Searching Bn_w: 10 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 11 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 12 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 13 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 14 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 15 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 16 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 17 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 18 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 19 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 20 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 21 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 22 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 23 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 24 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 25 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 26 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 27 
+ LUCK---0   
+Time: 0.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000000000000    0x000000000000     -0 
+02     0x000000000000    0x000000000000     -1 
+03     0x808000000000    0x808000000004     -3 
+04     0x800080000004    0x840080000020     -5 
+05     0x808080800020    0xa08480800124     -9 
+06     0x800400008124    0x842004008801     -9 
+07     0xa0a000008880    0x81a02004c88c     NULL 
+6 Round Total Weight: -27 
+Time cost: 0.43 seconds ==  0.01 minutes == 0.00 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 9.11 seconds ==  0.15 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@fws012 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:7 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 8.00 seconds.  
+Searching Bn_w: 15 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 16 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 17 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 18 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 19 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 20 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 21 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 22 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 23 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 24 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 25 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 26 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 27 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 28 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 29 
+ LUCK---0   
+Time: 0.00 seconds.  
+Searching Bn_w: 30 
+ LUCK---0   
+Time: 1.00 seconds.  
+Searching Bn_w: 31 
+ LUCK---0   
+Time: 3.00 seconds.  
+Searching Bn_w: 32 
+ LUCK---0   
+Time: 6.00 seconds.  
+Searching Bn_w: 33 
+ LUCK---0   
+Time: 14.00 seconds.  
+Searching Bn_w: 34 
+ LUCK---0   
+Time: 29.00 seconds.  
+Searching Bn_w: 35 
+ LUCK---0   
+Time: 61.00 seconds.  
+Searching Bn_w: 36 
+ LUCK---0   
+Time: 129.00 seconds.  
+Searching Bn_w: 37 
+ LUCK---0   
+Time: 275.00 seconds.  
+Searching Bn_w: 38 
+ LUCK---0   
+Time: 590.00 seconds.  
+Searching Bn_w: 39 
+ LUCK---0   
+Time: 590.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000000000000    0x000000000000     -0 
+02     0x000000000000    0x000000000000     -1 
+03     0x808000000000    0x808000000004     -3 
+04     0x800080000004    0x840080000020     -5 
+05     0x808080800020    0xa08480800124     -9 
+06     0x800400008124    0x842004008801     -9 
+07     0xa0a000008880    0x81a02004c88c     -12 
+08     0x000080044804    0x0d0180220c60     NULL 
+7 Round Total Weight: -39 
+Time cost: 590.21 seconds ==  9.84 minutes == 0.16 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 598.86 seconds ==  9.98 minutes == 0.17 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@fws012 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:8 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 8.00 seconds.  
+ Forward=================>>>>>>>>>>>   
+Searching Bn_w: 21 
+Time: 0.00 seconds.  
+Searching Bn_w: 22 
+Time: 0.00 seconds.  
+Searching Bn_w: 23 
+Time: 0.00 seconds.  
+Searching Bn_w: 24 
+Time: 0.00 seconds.  
+Searching Bn_w: 25 
+Time: 0.00 seconds.  
+Searching Bn_w: 26 
+Time: 0.00 seconds.  
+Searching Bn_w: 27 
+Time: 0.00 seconds.  
+Searching Bn_w: 28 
+Time: 0.00 seconds.  
+Searching Bn_w: 29 
+Time: 0.00 seconds.  
+Searching Bn_w: 30 
+Time: 0.00 seconds.  
+Searching Bn_w: 31 
+Time: 0.00 seconds.  
+Searching Bn_w: 32 
+Time: 1.00 seconds.  
+Searching Bn_w: 33 
+Time: 2.00 seconds.  
+Searching Bn_w: 34 
+Time: 4.00 seconds.  
+Searching Bn_w: 35 
+Time: 9.00 seconds.  
+Searching Bn_w: 36 
+Time: 21.00 seconds.  
+Searching Bn_w: 37 
+Time: 46.00 seconds.  
+Searching Bn_w: 38 
+Time: 102.00 seconds.  
+Searching Bn_w: 39 
+Time: 227.00 seconds.  
+Searching Bn_w: 40 
+Time: 504.00 seconds.  
+Searching Bn_w: 41 
+Time: 1115.00 seconds.  
+Searching Bn_w: 42 
+Time: 2458.00 seconds.  
+Searching Bn_w: 43 
+Time: 5392.00 seconds.  
+Searching Bn_w: 44 
+Time: 11756.00 seconds.  
+Searching Bn_w: 45 
+Time: 25454.00 seconds.  
+Searching Bn_w: 46 
+Time: 54697.00 seconds.  
+Searching Bn_w: 47 
+Time: 116655.00 seconds.  
+Searching Bn_w: 48 
+Time: 247011.00 seconds.  
+Searching Bn_w: 49 
+Time: 247016.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000000000000    0x000000000000     -0 
+02     0x000000000000    0x000000000000     -1 
+03     0x808000000000    0x808000000004     -3 
+04     0x800080000004    0x840080000020     -5 
+05     0x808080800020    0xa08480800124     -10 
+06     0x400400008124    0x442004008801     -11 
+07     0x202000008882    0x01202004c888     -10 
+08     0x810000044800    0x880100220c40     -9 
+09     0x888000220008    0xc8880132620c     NULL 
+8 Round Total Weight: -49 
+Time cost: 247016.35 seconds ==  4116.94 minutes == 68.62 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 247025.03 seconds ==  4117.08 minutes == 68.62 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////
+		Input_alpha = 0x000000000080;  //speck96//speck96--wt=0--2//110
+		Input_beta  = 0x800000000000;
+		Input_gamma = 0x000000000000;
+
+
+
+[root@fws013 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:4 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+ Forward---------->   
+Searching Bn_w: 3 
+Time: 0.00 seconds.  
+Searching Bn_w: 4 
+Time: 0.00 seconds.  
+Searching Bn_w: 5 
+Time: 0.00 seconds.  
+Searching Bn_w: 6 
+Time: 0.00 seconds.  
+Searching Bn_w: 7 
+Time: 0.00 seconds.  
+Searching Bn_w: 8 
+Time: 0.00 seconds.  
+Searching Bn_w: 9 
+Time: 0.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000000000000    0x000000000000     -0 
+02     0x000000000000    0x000000000000     -1 
+03     0x000000000004    0x000000000024     -3 
+04     0x040000000024    0x040000000104     -5 
+05     0x200400000104    0x000400000924     NULL 
+4 Round Total Weight: -9 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 7.63 seconds ==  0.13 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+[root@fws013 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:5 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+ Forward---------->   
+Searching Bn_w: 6 
+Time: 0.00 seconds.  
+Searching Bn_w: 7 
+Time: 0.00 seconds.  
+Searching Bn_w: 8 
+Time: 0.00 seconds.  
+Searching Bn_w: 9 
+Time: 0.00 seconds.  
+Searching Bn_w: 10 
+Time: 0.00 seconds.  
+Searching Bn_w: 11 
+Time: 0.00 seconds.  
+Searching Bn_w: 12 
+Time: 0.00 seconds.  
+Searching Bn_w: 13 
+Time: 0.00 seconds.  
+Searching Bn_w: 14 
+Time: 0.00 seconds.  
+Searching Bn_w: 15 
+Time: 0.00 seconds.  
+Searching Bn_w: 16 
+Time: 0.00 seconds.  
+Searching Bn_w: 17 
+Time: 0.00 seconds.  
+Searching Bn_w: 18 
+Time: 0.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000000000000    0x000000000000     -0 
+02     0x000000000000    0x000000000000     -1 
+03     0x000000000004    0x000000000024     -3 
+04     0x040000000024    0x040000000104     -5 
+05     0x200400000104    0x000400000924     -9 
+06     0x042404000925    0x040404004005     NULL 
+5 Round Total Weight: -18 
+Time cost: 0.00 seconds ==  0.00 minutes == 0.00 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 7.71 seconds ==  0.13 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@fws013 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:6 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+ Forward---------->   
+Searching Bn_w: 10 
+Time: 0.00 seconds.  
+Searching Bn_w: 11 
+Time: 0.00 seconds.  
+Searching Bn_w: 12 
+Time: 0.00 seconds.  
+Searching Bn_w: 13 
+Time: 0.00 seconds.  
+Searching Bn_w: 14 
+Time: 0.00 seconds.  
+Searching Bn_w: 15 
+Time: 0.00 seconds.  
+Searching Bn_w: 16 
+Time: 0.00 seconds.  
+Searching Bn_w: 17 
+Time: 0.00 seconds.  
+Searching Bn_w: 18 
+Time: 0.00 seconds.  
+Searching Bn_w: 19 
+Time: 0.00 seconds.  
+Searching Bn_w: 20 
+Time: 0.00 seconds.  
+Searching Bn_w: 21 
+Time: 0.00 seconds.  
+Searching Bn_w: 22 
+Time: 0.00 seconds.  
+Searching Bn_w: 23 
+Time: 0.00 seconds.  
+Searching Bn_w: 24 
+Time: 0.00 seconds.  
+Searching Bn_w: 25 
+Time: 0.00 seconds.  
+Searching Bn_w: 26 
+Time: 0.00 seconds.  
+Searching Bn_w: 27 
+Time: 1.00 seconds.  
+Searching Bn_w: 28 
+Time: 1.00 seconds.  
+Searching Bn_w: 29 
+Time: 1.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000000000000    0x000000000000     -0 
+02     0x000000000000    0x000000000000     -1 
+03     0x000000000004    0x000000000024     -3 
+04     0x040000000024    0x040000000104     -5 
+05     0x200400000104    0x000400000924     -9 
+06     0x042404000925    0x040404004005     -11 
+07     0x210020044004    0x01200006402c     NULL 
+6 Round Total Weight: -29 
+Time cost: 1.99 seconds ==  0.03 minutes == 0.00 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 9.63 seconds ==  0.16 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@fws011 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:7 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+ Forward=================>>>>>>>>>>>   
+Searching Bn_w: 15 
+Time: 0.00 seconds.  
+Searching Bn_w: 16 
+Time: 0.00 seconds.  
+Searching Bn_w: 17 
+Time: 0.00 seconds.  
+Searching Bn_w: 18 
+Time: 0.00 seconds.  
+Searching Bn_w: 19 
+Time: 0.00 seconds.  
+Searching Bn_w: 20 
+Time: 0.00 seconds.  
+Searching Bn_w: 21 
+Time: 0.00 seconds.  
+Searching Bn_w: 22 
+Time: 0.00 seconds.  
+Searching Bn_w: 23 
+Time: 0.00 seconds.  
+Searching Bn_w: 24 
+Time: 0.00 seconds.  
+Searching Bn_w: 25 
+Time: 0.00 seconds.  
+Searching Bn_w: 26 
+Time: 0.00 seconds.  
+Searching Bn_w: 27 
+Time: 0.00 seconds.  
+Searching Bn_w: 28 
+Time: 0.00 seconds.  
+Searching Bn_w: 29 
+Time: 1.00 seconds.  
+Searching Bn_w: 30 
+Time: 2.00 seconds.  
+Searching Bn_w: 31 
+Time: 4.00 seconds.  
+Searching Bn_w: 32 
+Time: 8.00 seconds.  
+Searching Bn_w: 33 
+Time: 17.00 seconds.  
+Searching Bn_w: 34 
+Time: 35.00 seconds.  
+Searching Bn_w: 35 
+Time: 76.00 seconds.  
+Searching Bn_w: 36 
+Time: 167.00 seconds.  
+Searching Bn_w: 37 
+Time: 374.00 seconds.  
+Searching Bn_w: 38 
+Time: 848.00 seconds.  
+Searching Bn_w: 39 
+Time: 1919.00 seconds.  
+Searching Bn_w: 40 
+Time: 4303.00 seconds.  
+Searching Bn_w: 41 
+Time: 9518.00 seconds.  
+Searching Bn_w: 42 
+Time: 9518.00 seconds.  
+round-------left-------------right--------weight 
+01     0x000000000000    0x000000000000     -0 
+02     0x000000000000    0x000000000000     -1 
+03     0x000000000004    0x000000000024     -3 
+04     0x040000000024    0x040000000104     -5 
+05     0x200400000104    0x000400000924     -9 
+06     0x042404000925    0x040404004005     -11 
+07     0x210020044004    0x01200006402c     -13 
+08     0x050100224424    0x0c0100104544     NULL 
+7 Round Total Weight: -42 
+Time cost: 9518.50 seconds ==  158.64 minutes == 2.64 hours. 
+Auto-search_speck END! 
+|************************************************************************|
+Time cost: 9526.25 seconds ==  158.77 minutes == 2.65 hours. 
+Auto-search END! 
+|************************************************************************|
+
+[root@fws013 Debug]# ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 96 
+rounds:8 
+mode: 0 
+----------------Search Optimal Differential Trail-------------------
+Time of Construct ARX_DDT: 7.00 seconds.  
+ Forward=================>>>>>>>>>>>   
+Searching Bn_w: 21 
+Time: 0.00 seconds.  
+Searching Bn_w: 22 
+Time: 0.00 seconds.  
+Searching Bn_w: 23 
+Time: 0.00 seconds.  
+Searching Bn_w: 24 
+Time: 0.00 seconds.  
+Searching Bn_w: 25 
+Time: 0.00 seconds.  
+Searching Bn_w: 26 
+Time: 0.00 seconds.  
+Searching Bn_w: 27 
+Time: 0.00 seconds.  
+Searching Bn_w: 28 
+Time: 0.00 seconds.  
+Searching Bn_w: 29 
+Time: 0.00 seconds.  
+Searching Bn_w: 30 
+Time: 0.00 seconds.  
+Searching Bn_w: 31 
+Time: 0.00 seconds.  
+Searching Bn_w: 32 
+Time: 1.00 seconds.  
+Searching Bn_w: 33 
+Time: 2.00 seconds.  
+Searching Bn_w: 34 
+Time: 6.00 seconds.  
+Searching Bn_w: 35 
+Time: 13.00 seconds.  
+Searching Bn_w: 36 
+Time: 29.00 seconds.  
+Searching Bn_w: 37 
+Time: 66.00 seconds.  
+Searching Bn_w: 38 
+Time: 153.00 seconds.  
+Searching Bn_w: 39 
+Time: 355.00 seconds.  
+Searching Bn_w: 40 
+Time: 822.00 seconds.  
+Searching Bn_w: 41 
+Time: 1889.00 seconds.  
+Searching Bn_w: 42 
+Time: 4278.00 seconds.  
+Searching Bn_w: 43 
+Time: 9524.00 seconds.  
+Searching Bn_w: 44 
+Time: 20822.00 seconds.  
+Searching Bn_w: 45 
+Time: 44669.00 seconds.  
+Searching Bn_w: 46 
+Time: 94133.00 seconds.  
+Searching Bn_w: 47 
+Time: 195150.00 seconds.  
+Searching Bn_w: 48 
+Time: 398784.00 seconds.  
+Searching Bn_w: 49 
+Time: 804912.00 seconds.  
+Searching Bn_w: 50 
+packet_write_wait: Connection to 192.168.118.63 port 22: Broken pipe
+
+
+
+
+///////////////////////////////////////////////////////////////////////
+		//Input_alpha = 0x000000000000;  //speck96--wt=0--3 //011
+		//Input_beta  = 0x800000000000;
+		//Input_gamma = 0x800000000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

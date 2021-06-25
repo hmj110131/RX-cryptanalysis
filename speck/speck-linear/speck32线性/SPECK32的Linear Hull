@@ -1,0 +1,904 @@
+//2019年03月12日15:10:48
+
+/////////////////10轮线性Hull//////////////
+[era@sce Debug]$ scerun ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 32 
+rounds:10 
+mode: 30 
+Time of Construct ARX_cLAT: 4.00 seconds.  
+--------------------Search SPECK Linear Hulls-------------------
+count: 1    weight: 17 
+count: 2    weight: 19 
+count: 3    weight: 19 
+count: 4    weight: 20 
+count: 5    weight: 19 
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:0   prob_sum:-inf 
+wt:-6   wt_num:0   prob_sum:-inf 
+wt:-7   wt_num:0   prob_sum:-inf 
+wt:-8   wt_num:0   prob_sum:-inf 
+wt:-9   wt_num:0   prob_sum:-inf 
+wt:-10   wt_num:0   prob_sum:-inf 
+wt:-11   wt_num:0   prob_sum:-inf 
+wt:-12   wt_num:0   prob_sum:-inf 
+wt:-13   wt_num:0   prob_sum:-inf 
+wt:-14   wt_num:0   prob_sum:-inf 
+wt:-15   wt_num:0   prob_sum:-inf 
+wt:-16   wt_num:0   prob_sum:-inf 
+wt:-17   wt_num:1   prob_sum:-17.000000 
+wt:-18   wt_num:0   prob_sum:-17.000000 
+wt:-19   wt_num:3   prob_sum:-16.192645 
+wt:-20   wt_num:1   prob_sum:-16.093109 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_32 
+ input:0x0000 3c04 ======>> output:0x2858 2840 
+ wt_min(:*)--->wt_max: -20 
+ 10 Rounds Linear Hull with total 5 trails.
+ Square Correlation weight is: -16.09 
+++++++++++++++++++++++++++++++++++++
+ Time: 5.00 seconds.  
+Time cost: 5.28 seconds ==  0.09 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年03月12日15:16:31
+[era@sce Debug]$ scerun ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 32 
+rounds:10 
+mode: 30 
+Time of Construct ARX_cLAT: 4.00 seconds.  
+--------------------Search SPECK Linear Hulls-------------------
+count: 1    weight: 22 
+count: 2    weight: 22 
+count: 3    weight: 22 
+count: 4    weight: 21 
+count: 5    weight: 22 
+count: 6    weight: 21 
+count: 7    weight: 22 
+count: 8    weight: 22 
+count: 9    weight: 17 
+count: 10    weight: 19 
+count: 11    weight: 21 
+count: 12    weight: 19 
+count: 13    weight: 21 
+count: 14    weight: 22 
+count: 15    weight: 22 
+count: 16    weight: 22 
+count: 17    weight: 20 
+count: 18    weight: 22 
+count: 19    weight: 22 
+count: 20    weight: 22 
+count: 21    weight: 19 
+count: 22    weight: 21 
+count: 23    weight: 21 
+count: 24    weight: 21 
+count: 25    weight: 22 
+count: 26    weight: 22 
+count: 27    weight: 21 
+count: 28    weight: 21 
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:0   prob_sum:-inf 
+wt:-6   wt_num:0   prob_sum:-inf 
+wt:-7   wt_num:0   prob_sum:-inf 
+wt:-8   wt_num:0   prob_sum:-inf 
+wt:-9   wt_num:0   prob_sum:-inf 
+wt:-10   wt_num:0   prob_sum:-inf 
+wt:-11   wt_num:0   prob_sum:-inf 
+wt:-12   wt_num:0   prob_sum:-inf 
+wt:-13   wt_num:0   prob_sum:-inf 
+wt:-14   wt_num:0   prob_sum:-inf 
+wt:-15   wt_num:0   prob_sum:-inf 
+wt:-16   wt_num:0   prob_sum:-inf 
+wt:-17   wt_num:1   prob_sum:-17.000000 
+wt:-18   wt_num:0   prob_sum:-17.000000 
+wt:-19   wt_num:3   prob_sum:-16.192645 
+wt:-20   wt_num:1   prob_sum:-16.093109 
+wt:-21   wt_num:9   prob_sum:-15.714598 
+wt:-22   wt_num:14   prob_sum:-15.476438 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_32 
+ input:0x0000 3c04 ======>> output:0x2858 2840 
+ wt_min(:-17)--->wt_max: -22 
+ 10 Rounds Linear Hull with total 28 trails.
+ Square Correlation weight is: -15.48 
+++++++++++++++++++++++++++++++++++++
+ Time: 56.00 seconds.  
+Time cost: 56.20 seconds ==  0.94 minutes == 0.02 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+//2019年03月12日16:06:49
+[era@sce Debug]$ scerun ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 32 
+rounds:10 
+mode: 30 
+Time of Construct ARX_cLAT: 5.00 seconds.  
+--------------------Search SPECK Linear Hulls-------------------
+count: 1    weight: 22 
+count: 2    weight: 23 
+count: 3    weight: 23 
+count: 4    weight: 23 
+count: 5    weight: 23 
+count: 6    weight: 23 
+count: 7    weight: 22 
+count: 8    weight: 23 
+count: 9    weight: 22 
+count: 10    weight: 21 
+count: 11    weight: 23 
+count: 12    weight: 22 
+count: 13    weight: 23 
+count: 14    weight: 23 
+count: 15    weight: 23 
+count: 16    weight: 23 
+count: 17    weight: 23 
+count: 18    weight: 23 
+count: 19    weight: 23 
+count: 20    weight: 23 
+count: 21    weight: 23 
+count: 22    weight: 23 
+count: 23    weight: 21 
+count: 24    weight: 23 
+count: 25    weight: 22 
+count: 26    weight: 22 
+count: 27    weight: 23 
+count: 28    weight: 17 
+count: 29    weight: 19 
+count: 30    weight: 21 
+count: 31    weight: 23 
+count: 32    weight: 23 
+count: 33    weight: 23 
+count: 34    weight: 23 
+count: 35    weight: 19 
+count: 36    weight: 21 
+count: 37    weight: 23 
+count: 38    weight: 23 
+count: 39    weight: 22 
+count: 40    weight: 23 
+count: 41    weight: 22 
+count: 42    weight: 23 
+count: 43    weight: 23 
+count: 44    weight: 23 
+count: 45    weight: 23 
+count: 46    weight: 23 
+count: 47    weight: 22 
+count: 48    weight: 23 
+count: 49    weight: 23 
+count: 50    weight: 23 
+count: 51    weight: 23 
+count: 52    weight: 23 
+count: 53    weight: 23 
+count: 54    weight: 23 
+count: 55    weight: 23 
+count: 56    weight: 20 
+count: 57    weight: 22 
+count: 58    weight: 22 
+count: 59    weight: 23 
+count: 60    weight: 23 
+count: 61    weight: 23 
+count: 62    weight: 23 
+count: 63    weight: 23 
+count: 64    weight: 23 
+count: 65    weight: 23 
+count: 66    weight: 23 
+count: 67    weight: 23 
+count: 68    weight: 23 
+count: 69    weight: 23 
+count: 70    weight: 22 
+count: 71    weight: 23 
+count: 72    weight: 23 
+count: 73    weight: 23 
+count: 74    weight: 23 
+count: 75    weight: 23 
+count: 76    weight: 23 
+count: 77    weight: 19 
+count: 78    weight: 21 
+count: 79    weight: 23 
+count: 80    weight: 21 
+count: 81    weight: 23 
+count: 82    weight: 21 
+count: 83    weight: 23 
+count: 84    weight: 22 
+count: 85    weight: 23 
+count: 86    weight: 23 
+count: 87    weight: 22 
+count: 88    weight: 23 
+count: 89    weight: 21 
+count: 90    weight: 23 
+count: 91    weight: 23 
+count: 92    weight: 21 
+count: 93    weight: 23 
+count: 94    weight: 23 
+count: 95    weight: 23 
+count: 96    weight: 23 
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:0   prob_sum:-inf 
+wt:-6   wt_num:0   prob_sum:-inf 
+wt:-7   wt_num:0   prob_sum:-inf 
+wt:-8   wt_num:0   prob_sum:-inf 
+wt:-9   wt_num:0   prob_sum:-inf 
+wt:-10   wt_num:0   prob_sum:-inf 
+wt:-11   wt_num:0   prob_sum:-inf 
+wt:-12   wt_num:0   prob_sum:-inf 
+wt:-13   wt_num:0   prob_sum:-inf 
+wt:-14   wt_num:0   prob_sum:-inf 
+wt:-15   wt_num:0   prob_sum:-inf 
+wt:-16   wt_num:0   prob_sum:-inf 
+wt:-17   wt_num:1   prob_sum:-17.000000 
+wt:-18   wt_num:0   prob_sum:-17.000000 
+wt:-19   wt_num:3   prob_sum:-16.192645 
+wt:-20   wt_num:1   prob_sum:-16.093109 
+wt:-21   wt_num:9   prob_sum:-15.714598 
+wt:-22   wt_num:14   prob_sum:-15.476438 
+wt:-23   wt_num:68   prob_sum:-15.022720 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_32 
+ input:0x0000 3c04 ======>> output:0x2858 2840 
+ wt_min(:-17)--->wt_max: -23 
+ 10 Rounds Linear Hull with total 96 trails.
+ Square Correlation weight is: -15.02 
+++++++++++++++++++++++++++++++++++++
+ Time: 396.00 seconds.  
+Time cost: 396.41 seconds ==  6.61 minutes == 0.11 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+huangmingjiang@ubuntu:~/hmj123/speck32/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 32 
+rounds:10 
+mode: 30 
+Time of Construct ARX_cLAT: 3.00 seconds.  
+--------------------Search SPECK Linear Hulls-------------------
+count: 1    weight: 22 
+count: 2    weight: 24 
+count: 3    weight: 24 
+count: 4    weight: 24 
+count: 5    weight: 24 
+count: 6    weight: 23 
+count: 7    weight: 23 
+count: 8    weight: 23 
+count: 9    weight: 23 
+count: 10    weight: 23 
+count: 11    weight: 24 
+count: 12    weight: 24 
+count: 13    weight: 22 
+count: 14    weight: 24 
+count: 15    weight: 23 
+count: 16    weight: 24 
+count: 17    weight: 24 
+count: 18    weight: 22 
+count: 19    weight: 24 
+count: 20    weight: 24 
+count: 21    weight: 24 
+count: 22    weight: 24 
+count: 23    weight: 21 
+count: 24    weight: 23 
+count: 25    weight: 22 
+count: 26    weight: 23 
+count: 27    weight: 24 
+count: 28    weight: 23 
+count: 29    weight: 24 
+count: 30    weight: 24 
+count: 31    weight: 24 
+count: 32    weight: 24 
+count: 33    weight: 23 
+count: 34    weight: 24 
+count: 35    weight: 24 
+count: 36    weight: 24 
+count: 37    weight: 24 
+count: 38    weight: 24 
+count: 39    weight: 24 
+count: 40    weight: 24 
+count: 41    weight: 23 
+count: 42    weight: 23 
+count: 43    weight: 23 
+count: 44    weight: 24 
+count: 45    weight: 23 
+count: 46    weight: 23 
+count: 47    weight: 24 
+count: 48    weight: 23 
+count: 49    weight: 24 
+count: 50    weight: 24 
+count: 51    weight: 24 
+count: 52    weight: 24 
+count: 53    weight: 24 
+count: 54    weight: 23 
+count: 55    weight: 24 
+count: 56    weight: 24 
+count: 57    weight: 21 
+count: 58    weight: 23 
+count: 59    weight: 22 
+count: 60    weight: 24 
+count: 61    weight: 22 
+count: 62    weight: 23 
+count: 63    weight: 24 
+count: 64    weight: 24 
+count: 65    weight: 24 
+count: 66    weight: 17 
+count: 67    weight: 19 
+count: 68    weight: 21 
+count: 69    weight: 23 
+count: 70    weight: 24 
+count: 71    weight: 23 
+count: 72    weight: 24 
+count: 73    weight: 24 
+count: 74    weight: 23 
+count: 75    weight: 23 
+count: 76    weight: 19 
+count: 77    weight: 21 
+count: 78    weight: 23 
+count: 79    weight: 23 
+count: 80    weight: 22 
+count: 81    weight: 24 
+count: 82    weight: 23 
+count: 83    weight: 22 
+count: 84    weight: 24 
+count: 85    weight: 23 
+count: 86    weight: 24 
+count: 87    weight: 24 
+count: 88    weight: 23 
+count: 89    weight: 24 
+count: 90    weight: 24 
+count: 91    weight: 23 
+count: 92    weight: 23 
+count: 93    weight: 24 
+count: 94    weight: 23 
+count: 95    weight: 24 
+count: 96    weight: 24 
+count: 97    weight: 22 
+count: 98    weight: 24 
+count: 99    weight: 24 
+count: 100    weight: 24 
+count: 101    weight: 23 
+count: 102    weight: 23 
+count: 103    weight: 23 
+count: 104    weight: 23 
+count: 105    weight: 23 
+count: 106    weight: 24 
+count: 107    weight: 23 
+count: 108    weight: 24 
+count: 109    weight: 24 
+count: 110    weight: 24 
+count: 111    weight: 24 
+count: 112    weight: 24 
+count: 113    weight: 24 
+count: 114    weight: 24 
+count: 115    weight: 24 
+count: 116    weight: 23 
+count: 117    weight: 24 
+count: 118    weight: 24 
+count: 119    weight: 24 
+count: 120    weight: 24 
+count: 121    weight: 24 
+count: 122    weight: 24 
+count: 123    weight: 23 
+count: 124    weight: 24 
+count: 125    weight: 20 
+count: 126    weight: 22 
+count: 127    weight: 24 
+count: 128    weight: 22 
+count: 129    weight: 24 
+count: 130    weight: 24 
+count: 131    weight: 24 
+count: 132    weight: 24 
+count: 133    weight: 24 
+count: 134    weight: 24 
+count: 135    weight: 24 
+count: 136    weight: 24 
+count: 137    weight: 23 
+count: 138    weight: 24 
+count: 139    weight: 24 
+count: 140    weight: 24 
+count: 141    weight: 24 
+count: 142    weight: 23 
+count: 143    weight: 24 
+count: 144    weight: 24 
+count: 145    weight: 24 
+count: 146    weight: 24 
+count: 147    weight: 24 
+count: 148    weight: 24 
+count: 149    weight: 24 
+count: 150    weight: 24 
+count: 151    weight: 24 
+count: 152    weight: 24 
+count: 153    weight: 24 
+count: 154    weight: 24 
+count: 155    weight: 24 
+count: 156    weight: 24 
+count: 157    weight: 24 
+count: 158    weight: 24 
+count: 159    weight: 24 
+count: 160    weight: 23 
+count: 161    weight: 24 
+count: 162    weight: 24 
+count: 163    weight: 24 
+count: 164    weight: 23 
+count: 165    weight: 24 
+count: 166    weight: 23 
+count: 167    weight: 23 
+count: 168    weight: 23 
+count: 169    weight: 24 
+count: 170    weight: 24 
+count: 171    weight: 24 
+count: 172    weight: 23 
+count: 173    weight: 23 
+count: 174    weight: 23 
+count: 175    weight: 23 
+count: 176    weight: 24 
+count: 177    weight: 24 
+count: 178    weight: 24 
+count: 179    weight: 24 
+count: 180    weight: 24 
+count: 181    weight: 24 
+count: 182    weight: 22 
+count: 183    weight: 24 
+count: 184    weight: 24 
+count: 185    weight: 24 
+count: 186    weight: 24 
+count: 187    weight: 23 
+count: 188    weight: 24 
+count: 189    weight: 24 
+count: 190    weight: 23 
+count: 191    weight: 24 
+count: 192    weight: 24 
+count: 193    weight: 24 
+count: 194    weight: 24 
+count: 195    weight: 23 
+count: 196    weight: 24 
+count: 197    weight: 24 
+count: 198    weight: 24 
+count: 199    weight: 24 
+count: 200    weight: 24 
+count: 201    weight: 24 
+count: 202    weight: 23 
+count: 203    weight: 24 
+count: 204    weight: 24 
+count: 205    weight: 24 
+count: 206    weight: 24 
+count: 207    weight: 24 
+count: 208    weight: 24 
+count: 209    weight: 24 
+count: 210    weight: 24 
+count: 211    weight: 24 
+count: 212    weight: 24 
+count: 213    weight: 24 
+count: 214    weight: 23 
+count: 215    weight: 24 
+count: 216    weight: 23 
+count: 217    weight: 24 
+count: 218    weight: 24 
+count: 219    weight: 19 
+count: 220    weight: 21 
+count: 221    weight: 23 
+count: 222    weight: 21 
+count: 223    weight: 23 
+count: 224    weight: 24 
+count: 225    weight: 24 
+count: 226    weight: 21 
+count: 227    weight: 23 
+count: 228    weight: 24 
+count: 229    weight: 22 
+count: 230    weight: 24 
+count: 231    weight: 24 
+count: 232    weight: 24 
+count: 233    weight: 24 
+count: 234    weight: 23 
+count: 235    weight: 23 
+count: 236    weight: 24 
+count: 237    weight: 24 
+count: 238    weight: 24 
+count: 239    weight: 24 
+count: 240    weight: 24 
+count: 241    weight: 24 
+count: 242    weight: 22 
+count: 243    weight: 24 
+count: 244    weight: 24 
+count: 245    weight: 24 
+count: 246    weight: 24 
+count: 247    weight: 24 
+count: 248    weight: 24 
+count: 249    weight: 24 
+count: 250    weight: 24 
+count: 251    weight: 23 
+count: 252    weight: 21 
+count: 253    weight: 23 
+count: 254    weight: 23 
+count: 255    weight: 24 
+count: 256    weight: 24 
+count: 257    weight: 21 
+count: 258    weight: 23 
+count: 259    weight: 23 
+count: 260    weight: 23 
+count: 261    weight: 24 
+count: 262    weight: 24 
+count: 263    weight: 24 
+count: 264    weight: 23 
+count: 265    weight: 24 
+count: 266    weight: 24 
+count: 267    weight: 24 
+--------------------Record SPECK Linear Hulls-------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:0   prob_sum:-inf 
+wt:-6   wt_num:0   prob_sum:-inf 
+wt:-7   wt_num:0   prob_sum:-inf 
+wt:-8   wt_num:0   prob_sum:-inf 
+wt:-9   wt_num:0   prob_sum:-inf 
+wt:-10   wt_num:0   prob_sum:-inf 
+wt:-11   wt_num:0   prob_sum:-inf 
+wt:-12   wt_num:0   prob_sum:-inf 
+wt:-13   wt_num:0   prob_sum:-inf 
+wt:-14   wt_num:0   prob_sum:-inf 
+wt:-15   wt_num:0   prob_sum:-inf 
+wt:-16   wt_num:0   prob_sum:-inf 
+wt:-17   wt_num:1   prob_sum:-17.000000 
+wt:-18   wt_num:0   prob_sum:-17.000000 
+wt:-19   wt_num:3   prob_sum:-16.192645 
+wt:-20   wt_num:1   prob_sum:-16.093109 
+wt:-21   wt_num:9   prob_sum:-15.714598 
+wt:-22   wt_num:14   prob_sum:-15.476438 
+wt:-23   wt_num:68   prob_sum:-15.022720 
+wt:-24   wt_num:171   prob_sum:-14.601256 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_32 
+ input:0x0000 3c04 ======>> output:0x2858 2840 
+ wt_min(:-17)--->wt_max: -24 
+ 10 Rounds Linear Hull with total 267 trails.
+ Square Correlation weight is: -14.60 
+++++++++++++++++++++++++++++++++++++
+ Time: 2673.00 seconds.  
+Time cost: 2673.23 seconds ==  44.55 minutes == 0.74 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//实际的线性平方相关
+wt:-17   wt_num:1   prob_sum:-34.000000 
+wt:-18   wt_num:0   prob_sum:-34.000000 
+wt:-19   wt_num:3   prob_sum:-33.752072 
+wt:-20   wt_num:1   prob_sum:-33.733213 
+wt:-21   wt_num:9   prob_sum:-33.691661 
+wt:-22   wt_num:14   prob_sum:-33.675819 
+wt:-23   wt_num:68   prob_sum:-33.656814 
+wt:-24   wt_num:171   prob_sum:-33.644993 
+
+
+
+
+
+
+
+////////////////////////////////////////
+///////////////////////////////////////
+////////////////////////////////////////
+huangmingjiang@ubuntu:~/hmj123/speck32/9-20/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 32 
+rounds:9 
+mode: 30 
+Time of Construct ARX_cLAT: 3.00 seconds.  
+--------------------Search SPECK Linear Hulls-------------------
+count: 1    weight: 16 
+count: 2    weight: 14 
+count: 3    weight: 20 
+count: 4    weight: 17 
+count: 5    weight: 17 
+count: 6    weight: 20 
+count: 7    weight: 18 
+count: 8    weight: 16 
+count: 9    weight: 19 
+count: 10    weight: 19 
+count: 11    weight: 20 
+count: 12    weight: 18 
+count: 13    weight: 20 
+count: 14    weight: 20 
+--------------------Record SPECK Linear Hulls-------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:0   prob_sum:-inf 
+wt:-6   wt_num:0   prob_sum:-inf 
+wt:-7   wt_num:0   prob_sum:-inf 
+wt:-8   wt_num:0   prob_sum:-inf 
+wt:-9   wt_num:0   prob_sum:-inf 
+wt:-10   wt_num:0   prob_sum:-inf 
+wt:-11   wt_num:0   prob_sum:-inf 
+wt:-12   wt_num:0   prob_sum:-inf 
+wt:-13   wt_num:0   prob_sum:-inf 
+wt:-14   wt_num:1   prob_sum:-14.000000 
+wt:-15   wt_num:0   prob_sum:-14.000000 
+wt:-16   wt_num:2   prob_sum:-13.415037 
+wt:-17   wt_num:2   prob_sum:-13.192645 
+wt:-18   wt_num:2   prob_sum:-13.093109 
+wt:-19   wt_num:2   prob_sum:-13.045804 
+wt:-20   wt_num:5   prob_sum:-12.988773 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_32 
+ input:0x00a0 062f ======>> output:0x170b 130a 
+ wt_min(:-14)--->wt_max: -20 
+ 9 Rounds Linear Hull with total 14 trails.
+ Square Correlation weight is: -12.99 
+++++++++++++++++++++++++++++++++++++
+ Time: 25.00 seconds.  
+Time cost: 25.11 seconds ==  0.42 minutes == 0.01 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////以上的平方相关统计有问题////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+//2019年03月12日18:55:01
+huangmingjiang@ubuntu:~/hmj123/speck32/9-20/auto_search/Debug$ ./auto_search 
+|************************************************************************|
+Auto-search Begin... 
+Enter the parameters : #ciper #blocksize #rounds  #mode 
+ciper:speck 
+blocksize: 32 
+rounds:9 
+mode: 30 
+Time of Construct ARX_cLAT: 2.00 seconds.  
+--------------------Search SPECK Linear Hulls-------------------
+count: 1    weight: 16 
+count: 2    weight: 14 
+count: 3    weight: 20 
+count: 4    weight: 17 
+count: 5    weight: 17 
+count: 6    weight: 20 
+count: 7    weight: 18 
+count: 8    weight: 16 
+count: 9    weight: 19 
+count: 10    weight: 19 
+count: 11    weight: 20 
+count: 12    weight: 18 
+count: 13    weight: 20 
+count: 14    weight: 20 
+--------------------Record SPECK Linear Hulls-------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:0   prob_sum:-inf 
+wt:-6   wt_num:0   prob_sum:-inf 
+wt:-7   wt_num:0   prob_sum:-inf 
+wt:-8   wt_num:0   prob_sum:-inf 
+wt:-9   wt_num:0   prob_sum:-inf 
+wt:-10   wt_num:0   prob_sum:-inf 
+wt:-11   wt_num:0   prob_sum:-inf 
+wt:-12   wt_num:0   prob_sum:-inf 
+wt:-13   wt_num:0   prob_sum:-inf 
+wt:-14   wt_num:1   prob_sum:-28.000000 
+wt:-15   wt_num:0   prob_sum:-28.000000 
+wt:-16   wt_num:2   prob_sum:-27.830075 
+wt:-17   wt_num:2   prob_sum:-27.790547 
+wt:-18   wt_num:2   prob_sum:-27.780831 
+wt:-19   wt_num:2   prob_sum:-27.778413 
+wt:-20   wt_num:5   prob_sum:-27.776903 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_32 
+ input:0x00a0 062f ======>> output:0x170b 130a 
+ wt_min(:-14)--->wt_max: -20 
+ 9 Rounds Linear Hull with total 14 trails.
+ Square Correlation weight is: -27.78 
+++++++++++++++++++++++++++++++++++++
+ Time: 25.00 seconds.  
+Time cost: 25.37 seconds ==  0.42 minutes == 0.01 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+//////////////////////////测试ACNS2016文章中的speck32的ALP，结果一致////////////////////////
+2019年03月13日15:03:09
+////////////////////////////////////////////////////////////////
+--------------------Record SPECK Linear Hulls-------------------
+wt:-0   wt_num:0   prob_sum:-inf 
+wt:-1   wt_num:0   prob_sum:-inf 
+wt:-2   wt_num:0   prob_sum:-inf 
+wt:-3   wt_num:0   prob_sum:-inf 
+wt:-4   wt_num:0   prob_sum:-inf 
+wt:-5   wt_num:0   prob_sum:-inf 
+wt:-6   wt_num:0   prob_sum:-inf 
+wt:-7   wt_num:0   prob_sum:-inf 
+wt:-8   wt_num:0   prob_sum:-inf 
+wt:-9   wt_num:0   prob_sum:-inf 
+wt:-10   wt_num:0   prob_sum:-inf 
+wt:-11   wt_num:0   prob_sum:-inf 
+wt:-12   wt_num:0   prob_sum:-inf 
+wt:-13   wt_num:0   prob_sum:-inf 
+wt:-14   wt_num:0   prob_sum:-inf 
+wt:-15   wt_num:1   prob_sum:-30.000000 
+wt:-16   wt_num:0   prob_sum:-30.000000 
+wt:-17   wt_num:3   prob_sum:-29.752072 
+wt:-18   wt_num:2   prob_sum:-29.714598 
+wt:-19   wt_num:21   prob_sum:-29.620622 
+wt:-20   wt_num:69   prob_sum:-29.547759 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_32 
+ input:0x0010 1400 ======>> output:0x0b00 0800 
+ wt_min(:-14)--->wt_max: -20 
+ 9 Rounds Linear Hull with total 96 trails.
+ Square Correlation weight is: -29.55 
+++++++++++++++++++++++++++++++++++++
+ Time: 40.00 seconds.  
+Time cost: 40.56 seconds ==  0.68 minutes == 0.01 hours. 
+Auto-search END! 
+|************************************************************************|
+
+////////////
+2019年03月13日16:04:30
+wt:-15   wt_num:0   prob_sum:-inf 
+wt:-16   wt_num:0   prob_sum:-inf 
+wt:-17   wt_num:2   prob_sum:-33.000000 
+wt:-18   wt_num:0   prob_sum:-33.000000 
+wt:-19   wt_num:6   prob_sum:-32.752072 
+wt:-20   wt_num:4   prob_sum:-32.714598 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_32 
+ input:0x0000 0207 ======>> output:0x0b00 0800 
+ wt_min(:-17)--->wt_max: -20 
+ 10 Rounds Linear Hull with total 12 trails.
+ Square Correlation weight is: -32.71 
+++++++++++++++++++++++++++++++++++++
+ Time: 6.00 seconds.  
+Time cost: 6.92 seconds ==  0.12 minutes == 0.00 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+//2019年03月14日11:28:08
+wt:-17   wt_num:2   prob_sum:-33.000000 
+wt:-18   wt_num:0   prob_sum:-33.000000 
+wt:-19   wt_num:6   prob_sum:-32.752072 
+wt:-20   wt_num:4   prob_sum:-32.714598 
+wt:-21   wt_num:51   prob_sum:-32.601256 
+wt:-22   wt_num:101   prob_sum:-32.548274 
+wt:-23   wt_num:596   prob_sum:-32.473501 
+wt:-24   wt_num:1874   prob_sum:-32.417329 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_32 
+ input:0x0000 0207 ======>> output:0x0b00 0800 
+ wt_min(:-17)--->wt_max: -24 
+ 10 Rounds Linear Hull with total 2634 trails.
+ Square Correlation weight is: -32.42 
+++++++++++++++++++++++++++++++++++++
+ Time: 6134.00 seconds.  
+Time cost: 6134.91 seconds ==  102.25 minutes == 1.70 hours. 
+Auto-search END! 
+|************************************************************************|
+
+//2019年04月19日08:51:16
+wt:-14   wt_num:0   prob_sum:-inf 
+wt:-15   wt_num:0   prob_sum:-inf 
+wt:-16   wt_num:0   prob_sum:-inf 
+wt:-17   wt_num:2   prob_sum:-33.000000 
+wt:-18   wt_num:0   prob_sum:-33.000000 
+wt:-19   wt_num:6   prob_sum:-32.752072 
+wt:-20   wt_num:4   prob_sum:-32.714598 
+wt:-21   wt_num:51   prob_sum:-32.601256 
+wt:-22   wt_num:101   prob_sum:-32.548274 
+wt:-23   wt_num:596   prob_sum:-32.473501 
+wt:-24   wt_num:1874   prob_sum:-32.417329 
+wt:-25   wt_num:8274   prob_sum:-32.357765 
+wt:-26   wt_num:28155   prob_sum:-32.308960 
+wt:-27   wt_num:105738   prob_sum:-32.264594 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_32 
+ input:0x0000 0207 ======>> output:0x0b00 0800 
+ wt_min(:-22)--->wt_max: -27 
+ 10 Rounds Linear Hull with total 144801 trails.
+ Square Correlation weight is: -32.26 
+++++++++++++++++++++++++++++++++++++
+ Time: 1516730.00 seconds.  
+Time cost: 1516730.90 seconds ==  25278.85 minutes == 421.31 hours. 
+Auto-search END! 
+|************************************************************************|
+---------------------------------
+huangmingjiang@ubuntu:~/hmj123/speck32/10-cor-17-27/auto_search/Debug$ 
+
+
+
+
+
+
+//2019年03月14日08:37:56
+wt:-15   wt_num:0   prob_sum:-inf 
+wt:-16   wt_num:0   prob_sum:-inf 
+wt:-17   wt_num:1   prob_sum:-34.000000 
+wt:-18   wt_num:0   prob_sum:-34.000000 
+wt:-19   wt_num:4   prob_sum:-33.678072 
+wt:-20   wt_num:1   prob_sum:-33.660150 
+wt:-21   wt_num:12   prob_sum:-33.607683 
+wt:-22   wt_num:15   prob_sum:-33.591670 
+wt:-23   wt_num:77   prob_sum:-33.571378 
+wt:-24   wt_num:185   prob_sum:-33.559325 
+wt:-25   wt_num:742   prob_sum:-33.547340 
+++++++++++++++++++++++++++++++++++++
+ cipher: speck_32 
+ input:0x0000 3c04 ======>> output:0x2064 2070 
+ wt_min(:-17)--->wt_max: -25 
+ 10 Rounds Linear Hull with total 1037 trails.
+ Square Correlation weight is: -33.55 
+++++++++++++++++++++++++++++++++++++
+ Time: 18315.00 seconds.  
+Time cost: 18315.70 seconds ==  305.26 minutes == 5.09 hours. 
+Auto-search END! 
+|************************************************************************|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
