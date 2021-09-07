@@ -3,7 +3,7 @@
 
 1. RX-cryptanalysis results for Alzette/CHAM.
 
-  Huang M, et al., On the Probability and Automatic Search of Rotational-XOR Cryptanalysis on ARX Ciphers. In submission. 2020.
+  Huang M, et al., On the Probability and Automatic Search of Rotational-XOR Cryptanalysis on ARX Ciphers. Date of submission: October 29-Oct-2020. Date of acceptance: 4-Aug-2021. The Computer Journal, 2021.
 
 
 2. XOR-differential characteristic results for SPECK/SPARX/CHAM.
